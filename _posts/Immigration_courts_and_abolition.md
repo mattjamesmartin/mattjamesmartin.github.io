@@ -3,7 +3,7 @@ layout: post
 title:  "Immigration Courts and Abolition"
 date:   2021-07-17
 excerpt: "An abolitionist response to the call for “independent” immigration courts"
-image: "/images/Blog1.jpg"
+image: "/images/pic1.png"
 ---
 
 <p> On May 8, 2021, The New York Times Editorial Board published an [article](https://www.nytimes.com/2021/05/08/opinion/sunday/immigration-courts-trump-biden.html), which boldly stated: “Immigration courts aren’t real courts. It’s time to change that.” The decision to run the piece was surprising considering how little attention the immigration court system typically receives, but by all measures, their diagnosis was accurate. Immigration courts are suffering the largest backlog of pending cases in their history, 1.3 million as of May 2021 according to TRAC. Immigration judges (IJs) lack any meaningful judicial independence—by any definition of the concept—facing perverse work incentives, limited resources, and politicized hiring procedures. And perhaps most glaringly, the chief prosecutor in immigration court is also the chief judge. The U.S. Attorney General has the power to intervene directly in IJ decision-making and overturn decisions they conclude are incorrect, a move employed frequently by former AG Jefferson Beauregard Sessions III.
