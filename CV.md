@@ -8,3 +8,6 @@ sitemap:
     changefreq: weekly
 ---
 You can download a full copy of my CV [here]({{site.url}}/files/CV.pdf).
+
+<embed src="https://mattjamesmartin.github.io/files/CV.pdf" width="500" height="375" 
+ type="application/pdf">
