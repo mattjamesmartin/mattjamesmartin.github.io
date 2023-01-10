@@ -23,8 +23,8 @@ sitemap:
 
 ### Graduate Research Assistant 
 _Supervisor: Dr. Raúl Madrid_ <br>
-   * Assisted Dr. Madrid assembly a national data set of all presidential elections in Nicaragua from 1838 through 1930.
-   * Helped assemble national data sets of all Latin American revolts from 1830 through 2020 by conducting in-depth 
+   * Assisted Dr. Madrid assemble a data set of all presidential elections in Nicaragua from 1838 through 1930.
+   * Constructed national data sets of all Latin American revolts from 1830 through 2020 by conducting in-depth 
    historical research, coding in Excel, and updating data sets.   
 
 ### Graduate Research Assistant
