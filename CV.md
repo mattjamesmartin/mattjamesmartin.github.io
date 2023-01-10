@@ -7,4 +7,4 @@ sitemap:
     lastmod: 2017-11-02
     changefreq: weekly
 ---
-You can download a full copy of my CV [get the PDF]({{site.url}}/_files/CV.pdf).
+You can download a full copy of my CV [get the PDF]({{ site.url }}/_files/CV.pdf).
