@@ -17,22 +17,22 @@ Spring 2023
 Dr. Connor Jerzak <br>
 Fall 2022
 
-### UGS 303 Drugs, Commerce, and Immigration in US-Mexico Relations
+### UGS 303: Drugs, Commerce, and Immigration in US-Mexico Relations
 Dr. Kenneth Greene <br>
 Spring 2022
 
-### GOV 320N Civil Rights And Civil Liberties
+### GOV 320N: Civil Rights And Civil Liberties
 Dr. Alan Sager <br>
 Fall 2021
 
-### GOV S365W Human Rights and World Politics
+### GOV S365W: Human Rights and World Politics
 Dr. Rhonda Evans <br>
 Summer 2021
 
-### GOV 312L The U.S. in Comparative Perspective
+### GOV 312L: The U.S. in Comparative Perspective
 Dr. Kurt Weyland <br>
 Spring 2021
 
-### GOV 328L Introduction to Latin American Politics
+### GOV 328L: Introduction to Latin American Politics
 Dr. Raúl Madrid <br>
 Fall 2020
