@@ -7,4 +7,4 @@ sitemap:
     lastmod: 2017-11-02
     changefreq: weekly
 ---
-yuhhuyhuyhuyhuyhuyh
+[Link to CV]({{ site.baseurl }}{% link _files/CV.pdf %})
