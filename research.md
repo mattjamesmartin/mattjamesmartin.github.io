@@ -13,7 +13,7 @@ sitemap:
 ### Bounded Participation and Regime Legitimation: <br> Public Consultation in Authoritarian Constitution-Making
    * Solo-authored working paper and the early stages of my dissertation.
 
-### Criminality, Deportation, and Political Entrepreneurs <br> The Emergence of Crime-Based Deportation in the 1980s United States
+### Criminality, Deportation, and Political Entrepreneurs: <br> The Emergence of Crime-Based Deportation in the 1980s United States
    * Solo-authored working paper currently under review at _Social Science History_
 
 ### What Kind of Constitution Do Chileans Want? <br> Chilean Consultation Input in Comparative Perspective
@@ -36,7 +36,7 @@ _Supervisor: Dr. Zachary Elkins_ <br>
 
 ## Other Projects 
 
-### Only a Matter of Crime <br> Immigration Politics and Executive-Judicial Relations in Argentina
+### Only a Matter of Crime: <br> Immigration Politics and Executive-Judicial Relations in Argentina
 Winner of the Consortium for Undergraduate Law and Justice Programs 2019 Best Undergraduate Student Paper Award <br>
 _Adviser: Dr. Rebecca Hamlin (UMass Amherst)_
 
