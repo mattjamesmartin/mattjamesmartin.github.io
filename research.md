@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Jekyll Theme - About - Massively
+title: Research
 description: 
 sitemap:
     priority: 0.7
