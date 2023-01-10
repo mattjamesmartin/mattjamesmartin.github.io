@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Yuh
+title: CV
 description: 
 sitemap:
-    priority: 1.0
+    priority: 0.7
     lastmod: 2017-11-02
     changefreq: weekly
 ---
