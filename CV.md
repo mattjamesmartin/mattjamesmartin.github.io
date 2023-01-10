@@ -1,7 +1,11 @@
 ---
-layout: archive
-title: "CV"
-permalink: /cv/
+layout: page
+title: CV
+description: 
+sitemap:
+    priority: 0.7
+    lastmod: 2017-11-02
+    changefreq: weekly
 ---
 
 Education
@@ -33,10 +37,7 @@ Skills
 
 Publications
 ======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
+
 Talks
 ======
   <ul>{% for post in site.talks %}
@@ -45,9 +46,7 @@ Talks
   
 Teaching
 ======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+
   
 Service and leadership
 ======
