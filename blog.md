@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: My Blog
+title: Blog
 description: 
 sitemap:
     priority: 1.0
