@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Matthew Martin - Teaching 
+title: Teaching Experience 
 description:
 sitemap:
     priority: 0.7
