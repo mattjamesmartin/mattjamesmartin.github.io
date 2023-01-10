@@ -4,8 +4,6 @@ title: "CV"
 permalink: /cv/
 ---
 
-{% include base_path %}
-
 Education
 ======
 * B.S. in GitHub, GitHub University, 2012
