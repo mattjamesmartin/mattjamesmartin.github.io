@@ -7,4 +7,4 @@ sitemap:
     lastmod: 2017-11-02
     changefreq: weekly
 ---
-[My page](_files/CV.pdf)
+[CV](mattjamesmartin.github.io/_files/CV.pdf)
