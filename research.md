@@ -37,7 +37,7 @@ _Supervisor: Dr. Zachary Elkins_ <br>
 ## Other Projects 
 
 ### Only a Matter of Crime: <br> Immigration Politics and Executive-Judicial Relations in Argentina
-Winner of the Consortium for Undergraduate Law and Justice Programs 2019 Best Undergraduate Student Paper Award <br>
+Consortium for Undergraduate Law and Justice Programs 2019 Best Undergraduate Student Paper <br>
 _Adviser: Dr. Rebecca Hamlin (UMass Amherst)_
 
 
