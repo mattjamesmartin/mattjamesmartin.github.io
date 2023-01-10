@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Matthew Martin - Teaching 
-description: This page explains my Teaching history.
+description:
 sitemap:
     priority: 0.7
     lastmod: 2017-11-02
