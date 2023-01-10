@@ -8,5 +8,5 @@ sitemap:
     changefreq: weekly
 ---
 <center>
-    <object data="files/CV.pdf" type="application/pdf" style="min-height:100vh;width:100%"></object>
+    <embed src="https://mattjamesmartin.github.io/files/CV.pdf" width="actual-width.px" height="actual-height.px"></embed>
 </center>
