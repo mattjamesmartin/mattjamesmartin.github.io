@@ -7,4 +7,4 @@ sitemap:
     lastmod: 2017-11-02
     changefreq: weekly
 ---
-You can download a full copy of my CV [here](_files/CV.pdf).
+You can download a full copy of my CV <a href="https://github.com/mattjamesmartin/mattjamesmartin.github.io/blob/main/_files/CV.pdf">here</a>.
