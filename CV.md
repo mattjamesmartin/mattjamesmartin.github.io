@@ -8,6 +8,5 @@ sitemap:
     changefreq: weekly
 ---
 <center>
-    <object data="CV.pdf" type="application/pdf" width="100%" height="100%">
-    </object>
+    <object data="files/CV.pdf" type="application/pdf" style="min-height:100vh;width:100%"></object>
 </center>
