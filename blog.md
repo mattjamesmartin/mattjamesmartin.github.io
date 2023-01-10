@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Jekyll Theme - Blog Page - Massively
+title: My Blog
 description: 
 sitemap:
     priority: 1.0
