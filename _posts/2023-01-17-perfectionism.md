@@ -25,7 +25,6 @@ Lowering the stakes of writing requires us to write routinely. Creative thoughts
 
 Create a writing log, in which you commit to write for at least one hour every day, five days per week. This commitment to writing daily made possible the guide you are reading. The writing log functions as a space for exposure therapy. Exposure, generally speaking, involves a controlled approach toward the source of one’s fear through repeated contact, and is a cornerstone for treating anxiety disorders (Craske et al. 2014). A daily writing log can achieve the same kind of systematic desensitization. If the failure to achieve perfection impedes us from moving forward, it is only through repetition that we can rewire our brains to write more, and more quickly. 
 Although the content of daily writing logs will vary widely, some general structural rules can maximize the utility of the exercise. It is best to delimit discrete log entries with a number, date, and shorthand title for the writing topic on a particular day. The entry number shows our progress; the date anchors our thoughts to some point in time; and the shorthand title serves as a location device if we wish to develop certain ideas further.[^1] The heading of a log entry may look something like this:
-
 <center>
  Log 01: September 21, 2022 <br> Tips and tricks for perfectionist writers…
 </center>
