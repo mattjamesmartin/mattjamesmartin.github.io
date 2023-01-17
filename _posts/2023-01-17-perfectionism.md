@@ -78,10 +78,6 @@ Writing as a perfectionist is the art of never being satisfied. We must find hea
 
 ---
 
-[^1]: This structure is particularly useful in Google Docs, which creates a table of contents in the left sidebar (according to the header styles used) and allows users to click through the sections of the document with ease.
-[^2]: Martial artist-philosopher Bruce Lee articulates this advice clearly: “A goal is not always meant to be reached; it often serves simply as something to aim at.”
-[^3]: The message here is best captured by one of my favorite lines from the play Wakey Wakey: “So, push yourself, a little. And, go easy on yourself, a little.”
-
 ## References
 
 1. Backer, Larry Catá, Flora Sapio, and James Korman. 2019. “Popular Participation in the Constitution of the Illiberal State-An Empirical Study of Popular Engagement and Constitutional Reform in Cuba and the Contours of Cuban Socialist Democracy 2.0.” Emory Int’l L. Rev. 34: 183. <br>
@@ -92,6 +88,9 @@ Writing as a perfectionist is the art of never being satisfied. We must find hea
 6. Flett, Gordon L, and Paul L Hewitt. 2002. Perfectionism: Theory, Research, and Treatment. American Psychological Association. <br>
 Frost, Randy O, Patricia Marten, Cathleen Lahart, and Robin Rosenblate. 1990. “The Dimensions of Perfectionism.” Cognitive Therapy and Research 14 (5): 449–68. <br>
 
-
+## Footnotes
+[^1]: This structure is particularly useful in Google Docs, which creates a table of contents in the left sidebar (according to the header styles used) and allows users to click through the sections of the document with ease.
+[^2]: Martial artist-philosopher Bruce Lee articulates this advice clearly: “A goal is not always meant to be reached; it often serves simply as something to aim at.”
+[^3]: The message here is best captured by one of my favorite lines from the play Wakey Wakey: “So, push yourself, a little. And, go easy on yourself, a little.”
 
 
