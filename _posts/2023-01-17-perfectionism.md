@@ -84,12 +84,12 @@ Writing as a perfectionist is the art of never being satisfied. We must find hea
 
 ## References
 
-Backer, Larry Catá, Flora Sapio, and James Korman. 2019. “Popular Participation in the Constitution of the Illiberal State-An Empirical Study of Popular Engagement and Constitutional Reform in Cuba and the Contours of Cuban Socialist Democracy 2.0.” Emory Int’l L. Rev. 34: 183. <br>
-Bieling, Peter J, Anne L Israeli, and Martin M Antony. 2004. “Is Perfectionism Good, Bad, or Both? Examining Models of the Perfectionism Construct.” Personality and Individual Differences 36 (6): 1373–85. <br>
-Craske, Michelle G, Michael Treanor, Christopher C Conway, Tomislav Zbozinek, and Bram Vervliet. 2014. “Maximizing Exposure Therapy: An Inhibitory Learning Approach.” Behaviour Research and Therapy 58: 10–23. <br>
-Elkins, Zachary. 2017. “A Non-Negotiable Time to Write... but First , Let Me Check My Email...” <br>
-Flaxman, Paul E, Julie Ménard, Frank W Bond, and Gail Kinman. 2012. “Academics’ Experiences of a Respite from Work: Effects of Self-Critical Perfectionism and Perseverative Cognition on Postrespite Well-Being.” Journal of Applied Psychology 97 (4): 854. <br>
-Flett, Gordon L, and Paul L Hewitt. 2002. Perfectionism: Theory, Research, and Treatment. American Psychological Association. <br>
+1. Backer, Larry Catá, Flora Sapio, and James Korman. 2019. “Popular Participation in the Constitution of the Illiberal State-An Empirical Study of Popular Engagement and Constitutional Reform in Cuba and the Contours of Cuban Socialist Democracy 2.0.” Emory Int’l L. Rev. 34: 183. <br>
+2. Bieling, Peter J, Anne L Israeli, and Martin M Antony. 2004. “Is Perfectionism Good, Bad, or Both? Examining Models of the Perfectionism Construct.” Personality and Individual Differences 36 (6): 1373–85. <br>
+3. Craske, Michelle G, Michael Treanor, Christopher C Conway, Tomislav Zbozinek, and Bram Vervliet. 2014. “Maximizing Exposure Therapy: An Inhibitory Learning Approach.” Behaviour Research and Therapy 58: 10–23. <br>
+4. Elkins, Zachary. 2017. “A Non-Negotiable Time to Write... but First , Let Me Check My Email...” <br>
+5. Flaxman, Paul E, Julie Ménard, Frank W Bond, and Gail Kinman. 2012. “Academics’ Experiences of a Respite from Work: Effects of Self-Critical Perfectionism and Perseverative Cognition on Postrespite Well-Being.” Journal of Applied Psychology 97 (4): 854. <br>
+6. Flett, Gordon L, and Paul L Hewitt. 2002. Perfectionism: Theory, Research, and Treatment. American Psychological Association. <br>
 Frost, Randy O, Patricia Marten, Cathleen Lahart, and Robin Rosenblate. 1990. “The Dimensions of Perfectionism.” Cognitive Therapy and Research 14 (5): 449–68. <br>
 
 
