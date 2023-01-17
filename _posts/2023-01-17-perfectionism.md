@@ -29,7 +29,7 @@ Although the content of daily writing logs will vary widely, some general struct
  Log 01: September 21, 2022 <br> Tips and tricks for perfectionist writers…
 </center>
 
-<p> Together, these three items constitute the organizational structure that connects otherwise distinct log entries. By tracking our progress, we can fight the nagging feeling that we are not meeting expectations. Moreover, using a reliable structure means we spend less time overthinking how to start writing. Instead, we settle into a mental groove for achieving high productivity. Over time, we start to see writing as an ordinary part of our professional routine. Expose yourself to regular writing in a measured manner, and you learn to replace anxiety with discipline.
+Together, these three items constitute the organizational structure that connects otherwise distinct log entries. By tracking our progress, we can fight the nagging feeling that we are not meeting expectations. Moreover, using a reliable structure means we spend less time overthinking how to start writing. Instead, we settle into a mental groove for achieving high productivity. Over time, we start to see writing as an ordinary part of our professional routine. Expose yourself to regular writing in a measured manner, and you learn to replace anxiety with discipline.
 
 
 ### Write routinely
