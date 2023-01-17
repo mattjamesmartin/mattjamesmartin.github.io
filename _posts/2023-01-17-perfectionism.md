@@ -70,12 +70,25 @@ I do not work on Saturdays. Taking off (at least) one day per week is even more 
 
 My final recommendation is simple—celebrate your wins, big and small. Good writing is not easy. Perfectionist ambitions make us blind to our own accomplishments. Rewarding yourself for hard work each step of the way is an essential part of unlearning harmful self-criticism and cultivating your confidence.
 
+## Conclusion (It’s almost time to write!)
+
 Writing as a perfectionist is the art of never being satisfied. We must find healthy ways to achieve excellence without falling victim to our high standards. The strategies and ideas that I offer here are born out of personal experience. I have long struggled with perfectionist writing, and through self-reflection, I have tried to identify and change maladaptive behaviors. When it is time to write, we must write regularly using techniques that lower the stakes of writing. When it is time not to write, we must respect our limits, take breaks, and celebrate our wins. We can strive for excellence while also being kind to ourselves. Perfectionism is a tendency, not an immutable trait. We are capable of unlearning poor writing habits and replacing them with more constructive approaches. But we can only do so with practice. Now, I suggest you start writing.
 
+---
 
 [^1]: This structure is particularly useful in Google Docs, which creates a table of contents in the left sidebar (according to the header styles used) and allows users to click through the sections of the document with ease.
 [^2]: Martial artist-philosopher Bruce Lee articulates this advice clearly: “A goal is not always meant to be reached; it often serves simply as something to aim at.”
 [^3]: The message here is best captured by one of my favorite lines from the play Wakey Wakey: “So, push yourself, a little. And, go easy on yourself, a little.”
+
+## References
+
+Backer, Larry Catá, Flora Sapio, and James Korman. 2019. “Popular Participation in the Constitution of the Illiberal State-An Empirical Study of Popular Engagement and Constitutional Reform in Cuba and the Contours of Cuban Socialist Democracy 2.0.” Emory Int’l L. Rev. 34: 183.
+Bieling, Peter J, Anne L Israeli, and Martin M Antony. 2004. “Is Perfectionism Good, Bad, or Both? Examining Models of the Perfectionism Construct.” Personality and Individual Differences 36 (6): 1373–85.
+Craske, Michelle G, Michael Treanor, Christopher C Conway, Tomislav Zbozinek, and Bram Vervliet. 2014. “Maximizing Exposure Therapy: An Inhibitory Learning Approach.” Behaviour Research and Therapy 58: 10–23.
+Elkins, Zachary. 2017. “A Non-Negotiable Time to Write... but First , Let Me Check My Email...”
+Flaxman, Paul E, Julie Ménard, Frank W Bond, and Gail Kinman. 2012. “Academics’ Experiences of a Respite from Work: Effects of Self-Critical Perfectionism and Perseverative Cognition on Postrespite Well-Being.” Journal of Applied Psychology 97 (4): 854.
+Flett, Gordon L, and Paul L Hewitt. 2002. Perfectionism: Theory, Research, and Treatment. American Psychological Association.
+Frost, Randy O, Patricia Marten, Cathleen Lahart, and Robin Rosenblate. 1990. “The Dimensions of Perfectionism.” Cognitive Therapy and Research 14 (5): 449–68.
 
 
 
