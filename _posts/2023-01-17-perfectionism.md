@@ -4,7 +4,7 @@ title:  "The Art of Never Being Satisfied"
 date:   2023-01-17
 excerpt: "A Guide to Writing for Perfectionists"
 ---
-<p style="text-align: center;">How can we overcome perfectionism in our writing? As academics, we often set unrealistically high standards when we must put words to the page. Chronically slow writing and obsessive editing are common symptoms of perfectionist writing. Below, I offer some ways to overcome these roadblocks and unlearn the maladaptive features of perfectionism. I recommend that perfectionists learn how to separate writing from editing, in effect lowering the stakes of an otherwise stressful task. I discuss some specific strategies to this end, such as starting a daily writing log and using informal mediums to record our ideas. I emphasize the importance of knowing our limits while writing—that is, when it is time to rest in the interest of future progress. Though not exhaustive, this guide provides some tools for perfectionist writers to use in times of need. We can strive for excellent writing while also being kind to ourselves.</p>
+<p style="width: 50%;">How can we overcome perfectionism in our writing? As academics, we often set unrealistically high standards when we must put words to the page. Chronically slow writing and obsessive editing are common symptoms of perfectionist writing. Below, I offer some ways to overcome these roadblocks and unlearn the maladaptive features of perfectionism. I recommend that perfectionists learn how to separate writing from editing, in effect lowering the stakes of an otherwise stressful task. I discuss some specific strategies to this end, such as starting a daily writing log and using informal mediums to record our ideas. I emphasize the importance of knowing our limits while writing—that is, when it is time to rest in the interest of future progress. Though not exhaustive, this guide provides some tools for perfectionist writers to use in times of need. We can strive for excellent writing while also being kind to ourselves.</p>
 
 ## Introduction
 
@@ -82,13 +82,13 @@ Writing as a perfectionist is the art of never being satisfied. We must find hea
 
 ## References
 
-Backer, Larry Catá, Flora Sapio, and James Korman. 2019. “Popular Participation in the Constitution of the Illiberal State-An Empirical Study of Popular Engagement and Constitutional Reform in Cuba and the Contours of Cuban Socialist Democracy 2.0.” Emory Int’l L. Rev. 34: 183.
-Bieling, Peter J, Anne L Israeli, and Martin M Antony. 2004. “Is Perfectionism Good, Bad, or Both? Examining Models of the Perfectionism Construct.” Personality and Individual Differences 36 (6): 1373–85.
-Craske, Michelle G, Michael Treanor, Christopher C Conway, Tomislav Zbozinek, and Bram Vervliet. 2014. “Maximizing Exposure Therapy: An Inhibitory Learning Approach.” Behaviour Research and Therapy 58: 10–23.
-Elkins, Zachary. 2017. “A Non-Negotiable Time to Write... but First , Let Me Check My Email...”
-Flaxman, Paul E, Julie Ménard, Frank W Bond, and Gail Kinman. 2012. “Academics’ Experiences of a Respite from Work: Effects of Self-Critical Perfectionism and Perseverative Cognition on Postrespite Well-Being.” Journal of Applied Psychology 97 (4): 854.
-Flett, Gordon L, and Paul L Hewitt. 2002. Perfectionism: Theory, Research, and Treatment. American Psychological Association.
-Frost, Randy O, Patricia Marten, Cathleen Lahart, and Robin Rosenblate. 1990. “The Dimensions of Perfectionism.” Cognitive Therapy and Research 14 (5): 449–68.
+Backer, Larry Catá, Flora Sapio, and James Korman. 2019. “Popular Participation in the Constitution of the Illiberal State-An Empirical Study of Popular Engagement and Constitutional Reform in Cuba and the Contours of Cuban Socialist Democracy 2.0.” Emory Int’l L. Rev. 34: 183. <br>
+Bieling, Peter J, Anne L Israeli, and Martin M Antony. 2004. “Is Perfectionism Good, Bad, or Both? Examining Models of the Perfectionism Construct.” Personality and Individual Differences 36 (6): 1373–85. <br>
+Craske, Michelle G, Michael Treanor, Christopher C Conway, Tomislav Zbozinek, and Bram Vervliet. 2014. “Maximizing Exposure Therapy: An Inhibitory Learning Approach.” Behaviour Research and Therapy 58: 10–23. <br>
+Elkins, Zachary. 2017. “A Non-Negotiable Time to Write... but First , Let Me Check My Email...” <br>
+Flaxman, Paul E, Julie Ménard, Frank W Bond, and Gail Kinman. 2012. “Academics’ Experiences of a Respite from Work: Effects of Self-Critical Perfectionism and Perseverative Cognition on Postrespite Well-Being.” Journal of Applied Psychology 97 (4): 854. <br>
+Flett, Gordon L, and Paul L Hewitt. 2002. Perfectionism: Theory, Research, and Treatment. American Psychological Association. <br>
+Frost, Randy O, Patricia Marten, Cathleen Lahart, and Robin Rosenblate. 1990. “The Dimensions of Perfectionism.” Cognitive Therapy and Research 14 (5): 449–68. <br>
 
 
 
