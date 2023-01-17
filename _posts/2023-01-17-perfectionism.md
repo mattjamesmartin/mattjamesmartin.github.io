@@ -21,6 +21,8 @@ The key is to separate writing from editing. In practice, however, taming perfec
 
 ## When it is time to write...
 
+### Write routinely
+
 Lowering the stakes of writing requires us to write routinely. Creative thoughts flow more freely when we reduce the pressure to create a perfect product on the first try. The commitment to write frequently and consistently is the “the art of applying ass to seat” or “the rear-to-chair principle,” as poet Dorothy Parker and political scientist Zachary Elkins, respectively, call it. Such advice may seem reductive. On the contrary, finding a “non-negotiable time to write” (Elkins 2017) is invaluable, especially for perfectionists who may otherwise demur.
 
 Create a writing log, in which you commit to write for at least one hour every day, five days per week. This commitment to writing daily made possible the guide you are reading. The writing log functions as a space for exposure therapy. Exposure, generally speaking, involves a controlled approach toward the source of one’s fear through repeated contact, and is a cornerstone for treating anxiety disorders (Craske et al. 2014). A daily writing log can achieve the same kind of systematic desensitization. If the failure to achieve perfection impedes us from moving forward, it is only through repetition that we can rewire our brains to write more, and more quickly. 
@@ -31,9 +33,50 @@ Although the content of daily writing logs will vary widely, some general struct
 
 Together, these three items constitute the organizational structure that connects otherwise distinct log entries. By tracking our progress, we can fight the nagging feeling that we are not meeting expectations. Moreover, using a reliable structure means we spend less time overthinking how to start writing. Instead, we settle into a mental groove for achieving high productivity. Over time, we start to see writing as an ordinary part of our professional routine. Expose yourself to regular writing in a measured manner, and you learn to replace anxiety with discipline.
 
+### Record your ideas informally
 
-### Write routinely
+Perfectionist writers often struggle with choosing a topic to write about, or articulating a specific idea. To sidestep writer’s block, we need a reservoir of ideas to draw from during times of scholarly drought. We can generate this supply by recording ideas using informal mediums. This strategy is meant to shield us from the cycle of myopic writing and neurotic editing that frequently depletes our mental faculties. Furthermore, low-stakes exercises in idea generation can help overcome the rigidity of perfectionist thinking that otherwise hinders our ability to reason and write creatively.
+
+Finding the best set of tools for recording our ideas requires experimentation. I have tested several techniques, including the following:
+
+1.	Throwing spontaneous ideas into the notes application of my phone.
+2.	Recording a voice memo explaining an idea to myself (or someone else).
+3.	Creating a list of possible research projects in a free-form Google doc.
+
+These three exercises are designed to stimulate the creativity that is needed for academic writing. They also share the same logic—that is, ideas that are not recorded somewhere will naturally fade away. Truth be told, we cannot predict those spontaneous moments of ingenuity that we covet as writers. Rather, we must equip ourselves with tools that allow us to capitalize on fleeting moments of original thought. Some of our ideas will be half-baked, but others may have the power to change the course of our intellectual development.
+
+My own dissertation topic was born out of a messy Google doc. At the time, I was writing a co-authored paper on the public consultation organized in 2016 by the Chilean government to inform their constitution-making efforts. I started to investigate other countries’ experiences with national consultations in the process of constitutional design. I discovered that Cuba’s communist government organized local meetings in which 77.89% of the population discussed a draft of the 2019 constitution (Backer, Sapio, and Korman 2019). Why would an authoritarian regime assume the massive responsibility of collecting, analyzing, and interpreting the voice of the citizenry? I recorded the question in my repository of ideas. Over the next few months, what could have been a passing thought blossomed into a seminar paper. This case study of Cuba has since become the departure point for my dissertation on public consultation in authoritarian constitution-making. 
+
+Rather than forcing myself to invent some spontaneous dissertation topic, I drew from the ideas that had accumulated in my Google doc. I dodged the trap of perfectionist writer’s block and instead stumbled upon a topic that has kept my interest. Some perfectionists may prefer other ways to record their ideas, but the lesson of the exercise is clear. Build a space where it is easy to translate creative energy into words, however messy they are. You can tap into this reservoir when your well of ideas (temporarily) runs dry.
+
+## When it is time _not_ to write
+
+### Be kind to yourself
+
+A fundamental part of any writing strategy for perfectionists is knowing when not to write—that is, when to take a break. Perfectionists tend to have a much harder time unwinding and mentally separating themselves from work, which can damage their work-life balance and general well-being (Flaxman et al. 2012). Learning not to fixate on our work is crucial, as we cannot always achieve every one of our goals.[^2] Writing more, and more quickly, as a perfectionist is not instantaneous. It is an iterative process that requires us to get comfortable with steady progress and understand our limits. As we accept the Sisyphean nature of writing, we learn to appreciate that writing 1,000 words in a day is better than none at all (even if our goal was 2,000).
+
+There will be days when we are tired, when we are distracted, when the last thing we want to do is write. Sometimes life gets in the way. But we must learn to trust our gut when it is time to step away from the laptop and stop ruminating about work. The alternative is that we let the frustration with not being able to write fester. We must be honest and accept that our tank is empty. Rest, reassess your goals, and start anew tomorrow. Learning your limits (slowly but surely) will make actually knowing when to write much easier.[^3]
+
+### Schedule breaks
+
+One of the best ways to ensure that we take a break from writing, and from work generally, is to schedule rest times. We need to make downtime part of our routine in the same way we commit to writing daily. Structuring our writing schedule in this way is indispensable for avoiding burnout. If we do not establish reasonable work-life boundaries, we will only take breaks out of exhaustion. 
+Writing grows only more and more difficult as we repeat this draining cycle. In order to develop sustainable writing habits, we must schedule daily and weekly rest times.
+
+I do not write after 10:00 PM; this is when I unwind at the end of the workday. I like to be in bed by 11:30 PM on weeknights, and if I do not have at least 90 minutes to separate from work completely, I typically have stress dreams about work. In these dreams, I am trapped in the same loop of indecision and anxiety that afflicts me on bad days. When I wake up, I find myself fatigued and less willing to return to work. Decompressing before bed instead allows me to detach, mentally and physically, from my writing space. I reflect on my strategy for the next day and put my daily writing goals in perspective. While 10:00 PM will not be the right time to disconnect for everyone, the logic stands—to break the cycle of stress and burnout, you must respect the sanctity of a good night’s sleep.
+
+I do not work on Saturdays. Taking off (at least) one day per week is even more important than relaxing at the end of the day. To be blunt, academic work culture is toxic, and perfectionists too often accept workaholism as the norm. Rather than treating academia like a job and taking real leisure time, we continue overworking and disregard fatigue as the cost of success. The principle of this strategy is similar to that behind the “no work after 10:00 PM” rule. We need space to breathe mentally in order to write effectively. We cannot get by with only intermittent breaks; we need (and deserve) a full day when we can disconnect and focus on other important things. Saturdays are best reserved for enjoyable, restorative activities such as spending time with friends and loved ones or having some “you” time. Without longer breaks, you heighten the risk of burnout and play into the workaholic culture of academia.
+
+### Celebrate your wins
+
+My final recommendation is simple—celebrate your wins, big and small. Good writing is not easy. Perfectionist ambitions make us blind to our own accomplishments. Rewarding yourself for hard work each step of the way is an essential part of unlearning harmful self-criticism and cultivating your confidence.
+
+Writing as a perfectionist is the art of never being satisfied. We must find healthy ways to achieve excellence without falling victim to our high standards. The strategies and ideas that I offer here are born out of personal experience. I have long struggled with perfectionist writing, and through self-reflection, I have tried to identify and change maladaptive behaviors. When it is time to write, we must write regularly using techniques that lower the stakes of writing. When it is time not to write, we must respect our limits, take breaks, and celebrate our wins. We can strive for excellence while also being kind to ourselves. Perfectionism is a tendency, not an immutable trait. We are capable of unlearning poor writing habits and replacing them with more constructive approaches. But we can only do so with practice. Now, I suggest you start writing.
+
 
 [^1]: This structure is particularly useful in Google Docs, which creates a table of contents in the left sidebar (according to the header styles used) and allows users to click through the sections of the document with ease.
+[^2]: Martial artist-philosopher Bruce Lee articulates this advice clearly: “A goal is not always meant to be reached; it often serves simply as something to aim at.”
+[^3]: The message here is best captured by one of my favorite lines from the play Wakey Wakey: “So, push yourself, a little. And, go easy on yourself, a little.”
+
+
 
 
