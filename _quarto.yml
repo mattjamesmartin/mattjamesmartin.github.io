@@ -18,7 +18,7 @@ format:
     dark: darkly
     css: styles.css
     toc: true
-    fontsize: 10pt
+    fontsize: 14pt
 
 editor: visual
 
