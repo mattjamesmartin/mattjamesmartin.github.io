@@ -13,9 +13,7 @@ about:
     - icon: github
       text: Github
       href: https://github.com/mattjamesmartin
-    - icon: Orcid
-      text: ORCID
-      href: https://orcid.org/my-orcid?orcid=0000-0003-3460-3603
+      
 html:
   page-layout: full
 ---
