@@ -1,7 +1,25 @@
 ---
-title: "Matthew Martin"
+title: "Matt Martin"
+about:
+  template: trestles
+  image: imgs/website_photo.jpg
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:mjmartin@utexas.edu
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/MattJ_Martin
+    - icon: github
+      text: Github
+      href: https://github.com/mattjamesmartin
+    - icon: Orcid
+      text: ORCID
+      href: https://orcid.org/my-orcid?orcid=0000-0003-3460-3603
 ---
 
-This is a Quarto website.
+My name is Matthew Martin (he/him), and I am a fourth-year Ph.D. student in the [Department of Government](https://liberalarts.utexas.edu/government/gradstudents/mjm7865) at the University of Texas at Austin. My fields of study are public law and comparative politics. My research interests include public participation in constitution-making, authoritarian constitutions, Latin American politics, and immigration law and politics. I am in the early stages of my dissertation, which examines the use of public consultation in constitution-making.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Prior to graduate school, I received my B.A. in Political Science and Legal Studies from the University of Massachusetts at Amherst. After graduation, I worked as a legal assistant in immigration law at a firm in Washington, D.C. I assisted attorneys with family- and humanitarian- based immigration cases ranging from permanent residence to removal defense to asylum. Today I continue to support trans and gender non-conforming asylum seekers, gathering them legal resources, contacting lawyers, and organizing fundraisers to ensure their security.
+
+My current research agenda focuses on public consultations in constitution-making. I am now constructing an original data set of all public consultations in constitution-making since 1789, which I plan to use for my dissertation and future research. I have also been involved in a project at the [Comparative Constitutions Project](https://comparativeconstitutionsproject.org/directors-staff/) that develops an innovative method for analyzing public consultation records with natural language processing (NLP) tools. 

@@ -3,18 +3,22 @@ project:
   output-dir: docs
 
 website:
-  title: "mattjamesmartin.github.io"
+  title: "Matt Martin"
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: About
+      - research.qmd
+      - teaching.qmd
+      - blog.qmd
 
 format:
   html:
-    theme: cosmo
+    theme: flatly
+    dark: darkly
     css: styles.css
     toc: true
+    fontsize: 10pt
 
 editor: visual
 
