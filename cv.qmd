@@ -2,4 +2,6 @@
 title: "CV"
 ---
 
+{{< pdf CV_2023.pdf >}}
+
 You can download my CV here.
