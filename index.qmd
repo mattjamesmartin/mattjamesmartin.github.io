@@ -16,6 +16,8 @@ about:
     - icon: Orcid
       text: ORCID
       href: https://orcid.org/my-orcid?orcid=0000-0003-3460-3603
+html:
+  page-layout: full
 ---
 
 My name is Matthew Martin (he/him), and I am a fourth-year Ph.D. student in the [Department of Government](https://liberalarts.utexas.edu/government/gradstudents/mjm7865) at the University of Texas at Austin. My fields of study are public law and comparative politics. My research interests include public participation in constitution-making, authoritarian constitutions, Latin American politics, and immigration law and politics. I am in the early stages of my dissertation, which examines the use of public consultation in constitution-making.
