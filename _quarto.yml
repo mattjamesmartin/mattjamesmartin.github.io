@@ -11,6 +11,7 @@ website:
       - research.qmd
       - teaching.qmd
       - blog.qmd
+      - cv.qmd
 
 format:
   html:
