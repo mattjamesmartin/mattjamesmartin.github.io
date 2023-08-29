@@ -4,15 +4,10 @@ title: "Teaching"
 
 ## Courses
 
-### UT Government Department Methods Camps 2023
+### UT Government Department Methods Camp
 
--   Senior instructor
--   Summer 2023
-
-### UT Government Department Methods Camp 2022
-
--   Junior instructor
--   Summer 2022
+-   Summer 2022 and 2023
+-   See our website [here](https://methodscamp.github.io/)
 
 ## Teaching Assistantships
 
@@ -50,8 +45,3 @@ title: "Teaching"
 
 -   Dr. Raul Madrid
 -   Fall 2020
-
-
-
-
-
