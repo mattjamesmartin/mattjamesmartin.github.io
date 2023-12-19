@@ -10,6 +10,15 @@ Cruz, Andrés, Zachary Elkins, Roy Gardner, Matthew Martin, and Ashley Moran. 20
 
 Product of the Process: Public Consultations in Constitution-Making
 
+<a data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+  Show Abstract
+</a> <br>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+  </div>
+</div>
+
 ## Other works
 
 Elkins, Zachary, Matthew Martin, Ashley Moran, Guillermo Pérez. 2023. "[12 Core Attributes of the Chilean Constitutional Proposal](https://www.constituteproject.org/data-stories/chile-2023-proposal)." Constitute Project.
