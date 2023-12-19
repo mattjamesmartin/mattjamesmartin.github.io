@@ -13,9 +13,10 @@ Product of the Process: Public Consultations in Constitution-Making
 ```{=html}
 <div class="card">
   <div class="card-header" id="headingOne">
-    <h2 class="mb-0">
-      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-        Paper Title <i class="fas fa-plus"></i>
+    <h2 class="mb-0 d-flex justify-content-between align-items-center">
+      <span class="paper-title">Product of the Process</span>
+      <button class="btn btn-primary btn-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Toggle Abstract
       </button>
     </h2>
   </div>
