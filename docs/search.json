@@ -116,7 +116,7 @@
     "href": "research.html#works-in-progress",
     "title": "Research",
     "section": "Works in progress",
-    "text": "Works in progress\nProduct of the Process: Public Consultations in Constitution-Making\n\n Link with href   Button with data-target \n\n\n\nAnim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
+    "text": "Works in progress\nProduct of the Process: Public Consultations in Constitution-Making\n\n    Button with data-bs-target\n\n\n  \n    Some placeholder content for the collapse component. This panel is        hidden by default but revealed when the user activates the relevant       trigger."
   },
   {
     "objectID": "research.html#other-works",

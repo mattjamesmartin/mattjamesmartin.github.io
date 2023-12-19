@@ -10,20 +10,17 @@ Cruz, Andrés, Zachary Elkins, Roy Gardner, Matthew Martin, and Ashley Moran. 20
 
 Product of the Process: Public Consultations in Constitution-Making
 
-<p>
-  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Link with href
-  </a>
-  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    Button with data-target
-  </button>
-</p>
+```{=html}
+<button class="btn btn-primary" type="button" 
+data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Button with data-bs-target
+</button>
 <div class="collapse" id="collapseExample">
   <div class="card card-body">
-    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+    Some placeholder content for the collapse component. This panel is        hidden by default but revealed when the user activates the relevant       trigger.
   </div>
 </div>
-
+```
 ## Other works
 
 Elkins, Zachary, Matthew Martin, Ashley Moran, Guillermo Pérez. 2023. "[12 Core Attributes of the Chilean Constitutional Proposal](https://www.constituteproject.org/data-stories/chile-2023-proposal)." Constitute Project.
