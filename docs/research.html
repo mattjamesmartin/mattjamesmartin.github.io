@@ -153,12 +153,19 @@ ul.task-list li input[type="checkbox"] {
 <section id="works-in-progress" class="level2">
 <h2 class="anchored" data-anchor-id="works-in-progress">Works in progress</h2>
 <p>Product of the Process: Public Consultations in Constitution-Making</p>
-<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    Button with data-bs-target
-</button>
-<div class="collapse" id="collapseExample">
-  <div class="card card-body">
-    Some placeholder content for the collapse component. This panel is        hidden by default but revealed when the user activates the relevant       trigger.
+<div class="card">
+  <div class="card-header" id="headingOne">
+    <h2 class="mb-0 anchored">
+      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Paper Title <i class="fas fa-plus"></i>
+      </button>
+    </h2>
+  </div>
+
+  <div id="collapseExample" class="collapse">
+    <div class="card-body">
+      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+    </div>
   </div>
 </div>
 </section>
