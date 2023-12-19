@@ -10,12 +10,14 @@ Cruz, Andrés, Zachary Elkins, Roy Gardner, Matthew Martin, and Ashley Moran. 20
 
 Product of the Process: Public Consultations in Constitution-Making
 
-<a data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"> Show Abstract </a> <br>
+::: custom-collapse
+<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"> Show Abstract </button>
 
 ::: {#collapseExample .collapse}
-::: {.card .card-body}
 ```         
-Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+<div class="card card-body">
+  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+</div>
 ```
 :::
 :::

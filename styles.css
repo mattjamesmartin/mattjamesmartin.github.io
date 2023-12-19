@@ -1,1 +1,26 @@
 /* css styles */
+
+.custom-collapse {
+  max-width: 500px; /* Set the maximum width as per your design */
+  margin: 20px 0; /* Add some margin for spacing */
+}
+
+.custom-collapse .card {
+  border: 1px solid #ddd; /* Border color */
+  border-radius: 8px; /* Border radius for rounded corners */
+}
+
+.custom-collapse .btn-link {
+  text-decoration: none;
+  color: #007bff; /* Link color */
+  cursor: pointer;
+  padding: 0;
+}
+
+.custom-collapse .btn-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.custom-collapse .card-body {
+  padding: 15px; /* Add padding to the card body */
+}
