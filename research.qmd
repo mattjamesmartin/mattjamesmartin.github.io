@@ -4,7 +4,7 @@ title: "Research"
 
 ## Publications
 
-Cruz, Andrés, Zachary Elkins, Roy Gardner, Matthew Martin, and Ashley Moran. 2023. "[Measuring Constitutional Preferences: A New Method for Analyzing Public Consultation Data](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0295396)." *PLOS ONE* 18 (12): e0295396.
+Cruz, Andrés, Zachary Elkins, Roy Gardner, Matthew Martin, and Ashley Moran. 2023. "Measuring Constitutional Preferences: A New Method for Analyzing Public Consultation Data." *PLOS ONE* 18 (12). [`https://doi.org/10.1371/journal.pone.0295396`](https://doi.org/10.1371/journal.pone.0295396)
 
 ## Works in progress
 
