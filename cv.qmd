@@ -3,7 +3,7 @@ title: "CV"
 description-meta: "Matt Martin's CV"
 engine: knitr 
 cv:
-  pdf: "files/CV_2023.pdf"
+  pdf: "files/CV_2024.pdf"
 ---
 
 ```{css echo=FALSE}
@@ -36,3 +36,4 @@ cv:
 <div class="embed-container">
   <iframe src="`r rmarkdown::metadata$cv$pdf`" style="border: 0.5px"></iframe>
 </div>
+```
