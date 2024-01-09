@@ -2,7 +2,7 @@
 title: "Matt Martin"
 about:
   template: trestles
-  image: imgs/website_photo.jpg
+  image: imgs/website_photo2.jpg
   links:
     - icon: envelope
       text: Email
@@ -18,7 +18,7 @@ html:
   page-layout: full
 ---
 
-My name is Matthew Martin (he/him), and I am a fourth-year Ph.D. student in the [Department of Government](https://liberalarts.utexas.edu/government/gradstudents/mjm7865) at the University of Texas at Austin. My fields of study are public law and comparative politics. My research interests include public participation in constitution-making, authoritarian constitutions, indigenous constitutionalism, Latin American politics, and immigration law and politics. I am in the early stages of my dissertation, which examines the use of public consultation in national constitution-making.
+My name is Matthew Martin (he/him), and I am a fourth-year Ph.D. student in the [Department of Government](https://liberalarts.utexas.edu/government/gradstudents/mjm7865) at the University of Texas at Austin. My fields of study are public law and comparative politics. My research interests include public participation in constitution-making, authoritarian constitutions, indigenous constitutionalism, Latin American politics, and immigration law and politics. I am in the early stages of my dissertation, which examines the use of public consultation in constitution-making.
 
 Prior to graduate school, I received my B.A. in Political Science and Legal Studies from the University of Massachusetts at Amherst. After graduation, I worked as a legal assistant in immigration law at a firm in Washington, D.C. I assisted attorneys with family- and humanitarian- based immigration cases ranging from permanent residence to removal defense to asylum. Today I continue to support trans and gender non-conforming asylum seekers, gathering legal resources, contacting lawyers, and organizing fundraisers to ensure their security.
 
