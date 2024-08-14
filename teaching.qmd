@@ -6,20 +6,20 @@ title: "Teaching"
 
 ### GOV 357L Judicial Process and Behavior
 
--   Served as instructor for an upper-level undergraduate course.
+-   This upper-level undergraduate course explores topics such as models of judicial decision-making, court structure, legitimacy, impact, and the social and political contexts in which judges operate.
 
--   Spring 2024
+-   Spring 2024 [syllabus](files/GOV357L_syllabus_sp24.pdf)
 
 ### UT Government Department Methods Camp
 
--   Co-organized an introduction to methods for political science for incoming graduate students during the summers of 2022 and 2023 with Andrés Cruz.
+-   This week-long course is an introduction to quantitative methods in political science for incoming graduate students.
 -   See our website [here](https://methodscamp.github.io/).
 
 ## Positions
 
 ### Methods Fellow
 
--   Assist graduate students in the Department of Government with methods-related questions, organize methods workshops, and coordinate weekly co-working hours.
+-   I assisted graduate students in the Department of Government with methods-related questions, organized methods workshops, and coordinated weekly co-working hours.
 
 -   Fall 2023, Spring 2024
 
