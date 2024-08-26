@@ -3,7 +3,6 @@ project:
   output-dir: docs
 
 website:
-  twitter-card: true
   title: "Matt Martin"
   navbar:
     left:
@@ -13,6 +12,10 @@ website:
       - teaching.qmd
       - blog.qmd
       - cv.qmd
+  open-graph: true
+  site-url: https://mattjamesmartin.github.io/
+  twitter-card: true
+    creator: "@MattJ_Martin"
 
 format:
   html:
