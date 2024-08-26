@@ -12,6 +12,7 @@ website:
       - teaching.qmd
       - blog.qmd
       - cv.qmd
+  twitter-card: true
 
 format:
   html:
