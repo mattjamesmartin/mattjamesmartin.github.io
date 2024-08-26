@@ -14,9 +14,9 @@ website:
       - cv.qmd
   open-graph: true
   site-url: https://mattjamesmartin.github.io/
-  twitter-card: true
+  twitter-card:
     creator: "@MattJ_Martin"
-
+  
 format:
   html:
     theme: 
