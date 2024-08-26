@@ -2,10 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mattjamesmartin.github.io/index.html</loc>
-    <lastmod>2024-08-26T17:21:31.540Z</lastmod>
+    <lastmod>2024-08-26T17:32:04.722Z</lastmod>
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/blog.html</loc>
-    <lastmod>2024-08-26T17:24:28.828Z</lastmod>
+    <lastmod>2024-08-26T17:31:52.086Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/research.html</loc>
+    <lastmod>2024-08-26T17:31:38.647Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/teaching.html</loc>
+    <lastmod>2024-08-26T17:32:12.256Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/cv.html</loc>
+    <lastmod>2024-08-26T17:32:49.708Z</lastmod>
   </url>
 </urlset>
