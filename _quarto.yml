@@ -16,6 +16,7 @@ website:
   site-url: https://mattjamesmartin.github.io/
   twitter-card:
     creator: "@MattJ_Martin"
+    card-style: summary
   
 format:
   html:
