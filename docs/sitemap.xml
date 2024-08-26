@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mattjamesmartin.github.io/index.html</loc>
-    <lastmod>2024-08-26T17:54:09.495Z</lastmod>
+    <lastmod>2024-08-26T17:58:56.597Z</lastmod>
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/blog.html</loc>
-    <lastmod>2024-08-26T17:49:26.267Z</lastmod>
+    <lastmod>2024-08-26T17:58:50.179Z</lastmod>
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/research.html</loc>
@@ -35,5 +35,9 @@
   <url>
     <loc>https://mattjamesmartin.github.io/posts/ReimaginingPatriotism.html</loc>
     <lastmod>2024-08-26T17:42:55.228Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/posts/reimaginingpatriotism.html</loc>
+    <lastmod>2024-08-26T17:58:44.641Z</lastmod>
   </url>
 </urlset>
