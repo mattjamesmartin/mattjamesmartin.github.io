@@ -2,7 +2,7 @@
 title: "Matt Martin"
 about:
   template: trestles
-  image: imgs/website_photo2.jpg
+  image: imgs/headshot.jpg
   links:
     - icon: envelope
       text: Email
