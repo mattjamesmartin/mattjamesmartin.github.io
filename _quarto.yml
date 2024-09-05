@@ -15,7 +15,7 @@ website:
   open-graph: true
   site-url: https://mattjamesmartin.github.io/
   twitter-card:
-    image: "/imgs/headshot.jpg"
+    image: "imgs/headshot.jpg"
     creator: "@MattJ_Martin"
     card-style: summary
   
