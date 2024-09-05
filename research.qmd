@@ -1,8 +1,6 @@
 ---
 title: "Research"
-website:
-  open-graph: 
-    image: "imgs/website_photo2.jpg"
+image: "imgs/website_photo2.jpg"
 ---
 
 ## Publications
