@@ -1,7 +1,6 @@
 ---
 title: "Research"
-image: "imgs/headshot.jpg"
-card-style: summary
+image: imgs/headshot.jpg
 ---
 
 ## Publications
