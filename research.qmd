@@ -1,6 +1,6 @@
 ---
 title: "Research"
-image: "imgs/website_photo2.jpg"
+twitter-card: true
 ---
 
 ## Publications
