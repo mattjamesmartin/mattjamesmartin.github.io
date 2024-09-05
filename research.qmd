@@ -1,6 +1,6 @@
 ---
 title: "Research"
-image: headshot_comp.jpg
+image: headshot.jpg
 ---
 
 ## Publications
