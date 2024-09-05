@@ -1,9 +1,6 @@
 ---
 title: "Research"
-meta:
-  og:image: "imgs/headshot.jpg"
-  og:image:width: "1200"
-  og:image:height: "628"
+image: headshot.jpg
 ---
 
 ## Publications
