@@ -1,6 +1,5 @@
 ---
 title: "Research"
-twitter-card: true
 ---
 
 ## Publications
