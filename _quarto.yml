@@ -18,6 +18,14 @@ website:
     image: "imgs/headshot.jpg"
     creator: "@MattJ_Martin"
     card-style: summary
+  page-footer:
+    background: light
+    left: "Copyright 2024, Matthew Martin" 
+    right: 
+      - icon: twitter 
+        href: https://twitter.com/MattJ_Martin
+  repo-url: https://github.com/mattjamesmartin/mattjamesmartin.github.io
+  repo-actions: [source, issue]
   
 format:
   html:
