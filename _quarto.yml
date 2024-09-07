@@ -20,7 +20,6 @@ website:
     card-style: summary
   page-footer:
     background: light
-    left: "Copyright 2024, Matthew Martin" 
     right: 
       - icon: twitter 
         href: https://twitter.com/MattJ_Martin
