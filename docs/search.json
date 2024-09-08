@@ -256,7 +256,7 @@
     "href": "research/index.html",
     "title": "Research",
     "section": "",
-    "text": "Andrés Cruz, Zachary Elkins, Roy Gardner, Matthew Martin, and Ashley Moran. “Measuring constitutional preferences: A new method for analyzing public consultation data,” PLoS ONE 18, no. 12 (2023): e0295396, doi: 10.1371/journal.pone.0295396\n            \n            \n                    \n                            Constitutional design\n                        \n                    \n                            Public consultation\n                        \n                    \n                            Natural language processing\n                        \n                    \n                            Chile\n                        \n                    \n                            Latin America\n                        \n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                        \n                             Final version\n                        \n                    \n                    \n                        \n                             Code\n                        \n                    \n                    \n                        \n                             Code and data\n                        \n                    \n                    \n                        \n                             Add to Zotero\n                        \n                    \n                \n            \n        \n\n\n\nNo matching items"
+    "text": "Andrés Cruz, Zachary Elkins, Roy Gardner, Matthew Martin, and Ashley Moran. “Measuring constitutional preferences: A new method for analyzing public consultation data,” PLoS ONE 18, no. 12 (2023): e0295396, doi: 10.1371/journal.pone.0295396\n            \n            \n                    \n                            Constitutional design\n                        \n                    \n                            Public consultation\n                        \n                    \n                            Natural language processing\n                        \n                    \n                            Chile\n                        \n                    \n                            Latin America\n                        \n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                        \n                             Final version\n                        \n                    \n                    \n                        \n                             Code and data\n                        \n                    \n                    \n                        \n                             Add to Zotero\n                        \n                    \n                \n            \n        \n\n\n\nNo matching items"
   },
   {
     "objectID": "research/index.html#publications",
@@ -340,7 +340,7 @@
     "href": "research/index.html#journal-articles",
     "title": "Research",
     "section": "",
-    "text": "Andrés Cruz, Zachary Elkins, Roy Gardner, Matthew Martin, and Ashley Moran. “Measuring constitutional preferences: A new method for analyzing public consultation data,” PLoS ONE 18, no. 12 (2023): e0295396, doi: 10.1371/journal.pone.0295396\n            \n            \n                    \n                            Constitutional design\n                        \n                    \n                            Public consultation\n                        \n                    \n                            Natural language processing\n                        \n                    \n                            Chile\n                        \n                    \n                            Latin America\n                        \n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                        \n                             Final version\n                        \n                    \n                    \n                        \n                             Code\n                        \n                    \n                    \n                        \n                             Code and data\n                        \n                    \n                    \n                        \n                             Add to Zotero\n                        \n                    \n                \n            \n        \n\n\n\nNo matching items"
+    "text": "Andrés Cruz, Zachary Elkins, Roy Gardner, Matthew Martin, and Ashley Moran. “Measuring constitutional preferences: A new method for analyzing public consultation data,” PLoS ONE 18, no. 12 (2023): e0295396, doi: 10.1371/journal.pone.0295396\n            \n            \n                    \n                            Constitutional design\n                        \n                    \n                            Public consultation\n                        \n                    \n                            Natural language processing\n                        \n                    \n                            Chile\n                        \n                    \n                            Latin America\n                        \n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                        \n                             Final version\n                        \n                    \n                    \n                        \n                             Code and data\n                        \n                    \n                    \n                        \n                             Add to Zotero\n                        \n                    \n                \n            \n        \n\n\n\nNo matching items"
   },
   {
     "objectID": "research/index.html#translations",
@@ -361,6 +361,55 @@
     "href": "research/articles/cruz-et-al-2023/index.html",
     "title": "Measuring constitutional preferences: A new method for analyzing public consultation data",
     "section": "",
-    "text": "xcvgdxfg"
+    "text": "Public consultation has become an indispensable part of constitutional design, yet the voluminous, narrative data produced are often impractical to analyze. There are also few, if any, standards for such analysis. Using a comprehensive reference ontology from the Comparative Constitutions Project (CCP), we develop a new methodology to identify constitutional topics of most concern to citizens and compare these to topics in constitutions globally. We analyze data from Chile’s 2016 public consultations—an ambitious process that produced nearly 265,000 narrative responses and launched the constitutional reform process that remains underway today. We leverage advances in natural language processing, in particular sentence-level semantic similarity technology, to classify consultation responses with respect to constitutional topics. Our methodology has potential for advocates, drafters, and researchers seeking to analyze public consultation data that too often go unexamined."
+  },
+  {
+    "objectID": "research/articles/chaudhry-heiss-ngos-repression/index.html",
+    "href": "research/articles/chaudhry-heiss-ngos-repression/index.html",
+    "title": "NGO Repression as a Predictor of Worsening Human Rights Abuses",
+    "section": "",
+    "text": "Paper (preprint)\nStatistical analysis notebook\nGitHub repository"
+  },
+  {
+    "objectID": "research/articles/chaudhry-heiss-ngos-repression/index.html#important-links",
+    "href": "research/articles/chaudhry-heiss-ngos-repression/index.html#important-links",
+    "title": "NGO Repression as a Predictor of Worsening Human Rights Abuses",
+    "section": "",
+    "text": "Paper (preprint)\nStatistical analysis notebook\nGitHub repository"
+  },
+  {
+    "objectID": "research/articles/chaudhry-heiss-ngos-repression/index.html#abstract",
+    "href": "research/articles/chaudhry-heiss-ngos-repression/index.html#abstract",
+    "title": "NGO Repression as a Predictor of Worsening Human Rights Abuses",
+    "section": "Abstract",
+    "text": "Abstract\nAn increasing number of countries have recently cracked down on non-governmental organizations (NGOs). Much of this crackdown is sanctioned by law and represents a bureaucratic form of repression that could indicate more severe human rights abuses in the future. This is especially the case for democracies, which unlike autocracies, may not aggressively attack civic space. We explore if crackdowns on NGOs predict broader human rights repression. Anti-NGO laws are among the most subtle means of repression and attract lesser domestic and international condemnation compared to the use of violence. Using original data on NGO repression, we test whether NGO crackdown is a predictor of political terror, and violations of physical integrity rights and civil liberties. We find that while de jure anti-NGO laws provide little information in predicting future repression, their patterns of implementation—or de facto civil society repression—predicts worsening respect for physical integrity rights and civil liberties."
+  },
+  {
+    "objectID": "research/articles/chaudhry-heiss-ngos-repression/index.html#important-figures",
+    "href": "research/articles/chaudhry-heiss-ngos-repression/index.html#important-figures",
+    "title": "NGO Repression as a Predictor of Worsening Human Rights Abuses",
+    "section": "Important figures",
+    "text": "Important figures\n\n\n\nFigure 6: Marginal effects of changing levels of civil society repression on the probability of specific levels of political terror and predicted latent human rights values\n\n\n\n\n\nFigure 7: The disconnect between Egypt’s de jure 2002 law and the widespread de facto repression of civil society a decade later"
+  },
+  {
+    "objectID": "research/articles/chaudhry-heiss-ngos-repression/index.html#citation",
+    "href": "research/articles/chaudhry-heiss-ngos-repression/index.html#citation",
+    "title": "NGO Repression as a Predictor of Worsening Human Rights Abuses",
+    "section": "Citation",
+    "text": "Citation\n\n Add to Zotero \n\n@article{cruz2023measuring,\n  title={Measuring constitutional preferences: A new method for analyzing public consultation data},\n  author={Cruz, Andr{\\'e}s and Elkins, Zachary and Gardner, Roy and Martin, Matthew and Moran, Ashley},\n  journal={Plos one},\n  volume={18},\n  number={12},\n  pages={e0295396},\n  year={2023},\n  publisher={Public Library of Science San Francisco, CA USA}\n}"
+  },
+  {
+    "objectID": "research/articles/cruz-et-al-2023/index.html#abstract",
+    "href": "research/articles/cruz-et-al-2023/index.html#abstract",
+    "title": "Measuring constitutional preferences: A new method for analyzing public consultation data",
+    "section": "",
+    "text": "Public consultation has become an indispensable part of constitutional design, yet the voluminous, narrative data produced are often impractical to analyze. There are also few, if any, standards for such analysis. Using a comprehensive reference ontology from the Comparative Constitutions Project (CCP), we develop a new methodology to identify constitutional topics of most concern to citizens and compare these to topics in constitutions globally. We analyze data from Chile’s 2016 public consultations—an ambitious process that produced nearly 265,000 narrative responses and launched the constitutional reform process that remains underway today. We leverage advances in natural language processing, in particular sentence-level semantic similarity technology, to classify consultation responses with respect to constitutional topics. Our methodology has potential for advocates, drafters, and researchers seeking to analyze public consultation data that too often go unexamined."
+  },
+  {
+    "objectID": "research/articles/cruz-et-al-2023/index.html#citation",
+    "href": "research/articles/cruz-et-al-2023/index.html#citation",
+    "title": "Measuring constitutional preferences: A new method for analyzing public consultation data",
+    "section": "Citation",
+    "text": "Citation\n\n Add to Zotero \n\n@article{cruz2023measuring,\n  title={Measuring constitutional preferences: A new method for analyzing public consultation data},\n  author={Cruz, Andr{\\'e}s and Elkins, Zachary and Gardner, Roy and Martin, Matthew and Moran, Ashley},\n  journal={Plos one},\n  volume={18},\n  number={12},\n  pages={e0295396},\n  year={2023},\n  doi = {10.1371/journal.pone.0295396}\n}"
   }
 ]
