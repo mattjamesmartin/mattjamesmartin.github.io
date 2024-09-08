@@ -19,7 +19,7 @@ website:
       - text: "CV"
         href: "cv/index.qmd"
   open-graph: true
-  site-url: https://mattjamesmartin.github.io/
+  site-url: https://mattjamesmartin.com/
   twitter-card:
     image: "imgs/headshot.jpg"
     creator: "@MattJ_Martin"
