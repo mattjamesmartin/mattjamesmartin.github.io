@@ -256,7 +256,7 @@
     "href": "research/index.html",
     "title": "Research",
     "section": "",
-    "text": "Andrés Cruz, Zachary Elkins, Roy Gardner, Matthew Martin, and Ashley Moran. “Measuring constitutional preferences: A new method for analyzing public consultation data,” PLoS ONE 18, no. 12 (2023): e0295396, doi: 10.1371/journal.pone.0295396\n            \n            \n                    \n                            Constitutional design\n                        \n                    \n                            Public consultation\n                        \n                    \n                            Natural language processing\n                        \n                    \n                            Chile\n                        \n                    \n                            Latin America\n                        \n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                        \n                             Final version\n                        \n                    \n                    \n                        \n                             Code and data\n                        \n                    \n                    \n                        \n                             Add to Zotero\n                        \n                    \n                \n            \n        \n\n\n\nNo matching items"
+    "text": "My research focuses on global constitution-making, with a particular interest in mechanisms of public consultation. My other areas of specialization include Latin American politics, statistical methods, and natural language processing."
   },
   {
     "objectID": "research/index.html#publications",
@@ -339,8 +339,8 @@
     "objectID": "research/index.html#journal-articles",
     "href": "research/index.html#journal-articles",
     "title": "Research",
-    "section": "",
-    "text": "Andrés Cruz, Zachary Elkins, Roy Gardner, Matthew Martin, and Ashley Moran. “Measuring constitutional preferences: A new method for analyzing public consultation data,” PLoS ONE 18, no. 12 (2023): e0295396, doi: 10.1371/journal.pone.0295396\n            \n            \n                    \n                            Constitutional design\n                        \n                    \n                            Public consultation\n                        \n                    \n                            Natural language processing\n                        \n                    \n                            Chile\n                        \n                    \n                            Latin America\n                        \n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                        \n                             Final version\n                        \n                    \n                    \n                        \n                             Code and data\n                        \n                    \n                    \n                        \n                             Add to Zotero\n                        \n                    \n                \n            \n        \n\n\n\nNo matching items"
+    "section": "Journal articles",
+    "text": "Journal articles\n\n\n\n        \n            \n                Andrés Cruz, Zachary Elkins, Roy Gardner, Matthew Martin, and Ashley Moran. “Measuring constitutional preferences: A new method for analyzing public consultation data,” PLoS ONE 18, no. 12 (2023): e0295396, doi: 10.1371/journal.pone.0295396\n            \n            \n                    \n                            Constitutional design\n                        \n                    \n                            Public consultation\n                        \n                    \n                            Natural language processing\n                        \n                    \n                            Chile\n                        \n                    \n                            Latin America\n                        \n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                        \n                             Final version\n                        \n                    \n                    \n                        \n                             Code and data\n                        \n                    \n                    \n                        \n                             Add to Zotero\n                        \n                    \n                \n            \n        \n\n\n\nNo matching items"
   },
   {
     "objectID": "research/index.html#translations",
@@ -411,5 +411,33 @@
     "title": "Measuring constitutional preferences: A new method for analyzing public consultation data",
     "section": "Citation",
     "text": "Citation\n\n Add to Zotero  \n\n@article{cruz2023measuring,\n  title={Measuring constitutional preferences: A new method for analyzing public consultation data},\n  author={Cruz, Andr{\\'e}s and Elkins, Zachary and Gardner, Roy and Martin, Matthew and Moran, Ashley},\n  journal={Plos one},\n  volume={18},\n  number={12},\n  pages={e0295396},\n  year={2023},\n  doi = {10.1371/journal.pone.0295396}\n}"
+  },
+  {
+    "objectID": "research/index.html#book-chapters",
+    "href": "research/index.html#book-chapters",
+    "title": "Research",
+    "section": "Book chapters",
+    "text": "Book chapters"
+  },
+  {
+    "objectID": "research/index.html#reviews",
+    "href": "research/index.html#reviews",
+    "title": "Research",
+    "section": "Reviews",
+    "text": "Reviews"
+  },
+  {
+    "objectID": "research/index.html#dormant-working-papers",
+    "href": "research/index.html#dormant-working-papers",
+    "title": "Research",
+    "section": "Dormant working papers",
+    "text": "Dormant working papers"
+  },
+  {
+    "objectID": "research/index.html#selected-seminar-papers",
+    "href": "research/index.html#selected-seminar-papers",
+    "title": "Research",
+    "section": "Selected seminar papers",
+    "text": "Selected seminar papers"
   }
 ]
