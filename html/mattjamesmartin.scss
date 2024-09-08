@@ -1,6 +1,6 @@
 /*-- scss:defaults --*/
 
-$theme: "ath" !default;
+$theme: "mattjamesmartin" !default;
 
 //
 // Color system
@@ -16,6 +16,7 @@ $gray-600: #868e96 !default;
 $gray-700: #495057 !default;
 $gray-800: #373a3c !default;
 $gray-900: #212529 !default;
+$dark-gray: #333F48 !default;
 $black:    #000000 !default;
 
 $blue:    #2780e3 !default;
@@ -25,6 +26,7 @@ $pink:    #A52C60 !default;
 $red:     #CF4446 !default;
 $orange:  #EE6A24 !default;
 $light-orange:  #FB9E07 !default;
+$burnt-orange: #BF5700 !default;
 $yellow:  #F6D645 !default;
 $green:   #118230 !default;
 $teal:    #20c997 !default;
@@ -42,7 +44,6 @@ $dark:      $black !default;
 // $min-contrast-ratio: 2.6 !default;
 
 // Fonts
-
 
 $font-family-sans-serif: "Libre Franklin" !default;
 
@@ -78,7 +79,7 @@ $toc-color: $orange;
 $toc-font-size: 1em;
 
 // Navbar
-$navbar-bg: $purple !default;
+$navbar-bg: $burnt-orange !default;
 $navbar-fg: $white !default;
 $navbar-hl: $light-orange !default;
 

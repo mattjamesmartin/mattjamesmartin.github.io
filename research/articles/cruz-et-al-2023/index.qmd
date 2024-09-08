@@ -50,7 +50,7 @@ Public consultation has become an indispensable part of constitutional design, y
 
 <p class="buttons" style="text-align:center;">
 
-<a class="btn btn-danger" target="_blank" href="https://www.zotero.org/save?type=doi&q=10.1371/journal.pone.0295396">{{< ai zotero >}} Add to Zotero {{< fa square-arrow-up-right >}}</a>
+<a class="btn btn-danger" target="_blank"             href="https://www.zotero.org/save?type=doi&q=10.1371/journal.pone.0295396">{{< ai zotero >}} Add to Zotero {{< fa square-arrow-up-right >}} </a>
 
 </p>
 
