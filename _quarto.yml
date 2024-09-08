@@ -56,7 +56,6 @@ format:
       - html/mattjamesmartin.scss
     grid: 
       body-width: 900px
-    css: styles.css
     toc: false
     code-link: true
     anchor-sections: true

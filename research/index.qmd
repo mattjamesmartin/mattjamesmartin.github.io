@@ -17,6 +17,8 @@ listing:
 page-layout: full
 include-back-link: false
 toc-location: right
+aliases: 
+  - research.html
 ---
 
 ## Journal articles

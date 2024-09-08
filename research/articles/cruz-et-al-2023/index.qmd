@@ -22,7 +22,7 @@ author:
     affiliation: Department of Government, University of Texas at Austin
 categories: 
   - Constitutional design
-  - Public consultation; 
+  - Public consultation 
   - Natural language processing
   - Chile
   - Latin America
