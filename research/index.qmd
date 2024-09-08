@@ -23,19 +23,17 @@ aliases:
 
 ## Journal articles
 
-:::{#articles}
+::: {#articles}
 :::
-
 
 ## Working papers
 
-:::{#working-papers}
+::: {#working-papers}
 :::
-
 
 ## Translations
 
-:::{#translations}
+::: {#translations}
 :::
 
 ## Publications

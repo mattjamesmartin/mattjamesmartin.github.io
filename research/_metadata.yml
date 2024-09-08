@@ -1,6 +1,9 @@
 # Date format
 date-format: "MMMM YYYY"
 
+# Enable banner style title blocks
+title-block-banner: "#CF4446"
+
 # Default for table of contents
 toc: true
 toc-title: Contents

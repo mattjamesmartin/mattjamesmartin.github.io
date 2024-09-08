@@ -16,15 +16,6 @@
                     <% } %>
             </div>
             <% } %>
-
-            <% // Loop through the haiku lines and prepend a / to all but the first %>
-            <% if (item.haiku) { %>
-            <div class="haiku">
-            <% for (var i=0; i <= item.haiku.length - 1; i++) { %>
-                <% if (i > 0) { %> / <% } %><%= item.haiku[i] %>
-            <% } %>
-            </div>
-            <% } %>
             
             <div class="project-details-listing">
                 <ul class="project-links">
