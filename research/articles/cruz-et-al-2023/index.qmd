@@ -44,5 +44,3 @@ pub-info:
       icon: ai ai-zotero
 doi: 10.1371/journal.pone.0295396
 ---
-
-xcvgdxfg

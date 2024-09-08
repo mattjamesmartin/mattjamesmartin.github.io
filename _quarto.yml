@@ -38,7 +38,7 @@ format:
       light: flatly
       dark: darkly
     css: styles.css
-    toc: true
+    toc: false
     fontsize: 14pt
     page-layout: full
   
