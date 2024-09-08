@@ -1,0 +1,48 @@
+---
+title: "Measuring constitutional preferences: A new method for analyzing public consultation data"
+date: 2023-12-14
+author:
+  - name: Andrés Cruz
+    url: https://arcruz0.github.io/
+    orcid: 0000-0003-3819-9433
+    affiliation: Department of Government, University of Texas at Austin
+  - name: Zachary Elkins
+    url: https://sites.google.com/site/zachelkinstexas/
+    orcid: 0000-0002-7932-773X
+    affiliation: Department of Government, University of Texas at Austin
+  - name: Roy Gardner
+    affiliation: Comparative Constitutions Project, University of Texas at Austin
+  - name: Matthew Martin
+    url: https://mattjamesmartin.github.io/
+    orcid: 0000-0003-3460-3603
+    affiliation: Department of Government, University of Texas at Austin
+  - name: Ashley Moran
+    url: https://liberalarts.utexas.edu/government/faculty/am49396
+    orcid: 0000-0001-5969-2134
+    affiliation: Department of Government, University of Texas at Austin
+categories: 
+  - Constitutional design
+  - Public consultation; 
+  - Natural language processing
+  - Chile
+  - Latin America
+pub-info:
+  reference: >-
+    <a href="https://arcruz0.github.io/">Andrés Cruz</a>, <a href="https://site.google.com/site/zachelkinstexas/">Zachary Elkins</a>, Roy Gardner, <strong>Matthew Martin</strong>, and <a href="https://liberalarts.utexas.edu/government/faculty/am49396">Ashley Moran</a>. “Measuring constitutional preferences: A new method for analyzing public consultation data,” <em>PLoS ONE</em> 18, no. 12 (2023): e0295396, doi: <a href="https://doi.org/10.1371/journal.pone.0295396"><code>10.1371/journal.pone.0295396</code></a>
+  links:
+    - name: Final version
+      url: https://doi.org/10.1371/journal.pone.0295396
+      icon: fa-solid fa-scroll
+    - name: Code
+      url: https://github.com/andrewheiss/who-cares-about-crackdown
+      icon: fa-brands fa-github
+    - name: Code and data
+      url: https://zenodo.org/records/10206770
+      icon: fa-brands fa-github
+    - name: Add to Zotero
+      url: https://www.zotero.org/save?type=doi&q=10.1371/journal.pone.0295396
+      icon: ai ai-zotero
+doi: 10.1371/journal.pone.0295396
+---
+
+xcvgdxfg

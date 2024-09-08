@@ -14,5 +14,11 @@
       "/blog/posts/blog2.html",
       "/blog/posts/blog1.html"
     ]
+  },
+  {
+    "listing": "/research/index.html",
+    "items": [
+      "/research/articles/cruz-et-al-2023/index.html"
+    ]
   }
 ]

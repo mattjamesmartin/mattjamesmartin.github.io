@@ -1,12 +1,44 @@
 ---
 title: "Research"
+listing:
+  - id: articles
+    contents: "articles/*/index.qmd"
+    sort: "date desc"
+    template: ../html/research/listing.ejs
+    categories: true
+  - id: working-papers
+    contents: "working-papers/*/index.qmd"
+    sort: "date desc"
+    template: ../html/research/listing.ejs
+  - id: translations
+    contents: "translations/*/index.qmd"
+    sort: "date desc"
+    template: ../html/research/listing.ejs
+page-layout: full
+include-back-link: false
+toc-location: right
 ---
+
+## Journal articles
+
+:::{#articles}
+:::
+
+
+## Working papers
+
+:::{#working-papers}
+:::
+
+
+## Translations
+
+:::{#translations}
+:::
 
 ## Publications
 
 Martin, Matthew. "Elite Fractures, Public Capture: The Strategic Use of Public Consultation in Global Constitution-Making." *Journal of Law and Courts* (forthcoming). [\[PDF\]](files/EFPC_final.pdf)
-
-Cruz, Andrés, Zachary Elkins, Roy Gardner, Matthew Martin, and Ashley Moran. 2023. "Measuring Constitutional Preferences: A New Method for Analyzing Public Consultation Data." *PLOS ONE* 18 (12). [`https://doi.org/10.1371/journal.pone.0295396`](https://doi.org/10.1371/journal.pone.0295396)
 
 ## Working papers
 
