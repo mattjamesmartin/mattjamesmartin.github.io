@@ -1,1 +1,1 @@
-Sitemap: https://mattjamesmartin.com/sitemap.xml
+Sitemap: https://mattjamesmartin.github.io/sitemap.xml
