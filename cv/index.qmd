@@ -1,9 +1,8 @@
 ---
 title: "CV"
-description-meta: "Matt Martin's CV"
 engine: knitr 
 cv:
-  pdf: "files/CV_2024.pdf"
+  pdf: "CV_2024.pdf"
 ---
 
 ```{css echo=FALSE}
