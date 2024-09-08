@@ -2,8 +2,23 @@ project:
   type: website
   output-dir: docs
 
+pagetitle: "{{< meta title >}} | Matthew Martin"
+author-meta:  "Matthew Martin"
+
 website:
   title: "Matthew Martin"
+  site-url: https://mattjamesmartin.github.io/
+  repo-url: https://github.com/mattjamesmartin/mattjamesmartin.github.io
+
+  open-graph: 
+    image: "imgs/headshot.jpg"
+    locale: en_US
+  
+  twitter-card:
+    image: "imgs/headshot.jpg"
+    creator: "@MattJ_Martin"
+    card-style: summary
+    
   navbar:
     pinned: true
 
@@ -18,28 +33,36 @@ website:
         href: "blog/index.qmd"
       - text: "CV"
         href: "cv/index.qmd"
-  open-graph: true
-  site-url: https://mattjamesmartin.github.io/
-  twitter-card:
-    image: "imgs/headshot.jpg"
-    creator: "@MattJ_Martin"
-    card-style: summary
+        
+    right:
+      - text: "{{< iconify bi envelope size=1.1em title='E-mail' >}}"
+        href: "mailto:mjmartin@utexas.edu"
+      - text: "{{< iconify bi github size=1.1em title='GitHub' >}}"
+        href: https://github.com/mattjamesmartin
+      - text: "{{< iconify bi twitter size=1em title='Twitter' >}}"
+        href: https://twitter.com/MattJ_Martin
+      - text: "{{< iconify bi linkedin size=1.1em title='LinkedIn' >}}"
+        href: https://www.linkedin.com/in/andrewheiss
+        rel: me
+      - text: "{{< iconify bi orcid size=1.1em title='Orcid' >}}"
+        href: https://orcid.org/0000-0003-3460-3603
+
   page-footer:
     background: light
-    right: 
-      - icon: twitter 
-        href: https://twitter.com/MattJ_Martin
-  repo-url: https://github.com/mattjamesmartin/mattjamesmartin.github.io
-  repo-actions: [source, issue]
   
 format:
   html:
     theme: 
-      light: flatly
-      dark: darkly
+      - html/mattjamesmartin.scss
+    grid: 
+      body-width: 900px
     css: styles.css
     toc: false
-    fontsize: 14pt
-    page-layout: full
+    code-link: true
+    anchor-sections: true
+    fig-cap-location: margin
+    reference-location: margin
+    footnotes-hover: true
+    highlight-style: monokai
   
 editor: visual
