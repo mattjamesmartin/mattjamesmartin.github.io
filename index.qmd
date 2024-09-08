@@ -1,5 +1,5 @@
 ---
-title: "Matt Martin"
+title: "Matthew Martin"
 about:
   template: trestles
   image: imgs/headshot.jpg

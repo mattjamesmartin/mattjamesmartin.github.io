@@ -3,15 +3,21 @@ project:
   output-dir: docs
 
 website:
-  title: "Matt Martin"
+  title: "Matthew Martin"
   navbar:
+    pinned: true
+
     left:
-      - href: index.qmd
-        text: About
-      - research.qmd
-      - teaching.qmd
-      - blog.qmd
-      - cv.qmd
+      - text: "About"
+        href: "index.qmd"
+      - text: "Research"
+        href: "research/index.qmd"
+      - text: "Teaching"
+        href: "teaching/index.qmd"
+      - text: "Blog"
+        href: "blog/index.qmd"
+      - text: "CV"
+        href: "cv/index.qmd"
   open-graph: true
   site-url: https://mattjamesmartin.github.io/
   twitter-card:

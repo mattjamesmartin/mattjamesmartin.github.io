@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mattjamesmartin.github.io/index.html</loc>
-    <lastmod>2024-09-07T15:33:49.389Z</lastmod>
+    <lastmod>2024-09-08T16:06:50.969Z</lastmod>
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/blog.html</loc>
@@ -43,5 +43,33 @@
   <url>
     <loc>https://mattjamesmartin.github.io/posts/reimagining_patriotism.html</loc>
     <lastmod>2024-08-26T18:15:38.542Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/cv/index.html</loc>
+    <lastmod>2024-09-08T16:06:50.447Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/blog/index.html</loc>
+    <lastmod>2024-09-08T16:06:49.443Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/blog/posts/blog2.html</loc>
+    <lastmod>2024-09-08T16:06:48.537Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/research/index.html</loc>
+    <lastmod>2024-09-08T16:06:47.396Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/blog/posts/reimagining_patriotism.html</loc>
+    <lastmod>2024-09-08T16:06:47.814Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/blog/posts/blog1.html</loc>
+    <lastmod>2024-09-08T16:06:48.966Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/teaching/index.html</loc>
+    <lastmod>2024-09-08T16:06:49.771Z</lastmod>
   </url>
 </urlset>
