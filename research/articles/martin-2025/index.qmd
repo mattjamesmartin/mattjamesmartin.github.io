@@ -1,0 +1,28 @@
+---
+title: "Elite Fractures, Public Capture: The Strategic Use of Public Consultation in Global Constitution-Making"
+date: 2025-03-20
+author:
+  - name: Matthew Martin
+    url: https://mattjamesmartin.github.io/
+    orcid: 0000-0003-3460-3603
+    affiliation: Department of Government, University of Texas at Austin
+categories: 
+  - Constitutional design
+  - Public consultation 
+  - Political elites
+pub-info:
+  reference: >-
+    <strong>Matthew Martin</strong>. “Elite Fractures, Public Capture: The Strategic Use of Public Consultation in Global Constitution-Making,” <em>Journal of Law and CourtsE</em> (forthcoming).
+  links:
+  - name: Preprint
+    url: martin-2025.pdf
+    local: true
+    icon: fa-solid fa-file-pdf
+  - name: Code and data
+    url: 
+    icon: fa-brands fa-github
+---
+
+## Abstract
+
+Since 1974, two out of every five constitutions (40.3%) were prepared via processes that included public consultation. The reasons for adopting these participatory mechanisms, however, are largely unexplored. I argue that public consultation is a tool for elite contestation of power. Introducing an original dataset of public consultations in constitution-making processes from 1974-2021 (n = 300), I find that in democracies, factional majorities and newcomer elites use public consultation to legitimate a break from the status quo. In autocracies, governing coalitions that depend on performance and enjoy greater party institutionalization push for public consultation to preserve favorable power-sharing arrangements.

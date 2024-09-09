@@ -1,0 +1,26 @@
+---
+title: "Deportation by Design: How Political Entrepreneurs Engineered Crime-Based Deportation in the United States"
+date: 2024-01-01
+author:
+  - name: Matthew Martin
+    url: https://mattjamesmartin.github.io/
+    orcid: 0000-0003-3460-3603
+    affiliation: Department of Government, University of Texas at Austin
+categories: 
+  - Crime-based deportation
+  - Crimmigration
+  - Political entrepreneurs
+  - Reactive sequences
+pub-info:
+  reference: >-
+    <strong>Matthew Martin</strong>. “Deportation by Design: How Political Entrepreneurs Engineered Crime-Based Deportation in the United States.” Under review.
+  links:
+  - name: Draft
+    url: martin-deportation.pdf
+    local: true
+    icon: fa-solid fa-file-pdf
+---
+
+## Abstract
+
+Starting in the 1980s, the United States federal government considerably expanded criminal grounds for the removal of non-citizens, laying the foundation for today’s deportation regime. The reasons for, and the timing of, the entrenchment of crime-based deportation remain unclear, however, considering the country’s long history of using criminality to exclude, detain, and deport immigrants. I contend that crime-based deportation, as a core institution of modern immigration enforcement, can be traced back to an understudied section of the Immigration Reform and Control Act (IRCA) of 1986 and two key reforms in 1988 and 1990. I use a “reactive sequences” approach to examine the macroscopic forces that converged to produce a contingent event—the insertion of Section 701 into IRCA—and two subsequent episodes that transformed the scale and arrangement of crime-based deportation through today. To bolster my argument, I uncover discursive evidence in the Congressional Record across three instances of reform in 1986, 1988, and 1990. A bipartisan coalition of political entrepreneurs consolidated modest policy innovations into the foundation of crime-based deportation, presenting these changes as a logical extension of the ongoing institutional crackdown on drugs and crime. Substantively, these findings contribute to historical research on how deportation laws have changed through the policymaking process. Theoretically, I apply the reactive sequences approach to a novel case study, clarifying how human agency contributes to certain processes of institutional transformation.

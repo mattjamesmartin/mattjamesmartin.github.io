@@ -6,12 +6,12 @@ listing:
     sort: "date desc"
     template: ../html/research/listing.ejs
     categories: true
-  - id: working-papers
-    contents: "working-papers/*/index.qmd"
+  - id: works-in-progress
+    contents: "works-in-progress/*/index.qmd"
     sort: "date desc"
     template: ../html/research/listing.ejs
-  - id: translations
-    contents: "translations/*/index.qmd"
+  - id: other-works
+    contents: "other-works/*/index.qmd"
     sort: "date desc"
     template: ../html/research/listing.ejs
 page-layout: full
@@ -21,38 +21,22 @@ aliases:
   - research.html
 ---
 
-My research focuses on global constitution-making, with a particular interest in mechanisms of public consultation. My other areas of specialization include Latin American politics, statistical methods, and natural language processing. {{< ai blank-just-to-add-ai-dependency-to-this-page >}} 
+My research focuses on global constitution-making, with a particular interest in mechanisms of public consultation. My other areas of specialization include Latin American politics, statistical methods, and natural language processing. {{< ai blank-just-to-add-ai-dependency-to-this-page >}}
 
 ## Journal articles
 
 ::: {#articles}
 :::
 
-## Working papers
-
-::: {#working-papers}
-:::
-
-## Translations
-
-::: {#translations}
-:::
-
-## Publications
-
-Martin, Matthew. "Elite Fractures, Public Capture: The Strategic Use of Public Consultation in Global Constitution-Making." *Journal of Law and Courts* (forthcoming). [\[PDF\]](files/EFPC_final.pdf)
-
-## Working papers
-
-Martin, Matthew. "Deportation by Design: How Political Entrepreneurs Engineered Crime-Based Deportation in the United States."
-
 ## Works in progress
 
-Martin, Matthew. "Product of the Process: Public Consultation in Global Constitution-Making."
+::: {#works-in-progress}
+:::
 
-Cruz, Andrés, Elkins, Zachary, Roy Gardner, Matthew Martin, Ashley Moran, Guillermo Pérez. "Tracing the Expression and Uptake of Constitutional Ideas across Three Reform Efforts in Chile."
+## Other works
 
-Gardner, Roy, Matthew Martin, Zachary Elkins, Ashley Moran, Guillermo Pérez. "Expanding Your Vocabulary: Topic Integration Using the Segments-as-Topics (SAT) Approach."
+::: {#other-works}
+:::
 
 ## Other works
 
