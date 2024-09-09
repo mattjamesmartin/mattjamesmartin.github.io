@@ -18,15 +18,20 @@ $gray-800: #373a3c !default;
 $gray-900: #212529 !default;
 $dark-gray: #333F48 !default;
 $black:    #000000 !default;
+$slategray: #708090 !default;
+$mutedblack: #1C1C1C !default;
 
 $blue:    #2780e3 !default;
+$deepblue: #005f86 !default;
 $indigo:  #6610f2 !default;
 $purple:  #170C3A !default;
 $pink:    #A52C60 !default;
 $red:     #CF4446 !default;
 $orange:  #EE6A24 !default;
-$light-orange:  #FB9E07 !default;
+$light-orange:  #FF8C00 !default;
 $burnt-orange: #BF5700 !default;
+$deepburntorange: #9A4A00 !default;
+$darkbrown: #5A2D0C !default;
 $yellow:  #F6D645 !default;
 $green:   #118230 !default;
 $teal:    #20c997 !default;
@@ -45,14 +50,14 @@ $dark:      $black !default;
 
 // Fonts
 
-$font-family-sans-serif: "Lora" !default;
+$font-family-sans-serif: "Roboto" !default;
 
-$headings-font-family: "Roboto" !default;
+$headings-font-family: "Lato" !default;
 $headings-font-weight: 600 !default;
 
-$navbar-font-family: "Roboto" !default;
-$toc-font-family: "Roboto" !default;
-$footer-font-family: "Roboto" !default;
+$navbar-font-family: "Lato" !default;
+$toc-font-family: "Lato" !default;
+$footer-font-family: "Lato" !default;
 
 // $font-size-base: 1.1rem !default; // Assumes the browser default, typically `16px`
 // $font-size-sm: $font-size-base * .875 !default;
@@ -62,9 +67,9 @@ $footer-font-family: "Roboto" !default;
 $body-color: $gray-900 !default;
 
 // Links
-$link-color: $orange !default;
+$link-color: $burnt-orange !default;
 $link-decoration: none !default;
-$link-hover-color: $red !default;
+$link-hover-color: $darkbrown !default;
 $link-hover-decoration: underline !default;
 
 // Inline code
@@ -72,16 +77,16 @@ $code-bg: $gray-200 !default;
 $code-color: $gray-900 !default;
 
 // Code copy
-$btn-code-copy-color-active: $orange !default;
+$btn-code-copy-color-active: $burnt-orange !default;
 
 // TOC
-$toc-color: $orange;
+$toc-color: $burnt-orange;
 $toc-font-size: 1em;
 
 // Navbar
 $navbar-bg: $burnt-orange !default;
 $navbar-fg: $white !default;
-$navbar-hl: $light-orange !default;
+$navbar-hl: $black !default;
 
 // Footer
 $footer-bg: $gray-900 !default;
@@ -89,7 +94,7 @@ $footer-fg: $gray-300 !default;
 
 /*-- scss:rules --*/
 
-$web-font-path: "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Lora:wght@400;700&display=swap" !default;
+$web-font-path: "https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;700;900&family=Roboto:wght@400;700&display=swap" !default;
 
 
 @if $web-font-path {
@@ -173,7 +178,7 @@ pre.text, pre.sourceCode, .cell-output pre {
         line-height: 1.1;
         padding-left: 0.6rem;
         margin-left: 0.5em;
-        border-left: 1px solid $gray-200;
+        border-left: 1px solid $gray-300;
 
         .category {
             padding-bottom: 0.5rem;
@@ -185,9 +190,9 @@ pre.text, pre.sourceCode, .cell-output pre {
         }
 
         .quarto-category-count {
-            font-weight: 200;
-            font-size: 0.8em;
-            color: $gray-600;
+            font-weight: 300;
+            font-size: 0.9em;
+            color: $gray-300;
         }
     }
 }
@@ -257,6 +262,7 @@ pre.text, pre.sourceCode, .cell-output pre {
 #title-block-header {
     .quarto-title-banner {
         font-family: $headings-font-family;
+        color: $white;
         
         .description {
             font-size: 1.1em;
@@ -396,7 +402,7 @@ pre.text, pre.sourceCode, .cell-output pre {
     }
 
     .project-details {
-        background-color: rgba($red, 0.1);
+        background-color: rgba($slategray, 0.1);
         padding: 0.75em;
         margin: 1em 0;
     }
@@ -425,12 +431,12 @@ pre.text, pre.sourceCode, .cell-output pre {
 
 .research {
     .back-nav a {
-        color: shift-color($red, -50%);
+        color: $black;
     }
     
     .quarto-title .quarto-categories .quarto-category {
-        background-color: shift-color($red, -75%);
-        color: $red;
+        background-color: shift-color($slategray, -90%);
+        color: $slategray;
         font-size: 0.65em;
         opacity: 1;
     }
@@ -462,7 +468,7 @@ pre.text, pre.sourceCode, .cell-output pre {
 
         li.project {
             margin-bottom: 2.5em;
-            border-left: 6px solid shift-color($red, -90%);
+            border-left: 6px solid shift-color($slategray, -90%);
 
             p {
                 margin: 0;
@@ -501,7 +507,7 @@ pre.text, pre.sourceCode, .cell-output pre {
 
     .project-details-listing {
         margin-top: 0.8em;
-        background-color: shift-color($red, -90%);
+        background-color: shift-color($slategray, -90%);
         font-size: 0.9rem;
 
         @media (max-width: map-get($grid-breakpoints, md)) {
@@ -515,7 +521,7 @@ pre.text, pre.sourceCode, .cell-output pre {
         }
 
         .details {
-            background-color: $red;
+            background-color: shift-color($slategray, -20%);
             padding-right: 1.5em;
 
             a {
@@ -651,13 +657,13 @@ pre.text, pre.sourceCode, .cell-output pre {
 
 .cv-download {
     font-family: $headings-font-family;
-    background-color: #771C6D;
-    border-color: #771C6D;
+    background-color: $burnt-orange;
+    border-color: $burnt-orange;
     color: $white;
 
     &:hover {
-        background-color: $red;
-        border-color: $red;
+        background-color: $orange;
+        border-color: $orange;
         color: $white;
     }
 }

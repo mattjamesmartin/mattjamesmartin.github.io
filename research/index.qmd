@@ -35,11 +35,6 @@ My research focuses on global constitution-making, with a particular interest in
 
 ## Other works
 
-::: {#other-works}
-:::
-
-## Other works
-
 Elkins, Zachary, Matthew Martin, Ashley Moran, Guillermo Pérez. 2023. "[12 Core Attributes of the Chilean Constitutional Proposal](https://www.constituteproject.org/data-stories/chile-2023-proposal)." Constitute Project.
 
 Martin, Matthew and Guillermo Pérez. "[Chile 2023 - Draft of 30 Oct 2023](https://www.constituteproject.org/constitution/Chile_2023DD)." Translation of Chilean constitutional proposal. Constitute Project.

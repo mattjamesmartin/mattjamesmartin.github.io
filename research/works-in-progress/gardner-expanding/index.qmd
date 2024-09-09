@@ -24,7 +24,7 @@ categories:
   - Constitutional design
 pub-info:
   reference: >-
-    <Roy Gardner, <strong>Matthew Martin</strong>, a href="https://arcruz0.github.io/">Andrés Cruz</a>, <a href="https://site.google.com/site/zachelkinstexas/">Zachary Elkins</a>, and <a href="https://liberalarts.utexas.edu/government/faculty/am49396">Ashley Moran</a>. “Expanding Your Vocabulary: Topic Integration Using the Segments-as-Topics (SAT) Approach.”
+    <Roy Gardner, <strong>Matthew Martin</strong>, <a href="https://arcruz0.github.io/">Andrés Cruz</a>, <a href="https://site.google.com/site/zachelkinstexas/">Zachary Elkins</a>, and <a href="https://liberalarts.utexas.edu/government/faculty/am49396">Ashley Moran</a>. “Expanding Your Vocabulary: Topic Integration Using the Segments-as-Topics (SAT) Approach.”
   links:
   - name: Draft
     url: gardner-expanding.pdf

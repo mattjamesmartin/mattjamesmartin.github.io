@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mattjamesmartin.github.io/index.html</loc>
-    <lastmod>2024-09-08T22:17:52.732Z</lastmod>
+    <lastmod>2024-09-09T22:52:38.421Z</lastmod>
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/blog.html</loc>
@@ -46,11 +46,11 @@
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/cv/index.html</loc>
-    <lastmod>2024-09-08T19:00:58.848Z</lastmod>
+    <lastmod>2024-09-09T22:37:48.818Z</lastmod>
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/blog/index.html</loc>
-    <lastmod>2024-09-08T21:33:40.250Z</lastmod>
+    <lastmod>2024-09-09T22:38:37.866Z</lastmod>
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/blog/posts/blog2.html</loc>
@@ -58,7 +58,7 @@
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/research/index.html</loc>
-    <lastmod>2024-09-08T22:17:59.402Z</lastmod>
+    <lastmod>2024-09-09T23:04:51.346Z</lastmod>
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/blog/posts/reimagining_patriotism.html</loc>
@@ -70,7 +70,7 @@
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/teaching/index.html</loc>
-    <lastmod>2024-09-08T21:51:29.012Z</lastmod>
+    <lastmod>2024-09-09T22:52:31.736Z</lastmod>
   </url>
   <url>
     <loc>https://mattjamesmartin.com/cv/index.html</loc>
@@ -86,10 +86,26 @@
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/research/articles/cruz-et-al-2023/index.html</loc>
-    <lastmod>2024-09-08T21:55:22.732Z</lastmod>
+    <lastmod>2024-09-09T23:05:51.492Z</lastmod>
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/research/articles/chaudhry-heiss-ngos-repression/index.html</loc>
     <lastmod>2024-09-08T21:06:14.253Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/research/works-in-progress/cruz-et-al-tracing/index.html</loc>
+    <lastmod>2024-09-09T17:06:12.595Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/research/works-in-progress/gardner-expanding/index.html</loc>
+    <lastmod>2024-09-09T20:54:14.624Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/research/works-in-progress/martin-deportation/index.html</loc>
+    <lastmod>2024-09-09T22:50:51.425Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/research/articles/martin-2025/index.html</loc>
+    <lastmod>2024-09-09T22:58:40.182Z</lastmod>
   </url>
 </urlset>

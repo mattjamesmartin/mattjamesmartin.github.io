@@ -1,6 +1,5 @@
 ---
 title: "Deportation by Design: How Political Entrepreneurs Engineered Crime-Based Deportation in the United States"
-date: 2024-01-01
 author:
   - name: Matthew Martin
     url: https://mattjamesmartin.github.io/

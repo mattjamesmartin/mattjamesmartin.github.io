@@ -95,20 +95,20 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-working-papers .list');
+    const listingTargetEl = window.document.querySelector('#listing-works-in-progress .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: [{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-project','listing-pagetitle','listing-author-meta','listing-website','listing-format','listing-editor','listing-_quarto-vars','listing-language','listing-date-format','listing-title-block-banner','listing-toc','listing-toc-title','listing-toc-location','listing-execute','listing-include-back-link','listing-title','listing-date','listing-author','listing-categories','listing-pub-info','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-project","listing-pagetitle","listing-author-meta","listing-website","listing-format","listing-editor","listing-_quarto-vars","listing-language","listing-date-format","listing-title-block-banner","listing-toc","listing-toc-title","listing-toc-location","listing-execute","listing-include-back-link","listing-title","listing-date","listing-author","listing-categories","listing-pub-info","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-working-papers'] = new List('listing-working-papers', options);
+    window['quarto-listings']['listing-works-in-progress'] = new List('listing-works-in-progress', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -123,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-translations .list');
+    const listingTargetEl = window.document.querySelector('#listing-other-works .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -136,7 +136,7 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-translations'] = new List('listing-translations', options);
+    window['quarto-listings']['listing-other-works'] = new List('listing-other-works', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -152,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
 <style>
 
       .quarto-title-block .quarto-title-banner {
-        background: #48BB78;
+        background: #708090;
       }
 </style>
 
@@ -268,15 +268,11 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#journal-articles" id="toc-journal-articles" class="nav-link active" data-scroll-target="#journal-articles">Journal articles</a></li>
-  <li><a href="#working-papers" id="toc-working-papers" class="nav-link" data-scroll-target="#working-papers">Working papers</a></li>
-  <li><a href="#translations" id="toc-translations" class="nav-link" data-scroll-target="#translations">Translations</a></li>
-  <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications">Publications</a></li>
-  <li><a href="#working-papers-1" id="toc-working-papers-1" class="nav-link" data-scroll-target="#working-papers-1">Working papers</a></li>
   <li><a href="#works-in-progress" id="toc-works-in-progress" class="nav-link" data-scroll-target="#works-in-progress">Works in progress</a></li>
   <li><a href="#other-works" id="toc-other-works" class="nav-link" data-scroll-target="#other-works">Other works</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Chile">Chile <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Constitutional design">Constitutional design <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Latin America">Latin America <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Natural language processing">Natural language processing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Public consultation">Public consultation <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Chile">Chile <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Constitutional design">Constitutional design <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Crime-based deportation">Crime-based deportation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Crimmigration">Crimmigration <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Latin America">Latin America <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Natural language processing">Natural language processing <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Political elites">Political elites <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Political entrepreneurs">Political entrepreneurs <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Public consultation">Public consultation <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Reactive sequences">Reactive sequences <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -288,7 +284,42 @@ ul.task-list li input[type="checkbox"] {
 <div id="listing-articles" class="quarto-listing quarto-listing-container-custom">
 <div class="research project-list">
 <ul class="list">
-        <li class="project" data-index="0" data-categories="Constitutional design,Public consultation,Natural language processing,Chile,Latin America" data-listing-date-sort="1702530000000" data-listing-file-modified-sort="1725831983608" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+        <li class="project" data-index="0" data-categories="Constitutional design,Public consultation,Political elites" data-listing-date-sort="1742454000000" data-listing-file-modified-sort="1725845778540" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+            <div class="project-content listing-pub-info">
+                <p><strong>Matthew Martin</strong>. “Elite Fractures, Public Capture: The Strategic Use of Public Consultation in Global Constitution-Making,” <em>Journal of Law and CourtsE</em> (forthcoming).</p>
+            </div>
+            <div class="project-categories">
+                    <div class="project-category"><a href="#category=Constitutional design">
+                            Constitutional design
+                        </a></div>
+                    <div class="project-category"><a href="#category=Public consultation">
+                            Public consultation
+                        </a></div>
+                    <div class="project-category"><a href="#category=Political elites">
+                            Political elites
+                        </a></div>
+            </div>
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    <li class="project-link details">
+                        <a href="../research/articles/martin-2025/index.html" class="listing-name">
+                            <i class="fa-solid fa-circle-info"></i> Full details »
+                        </a>
+                    </li>
+                    <li class="project-link">
+                        <a href="../research/articles/martin-2025/martin-2025.pdf">
+                            <i class="fa-solid fa-file-pdf"></i> Preprint
+                        </a>
+                    </li>
+                    <li class="project-link">
+                        <a href="">
+                            <i class="fa-brands fa-github"></i> Code and data
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="project" data-index="1" data-categories="Constitutional design,Public consultation,Natural language processing,Chile,Latin America" data-listing-date-sort="1702540800000" data-listing-file-modified-sort="1725922708086" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
             <div class="project-content listing-pub-info">
                 <p><a href="https://arcruz0.github.io/">Andrés Cruz</a>, <a href="https://site.google.com/site/zachelkinstexas/">Zachary Elkins</a>, Roy Gardner, <strong>Matthew Martin</strong>, and <a href="https://liberalarts.utexas.edu/government/faculty/am49396">Ashley Moran</a>. “Measuring constitutional preferences: A new method for analyzing public consultation data,” <em>PLoS ONE</em> 18, no. 12 (2023): e0295396, doi: <a href="https://doi.org/10.1371/journal.pone.0295396"><code>10.1371/journal.pone.0295396</code></a></p>
             </div>
@@ -341,43 +372,105 @@ No matching items
 </div>
 </div>
 </section>
-<section id="working-papers" class="level2">
-<h2 class="anchored" data-anchor-id="working-papers">Working papers</h2>
-<div id="listing-working-papers" class="quarto-listing quarto-listing-container-custom">
-<div class="research project-list">
-<ul class="list">
-</ul>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-</section>
-<section id="translations" class="level2">
-<h2 class="anchored" data-anchor-id="translations">Translations</h2>
-<div id="listing-translations" class="quarto-listing quarto-listing-container-custom">
-<div class="research project-list">
-<ul class="list">
-</ul>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-</section>
-<section id="publications" class="level2">
-<h2 class="anchored" data-anchor-id="publications">Publications</h2>
-<p>Martin, Matthew. “Elite Fractures, Public Capture: The Strategic Use of Public Consultation in Global Constitution-Making.” <em>Journal of Law and Courts</em> (forthcoming). <a href="files/EFPC_final.pdf">[PDF]</a></p>
-</section>
-<section id="working-papers-1" class="level2">
-<h2 class="anchored" data-anchor-id="working-papers-1">Working papers</h2>
-<p>Martin, Matthew. “Deportation by Design: How Political Entrepreneurs Engineered Crime-Based Deportation in the United States.”</p>
-</section>
 <section id="works-in-progress" class="level2">
 <h2 class="anchored" data-anchor-id="works-in-progress">Works in progress</h2>
-<p>Martin, Matthew. “Product of the Process: Public Consultation in Global Constitution-Making.”</p>
-<p>Cruz, Andrés, Elkins, Zachary, Roy Gardner, Matthew Martin, Ashley Moran, Guillermo Pérez. “Tracing the Expression and Uptake of Constitutional Ideas across Three Reform Efforts in Chile.”</p>
-<p>Gardner, Roy, Matthew Martin, Zachary Elkins, Ashley Moran, Guillermo Pérez. “Expanding Your Vocabulary: Topic Integration Using the Segments-as-Topics (SAT) Approach.”</p>
+<div id="listing-works-in-progress" class="quarto-listing quarto-listing-container-custom">
+<div class="research project-list">
+<ul class="list">
+        <li class="project" data-index="0" data-categories="Crime-based deportation,Crimmigration,Political entrepreneurs,Reactive sequences" data-listing-file-modified-sort="1725922129135" data-listing-reading-time-sort="2">
+            <div class="project-content listing-pub-info">
+                <p><strong>Matthew Martin</strong>. “Deportation by Design: How Political Entrepreneurs Engineered Crime-Based Deportation in the United States.” Under review.</p>
+            </div>
+            <div class="project-categories">
+                    <div class="project-category"><a href="#category=Crime-based deportation">
+                            Crime-based deportation
+                        </a></div>
+                    <div class="project-category"><a href="#category=Crimmigration">
+                            Crimmigration
+                        </a></div>
+                    <div class="project-category"><a href="#category=Political entrepreneurs">
+                            Political entrepreneurs
+                        </a></div>
+                    <div class="project-category"><a href="#category=Reactive sequences">
+                            Reactive sequences
+                        </a></div>
+            </div>
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    <li class="project-link details">
+                        <a href="../research/works-in-progress/martin-deportation/index.html" class="listing-name">
+                            <i class="fa-solid fa-circle-info"></i> Full details »
+                        </a>
+                    </li>
+                    <li class="project-link">
+                        <a href="../research/works-in-progress/martin-deportation/martin-deportation.pdf">
+                            <i class="fa-solid fa-file-pdf"></i> Draft
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="project" data-index="1" data-categories="Constitutional design" data-listing-date-sort="1725174000000" data-listing-file-modified-sort="1725915134417" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+            <div class="project-content listing-pub-info">
+                <p><roy gardner,="" <strong="">Matthew Martin, <a href="https://arcruz0.github.io/">Andrés Cruz</a>, <a href="https://site.google.com/site/zachelkinstexas/">Zachary Elkins</a>, and <a href="https://liberalarts.utexas.edu/government/faculty/am49396">Ashley Moran</a>. “Expanding Your Vocabulary: Topic Integration Using the Segments-as-Topics (SAT) Approach.”</roy></p>
+            </div>
+            <div class="project-categories">
+                    <div class="project-category"><a href="#category=Constitutional design">
+                            Constitutional design
+                        </a></div>
+            </div>
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    <li class="project-link details">
+                        <a href="../research/works-in-progress/gardner-expanding/index.html" class="listing-name">
+                            <i class="fa-solid fa-circle-info"></i> Full details »
+                        </a>
+                    </li>
+                    <li class="project-link">
+                        <a href="../research/works-in-progress/gardner-expanding/gardner-expanding.pdf">
+                            <i class="fa-solid fa-file-pdf"></i> Draft
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="project" data-index="2" data-categories="Constitutional design,Public consultation,Natural language processing,Chile,Latin America" data-listing-date-sort="1704096000000" data-listing-file-modified-sort="1725901568961" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+            <div class="project-content listing-pub-info">
+                <p><a href="https://arcruz0.github.io/">Andrés Cruz</a>, <a href="https://site.google.com/site/zachelkinstexas/">Zachary Elkins</a>, Roy Gardner, <strong>Matthew Martin</strong>, and <a href="https://liberalarts.utexas.edu/government/faculty/am49396">Ashley Moran</a>. “Tracing the Expression and Uptake of Constitutional Ideas across Three Reform Efforts in Chile.”</p>
+            </div>
+            <div class="project-categories">
+                    <div class="project-category"><a href="#category=Constitutional design">
+                            Constitutional design
+                        </a></div>
+                    <div class="project-category"><a href="#category=Public consultation">
+                            Public consultation
+                        </a></div>
+                    <div class="project-category"><a href="#category=Natural language processing">
+                            Natural language processing
+                        </a></div>
+                    <div class="project-category"><a href="#category=Chile">
+                            Chile
+                        </a></div>
+                    <div class="project-category"><a href="#category=Latin America">
+                            Latin America
+                        </a></div>
+            </div>
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    <li class="project-link details">
+                        <a href="../research/works-in-progress/cruz-et-al-tracing/index.html" class="listing-name">
+                            <i class="fa-solid fa-circle-info"></i> Full details »
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+</ul>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
 </section>
 <section id="other-works" class="level2">
 <h2 class="anchored" data-anchor-id="other-works">Other works</h2>
@@ -388,7 +481,15 @@ No matching items
 
 </section>
 
-</main> <!-- /main -->
+<div class="quarto-listing quarto-listing-container-custom" id="listing-other-works">
+<div class="research project-list">
+<ul class="list">
+</ul>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
