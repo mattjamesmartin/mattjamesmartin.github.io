@@ -30,5 +30,3 @@ pub-info:
   reference: >-
     <a href="https://arcruz0.github.io/">Andrés Cruz</a>, <a href="https://site.google.com/site/zachelkinstexas/">Zachary Elkins</a>, Roy Gardner, <strong>Matthew Martin</strong>, and <a href="https://liberalarts.utexas.edu/government/faculty/am49396">Ashley Moran</a>. “Tracing the Expression and Uptake of Constitutional Ideas across Three Reform Efforts in Chile.”
 ---
-
-## Abstract
