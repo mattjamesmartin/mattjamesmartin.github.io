@@ -6,14 +6,13 @@ author:
     url: https://mattjamesmartin.github.io/
     orcid: 0000-0003-3460-3603
     affiliation: Department of Government, University of Texas at Austin
-course_semesters:
-  - "Spring 2024"
 pub-info:
   links:
   - name: Syllabus
     url: GOV357L_syllabus_sp24.pdf
     icon: fa-solid fa-book
     local: true
+image: gov357L.jpeg
 ---
 
 ## Course description

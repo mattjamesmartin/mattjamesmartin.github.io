@@ -5,7 +5,7 @@ listing:
     contents: "course/*/index.qmd"
     sort: "date desc"
     template: ../html/teaching/listing.ejs
-    categories: true
+    categories: false
 page-layout: full
 include-back-link: false
 toc-location: right
