@@ -10,12 +10,13 @@ page-layout: full
 include-back-link: false
 toc-location: right
 ---
+
 ## Courses
 
-:::{#courses}
+::: {#courses}
 :::
 
-## Positions 
+## Positions
 
 ### Research Internship Supervisor
 

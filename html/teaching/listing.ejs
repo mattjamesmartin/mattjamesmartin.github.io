@@ -9,9 +9,14 @@
                 <h3><%= item.title %></h3>
             </div>
 
-            <div class="project-content listing-pub-info">
-                <p><%= item['pub-info'].reference %></p>
-            </div>
+            <!-- Display the course semesters if they exist -->
+            <% if (item.course_semesters) { %>
+                <ul class="course-semesters">
+                    <% for (const semester of item.course_semesters) { %>
+                        <li><%= semester %></li>
+                    <% } %>
+                </ul>
+            <% } %>
 
             <% if(item.categories) { %>
             <div class="project-categories">

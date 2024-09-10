@@ -20,4 +20,4 @@ include-back-link: true
 format:
   html:
     template-partials:
-      - ../html/research/title-block.html
+      - ../html/teaching/title-block.html

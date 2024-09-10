@@ -74,9 +74,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-pagetitle','listing-author-meta','listing-website','listing-format','listing-editor','listing-_quarto-vars','listing-language','listing-date-format','listing-title-block-banner','listing-toc','listing-toc-title','listing-toc-location','listing-execute','listing-include-back-link','listing-title','listing-date','listing-author','listing-pub-info','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
+      valueNames: ['listing-project','listing-pagetitle','listing-author-meta','listing-website','listing-format','listing-editor','listing-_quarto-vars','listing-language','listing-date-format','listing-title-block-banner','listing-toc','listing-toc-title','listing-toc-location','listing-execute','listing-include-back-link','listing-title','listing-date','listing-author','listing-course_semesters','listing-pub-info','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
       
-      searchColumns: ["listing-project","listing-pagetitle","listing-author-meta","listing-website","listing-format","listing-editor","listing-_quarto-vars","listing-language","listing-date-format","listing-title-block-banner","listing-toc","listing-toc-title","listing-toc-location","listing-execute","listing-include-back-link","listing-title","listing-date","listing-author","listing-pub-info","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time"],
+      searchColumns: ["listing-project","listing-pagetitle","listing-author-meta","listing-website","listing-format","listing-editor","listing-_quarto-vars","listing-language","listing-date-format","listing-title-block-banner","listing-toc","listing-toc-title","listing-toc-location","listing-execute","listing-include-back-link","listing-title","listing-date","listing-author","listing-course_semesters","listing-pub-info","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -180,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block research default page-columns page-full">
+<header id="title-block-header" class="quarto-title-block teaching default page-columns page-full">
     <div class="quarto-title-banner page-columns page-full">
                 <div class="quarto-title column-page-left">
             <h1 class="title">Teaching</h1>
@@ -229,14 +229,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="listing-courses" class="quarto-listing quarto-listing-container-custom">
 <div class="research project-list">
 <ul class="list">
-        <li class="project" data-index="0" data-listing-date-sort="1706774400000" data-listing-file-modified-sort="1725949726957" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+        <li class="project" data-index="0" data-listing-date-sort="1706774400000" data-listing-file-modified-sort="1725985889190" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
             <!-- Display the title of the project -->
             <div class="project-title">
                 <h3 class="anchored">GOV 357L: Judicial Process and Behavior</h3>
             </div>
-            <div class="project-content listing-pub-info">
-                <p><strong>GOV 357L: Judicial Process and Behavior</strong></p>
-            </div>
+            <!-- Display the course semesters if they exist -->
+                <ul class="course-semesters">
+                        <li>Spring 2024</li>
+                </ul>
             <div class="project-details-listing">
                 <ul class="project-links">
                     <li class="project-link details">
@@ -257,9 +258,7 @@ ul.task-list li input[type="checkbox"] {
             <div class="project-title">
                 <h3 class="anchored">Methods Camp 2023</h3>
             </div>
-            <div class="project-content listing-pub-info">
-                <p><strong>Methods Camp 2023</strong></p>
-            </div>
+            <!-- Display the course semesters if they exist -->
             <div class="project-details-listing">
                 <ul class="project-links">
                     <li class="project-link details">

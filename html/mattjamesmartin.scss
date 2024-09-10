@@ -532,6 +532,10 @@ pre.text, pre.sourceCode, .cell-output pre {
 }
 
 .teaching {
+    .back-nav a {
+        color: $white;
+    }
+    
     .course-entry {
         display: flex;
         flex-direction: row;
@@ -569,10 +573,6 @@ pre.text, pre.sourceCode, .cell-output pre {
             font-weight: 300;
             font-size: 1.1em;
             margin-bottom: 0.5em;
-        }
-
-        .course-role {
-            font-weight: 500;
         }
 
         ul.course-semesters {
