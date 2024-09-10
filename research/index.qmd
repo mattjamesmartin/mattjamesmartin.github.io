@@ -21,7 +21,7 @@ aliases:
   - research.html
 ---
 
-My research focuses on global constitution-making, with a particular interest in mechanisms of public consultation. My other areas of specialization include Latin American politics, statistical methods, and natural language processing. {{< ai blank-just-to-add-ai-dependency-to-this-page >}} {{< fa blank >}} 
+My research focuses on global constitution-making, with a particular interest in mechanisms of public consultation. My other areas of specialization include Latin American politics, statistical methods, and natural language processing. {{< ai blank-just-to-add-ai-dependency-to-this-page >}} {{< fa blank >}}
 
 ## Journal articles
 

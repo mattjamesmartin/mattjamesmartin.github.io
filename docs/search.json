@@ -305,28 +305,28 @@
     "href": "teaching/index.html",
     "title": "Teaching",
     "section": "",
-    "text": "This upper-level undergraduate course explores topics such as models of judicial decision-making, court structure, legitimacy, impact, and the social and political contexts in which judges operate.\nSpring 2024 syllabus\n\n\n\n\n\nThis week-long course is an introduction to quantitative methods in political science for incoming graduate students.\nSee our website here."
+    "text": "GOV 357L: Judicial Process and Behavior\n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                        \n                             Syllabus\n                        \n                    \n                \n            \n        \n        \n            \n                Methods Camp 2023\n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                        \n                             Syllabus\n                        \n                    \n                \n            \n        \n\n\n\nNo matching items"
   },
   {
     "objectID": "teaching/index.html#courses",
     "href": "teaching/index.html#courses",
     "title": "Teaching",
     "section": "",
-    "text": "This upper-level undergraduate course explores topics such as models of judicial decision-making, court structure, legitimacy, impact, and the social and political contexts in which judges operate.\nSpring 2024 syllabus\n\n\n\n\n\nThis week-long course is an introduction to quantitative methods in political science for incoming graduate students.\nSee our website here."
+    "text": "GOV 357L: Judicial Process and Behavior\n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                        \n                             Syllabus\n                        \n                    \n                \n            \n        \n        \n            \n                Methods Camp 2023\n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                        \n                             Syllabus\n                        \n                    \n                \n            \n        \n\n\n\nNo matching items"
   },
   {
     "objectID": "teaching/index.html#positions",
     "href": "teaching/index.html#positions",
     "title": "Teaching",
     "section": "Positions",
-    "text": "Positions\n\nMethods Fellow\n\nI assisted graduate students in the Department of Government with methods-related questions, organized methods workshops, and coordinated weekly co-working hours.\nFall 2023, Spring 2024"
+    "text": "Positions\n\nResearch Internship Supervisor\n\nSupervised eight students across four semesters as part of GOV 362L - Undergraduate Research Internship course. \n\n\n\nMethods Fellow\n\nAssisted graduate students in the Department of Government with methods-related questions, organized methods workshops, and coordinated weekly co-working hours.\nFall 2023, Spring 2024"
   },
   {
     "objectID": "teaching/index.html#teaching-assistantships",
     "href": "teaching/index.html#teaching-assistantships",
     "title": "Teaching",
     "section": "Teaching Assistantships",
-    "text": "Teaching Assistantships\n\nUGS 303: Drugs, Commerce, and Immigration in U.S.-Mexico Relations\n\nDr. Kenneth Greene\nFall 2023, Spring 2022\n\n\n\nGOV 391L: Statistical Analysis in Political Science II\n\nDr. Alison Craig\nSpring 2023\n\n\n\nGOV 391J: Statistical Analysis in Political Science I\n\nDr. Connor Jerzak\nFall 2022\n\n\n\nGOV 320N: Civil Rights and Civil Liberties\n\nDr. Alan Sager\nFall 2021\n\n\n\nGOV S365W: Human Rights and World Politics\n\nDr. Rhonda Evans\nSummer 2021\n\n\n\nGOV 312L: The U.S. in Comparative Perspective\n\nDr. Kurt Weyland\nSpring 2021\n\n\n\nGOV 328L: Introduction to Latin American Politics\n\nDr. Raul Madrid\nFall 2020"
+    "text": "Teaching Assistantships\n\nUGS 303: Drugs, Commerce, and Immigration in U.S.-Mexico Relations (Fall 2023, Spring 2022)\nGOV 391L: Statistical Analysis in Political Science II (Spring 2023)\nGOV 391J: Statistical Analysis in Political Science I (Fall 2022)\nGOV 320N: Civil Rights and Civil Liberties (Fall 2021)\nGOV S365W: Human Rights and World Politics (Summer 2021)\nGOV 312L: The U.S. in Comparative Perspective (Spring 2021)\nGOV 328L: Introduction to Latin American Politics (Fall 2020)"
   },
   {
     "objectID": "research/articles/cruz-et-al-2023/cruz-et-al-2023.html",
@@ -516,5 +516,75 @@
     "title": "Elite Fractures, Public Capture: The Strategic Use of Public Consultation in Global Constitution-Making",
     "section": "Key figures",
     "text": "Key figures\n\n\n\nFigure 2: World Map of Public Consultation in Constitution-Making (1974-2021)\n\n\n\n\n\n\nFigure 3a: Predicted Probability of Public Consultation Across Level of Democracy (Lexical Index of Democracy)\n\n\n\n\n\nFigure 3: Predicted Probability of Public Consultation Across Level of Democracy (V-Dem Electoral Democracy Index)"
+  },
+  {
+    "objectID": "teaching/course/gov357L/index.html",
+    "href": "teaching/course/gov357L/index.html",
+    "title": "GOV 357L",
+    "section": "",
+    "text": "Public consultation has become an indispensable part of constitutional design, yet the voluminous, narrative data produced are often impractical to analyze. There are also few, if any, standards for such analysis. Using a comprehensive reference ontology from the Comparative Constitutions Project (CCP), we develop a new methodology to identify constitutional topics of most concern to citizens and compare these to topics in constitutions globally. We analyze data from Chile’s 2016 public consultations—an ambitious process that produced nearly 265,000 narrative responses and launched the constitutional reform process that remains underway today. We leverage advances in natural language processing, in particular sentence-level semantic similarity technology, to classify consultation responses with respect to constitutional topics. Our methodology has potential for advocates, drafters, and researchers seeking to analyze public consultation data that too often go unexamined."
+  },
+  {
+    "objectID": "teaching/course/gov357L/index.html#abstract",
+    "href": "teaching/course/gov357L/index.html#abstract",
+    "title": "GOV 357L",
+    "section": "",
+    "text": "Public consultation has become an indispensable part of constitutional design, yet the voluminous, narrative data produced are often impractical to analyze. There are also few, if any, standards for such analysis. Using a comprehensive reference ontology from the Comparative Constitutions Project (CCP), we develop a new methodology to identify constitutional topics of most concern to citizens and compare these to topics in constitutions globally. We analyze data from Chile’s 2016 public consultations—an ambitious process that produced nearly 265,000 narrative responses and launched the constitutional reform process that remains underway today. We leverage advances in natural language processing, in particular sentence-level semantic similarity technology, to classify consultation responses with respect to constitutional topics. Our methodology has potential for advocates, drafters, and researchers seeking to analyze public consultation data that too often go unexamined."
+  },
+  {
+    "objectID": "teaching/course/gov357L/index.html#citation",
+    "href": "teaching/course/gov357L/index.html#citation",
+    "title": "GOV 357L",
+    "section": "Citation",
+    "text": "Citation\n\n Add to Zotero  \n\n@article{cruz2023measuring,\n  title={Measuring constitutional preferences: A new method for analyzing public consultation data},\n  author={Cruz, Andr{\\'e}s and Elkins, Zachary and Gardner, Roy and Martin, Matthew and Moran, Ashley},\n  journal={Plos one},\n  volume={18},\n  number={12},\n  pages={e0295396},\n  year={2023},\n  doi = {10.1371/journal.pone.0295396}\n}"
+  },
+  {
+    "objectID": "teaching/course/method-scamp/index.html",
+    "href": "teaching/course/method-scamp/index.html",
+    "title": "Elite Fractures, Public Capture: The Strategic Use of Public Consultation in Global Constitution-Making",
+    "section": "",
+    "text": "Since 1974, two out of every five constitutions (40.3%) were prepared via processes that included public consultation. The reasons for adopting these participatory mechanisms, however, are largely unexplored. I argue that public consultation is a tool for elite contestation of power. Introducing an original dataset of public consultations in constitution-making processes from 1974-2021 (n = 300), I find that in democracies, factional majorities and newcomer elites use public consultation to legitimate a break from the status quo. In autocracies, governing coalitions that depend on performance and enjoy greater party institutionalization push for public consultation to preserve favorable power-sharing arrangements."
+  },
+  {
+    "objectID": "teaching/course/method-scamp/index.html#abstract",
+    "href": "teaching/course/method-scamp/index.html#abstract",
+    "title": "Elite Fractures, Public Capture: The Strategic Use of Public Consultation in Global Constitution-Making",
+    "section": "",
+    "text": "Since 1974, two out of every five constitutions (40.3%) were prepared via processes that included public consultation. The reasons for adopting these participatory mechanisms, however, are largely unexplored. I argue that public consultation is a tool for elite contestation of power. Introducing an original dataset of public consultations in constitution-making processes from 1974-2021 (n = 300), I find that in democracies, factional majorities and newcomer elites use public consultation to legitimate a break from the status quo. In autocracies, governing coalitions that depend on performance and enjoy greater party institutionalization push for public consultation to preserve favorable power-sharing arrangements."
+  },
+  {
+    "objectID": "teaching/course/method-scamp/index.html#key-figures",
+    "href": "teaching/course/method-scamp/index.html#key-figures",
+    "title": "Elite Fractures, Public Capture: The Strategic Use of Public Consultation in Global Constitution-Making",
+    "section": "Key figures",
+    "text": "Key figures\n\n\n\nFigure 2: World Map of Public Consultation in Constitution-Making (1974-2021)\n\n\n\n\n\n\nFigure 3a: Predicted Probability of Public Consultation Across Level of Democracy (Lexical Index of Democracy)\n\n\n\n\n\nFigure 3: Predicted Probability of Public Consultation Across Level of Democracy (V-Dem Electoral Democracy Index)"
+  },
+  {
+    "objectID": "teaching/course/methods-camp/index.html",
+    "href": "teaching/course/methods-camp/index.html",
+    "title": "Methods Camp 2023",
+    "section": "",
+    "text": "Since 1974, two out of every five constitutions (40.3%) were prepared via processes that included public consultation. The reasons for adopting these participatory mechanisms, however, are largely unexplored. I argue that public consultation is a tool for elite contestation of power. Introducing an original dataset of public consultations in constitution-making processes from 1974-2021 (n = 300), I find that in democracies, factional majorities and newcomer elites use public consultation to legitimate a break from the status quo. In autocracies, governing coalitions that depend on performance and enjoy greater party institutionalization push for public consultation to preserve favorable power-sharing arrangements."
+  },
+  {
+    "objectID": "teaching/course/methods-camp/index.html#abstract",
+    "href": "teaching/course/methods-camp/index.html#abstract",
+    "title": "Methods Camp 2023",
+    "section": "",
+    "text": "Since 1974, two out of every five constitutions (40.3%) were prepared via processes that included public consultation. The reasons for adopting these participatory mechanisms, however, are largely unexplored. I argue that public consultation is a tool for elite contestation of power. Introducing an original dataset of public consultations in constitution-making processes from 1974-2021 (n = 300), I find that in democracies, factional majorities and newcomer elites use public consultation to legitimate a break from the status quo. In autocracies, governing coalitions that depend on performance and enjoy greater party institutionalization push for public consultation to preserve favorable power-sharing arrangements."
+  },
+  {
+    "objectID": "teaching/course/methods-camp/index.html#key-figures",
+    "href": "teaching/course/methods-camp/index.html#key-figures",
+    "title": "Methods Camp 2023",
+    "section": "Key figures",
+    "text": "Key figures\n\n\n\nFigure 2: World Map of Public Consultation in Constitution-Making (1974-2021)\n\n\n\n\n\n\nFigure 3a: Predicted Probability of Public Consultation Across Level of Democracy (Lexical Index of Democracy)\n\n\n\n\n\nFigure 3: Predicted Probability of Public Consultation Across Level of Democracy (V-Dem Electoral Democracy Index)"
+  },
+  {
+    "objectID": "teaching/index.html#positions-fa-blank",
+    "href": "teaching/index.html#positions-fa-blank",
+    "title": "Teaching",
+    "section": "Positions ",
+    "text": "Positions \n\nResearch Internship Supervisor\n\nSupervised eight students across four semesters as part of GOV 362L - Undergraduate Research Internship course.\n\n\n\nMethods Fellow\n\nAssisted graduate students in the Department of Government with methods-related questions, organized methods workshops, and coordinated weekly co-working hours.\nFall 2023, Spring 2024"
   }
 ]

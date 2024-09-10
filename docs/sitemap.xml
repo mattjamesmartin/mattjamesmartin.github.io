@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mattjamesmartin.github.io/index.html</loc>
-    <lastmod>2024-09-09T22:52:38.421Z</lastmod>
+    <lastmod>2024-09-10T05:22:51.908Z</lastmod>
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/blog.html</loc>
@@ -50,7 +50,7 @@
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/blog/index.html</loc>
-    <lastmod>2024-09-09T23:40:48.921Z</lastmod>
+    <lastmod>2024-09-10T05:22:45.758Z</lastmod>
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/blog/posts/blog2.html</loc>
@@ -58,7 +58,7 @@
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/research/index.html</loc>
-    <lastmod>2024-09-10T05:10:45.483Z</lastmod>
+    <lastmod>2024-09-10T06:20:13.147Z</lastmod>
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/blog/posts/reimagining_patriotism.html</loc>
@@ -70,7 +70,7 @@
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/teaching/index.html</loc>
-    <lastmod>2024-09-10T04:31:57.050Z</lastmod>
+    <lastmod>2024-09-10T06:29:04.687Z</lastmod>
   </url>
   <url>
     <loc>https://mattjamesmartin.com/cv/index.html</loc>
@@ -106,6 +106,26 @@
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/research/articles/martin-2025/index.html</loc>
-    <lastmod>2024-09-10T05:10:45.108Z</lastmod>
+    <lastmod>2024-09-10T05:22:38.885Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/teaching/courses/gov357l/index.html</loc>
+    <lastmod>2024-09-10T05:53:50.729Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/teaching/courses/methods-camp/index.html</loc>
+    <lastmod>2024-09-10T05:53:54.251Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/teaching/course/gov357L/index.html</loc>
+    <lastmod>2024-09-10T06:28:47.338Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/teaching/course/method-scamp/index.html</loc>
+    <lastmod>2024-09-10T06:10:04.033Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/teaching/course/methods-camp/index.html</loc>
+    <lastmod>2024-09-10T06:21:56.641Z</lastmod>
   </url>
 </urlset>

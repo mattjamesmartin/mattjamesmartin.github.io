@@ -1,0 +1,21 @@
+---
+title: "GOV 357L: Judicial Process and Behavior"
+date: 2024-02-01
+author:
+  - name: Matthew Martin
+    url: https://mattjamesmartin.github.io/
+    orcid: 0000-0003-3460-3603
+    affiliation: Department of Government, University of Texas at Austin
+pub-info:
+  reference: >-
+    <strong>GOV 357L: Judicial Process and Behavior</strong>
+  links:
+  - name: Syllabus
+    url: GOV357L_syllabus_sp24.pdf
+    icon: fa-solid fa-book
+    local: true
+---
+
+## Course description
+
+{{< fa blank >}}

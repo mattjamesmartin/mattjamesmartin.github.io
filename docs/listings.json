@@ -24,5 +24,12 @@
       "/research/works-in-progress/gardner-expanding/index.html",
       "/research/works-in-progress/cruz-et-al-tracing/index.html"
     ]
+  },
+  {
+    "listing": "/teaching/index.html",
+    "items": [
+      "/teaching/course/gov357L/index.html",
+      "/teaching/course/methods-camp/index.html"
+    ]
   }
 ]

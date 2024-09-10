@@ -1,61 +1,44 @@
 ---
 title: "Teaching"
+listing:
+  - id: courses
+    contents: "course/*/index.qmd"
+    sort: "date desc"
+    template: ../html/teaching/listing.ejs
+    categories: true
+page-layout: full
+include-back-link: false
+toc-location: right
 ---
-
 ## Courses
 
-### GOV 357L Judicial Process and Behavior
+:::{#courses}
+:::
 
--   This upper-level undergraduate course explores topics such as models of judicial decision-making, court structure, legitimacy, impact, and the social and political contexts in which judges operate.
+## Positions 
 
--   Spring 2024 [syllabus](files/GOV357L_syllabus_sp24.pdf)
+### Research Internship Supervisor
 
-### UT Government Department Methods Camp
-
--   This week-long course is an introduction to quantitative methods in political science for incoming graduate students.
--   See our website [here](https://methodscamp.github.io/).
-
-## Positions
+-   Supervised eight students across four semesters as part of GOV 362L - Undergraduate Research Internship course. {{< fa blank >}}
 
 ### Methods Fellow
 
--   I assisted graduate students in the Department of Government with methods-related questions, organized methods workshops, and coordinated weekly co-working hours.
+-   Assisted graduate students in the Department of Government with methods-related questions, organized methods workshops, and coordinated weekly co-working hours.
 
 -   Fall 2023, Spring 2024
 
 ## Teaching Assistantships
 
-### UGS 303: Drugs, Commerce, and Immigration in U.S.-Mexico Relations
+-   UGS 303: Drugs, Commerce, and Immigration in U.S.-Mexico Relations (Fall 2023, Spring 2022)
 
--   Dr. Kenneth Greene
--   Fall 2023, Spring 2022
+-   GOV 391L: Statistical Analysis in Political Science II (Spring 2023)
 
-### GOV 391L: Statistical Analysis in Political Science II
+-   GOV 391J: Statistical Analysis in Political Science I (Fall 2022)
 
--   Dr. Alison Craig
--   Spring 2023
+-   GOV 320N: Civil Rights and Civil Liberties (Fall 2021)
 
-### GOV 391J: Statistical Analysis in Political Science I
+-   GOV S365W: Human Rights and World Politics (Summer 2021)
 
--   Dr. Connor Jerzak
--   Fall 2022
+-   GOV 312L: The U.S. in Comparative Perspective (Spring 2021)
 
-### GOV 320N: Civil Rights and Civil Liberties
-
--   Dr. Alan Sager
--   Fall 2021
-
-### GOV S365W: Human Rights and World Politics
-
--   Dr. Rhonda Evans
--   Summer 2021
-
-### GOV 312L: The U.S. in Comparative Perspective
-
--   Dr. Kurt Weyland
--   Spring 2021
-
-### GOV 328L: Introduction to Latin American Politics
-
--   Dr. Raul Madrid
--   Fall 2020
+-   GOV 328L: Introduction to Latin American Politics (Fall 2020)
