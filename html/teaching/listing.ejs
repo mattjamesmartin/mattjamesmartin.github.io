@@ -3,6 +3,12 @@
 <ul class="list">
     <% for (const item of items) { %>
         <li class="project" <%=metadataAttrs(item) %>>
+            
+            <!-- Display the title of the project -->
+            <div class="project-title">
+                <h3><%= item.title %></h3>
+            </div>
+
             <div class="project-content listing-pub-info">
                 <p><%= item['pub-info'].reference %></p>
             </div>
@@ -40,7 +46,7 @@
                 </ul>
             </div>
         </li>
-        <% } %>
+    <% } %>
 </ul>
 </div>
 ```
