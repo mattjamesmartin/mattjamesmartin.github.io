@@ -89,8 +89,8 @@ $navbar-fg: $white !default;
 $navbar-hl: $black !default;
 
 // Footer
-$footer-bg: $gray-900 !default;
-$footer-fg: $gray-300 !default;
+$footer-bg: $slategray !default;
+$footer-fg: $white !default;
 
 /*-- scss:rules --*/
 
@@ -205,7 +205,7 @@ pre.text, pre.sourceCode, .cell-output pre {
     font-family: $footer-font-family;
 
     a {
-        color: $light-orange;
+        color: $white;
     }
 
     .faux-block {

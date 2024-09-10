@@ -48,6 +48,9 @@ website:
         href: https://orcid.org/0000-0003-3460-3603
 
   page-footer:
+    right: |
+      <span class="faux-block">Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)</span>
+      <span class="faux-block">[View the source at {{< fa brands github >}} GitHub]({{< var github-url >}})</span>
     background: light
   
 format:
