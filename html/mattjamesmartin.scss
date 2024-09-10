@@ -532,9 +532,6 @@ pre.text, pre.sourceCode, .cell-output pre {
 }
 
 .teaching {
-    .back-nav a {
-        color: $white;
-    }
     
     .course-entry {
         display: flex;
@@ -549,11 +546,13 @@ pre.text, pre.sourceCode, .cell-output pre {
         }
 
         .logo {
-            flex: 0 0 140px;
-
-            img {
-                width: 100%;
-            }
+            display: inline-flex; /* Aligns the logo image with the surrounding text */
+        }
+        
+        .logo img {
+            height: auto;         /* Adjusts the image height to maintain aspect ratio */
+            max-height: 6em;    /* Adjust this value to fit the height relative to text */
+            vertical-align: top; /* Ensures image aligns with text */
         }
 
         .course-title {
@@ -583,7 +582,7 @@ pre.text, pre.sourceCode, .cell-output pre {
             li {
                 display: inline-block;
                 white-space: nowrap;
-                background-color: $orange;
+                background-color: $burnt-orange;
                 margin: 0 0.2em 0.4em 0;
                 padding: 0.2em 0.4em;
                 font-size: 0.85em;
@@ -593,6 +592,7 @@ pre.text, pre.sourceCode, .cell-output pre {
                     background-color: $white;
                     border: 1px solid $black;
                 }
+
 
                 a {
                     color: $white;

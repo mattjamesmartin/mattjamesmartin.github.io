@@ -2,13 +2,14 @@
 title: "Teaching"
 listing:
   - id: courses
-    contents: "course/*/index.qmd"
+    contents: courses.yml
     sort: "date desc"
     template: ../html/teaching/listing.ejs
-    categories: false
+title-block-banner: "#708090"
 page-layout: full
-include-back-link: false
+toc: true
 toc-location: right
+toc-title: Contents
 ---
 
 ## Courses

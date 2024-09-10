@@ -1,57 +1,44 @@
 ```{=html}
-<div class="research project-list">
-<ul class="list">
-    <% for (const item of items) { %>
-        <li class="project" <%=metadataAttrs(item) %>>
-            
-            <!-- Display the title of the project -->
-            <div class="project-title">
-                <h3><%= item.title %></h3>
-            </div>
-
-            <!-- Display the course semesters if they exist -->
-            <% if (item.course_semesters) { %>
-                <ul class="course-semesters">
-                    <% for (const semester of item.course_semesters) { %>
-                        <li><%= semester %></li>
-                    <% } %>
-                </ul>
+<div class="teaching">
+    <% for (const course of items) { %>
+    <div class="course-entry">
+        <div class="logo">
+            <% if (course.url) { %>
+            <a href="<%= course.url %>" target="_blank"><img src="<%= course.logo %>" alt="<%= course.title %>" title="<%= course.title %>" /></a>
+            <% } else { %>
+            <img src="<%= course.logo %>" alt="<%= course.title %>" title="<%= course.title %>" />
             <% } %>
+        </div>
+        <div class="body">
+            <p class="course-title">
+                <% if (course.url) { %>
+                <a href="<%= course.url %>" target="_blank"><%= course.title %></a> 
+                <% } else { %>
+                <%= course.title %> 
+                <% } %>
+            </p>
+            <p class="course-details">
+                <% if (course.number) { %>
+                <span class="course-number"><%= course.number %></span> | 
+                <% } %>
+                <span class="course-university"><%= course.university %></span>
+                <% if (course.role) { %>
+                | <span class="course-role"><%= course.role %></span>
+                <% } %>
+            </p>
+            <p class="course-description"><%= course.description %></p>
 
-            <% if(item.categories) { %>
-            <div class="project-categories">
-                <% for (const cat of item.categories) { %>
-                    <div class="project-category"><a href="#category=<%= cat %>">
-                            <%= cat %>
-                        </a></div>
-                    <% } %>
-            </div>
-            <% } %>
-            
-            <div class="project-details-listing">
-                <ul class="project-links">
-                    <li class="project-link details">
-                        <a href="<%- item.path %>" class="listing-name">
-                            <i class="fa-solid fa-circle-info"></i> Full details »
-                        </a>
-                    </li>
-                    <% if (item['pub-info'].links) { %>
-                        <% for (const link of item['pub-info'].links) { %>
-                    <li class="project-link">
-                        <% if (link.local) { %>
-                        <a href="<%- item.path.substring(0, item.path.lastIndexOf('/')) %>/<%- link.url %>">
-                        <% } else { %>
-                        <a href="<%- link.url %>">
-                        <% } %>
-                            <i class="<%- link.icon %>"></i> <%= link.name %>
-                        </a>
-                    </li>
-                        <% } %>
-                    <% } %>
-                </ul>
-            </div>
-        </li>
+            <ul class="course-semesters">
+                <% for (const semester of course.semester) { %>
+                <% if (semester.url) { %>
+                <li><a href="<%= semester.url %>"><i class="fa-solid fa-book"></i> <%= semester.name %> syllabus</a></li>
+                <% } else { %> 
+                <li class="no-link"><i class="fa-solid fa-book"></i> <%= semester.name %></li>
+                <% } %>
+                <% } %>
+            </ul>
+        </div>
+    </div>
     <% } %>
-</ul>
 </div>
 ```

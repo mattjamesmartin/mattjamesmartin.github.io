@@ -74,9 +74,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-pagetitle','listing-author-meta','listing-website','listing-format','listing-editor','listing-_quarto-vars','listing-language','listing-date-format','listing-title-block-banner','listing-toc','listing-toc-title','listing-toc-location','listing-execute','listing-include-back-link','listing-title','listing-date','listing-author','listing-pub-info','listing-image','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
+      valueNames: ['listing-title','listing-description','listing-university','listing-number','listing-url','listing-logo','listing-semester',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-project","listing-pagetitle","listing-author-meta","listing-website","listing-format","listing-editor","listing-_quarto-vars","listing-language","listing-date-format","listing-title-block-banner","listing-toc","listing-toc-title","listing-toc-location","listing-execute","listing-include-back-link","listing-title","listing-date","listing-author","listing-pub-info","listing-image","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time"],
+      searchColumns: ["listing-title","listing-description","listing-university","listing-number","listing-url","listing-logo","listing-semester"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -180,28 +180,23 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block teaching default page-columns page-full">
-    <div class="quarto-title-banner page-columns page-full">
-                <div class="quarto-title column-page-left">
-            <h1 class="title">Teaching</h1>
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Teaching</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
 
-            
-            
-                    </div>
+      
+    
+      
     </div>
     
-    
-    
-    <div class="quarto-title-meta">
-
-        
-      
-        
-      </div>
-      
-
-    
-</header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -224,59 +219,46 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+
 <section id="courses" class="level2">
 <h2 class="anchored" data-anchor-id="courses">Courses</h2>
 <div id="listing-courses" class="quarto-listing quarto-listing-container-custom">
-<div class="research project-list">
-<ul class="list">
-        <li class="project" data-index="0" data-listing-date-sort="1706774400000" data-listing-file-modified-sort="1725987665979" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-            <!-- Display the title of the project -->
-            <div class="project-title">
-                <h3 class="anchored">GOV 357L: Judicial Process and Behavior</h3>
-            </div>
-            <!-- Display the course semesters if they exist -->
-            <div class="project-details-listing">
-                <ul class="project-links">
-                    <li class="project-link details">
-                        <a href="../teaching/course/gov357L/index.html" class="listing-name">
-                            <i class="fa-solid fa-circle-info"></i> Full details »
-                        </a>
-                    </li>
-                    <li class="project-link">
-                        <a href="../teaching/course/gov357L/GOV357L_syllabus_sp24.pdf">
-                            <i class="fa-solid fa-book"></i> Syllabus
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </li>
-        <li class="project" data-index="1" data-listing-date-sort="1690873200000" data-listing-file-modified-sort="1725986645129" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-            <!-- Display the title of the project -->
-            <div class="project-title">
-                <h3 class="anchored">Methods Camp 2023</h3>
-            </div>
-            <!-- Display the course semesters if they exist -->
-            <div class="project-details-listing">
-                <ul class="project-links">
-                    <li class="project-link details">
-                        <a href="../teaching/course/methods-camp/index.html" class="listing-name">
-                            <i class="fa-solid fa-circle-info"></i> Full details »
-                        </a>
-                    </li>
-                    <li class="project-link">
-                        <a href="../teaching/course/methods-camp/methods-camp.pdf">
-                            <i class="fa-solid fa-book"></i> Syllabus
-                        </a>
-                    </li>
-                    <li class="project-link">
-                        <a href="https://methodscamp.github.io/">
-                            <i class="fa-brands fa-github"></i> Website
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </li>
-</ul>
+<div class="teaching">
+    <div class="course-entry">
+        <div class="logo">
+            <a href="syllabi/GOV357L_syllabus_sp24.pdf" target="_blank"><img src="logos/UT.png" alt="Judicial Process and Behavior" title="Judicial Process and Behavior"></a>
+        </div>
+        <div class="body">
+            <p class="course-title">
+                <a href="syllabi/GOV357L_syllabus_sp24.pdf" target="_blank">Judicial Process and Behavior</a> 
+            </p>
+            <p class="course-details">
+                <span class="course-number">GOV 357L</span> | 
+                <span class="course-university">University of Texas at Austin</span>
+            </p>
+            <p class="course-description">Upper-level undergraduate course in Department of Government.</p>
+            <ul class="course-semesters">
+                <li><a href="syllabi/GOV357L_syllabus_sp24.pdf"><i class="fa-solid fa-book"></i> Spring 2024 syllabus</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="course-entry">
+        <div class="logo">
+            <a href="https://methodscamp.github.io/previous-editions/2023/" target="_blank"><img src="logos/UT.png" alt="Methods Camp 2023" title="Methods Camp 2023"></a>
+        </div>
+        <div class="body">
+            <p class="course-title">
+                <a href="https://methodscamp.github.io/previous-editions/2023/" target="_blank">Methods Camp 2023</a> 
+            </p>
+            <p class="course-details">
+                <span class="course-university">University of Texas at Austin</span>
+            </p>
+            <p class="course-description">Introduction to statistics and quantitative methods for incoming PhD students in Deparment of Government.</p>
+            <ul class="course-semesters">
+                <li><a href="https://methodscamp.github.io/previous-editions/2023/"><i class="fa-solid fa-book"></i> Summer 2023 syllabus</a></li>
+            </ul>
+        </div>
+    </div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items

@@ -27,9 +27,6 @@
   },
   {
     "listing": "/teaching/index.html",
-    "items": [
-      "/teaching/course/gov357L/index.html",
-      "/teaching/course/methods-camp/index.html"
-    ]
+    "items": []
   }
 ]

@@ -1,0 +1,18 @@
+- title: Judicial Process and Behavior
+  description: "Upper-level undergraduate course in Department of Government."
+  university: University of Texas at Austin
+  number: GOV 357L
+  url: syllabi/GOV357L_syllabus_sp24.pdf
+  logo: logos/UT.png
+  semester:
+  - name: Spring 2024
+    url: syllabi/GOV357L_syllabus_sp24.pdf
+
+- title: Methods Camp 2023
+  description: "Introduction to statistics and quantitative methods for incoming PhD students in Deparment of Government."
+  university: University of Texas at Austin
+  url: https://methodscamp.github.io/previous-editions/2023/
+  logo: logos/UT.png
+  semester:
+  - name: Summer 2023
+    url: https://methodscamp.github.io/previous-editions/2023/
