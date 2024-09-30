@@ -12,7 +12,7 @@ categories:
   - Political elites
 pub-info:
   reference: >-
-    <strong>Matthew Martin</strong>. “Elite Fractures, Public Capture: The Strategic Use of Public Consultation in Global Constitution-Making,” <em>Journal of Law and Courts</em> (forthcoming).
+    <strong>Matthew Martin</strong>. “Elite Fractures, Public Capture: The Strategic Use of Public Consultation in Global Constitution-Making,” <em>Journal of Law and Courts</em> (forthcoming). Job market paper.
   links:
   - name: Pre-print
     url: martin-2025.pdf
@@ -33,14 +33,20 @@ Since 1974, two out of every five constitutions (40.3%) were prepared via proces
 
 ![Figure 2: World Map of Public Consultation in Constitution-Making (1974-2021)](figures/map.png)
 
-<div style="display: flex; justify-content: space-between; align-items: center;">
-  <figure style="width: 50%; text-align: center; margin-right: 10px;">
-    <img src="figures/full_plot_ord.png" alt="Figure 3a: Predicted Probability of Public Consultation Across Level of Democracy (Lexical Index of Democracy)" style="width: 100%;">
-    <figcaption>Figure 3a: Predicted Probability of Public Consultation Across Level of Democracy (Lexical Index of Democracy)</figcaption>
-  </figure>
-  <figure style="width: 50%; text-align: center; margin-left: 10px;">
-    <img src="figures/full_plot_cont.png" alt="Figure 3b: Predicted Probability of Public Consultation Across Level of Democracy (V-Dem Electoral Democracy Index)" style="width: 100%;">
-    <figcaption>Figure 3: Predicted Probability of Public Consultation Across Level of Democracy (V-Dem Electoral Democracy Index)</figcaption>
-  </figure>
-</div>
+::: {style="display: flex; justify-content: space-between; align-items: center;"}
+<figure style="width: 50%; text-align: center; margin-right: 10px;">
 
+<img src="figures/full_plot_ord.png" alt="Figure 3a: Predicted Probability of Public Consultation Across Level of Democracy (Lexical Index of Democracy)" style="width: 100%;"/>
+
+<figcaption>Figure 3a: Predicted Probability of Public Consultation Across Level of Democracy (Lexical Index of Democracy)</figcaption>
+
+</figure>
+
+<figure style="width: 50%; text-align: center; margin-left: 10px;">
+
+<img src="figures/full_plot_cont.png" alt="Figure 3b: Predicted Probability of Public Consultation Across Level of Democracy (V-Dem Electoral Democracy Index)" style="width: 100%;"/>
+
+<figcaption>Figure 3: Predicted Probability of Public Consultation Across Level of Democracy (V-Dem Electoral Democracy Index)</figcaption>
+
+</figure>
+:::
