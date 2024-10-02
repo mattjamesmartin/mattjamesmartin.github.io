@@ -1,5 +1,9 @@
 ---
-title: "CV"
+title: Curriculum Vitae
+date: 10-02-2024
+title-block-banner: "#800020"
+published-title: CV last updated
+freeze: false
 engine: knitr 
 cv:
   pdf: "CV_2024.pdf"
@@ -28,7 +32,7 @@ cv:
 ```{=html}
 <p class="text-center">
   <a class="btn btn-primary btn-lg cv-download" href="`r rmarkdown::metadata$cv$pdf`" target="_blank">
-    <i class="fa-solid fa-file-arrow-down"></i>Download CV
+    <i class="fa-solid fa-file-arrow-down"></i> Download CV
   </a>
 </p>
 
