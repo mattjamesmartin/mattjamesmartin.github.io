@@ -2,11 +2,11 @@
 title: "Reimagining Patriotism, According to My Father"
 description: "A letter to the editors of the Harper Review"
 image: hydrangeas.jpg
-author: "Matthew Martin"
-date: "8/23/2024"
+date: 08-23-2024
 categories:
   - patriotism
   - electoralism
+code-tools: false
 ---
 
 Love of country demands fantasy. Nations are not natural entities; they are constructed or imagined communities formed through common narratives and symbols. We invest meaning in the idea of the nation to feel connected to something larger than ourselves, creating a framework for shared identity rooted in land, culture, and, most importantly, people. This fantasy, however abstract, provokes a genuine and uniquely human sense of loyalty. Make-believe, even on a national scale, is not inherently harmful. The conundrum resides in how this fantasy is practiced and to what ends: whether it serves as carte blanche for the self-interest of the few, or as a tool to foster solidarity among the many.

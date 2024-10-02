@@ -295,7 +295,7 @@ pre.text, pre.sourceCode, .cell-output pre {
             img {
                 width: 100%;
                 object-fit: cover;
-                max-height: 120px;
+                object-fit: contain;
             }
         }
 
@@ -360,9 +360,8 @@ pre.text, pre.sourceCode, .cell-output pre {
         margin-top: 1.5em;
 
         .quarto-category {
-            background-color: shift-color($purple, -25%);
-            border-color: shift-color($purple, -45%);
-            color: $white;
+            background-color: shift-color($slategray, -90%);
+            color: $slategray;
             font-size: 0.65em;
             opacity: 1;
         }

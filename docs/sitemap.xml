@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mattjamesmartin.github.io/index.html</loc>
-    <lastmod>2024-10-02T04:27:22.227Z</lastmod>
+    <lastmod>2024-10-02T04:56:00.569Z</lastmod>
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/blog.html</loc>
@@ -46,11 +46,11 @@
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/cv/index.html</loc>
-    <lastmod>2024-09-09T23:41:12.750Z</lastmod>
+    <lastmod>2024-10-02T04:56:09.664Z</lastmod>
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/blog/index.html</loc>
-    <lastmod>2024-10-02T04:28:15.359Z</lastmod>
+    <lastmod>2024-10-02T05:13:33.705Z</lastmod>
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/blog/posts/blog2.html</loc>
@@ -58,7 +58,7 @@
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/research/index.html</loc>
-    <lastmod>2024-10-02T04:27:34.929Z</lastmod>
+    <lastmod>2024-10-02T05:10:16.276Z</lastmod>
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/blog/posts/reimagining_patriotism.html</loc>
@@ -70,7 +70,7 @@
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/teaching/index.html</loc>
-    <lastmod>2024-10-02T04:28:14.027Z</lastmod>
+    <lastmod>2024-10-02T05:13:49.254Z</lastmod>
   </url>
   <url>
     <loc>https://mattjamesmartin.com/cv/index.html</loc>
@@ -106,7 +106,7 @@
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/research/articles/martin-2025/index.html</loc>
-    <lastmod>2024-09-30T00:23:00.047Z</lastmod>
+    <lastmod>2024-10-02T04:50:19.728Z</lastmod>
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/teaching/courses/gov357l/index.html</loc>
@@ -127,5 +127,29 @@
   <url>
     <loc>https://mattjamesmartin.github.io/teaching/course/methods-camp/index.html</loc>
     <lastmod>2024-09-10T18:25:36.764Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/blog/2021/blog1.html</loc>
+    <lastmod>2024-10-02T05:09:41.144Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/blog/2024/reimagining_patriotism.html</loc>
+    <lastmod>2024-10-02T04:40:13.634Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/blog/2023/blog2.html</loc>
+    <lastmod>2024-10-02T04:53:46.351Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/blog/2024/index.html</loc>
+    <lastmod>2024-10-02T05:13:12.429Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/blog/2023/index.html</loc>
+    <lastmod>2024-10-02T05:12:34.123Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/blog/2021/index.html</loc>
+    <lastmod>2024-10-02T05:12:32.369Z</lastmod>
   </url>
 </urlset>

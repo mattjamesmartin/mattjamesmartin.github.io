@@ -2,8 +2,8 @@
 title: "The Art of Never Being Satisfied"
 description: "A guide to writing for perfectionists"
 image: Gettysburg.jpg
-author: "Matthew Martin"
-date: "1/17/2023"
+date: 01-17-2023"
+code-tools: false
 categories:
   - writing
   - perfectionism
