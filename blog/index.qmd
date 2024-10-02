@@ -51,6 +51,3 @@ freeze: false
 ::: {#posts_2021}
 :::
 
-```{=html}
-<a class="twitter-timeline" href="https://twitter.com/MattJ_Martin?ref_src=twsrc%5Etfw">Tweets by MattJ_Martin</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-```
