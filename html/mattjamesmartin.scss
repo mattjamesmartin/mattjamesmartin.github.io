@@ -675,3 +675,13 @@ pre.text, pre.sourceCode, .cell-output pre {
         left: 0;
     }
 }
+
+.twitter-timeline-container {
+    float: right;
+    width: 300px; /* Adjust width as necessary */
+    margin-left: 20px; /* Space between timeline and content */
+    /* Optional: Add a border or background for better visibility */
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}

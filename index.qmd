@@ -13,7 +13,6 @@ about:
     - icon: github
       text: Github
       href: https://github.com/mattjamesmartin
-      
 html:
   page-layout: full
 ---
