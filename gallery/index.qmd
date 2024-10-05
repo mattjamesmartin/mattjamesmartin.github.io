@@ -2,14 +2,28 @@
 title: Photos
 title-block-banner: "#733D6F"
 listing:
-  id: listing-gallery
-  template: ../html/gallery/gallery.ejs
-  contents:
-    - photos/*.*
-  sort-ui: false
-  filter-ui: false
-  categories: false
+  - id: Cuba
+    template: ../html/gallery/gallery.ejs
+    contents:
+      - photos/Cuba/*.*
+    sort-ui: false
+    filter-ui: false
+    categories: false
+  - id: Panama
+    template: ../html/gallery/gallery.ejs
+    contents:
+      - photos/Panama/*.*
+    sort-ui: false
+    filter-ui: false
+    categories: false
 ---
 
-::: {#listing-gallery}
+## Cuba
+
+::: {#Cuba}
+:::
+
+## Panamá
+
+::: {#Panama}
 :::
