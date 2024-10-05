@@ -1,0 +1,18 @@
+---
+title: Photos
+title-block-banner: "#733D6F"
+published-title:
+freeze: false
+engine: knitr 
+listing:
+  id: listing-gallery
+  template: ../html/gallery/gallery.ejs
+  contents:
+    - photos/*.*
+  sort-ui: false
+  filter-ui: false
+  categories: false
+---
+
+::: {#listing-gallery}
+:::
