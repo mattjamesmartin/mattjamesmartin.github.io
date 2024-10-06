@@ -1,5 +1,6 @@
 ---
 title: "Matthew Martin"
+pagetitle: "About | Matthew Martin"
 about:
   template: trestles
   image: imgs/headshot.jpg
