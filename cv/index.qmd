@@ -1,7 +1,7 @@
 ---
 title: Curriculum Vitae
 date: 10-02-2024
-title-block-banner: "#800020"
+title-block-banner: "#563C5C"
 published-title: CV last updated
 freeze: false
 engine: knitr 

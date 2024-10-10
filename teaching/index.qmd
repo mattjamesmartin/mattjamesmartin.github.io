@@ -5,7 +5,7 @@ listing:
     contents: courses.yml
     sort: "date desc"
     template: ../html/teaching/listing.ejs
-title-block-banner: "#4682B4"
+title-block-banner: "#4E6E5D"
 page-layout: full
 toc: true
 toc-location: right

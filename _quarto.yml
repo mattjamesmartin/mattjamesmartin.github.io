@@ -29,10 +29,10 @@ website:
         href: "research/index.qmd"
       - text: "Teaching"
         href: "teaching/index.qmd"
-      - text: "Blog"
-        href: "blog/index.qmd"
       - text: "CV"
         href: "cv/index.qmd"
+      - text: "Blog"
+        href: "blog/index.qmd"
       - text: "Photos"
         href: "gallery/index.qmd"
         
