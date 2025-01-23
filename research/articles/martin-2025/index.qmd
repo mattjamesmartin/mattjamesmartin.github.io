@@ -1,6 +1,6 @@
 ---
 title: "Elite Fractures, Public Capture: The Strategic Use of Public Consultation in Global Constitution-Making"
-date: 2025-03-20
+date: 2025-01-10
 author:
   - name: Matthew Martin
     url: https://mattjamesmartin.github.io/
@@ -12,17 +12,21 @@ categories:
   - Political elites
 pub-info:
   reference: >-
-    <strong>Matthew Martin</strong>. “Elite Fractures, Public Capture: The Strategic Use of Public Consultation in Global Constitution-Making,” <em>Journal of Law and Courts</em> (forthcoming). Job market paper.
+    <strong>Matthew Martin</strong>. “Elite Fractures, Public Capture: The Strategic Use of Public Consultation in Global Constitution-Making,” <em>Journal of Law and Courts</em>, 2025, 1-34. Job market paper.
   links:
-  - name: Pre-print
-    url: martin-2025.pdf
-    icon: fa-solid fa-file-pdf
+  - name: Final version
+    url: https://doi.org/10.1017/jlc.2024.9
+    icon: fa-solid fa-scroll
     local: true
   - name: Code/data
     url: "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PVTH3Z"
     icon: fa-solid fa-database
+  - name: Add to Zotero
+    url: https://www.zotero.org/save?type=doi&q=10.1017/jlc.2024.9
+    icon: ai ai-zotero
   extra: >-
     Presented at American Political Science Association (2024), Law and Society      Association (2024), and Northern Political Science Association (2023).
+doi: https://doi.org/10.1017/jlc.2024.9
 ---
 
 ## Abstract
