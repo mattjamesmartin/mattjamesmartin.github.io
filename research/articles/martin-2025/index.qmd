@@ -15,9 +15,8 @@ pub-info:
     <strong>Matthew Martin</strong>. “Elite Fractures, Public Capture: The Strategic Use of Public Consultation in Global Constitution-Making,” <em>Journal of Law and Courts</em>, 2025, 1-34. Job market paper.
   links:
   - name: Final version
-    url: https://www.cambridge.org/core/journals/journal-of-law-and-courts/article/elite-fractures-public-capture-the-strategic-use-of-public-consultation-in-global-constitutionmaking/A6BBCC7D2A7B5744D7766ABB4293595D
+    url: https://doi.org/10.1017/jlc.2024.9
     icon: fa-solid fa-scroll
-    local: true
   - name: Code/data
     url: "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PVTH3Z"
     icon: fa-solid fa-database
