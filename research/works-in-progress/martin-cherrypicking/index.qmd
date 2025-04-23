@@ -6,9 +6,11 @@ author:
     orcid: 0000-0003-3460-3603
     affiliation: Department of Government, University of Texas at Austin
 categories: 
+  - Chile
   - Constitutional design
-  - Public consultation 
+  - Cuba
   - Political elites
+  - Public consultation 
 pub-info:
   reference: >-
     <strong>Matthew Martin</strong>. “Constitutional Cherry-Picking: How Drafters Leverage Public Input in Constitution-Making.”
