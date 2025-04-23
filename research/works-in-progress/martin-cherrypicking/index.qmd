@@ -11,7 +11,7 @@ categories:
   - Political elites
 pub-info:
   reference: >-
-    <strong>Matthew Martin</strong>. “Constitutional Cherry-Picking:\\How Drafters Leverage Public Input in Constitution-Making.”
+    <strong>Matthew Martin</strong>. “Constitutional Cherry-Picking: How Drafters Leverage Public Input in Constitution-Making.”
   links:
   - name: Draft
     url: martin-cherrypicking.pdf
