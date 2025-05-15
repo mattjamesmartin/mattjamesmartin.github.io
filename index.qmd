@@ -8,9 +8,8 @@ about:
     - icon: envelope
       text: Email
       href: mailto:mjmartin@utexas.edu
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/MattJ_Martin
+    - text: "{{< iconify bi bluesky size=1em title='Bluesky' >}} Bluesky"
+      href: https://bsky.app/profile/mattjmartin.bsky.social
     - icon: github
       text: Github
       href: https://github.com/mattjamesmartin
