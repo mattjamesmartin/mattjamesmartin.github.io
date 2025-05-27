@@ -1,6 +1,6 @@
 ---
 title: "From Data to Demos: Public Consultation and the Logic of Will-Confirmation in Constitution-Making"
-date: 2025-05
+date: 2025-05-26
 author:
   - name: Matthew Martin
     url: https://mattjamesmartin.github.io/
