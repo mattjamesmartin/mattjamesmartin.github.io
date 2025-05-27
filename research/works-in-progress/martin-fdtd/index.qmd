@@ -1,0 +1,27 @@
+---
+title: "From Data to Demos: Public Consultation and the Logic of Will-Confirmation in Constitution-Making"
+date: 2025-05
+author:
+  - name: Matthew Martin
+    url: https://mattjamesmartin.github.io/
+    orcid: 0000-0003-3460-3603
+    affiliation: Department of Government, University of Texas at Austin
+categories: 
+  - Chile
+  - Constitutional design
+  - Cuba
+  - Political elites
+  - Public consultation 
+pub-info:
+  reference: >-
+    <strong>Matthew Martin</strong>. “From Data to Demos: Public Consultation and the Logic of Will-Confirmation in Constitution-Making.”
+  links:
+  - name: Draft
+    url: martin-fdtd.pdf
+    local: true
+    icon: fa-solid fa-file-pdf
+---
+
+## Abstract
+
+Constitutions are assumed to express the will of the people, yet are crafted by elites under institutional constraints and strategic incentives. This tension is especially evident during public consultation, where drafters must interpret noisy, contradictory input as a coherent public will. While research shows elites leverage public input to negotiate preferred outcomes, less is known about their behind-the-scenes interpretive processes. This paper introduces "will-confirmation"—a cognitive process whereby constitutional drafters interpret public input as aligning with their existing preferences. Drawing on elite interviews from Chile's 2021-22 Constitutional Convention and Cuba's 2018-19 Drafting Commission, I demonstrate how will-confirmation operates across regime types by reconciling citizen preferences with elite objectives. In Chile's pluralistic context, drafters selectively embraced input that resonated with their transformative vision, while in Cuba's controlled environment, curated feedback reinforced ideological continuity. In both cases, public input served as a symbolic resource to validate drafters' authority and their constitutional projects. {{< fa blank >}}
