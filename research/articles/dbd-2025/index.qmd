@@ -13,10 +13,10 @@ categories:
   - Reactive sequences
 pub-info:
   reference: >-
-    <strong>Matthew Martin</strong>. “Deportation by Design: How Political Entrepreneurs Engineered Crime-Based Deportation in the United States.” Revise and resubmit at <em>Polity</em>.
+    <strong>Matthew Martin</strong>. “Deportation by Design: How Political Entrepreneurs Engineered Crime-Based Deportation in the United States.” <em>Polity</em>, forthcoming.
   links:
-  - name: Draft
-    url: martin-deportation.pdf
+  - name: Pre-print
+    url: dbd-2025.pdf
     local: true
     icon: fa-solid fa-file-pdf
 ---
