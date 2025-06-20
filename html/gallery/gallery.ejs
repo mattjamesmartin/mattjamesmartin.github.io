@@ -24,9 +24,41 @@ img.grid-item:hover {
 ```
 
 ::: {.grid-gallery}
+<% 
+// Define captions for each directory
+const allCaptions = {
+  '/gallery/photos/Cuba': {
+    'contrasts_of_shade.jpg': 'My apartment in El Vedado',
+    'potted_cat.jpg': 'Street cat amidst decay'
+  },
+  '/gallery/photos/Panama': {
+    'mono.jpg': 'Monkey in the rainforest',
+    'gato.jpg': 'Cat lounging in Panama City',
+    'derechos.jpg': 'Rights mural'
+  }
+};
+
+// Function to get caption for an image
+function getCaption(imagePath) {
+  const photoDir = imagePath.substring(0, imagePath.lastIndexOf('/'));
+  const filename = imagePath.split('/').pop();
+  
+  const dirCaptions = allCaptions[photoDir];
+  return dirCaptions ? dirCaptions[filename] : null;
+}
+%>
+
 <% for (const item of items) { %>
 ::: {}
-![](<%= item.path %>){.grid-item .lightbox loading="lazy" group="quarto-grid-gallery"}
+<div class="grid-item-container">
+  ![](<%= item.path %>){.grid-item .lightbox loading="lazy" group="quarto-grid-gallery"}
+  <% 
+  const caption = getCaption(item.path);
+  %>
+  <% if (caption) { %>
+  <div class="caption"><%= caption %></div>
+  <% } %>
+</div>
 :::
 <% } %>
 :::

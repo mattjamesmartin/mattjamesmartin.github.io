@@ -675,3 +675,44 @@ pre.text, pre.sourceCode, .cell-output pre {
         left: 0;
     }
 }
+
+// Gallery captions
+.grid-item-container {
+    display: inline-block;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.25s ease-in-out;
+    vertical-align: top; // Prevent baseline spacing
+}
+
+.grid-item-container img.grid-item {
+    display: block; // Removes any inline spacing
+    margin: 0 !important; // Force override any existing margin
+    padding: 0 !important; // Force override any existing padding
+    vertical-align: top; // Remove baseline gap
+}
+
+.grid-item-container p {
+    margin: 0 !important; // Remove paragraph margins that might be wrapping the image
+    padding: 0 !important;
+}
+
+.caption {
+    background: rgba($slategray, 0.9); // Using your theme's gray-800 with high opacity
+    color: $white;
+    padding: 0;
+    font-size: 0.85em;
+    font-family: $font-family-sans-serif;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.25s ease-in-out;
+    margin: 0 !important; // Force no margin
+    line-height: 1.2;
+}
+
+.grid-item-container:hover .caption {
+    max-height: 50px;
+    padding: 8px;
+}

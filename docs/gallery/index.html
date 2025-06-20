@@ -230,8 +230,8 @@ window.Quarto = {
 <span class="menu-text"><iconify-icon inline="" icon="bi:github" style="font-size: 1.1em;" aria-label="Icon github from bi Iconify.design set." title="GitHub"></iconify-icon></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://twitter.com/MattJ_Martin"> 
-<span class="menu-text"><iconify-icon inline="" icon="bi:twitter" style="font-size: 1em;" aria-label="Icon twitter from bi Iconify.design set." title="Twitter"></iconify-icon></span></a>
+    <a class="nav-link" href="https://bsky.app/profile/mattjmartin.bsky.social"> 
+<span class="menu-text"><iconify-icon inline="" icon="bi:bluesky" style="font-size: 1em;" aria-label="Icon bluesky from bi Iconify.design set." title="Bluesky"></iconify-icon></span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://www.linkedin.com/in/mattj-martin/" rel="me"> 
@@ -303,10 +303,20 @@ img.grid-item:hover {
 </style>
 <div class="grid-gallery">
 <div>
+<div class="grid-item-container">
 <p><a href="../gallery/photos/Cuba/contrasts_of_shade.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="../gallery/photos/Cuba/contrasts_of_shade.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+<div class="caption">
+My apartment in El Vedado
+</div>
+</div>
 </div>
 <div>
+<div class="grid-item-container">
 <p><a href="../gallery/photos/Cuba/potted_cat.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="../gallery/photos/Cuba/potted_cat.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+<div class="caption">
+Street cat amidst decay
+</div>
+</div>
 </div>
 </div>
 <div class="listing-no-matching d-none">
@@ -341,13 +351,28 @@ img.grid-item:hover {
 </style>
 <div class="grid-gallery">
 <div>
-<p><a href="../gallery/photos/Panama/IMG_5491.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="../gallery/photos/Panama/IMG_5491.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+<div class="grid-item-container">
+<p><a href="../gallery/photos/Panama/derechos.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="../gallery/photos/Panama/derechos.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+<div class="caption">
+Rights mural
+</div>
+</div>
 </div>
 <div>
-<p><a href="../gallery/photos/Panama/IMG_8560.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="../gallery/photos/Panama/IMG_8560.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+<div class="grid-item-container">
+<p><a href="../gallery/photos/Panama/gato.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="../gallery/photos/Panama/gato.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+<div class="caption">
+Cat lounging in Panama City
+</div>
+</div>
 </div>
 <div>
-<p><a href="../gallery/photos/Panama/IMG_8710.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="../gallery/photos/Panama/IMG_8710.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+<div class="grid-item-container">
+<p><a href="../gallery/photos/Panama/mono.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="../gallery/photos/Panama/mono.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+<div class="caption">
+Monkey in the rainforest
+</div>
+</div>
 </div>
 </div>
 <div class="listing-no-matching d-none">
@@ -794,7 +819,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","loop":false,"closeEffect":"zoom","descPosition":"bottom","selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","selector":".lightbox","openEffect":"zoom","loop":false});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {
