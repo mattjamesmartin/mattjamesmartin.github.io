@@ -717,17 +717,22 @@ pre.text, pre.sourceCode, .cell-output pre {
     padding: 8px;
 }
 
-// Target the about-image class specifically
+// Headshot mobile
 .about-image.rounded {
+    // Add vertical spacing above the image on all screen sizes
+    margin-top: 2rem !important;
+    
     // Mobile phones (up to 576px)
     @media (max-width: map-get($grid-breakpoints, sm)) {
         width: 60% !important;
         max-width: 60% !important;
+        margin-top: 1.5rem !important; // Slightly less spacing on mobile
     }
     
     // Small tablets and large phones (up to 768px)
     @media (max-width: map-get($grid-breakpoints, md)) {
         width: 70% !important;
         max-width: 70% !important;
+        margin-top: 1.75rem !important;
     }
 }
