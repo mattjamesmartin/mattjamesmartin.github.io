@@ -717,8 +717,10 @@ pre.text, pre.sourceCode, .cell-output pre {
     padding: 8px;
 }
 
-// Target the about-image class specifically
 .about-image.rounded {
+    // Ensure rounded corners are preserved
+    border-radius: 0.375rem !important; // Bootstrap's default rounded value
+    
     // Mobile phones (up to 576px)
     @media (max-width: map-get($grid-breakpoints, sm)) {
         width: 60% !important;
