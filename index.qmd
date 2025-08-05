@@ -13,8 +13,17 @@ about:
     - icon: github
       text: Github
       href: https://github.com/mattjamesmartin
-html:
-  page-layout: full
+format:
+  html:
+    page-layout: full
+    css: |
+      @media (max-width: 768px) {
+        .about-image img {
+          max-width: 200px !important;
+          width: auto !important;
+          height: auto !important;
+        }
+      }
 ---
 
 My name is Matthew Martin (he/him), and I am completing my PhD in the [Department of Government](https://liberalarts.utexas.edu/government/gradstudents/mjm7865) at the University of Texas at Austin in June 2025. I specialize in public law and comparative politics, with substantive research interests including Latin American politics, indigenous constitutionalism, and immigration politics. I am on the 2025-26 job market.

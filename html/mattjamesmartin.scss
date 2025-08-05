@@ -94,21 +94,6 @@ $footer-fg: $white !default;
 
 /*-- scss:rules --*/
 
-// Even broader approach if the above doesn't work
-img[src*="headshot"] {
-    max-width: 100%;
-    height: auto;
-    
-    @media (max-width: map-get($grid-breakpoints, md)) {
-        max-width: 250px;
-        width: 100%;
-    }
-    
-    @media (max-width: map-get($grid-breakpoints, sm)) {
-        max-width: 200px;
-    }
-}
-
 $web-font-path: "https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;700;900&family=Roboto:wght@400;700&display=swap" !default;
 
 
