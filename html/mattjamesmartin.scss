@@ -716,12 +716,3 @@ pre.text, pre.sourceCode, .cell-output pre {
     max-height: 50px;
     padding: 8px;
 }
-
-// Mobile image sizing for about page
-@media (max-width: 768px) {
-    .about-image img {
-        max-width: 200px !important;
-        width: 200px !important;
-        height: auto !important;
-    }
-}
