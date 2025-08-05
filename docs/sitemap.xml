@@ -1,160 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mattjamesmartin.github.io/index.html</loc>
-    <lastmod>2025-08-05T18:41:07.113Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/blog.html</loc>
-    <lastmod>2024-09-07T15:30:02.007Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/research.html</loc>
-    <lastmod>2024-09-07T15:33:48.922Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/teaching.html</loc>
-    <lastmod>2024-09-07T15:33:53.650Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/cv.html</loc>
-    <lastmod>2024-08-28T18:52:18.014Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/posts/blog3.html</loc>
-    <lastmod>2024-08-26T17:49:20.801Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/posts/blog2.html</loc>
-    <lastmod>2024-08-26T17:37:35.784Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/posts/blog1.html</loc>
-    <lastmod>2024-08-26T17:37:38.094Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/posts/ReimaginingPatriotism.html</loc>
-    <lastmod>2024-08-26T17:42:55.228Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/posts/reimaginingpatriotism.html</loc>
-    <lastmod>2024-08-26T18:07:52.124Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/posts/reimagining_patriotism.html</loc>
-    <lastmod>2024-08-26T18:15:38.542Z</lastmod>
-  </url>
-  <url>
     <loc>https://mattjamesmartin.github.io/cv/index.html</loc>
     <lastmod>2025-06-20T18:15:15.408Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/blog/index.html</loc>
-    <lastmod>2024-10-05T18:47:18.913Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/blog/posts/blog2.html</loc>
-    <lastmod>2024-09-08T16:06:48.537Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/research/index.html</loc>
-    <lastmod>2025-05-27T19:22:18.428Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/blog/posts/reimagining_patriotism.html</loc>
-    <lastmod>2024-09-09T23:41:00.502Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/blog/posts/blog1.html</loc>
-    <lastmod>2024-09-08T16:06:48.966Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/teaching/index.html</loc>
-    <lastmod>2024-10-10T04:02:17.811Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.com/cv/index.html</loc>
-    <lastmod>2024-09-08T16:16:00.917Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.com/index.html</loc>
-    <lastmod>2024-09-08T16:16:07.091Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/research/articles/cruz-et-al-2023/cruz-et-al-2023.html</loc>
-    <lastmod>2024-09-08T17:23:34.635Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/research/articles/cruz-et-al-2023/index.html</loc>
-    <lastmod>2024-09-09T23:34:26.747Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/research/articles/chaudhry-heiss-ngos-repression/index.html</loc>
-    <lastmod>2024-09-09T23:11:25.375Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/research/works-in-progress/cruz-et-al-tracing/index.html</loc>
-    <lastmod>2024-09-09T23:37:43.854Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/research/works-in-progress/gardner-expanding/index.html</loc>
-    <lastmod>2025-05-27T19:19:48.203Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/research/works-in-progress/martin-deportation/index.html</loc>
-    <lastmod>2025-05-27T19:23:14.644Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/research/articles/martin-2025/index.html</loc>
-    <lastmod>2025-04-23T23:00:11.498Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/teaching/courses/gov357l/index.html</loc>
-    <lastmod>2024-09-10T05:53:50.729Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/teaching/courses/methods-camp/index.html</loc>
-    <lastmod>2024-09-10T05:53:54.251Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/teaching/course/gov357L/index.html</loc>
-    <lastmod>2024-09-10T19:05:33.776Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/teaching/course/method-scamp/index.html</loc>
-    <lastmod>2024-09-10T06:10:04.033Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/teaching/course/methods-camp/index.html</loc>
-    <lastmod>2024-09-10T18:25:36.764Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/blog/2021/blog1.html</loc>
-    <lastmod>2024-10-02T05:09:41.144Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/blog/2024/reimagining_patriotism.html</loc>
-    <lastmod>2024-10-02T04:40:13.634Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/blog/2023/blog2.html</loc>
-    <lastmod>2024-10-02T04:53:46.351Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/blog/2024/index.html</loc>
-    <lastmod>2025-05-15T04:23:23.423Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattjamesmartin.github.io/blog/2023/index.html</loc>
-    <lastmod>2024-10-02T05:12:28.977Z</lastmod>
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/blog/2021/index.html</loc>
     <lastmod>2024-10-02T05:04:15.102Z</lastmod>
   </url>
   <url>
-    <loc>https://mattjamesmartin.github.io/gallery/index.html</loc>
-    <lastmod>2024-10-10T04:16:29.082Z</lastmod>
+    <loc>https://mattjamesmartin.github.io/blog/2023/index.html</loc>
+    <lastmod>2024-10-02T05:12:28.977Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/index.html</loc>
+    <lastmod>2025-08-05T18:41:07.113Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/research/index.html</loc>
+    <lastmod>2025-05-27T19:22:18.428Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/research/articles/cruz-et-al-2023/index.html</loc>
+    <lastmod>2024-09-09T23:34:25.982Z</lastmod>
   </url>
   <url>
     <loc>https://mattjamesmartin.github.io/research/works-in-progress/martin-cherrypicking/index.html</loc>
@@ -165,7 +33,31 @@
     <lastmod>2025-05-27T19:02:19.959Z</lastmod>
   </url>
   <url>
+    <loc>https://mattjamesmartin.github.io/research/works-in-progress/gardner-expanding/index.html</loc>
+    <lastmod>2025-05-27T19:19:48.203Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/research/articles/martin-2025/index.html</loc>
+    <lastmod>2025-04-23T23:00:11.498Z</lastmod>
+  </url>
+  <url>
     <loc>https://mattjamesmartin.github.io/research/articles/dbd-2025/index.html</loc>
     <lastmod>2025-06-20T16:51:29.694Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/gallery/index.html</loc>
+    <lastmod>2024-10-10T04:16:29.082Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/blog/2024/index.html</loc>
+    <lastmod>2025-05-15T04:23:23.423Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/blog/index.html</loc>
+    <lastmod>2024-10-05T18:47:18.913Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattjamesmartin.github.io/teaching/index.html</loc>
+    <lastmod>2024-10-10T04:02:17.811Z</lastmod>
   </url>
 </urlset>

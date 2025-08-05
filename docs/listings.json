@@ -1,21 +1,5 @@
 [
   {
-    "listing": "/blog.html",
-    "items": [
-      "/posts/reimagining_patriotism.html",
-      "/posts/blog2.html",
-      "/posts/blog1.html"
-    ]
-  },
-  {
-    "listing": "/blog/index.html",
-    "items": [
-      "/blog/2024/index.html",
-      "/blog/2023/index.html",
-      "/blog/2021/index.html"
-    ]
-  },
-  {
     "listing": "/research/index.html",
     "items": [
       "/research/articles/dbd-2025/index.html",
@@ -27,11 +11,19 @@
     ]
   },
   {
-    "listing": "/teaching/index.html",
+    "listing": "/gallery/index.html",
     "items": []
   },
   {
-    "listing": "/gallery/index.html",
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/2024/index.html",
+      "/blog/2023/index.html",
+      "/blog/2021/index.html"
+    ]
+  },
+  {
+    "listing": "/teaching/index.html",
     "items": []
   }
 ]
