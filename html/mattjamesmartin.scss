@@ -94,26 +94,18 @@ $footer-fg: $white !default;
 
 /*-- scss:rules --*/
 
-// About page photo responsive sizing for Quarto trestles template
-.about-entity {
-    .entity-contents {
-        .about-image {
-            img {
-                max-width: 100%;
-                height: auto;
-                
-                // On mobile devices, limit the photo size
-                @media (max-width: map-get($grid-breakpoints, md)) {
-                    max-width: 250px; // Adjust this value as needed
-                    width: 100%;
-                }
-                
-                // On very small screens, make it even smaller
-                @media (max-width: map-get($grid-breakpoints, sm)) {
-                    max-width: 200px;
-                }
-            }
-        }
+// Even broader approach if the above doesn't work
+img[src*="headshot"] {
+    max-width: 100%;
+    height: auto;
+    
+    @media (max-width: map-get($grid-breakpoints, md)) {
+        max-width: 250px;
+        width: 100%;
+    }
+    
+    @media (max-width: map-get($grid-breakpoints, sm)) {
+        max-width: 200px;
     }
 }
 
