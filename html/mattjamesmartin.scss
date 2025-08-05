@@ -716,3 +716,34 @@ pre.text, pre.sourceCode, .cell-output pre {
     max-height: 50px;
     padding: 8px;
 }
+
+// About page responsive headshot
+.about-contents {
+    .about-image {
+        img {
+            // Default size for larger screens
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    
+    // Mobile devices (phones)
+    @media (max-width: map-get($grid-breakpoints, sm)) {
+        .about-image {
+            img {
+                max-width: 60%; // Reduce to 60% of container width
+                height: auto;
+            }
+        }
+    }
+    
+    // Small tablets and large phones
+    @media (max-width: map-get($grid-breakpoints, md)) {
+        .about-image {
+            img {
+                max-width: 70%; // Reduce to 70% of container width
+                height: auto;
+            }
+        }
+    }
+}
