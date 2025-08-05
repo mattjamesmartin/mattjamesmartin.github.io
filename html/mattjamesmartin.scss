@@ -94,6 +94,29 @@ $footer-fg: $white !default;
 
 /*-- scss:rules --*/
 
+// About page photo responsive sizing for Quarto trestles template
+.about-entity {
+    .entity-contents {
+        .about-image {
+            img {
+                max-width: 100%;
+                height: auto;
+                
+                // On mobile devices, limit the photo size
+                @media (max-width: map-get($grid-breakpoints, md)) {
+                    max-width: 250px; // Adjust this value as needed
+                    width: 100%;
+                }
+                
+                // On very small screens, make it even smaller
+                @media (max-width: map-get($grid-breakpoints, sm)) {
+                    max-width: 200px;
+                }
+            }
+        }
+    }
+}
+
 $web-font-path: "https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;700;900&family=Roboto:wght@400;700&display=swap" !default;
 
 
