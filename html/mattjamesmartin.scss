@@ -721,8 +721,8 @@ pre.text, pre.sourceCode, .cell-output pre {
 .about-image.rounded {
     // Mobile phones (up to 576px)
     @media (max-width: map-get($grid-breakpoints, sm)) {
-        width: 60% !important;
-        max-width: 60% !important;
+        width: 75% !important;
+        max-width: 75% !important;
         border-radius: 0.375rem !important;
         overflow: hidden !important;
         margin-top: 1.5rem !important; // Add white space above on mobile
@@ -730,8 +730,8 @@ pre.text, pre.sourceCode, .cell-output pre {
     
     // Small tablets and large phones (up to 768px)
     @media (max-width: map-get($grid-breakpoints, md)) {
-        width: 70% !important;
-        max-width: 70% !important;
+        width: 75% !important;
+        max-width: 75% !important;
         border-radius: 0.375rem !important;
         overflow: hidden !important;
         margin-top: 1rem !important; // Add white space above on tablets
