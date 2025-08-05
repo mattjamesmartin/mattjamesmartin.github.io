@@ -736,20 +736,3 @@ pre.text, pre.sourceCode, .cell-output pre {
     }
 }
 
-// Additional mobile-specific targeting
-@media (max-width: 576px) {
-    .about-entity {
-        margin-top: 1.5rem !important;
-        padding-top: 1rem !important;
-    }
-    
-    .about-image.rounded {
-        margin-top: 1rem !important;
-        padding-top: 0.5rem !important;
-    }
-    
-    // Target the entire about container on mobile
-    .quarto-about-trestles {
-        padding-top: 1rem !important;
-    }
-}
