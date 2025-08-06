@@ -13,8 +13,13 @@ about:
     - icon: github
       text: Github
       href: https://github.com/mattjamesmartin
-html:
-  page-layout: full
+format:
+  html:
+    page-layout: full
+    open-graph:
+      image: "imgs/headshot-social.jpg"
+    twitter-card:
+      image: "imgs/headshot-social.jpg"
 ---
 
 My name is Matt Martin (he/him), and I am a postdoctoral researcher funded by the University of Texas at Austin and the University of Chicago Law School, specializing in public law and comparative politics. I recently completed my PhD in the Department of Government at UT Austin in June 2025. My substantive research interests include Latin American politics, indigenous constitutionalism, and immigration politics. I am on the 2025-26 job market.
