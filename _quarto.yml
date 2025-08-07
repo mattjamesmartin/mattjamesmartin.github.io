@@ -42,7 +42,7 @@ website:
       - text: "{{< iconify bi github size=1.1em title='GitHub' >}}"
         href: https://github.com/mattjamesmartin
       - text: "{{< iconify bi bluesky size=1em title='Bluesky' >}}"
-        href: https://bsky.app/profile/mattjmartin.bsky.social
+        href: https://bsky.app/profile/mattjmartin.com
       - text: "{{< iconify bi linkedin size=1.1em title='LinkedIn' >}}"
         href: https://www.linkedin.com/in/mattj-martin/
         rel: me
