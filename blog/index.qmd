@@ -3,6 +3,11 @@ title: "Blog"
 author: ""
 description: "Matthew Martin's blog"
 listing:
+  - id: posts_2025
+    contents: "2025/**/index.qmd"
+    sort: "date desc"
+    template: ../html/blog/listing.ejs
+    categories: true
   - id: posts_2024
     contents: "2024/**/index.qmd"
     sort: "date desc"
@@ -31,6 +36,11 @@ freeze: false
     display: none;
 }
 ```
+
+## 2025
+
+::: {#posts_2025}
+:::
 
 ## 2024
 

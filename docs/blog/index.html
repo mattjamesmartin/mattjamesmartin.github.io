@@ -69,6 +69,34 @@ ul.task-list li input[type="checkbox"] {
 }</script><script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-posts_2025 .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-project','listing-pagetitle','listing-author-meta','listing-website','listing-format','listing-editor','listing-_quarto-vars','listing-language','listing-date-format','listing-title-block-banner','listing-toc','listing-toc-title','listing-toc-location','listing-freeze','listing-execute','listing-author','listing-title','listing-description','listing-image','listing-date','listing-categories','listing-code-tools','listing-path','listing-outputHref','listing-date-modified','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-pagetitle","listing-author-meta","listing-website","listing-format","listing-editor","listing-_quarto-vars","listing-language","listing-date-format","listing-title-block-banner","listing-toc","listing-toc-title","listing-toc-location","listing-freeze","listing-execute","listing-author","listing-title","listing-description","listing-image","listing-date","listing-categories","listing-code-tools","listing-path","listing-outputHref","listing-date-modified","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-posts_2025'] = new List('listing-posts_2025', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-posts_2024 .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -243,7 +271,7 @@ window.Quarto = {
 <span class="menu-text"><iconify-icon inline="" icon="bi:github" style="font-size: 1.1em;" aria-label="Icon github from bi Iconify.design set." title="GitHub"></iconify-icon></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://bsky.app/profile/mattjmartin.bsky.social"> 
+    <a class="nav-link" href="https://bsky.app/profile/mattjmartin.com"> 
 <span class="menu-text"><iconify-icon inline="" icon="bi:bluesky" style="font-size: 1em;" aria-label="Icon bluesky from bi Iconify.design set." title="Bluesky"></iconify-icon></span></a>
   </li>  
   <li class="nav-item">
@@ -286,11 +314,12 @@ window.Quarto = {
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Year</h2>
    
   <ul>
-<li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">2024</a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2023</a></li>
-  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2021</a></li>
+<li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">2025</a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2024</a></li>
+  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2023</a></li>
+  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">2021</a></li>
   </ul></nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="abolition">abolition <span class="quarto-category-count">(1)</span></div><div class="category" data-category="courts">courts <span class="quarto-category-count">(1)</span></div><div class="category" data-category="electoralism">electoralism <span class="quarto-category-count">(1)</span></div><div class="category" data-category="immigration">immigration <span class="quarto-category-count">(1)</span></div><div class="category" data-category="patriotism">patriotism <span class="quarto-category-count">(1)</span></div><div class="category" data-category="perfectionism">perfectionism <span class="quarto-category-count">(1)</span></div><div class="category" data-category="writing">writing <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="abolition">abolition <span class="quarto-category-count">(1)</span></div><div class="category" data-category="courts">courts <span class="quarto-category-count">(1)</span></div><div class="category" data-category="electoralism">electoralism <span class="quarto-category-count">(1)</span></div><div class="category" data-category="immigration">immigration <span class="quarto-category-count">(1)</span></div><div class="category" data-category="patriotism">patriotism <span class="quarto-category-count">(1)</span></div><div class="category" data-category="perfectionism">perfectionism <span class="quarto-category-count">(1)</span></div><div class="category" data-category="writing">writing <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content"><div class="cell">
 <style type="text/css">
@@ -299,11 +328,48 @@ window.Quarto = {
 }
 </style>
 </div>
-<section id="section" class="level2"><h2 class="anchored" data-anchor-id="section">2024</h2>
+<section id="section" class="level2"><h2 class="anchored" data-anchor-id="section">2025</h2>
+<div id="listing-posts_2025" class="quarto-listing quarto-listing-container-custom">
+<div class="list blog">
+    
+    <div class="blog-entry" data-index="0" data-categories="writing" data-listing-date-sort="1756364400000" data-listing-file-modified-sort="1756401766992" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="258">
+        <div class="metadata">          
+            <p class="date listing-date">August 28, 2025</p>
+        </div>
+        <div class="body">
+            <p class="title listing-title"><a href="../blog/2025/index.html">Writing with OCD</a></p>
+
+            
+            <div class="post-categories listing-categories">
+                
+                <div class="post-category listing-category" onclick="window.quartoListingCategory('writing'); return false;">
+                    writing
+                </div>
+                
+            </div>
+            
+
+            <p class="description listing-description">When every word, space, and letter becomes a battleground</p>
+            
+            
+        </div>
+        
+        <div class="thumbnail">
+            <img src="../blog/2025/Gettysburg.jpg" alt="Writing with OCD" title="Writing with OCD">
+</div>
+        
+    </div>
+    
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section><section id="section-1" class="level2"><h2 class="anchored" data-anchor-id="section-1">2024</h2>
 <div id="listing-posts_2024" class="quarto-listing quarto-listing-container-custom">
 <div class="list blog">
     
-    <div class="blog-entry" data-index="0" data-categories="patriotism,electoralism" data-listing-date-sort="1724396400000" data-listing-file-modified-sort="1747283003423" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="622">
+    <div class="blog-entry" data-index="0" data-categories="patriotism,electoralism" data-listing-date-sort="1724396400000" data-listing-file-modified-sort="1750456465000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="622">
         <div class="metadata">          
             <p class="date listing-date">August 23, 2024</p>
         </div>
@@ -340,11 +406,11 @@ window.Quarto = {
 No matching items
 </div>
 </div>
-</section><section id="section-1" class="level2"><h2 class="anchored" data-anchor-id="section-1">2023</h2>
+</section><section id="section-2" class="level2"><h2 class="anchored" data-anchor-id="section-2">2023</h2>
 <div id="listing-posts_2023" class="quarto-listing quarto-listing-container-custom">
 <div class="list blog">
     
-    <div class="blog-entry" data-index="0" data-categories="writing,perfectionism" data-listing-date-sort="1673942400000" data-listing-file-modified-sort="1727845948977" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2425">
+    <div class="blog-entry" data-index="0" data-categories="writing,perfectionism" data-listing-date-sort="1673942400000" data-listing-file-modified-sort="1750456465000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2425">
         <div class="metadata">          
             <p class="date listing-date">January 17, 2023</p>
         </div>
@@ -381,11 +447,11 @@ No matching items
 No matching items
 </div>
 </div>
-</section><section id="section-2" class="level2"><h2 class="anchored" data-anchor-id="section-2">2021</h2>
+</section><section id="section-3" class="level2"><h2 class="anchored" data-anchor-id="section-3">2021</h2>
 <div id="listing-posts_2021" class="quarto-listing quarto-listing-container-custom">
 <div class="list blog">
     
-    <div class="blog-entry" data-index="0" data-categories="immigration,courts,abolition" data-listing-date-sort="1626505200000" data-listing-file-modified-sort="1727845455102" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="920">
+    <div class="blog-entry" data-index="0" data-categories="immigration,courts,abolition" data-listing-date-sort="1626505200000" data-listing-file-modified-sort="1750456465000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="920">
         <div class="metadata">          
             <p class="date listing-date">July 17, 2021</p>
         </div>
