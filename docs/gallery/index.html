@@ -44,9 +44,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script src="../site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script>
-<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -230,7 +227,7 @@ window.Quarto = {
 <span class="menu-text"><iconify-icon inline="" icon="bi:github" style="font-size: 1.1em;" aria-label="Icon github from bi Iconify.design set." title="GitHub"></iconify-icon></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://bsky.app/profile/mattjmartin.bsky.social"> 
+    <a class="nav-link" href="https://bsky.app/profile/mattjmartin.com"> 
 <span class="menu-text"><iconify-icon inline="" icon="bi:bluesky" style="font-size: 1em;" aria-label="Icon bluesky from bi Iconify.design set." title="Bluesky"></iconify-icon></span></a>
   </li>  
   <li class="nav-item">
@@ -279,46 +276,409 @@ window.Quarto = {
 <section id="cuba" class="level2">
 <h2 class="anchored" data-anchor-id="cuba">Cuba</h2>
 <div id="listing-Cuba" class="quarto-listing quarto-listing-container-custom">
-<style type="text/css">
-.grid-gallery {
-  columns: 5 200px;
-  column-gap: 0.5rem;
-  width: 90%;
-  margin: 0 auto;
+
+<style>
+.photo-carousel-travel-1757898073663-415 {
+  position: relative;
+  max-width: 800px;
+  margin: 2rem auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
 }
-.grid-item {
-  width: 150px;
-  margin: 0 0.5rem 0.5rem 0;
-  display: inline-block;
+
+.carousel-container-travel-1757898073663-415 {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.carousel-slides-travel-1757898073663-415 {
+  display: flex;
+  height: 100%;
+  transition: transform 0.4s ease;
+}
+
+.slide-item-travel-1757898073663-415 {
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-item-travel-1757898073663-415::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(15px);
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.slide-main-image-travel-1757898073663-415 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  z-index: 2;
+}
+
+.hover-caption-travel-1757898073663-415 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: white;
+  padding: 2rem 1rem 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 1rem;
+  z-index: 3;
+}
+
+.slide-item-travel-1757898073663-415:hover .hover-caption-travel-1757898073663-415 {
+  opacity: 1;
+}
+
+.nav-button-travel-1757898073663-415 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.2);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 10;
+  transition: all 0.3s ease;
+  color: rgba(0,0,0,0.5);
+}
+
+.nav-button-travel-1757898073663-415:hover {
+  background: rgba(255,255,255,0.5);
+  color: rgba(0,0,0,0.8);
+}
+
+.nav-prev-travel-1757898073663-415 {
+  left: 15px;
+}
+
+.nav-next-travel-1757898073663-415 {
+  right: 15px;
+}
+
+.indicator-dots-travel-1757898073663-415 {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.dot-travel-1757898073663-415 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot-travel-1757898073663-415.active {
+  background: rgba(255,255,255,0.6);
+  transform: scale(1.2);
+}
+
+.dot-travel-1757898073663-415:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+/* Full size modal */
+.fullsize-modal-travel-1757898073663-415 {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  padding: 80px 60px 40px;
+  box-sizing: border-box;
+}
+
+.fullsize-modal-travel-1757898073663-415.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modal-image-travel-1757898073663-415 {
+  max-width: calc(100% - 140px);
+  max-height: calc(100% - 120px);
+  object-fit: contain;
   border-radius: 5px;
 }
-img.grid-item {
-  width: 100%;
-  transition: all .25s ease-in-out;
+
+.modal-text-travel-1757898073663-415 {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0;
+  max-width: 80%;
 }
-img.grid-item:hover {
-  transform: scale(1.025);
+
+.close-modal-travel-1757898073663-415 {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: rgba(255,255,255,0.4);
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+  transition: color 0.3s ease;
+}
+
+.close-modal-travel-1757898073663-415:hover {
+  color: rgba(255,255,255,0.8);
+}
+
+.modal-nav-travel-1757898073663-415 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255,255,255,0.2);
+  font-size: 60px;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s ease;
+  z-index: 1001;
+  padding: 20px;
+}
+
+.modal-nav-travel-1757898073663-415:hover {
+  color: rgba(255,255,255,0.6);
+}
+
+.modal-prev-travel-1757898073663-415 {
+  left: 20px;
+}
+
+.modal-next-travel-1757898073663-415 {
+  right: 20px;
+}
+
+@media (max-width: 768px) {
+  .fullsize-modal-travel-1757898073663-415 {
+    padding: 60px 20px 20px;
+  }
+  
+  .modal-image-travel-1757898073663-415 {
+    max-width: calc(100% - 80px);
+  }
+  
+  .modal-nav-travel-1757898073663-415 {
+    font-size: 40px;
+    padding: 10px;
+  }
+  
+  .close-modal-travel-1757898073663-415 {
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+  }
 }
 </style>
-<div class="grid-gallery">
-<div>
-<div class="grid-item-container">
-<p><a href="../gallery/photos/Cuba/contrasts_of_shade.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="../gallery/photos/Cuba/contrasts_of_shade.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
-<div class="caption">
-My apartment in El Vedado
+
+<div class="photo-carousel-travel-1757898073663-415">
+  <div class="carousel-container-travel-1757898073663-415">
+    <div class="carousel-slides-travel-1757898073663-415" id="slides-travel-1757898073663-415">
+      
+        <div class="slide-item-travel-1757898073663-415" style="background-image: url('/gallery/photos/Cuba/contrasts_of_shade.jpg')" onclick="openFullsize('travel-1757898073663-415', 0)">
+          <img src="../gallery/photos/Cuba/contrasts_of_shade.jpg" alt="Travel photo" class="slide-main-image-travel-1757898073663-415">
+          
+          
+            <div class="hover-caption-travel-1757898073663-415">El Vedado, Havana, July 2023</div>
+          
+        </div>
+      
+        <div class="slide-item-travel-1757898073663-415" style="background-image: url('/gallery/photos/Cuba/potted_cat.jpg')" onclick="openFullsize('travel-1757898073663-415', 1)">
+          <img src="../gallery/photos/Cuba/potted_cat.jpg" alt="Travel photo" class="slide-main-image-travel-1757898073663-415">
+          
+          
+            <div class="hover-caption-travel-1757898073663-415">El Vedado, Havana, July 2023</div>
+          
+        </div>
+      
+    </div>
+    
+    
+      <button class="nav-button-travel-1757898073663-415 nav-prev-travel-1757898073663-415" onclick="slideCarousel('travel-1757898073663-415', -1)">‹</button>
+      <button class="nav-button-travel-1757898073663-415 nav-next-travel-1757898073663-415" onclick="slideCarousel('travel-1757898073663-415', 1)">›</button>
+      
+      <div class="indicator-dots-travel-1757898073663-415" id="indicators-travel-1757898073663-415">
+        
+          <span class="dot-travel-1757898073663-415 active" onclick="jumpToSlide('travel-1757898073663-415', 0)"></span>
+        
+          <span class="dot-travel-1757898073663-415 " onclick="jumpToSlide('travel-1757898073663-415', 1)"></span>
+        
+      </div>
+    
+  </div>
 </div>
+
+<!-- Full size modal -->
+<div id="fullModal-travel-1757898073663-415" class="fullsize-modal-travel-1757898073663-415">
+  <span class="close-modal-travel-1757898073663-415" onclick="closeFullsize('travel-1757898073663-415')">×</span>
+  
+    <div class="modal-nav-travel-1757898073663-415 modal-prev-travel-1757898073663-415" onclick="navigateModal('travel-1757898073663-415', -1)">‹</div>
+    <div class="modal-nav-travel-1757898073663-415 modal-next-travel-1757898073663-415" onclick="navigateModal('travel-1757898073663-415', 1)">›</div>
+  
+  <img id="fullImage-travel-1757898073663-415" class="modal-image-travel-1757898073663-415">
+  <div id="fullCaption-travel-1757898073663-415" class="modal-text-travel-1757898073663-415"></div>
 </div>
-</div>
-<div>
-<div class="grid-item-container">
-<p><a href="../gallery/photos/Cuba/potted_cat.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="../gallery/photos/Cuba/potted_cat.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
-<div class="caption">
-Street cat amidst decay
-</div>
-</div>
-</div>
-</div>
+
+<script>
+if (!window.photoGalleries) window.photoGalleries = {};
+
+window.photoGalleries['travel-1757898073663-415'] = {
+  current: 0,
+  modalCurrent: 0,
+  total: 2,
+  photos: [
+    
+      {
+        src: '/gallery/photos/Cuba/contrasts_of_shade.jpg',
+        caption: 'El Vedado, Havana, July 2023'
+      },
+    
+      {
+        src: '/gallery/photos/Cuba/potted_cat.jpg',
+        caption: 'El Vedado, Havana, July 2023'
+      }
+    
+  ]
+};
+
+function slideCarousel(id, direction) {
+  const gallery = window.photoGalleries[id];
+  const slides = document.getElementById('slides-' + id);
+  const dots = document.querySelectorAll('#indicators-' + id + ' .dot-' + id);
+  
+  gallery.current += direction;
+  
+  if (gallery.current >= gallery.total) gallery.current = 0;
+  if (gallery.current < 0) gallery.current = gallery.total - 1;
+  
+  slides.style.transform = 'translateX(-' + (gallery.current * 100) + '%)';
+  
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('active', index === gallery.current);
+  });
+}
+
+function jumpToSlide(id, index) {
+  const gallery = window.photoGalleries[id];
+  const slides = document.getElementById('slides-' + id);
+  const dots = document.querySelectorAll('#indicators-' + id + ' .dot-' + id);
+  
+  gallery.current = index;
+  slides.style.transform = 'translateX(-' + (index * 100) + '%)';
+  
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === index);
+  });
+}
+
+function openFullsize(id, index) {
+  const gallery = window.photoGalleries[id];
+  const modal = document.getElementById('fullModal-' + id);
+  const image = document.getElementById('fullImage-' + id);
+  const caption = document.getElementById('fullCaption-' + id);
+  
+  gallery.modalCurrent = index;
+  modal.classList.add('show');
+  image.src = gallery.photos[index].src;
+  caption.textContent = gallery.photos[index].caption || '';
+  
+  if (!gallery.photos[index].caption) {
+    caption.style.display = 'none';
+  } else {
+    caption.style.display = 'block';
+  }
+  
+  document.body.style.overflow = 'hidden';
+}
+
+function navigateModal(id, direction) {
+  const gallery = window.photoGalleries[id];
+  const image = document.getElementById('fullImage-' + id);
+  const caption = document.getElementById('fullCaption-' + id);
+  
+  gallery.modalCurrent += direction;
+  
+  if (gallery.modalCurrent >= gallery.total) gallery.modalCurrent = 0;
+  if (gallery.modalCurrent < 0) gallery.modalCurrent = gallery.total - 1;
+  
+  image.src = gallery.photos[gallery.modalCurrent].src;
+  caption.textContent = gallery.photos[gallery.modalCurrent].caption || '';
+  
+  if (!gallery.photos[gallery.modalCurrent].caption) {
+    caption.style.display = 'none';
+  } else {
+    caption.style.display = 'block';
+  }
+}
+
+function closeFullsize(id) {
+  const modal = document.getElementById('fullModal-' + id);
+  modal.classList.remove('show');
+  document.body.style.overflow = 'auto';
+}
+
+// Close on click outside
+window.addEventListener('click', function(event) {
+  Object.keys(window.photoGalleries).forEach(id => {
+    const modal = document.getElementById('fullModal-' + id);
+    if (event.target === modal) {
+      closeFullsize(id);
+    }
+  });
+});
+
+// Keyboard navigation
+document.addEventListener('keydown', function(e) {
+  const activeModal = Object.keys(window.photoGalleries).find(id => 
+    document.getElementById('fullModal-' + id).classList.contains('show')
+  );
+  
+  if (activeModal) {
+    if (e.key === 'ArrowLeft') navigateModal(activeModal, -1);
+    if (e.key === 'ArrowRight') navigateModal(activeModal, 1);
+    if (e.key === 'Escape') closeFullsize(activeModal);
+  }
+});
+</script>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
@@ -327,54 +687,424 @@ No matching items
 <section id="panamá" class="level2">
 <h2 class="anchored" data-anchor-id="panamá">Panamá</h2>
 <div id="listing-Panama" class="quarto-listing quarto-listing-container-custom">
-<style type="text/css">
-.grid-gallery {
-  columns: 5 200px;
-  column-gap: 0.5rem;
-  width: 90%;
-  margin: 0 auto;
+
+<style>
+.photo-carousel-travel-1757898073664-232 {
+  position: relative;
+  max-width: 800px;
+  margin: 2rem auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
 }
-.grid-item {
-  width: 150px;
-  margin: 0 0.5rem 0.5rem 0;
-  display: inline-block;
+
+.carousel-container-travel-1757898073664-232 {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.carousel-slides-travel-1757898073664-232 {
+  display: flex;
+  height: 100%;
+  transition: transform 0.4s ease;
+}
+
+.slide-item-travel-1757898073664-232 {
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-item-travel-1757898073664-232::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(15px);
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.slide-main-image-travel-1757898073664-232 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  z-index: 2;
+}
+
+.hover-caption-travel-1757898073664-232 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: white;
+  padding: 2rem 1rem 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 1rem;
+  z-index: 3;
+}
+
+.slide-item-travel-1757898073664-232:hover .hover-caption-travel-1757898073664-232 {
+  opacity: 1;
+}
+
+.nav-button-travel-1757898073664-232 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.2);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 10;
+  transition: all 0.3s ease;
+  color: rgba(0,0,0,0.5);
+}
+
+.nav-button-travel-1757898073664-232:hover {
+  background: rgba(255,255,255,0.5);
+  color: rgba(0,0,0,0.8);
+}
+
+.nav-prev-travel-1757898073664-232 {
+  left: 15px;
+}
+
+.nav-next-travel-1757898073664-232 {
+  right: 15px;
+}
+
+.indicator-dots-travel-1757898073664-232 {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.dot-travel-1757898073664-232 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot-travel-1757898073664-232.active {
+  background: rgba(255,255,255,0.6);
+  transform: scale(1.2);
+}
+
+.dot-travel-1757898073664-232:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+/* Full size modal */
+.fullsize-modal-travel-1757898073664-232 {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  padding: 80px 60px 40px;
+  box-sizing: border-box;
+}
+
+.fullsize-modal-travel-1757898073664-232.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modal-image-travel-1757898073664-232 {
+  max-width: calc(100% - 140px);
+  max-height: calc(100% - 120px);
+  object-fit: contain;
   border-radius: 5px;
 }
-img.grid-item {
-  width: 100%;
-  transition: all .25s ease-in-out;
+
+.modal-text-travel-1757898073664-232 {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0;
+  max-width: 80%;
 }
-img.grid-item:hover {
-  transform: scale(1.025);
+
+.close-modal-travel-1757898073664-232 {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: rgba(255,255,255,0.4);
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+  transition: color 0.3s ease;
+}
+
+.close-modal-travel-1757898073664-232:hover {
+  color: rgba(255,255,255,0.8);
+}
+
+.modal-nav-travel-1757898073664-232 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255,255,255,0.2);
+  font-size: 60px;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s ease;
+  z-index: 1001;
+  padding: 20px;
+}
+
+.modal-nav-travel-1757898073664-232:hover {
+  color: rgba(255,255,255,0.6);
+}
+
+.modal-prev-travel-1757898073664-232 {
+  left: 20px;
+}
+
+.modal-next-travel-1757898073664-232 {
+  right: 20px;
+}
+
+@media (max-width: 768px) {
+  .fullsize-modal-travel-1757898073664-232 {
+    padding: 60px 20px 20px;
+  }
+  
+  .modal-image-travel-1757898073664-232 {
+    max-width: calc(100% - 80px);
+  }
+  
+  .modal-nav-travel-1757898073664-232 {
+    font-size: 40px;
+    padding: 10px;
+  }
+  
+  .close-modal-travel-1757898073664-232 {
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+  }
 }
 </style>
-<div class="grid-gallery">
-<div>
-<div class="grid-item-container">
-<p><a href="../gallery/photos/Panama/derechos.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="../gallery/photos/Panama/derechos.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
-<div class="caption">
-Rights mural
+
+<div class="photo-carousel-travel-1757898073664-232">
+  <div class="carousel-container-travel-1757898073664-232">
+    <div class="carousel-slides-travel-1757898073664-232" id="slides-travel-1757898073664-232">
+      
+        <div class="slide-item-travel-1757898073664-232" style="background-image: url('/gallery/photos/Panama/derechos.jpg')" onclick="openFullsize('travel-1757898073664-232', 0)">
+          <img src="../gallery/photos/Panama/derechos.jpg" alt="Travel photo" class="slide-main-image-travel-1757898073664-232">
+          
+          
+            <div class="hover-caption-travel-1757898073664-232">Panama City, Panama, June 2023</div>
+          
+        </div>
+      
+        <div class="slide-item-travel-1757898073664-232" style="background-image: url('/gallery/photos/Panama/gato.jpg')" onclick="openFullsize('travel-1757898073664-232', 1)">
+          <img src="../gallery/photos/Panama/gato.jpg" alt="Travel photo" class="slide-main-image-travel-1757898073664-232">
+          
+          
+            <div class="hover-caption-travel-1757898073664-232">Panama City, Panama, May 2023</div>
+          
+        </div>
+      
+        <div class="slide-item-travel-1757898073664-232" style="background-image: url('/gallery/photos/Panama/mono.jpg')" onclick="openFullsize('travel-1757898073664-232', 2)">
+          <img src="../gallery/photos/Panama/mono.jpg" alt="Travel photo" class="slide-main-image-travel-1757898073664-232">
+          
+          
+            <div class="hover-caption-travel-1757898073664-232">Soberanía National Park, Panama, July 2022</div>
+          
+        </div>
+      
+    </div>
+    
+    
+      <button class="nav-button-travel-1757898073664-232 nav-prev-travel-1757898073664-232" onclick="slideCarousel('travel-1757898073664-232', -1)">‹</button>
+      <button class="nav-button-travel-1757898073664-232 nav-next-travel-1757898073664-232" onclick="slideCarousel('travel-1757898073664-232', 1)">›</button>
+      
+      <div class="indicator-dots-travel-1757898073664-232" id="indicators-travel-1757898073664-232">
+        
+          <span class="dot-travel-1757898073664-232 active" onclick="jumpToSlide('travel-1757898073664-232', 0)"></span>
+        
+          <span class="dot-travel-1757898073664-232 " onclick="jumpToSlide('travel-1757898073664-232', 1)"></span>
+        
+          <span class="dot-travel-1757898073664-232 " onclick="jumpToSlide('travel-1757898073664-232', 2)"></span>
+        
+      </div>
+    
+  </div>
 </div>
+
+<!-- Full size modal -->
+<div id="fullModal-travel-1757898073664-232" class="fullsize-modal-travel-1757898073664-232">
+  <span class="close-modal-travel-1757898073664-232" onclick="closeFullsize('travel-1757898073664-232')">×</span>
+  
+    <div class="modal-nav-travel-1757898073664-232 modal-prev-travel-1757898073664-232" onclick="navigateModal('travel-1757898073664-232', -1)">‹</div>
+    <div class="modal-nav-travel-1757898073664-232 modal-next-travel-1757898073664-232" onclick="navigateModal('travel-1757898073664-232', 1)">›</div>
+  
+  <img id="fullImage-travel-1757898073664-232" class="modal-image-travel-1757898073664-232">
+  <div id="fullCaption-travel-1757898073664-232" class="modal-text-travel-1757898073664-232"></div>
 </div>
-</div>
-<div>
-<div class="grid-item-container">
-<p><a href="../gallery/photos/Panama/gato.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="../gallery/photos/Panama/gato.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
-<div class="caption">
-Cat lounging in Panama City
-</div>
-</div>
-</div>
-<div>
-<div class="grid-item-container">
-<p><a href="../gallery/photos/Panama/mono.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="../gallery/photos/Panama/mono.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
-<div class="caption">
-Monkey in the rainforest
-</div>
-</div>
-</div>
-</div>
+
+<script>
+if (!window.photoGalleries) window.photoGalleries = {};
+
+window.photoGalleries['travel-1757898073664-232'] = {
+  current: 0,
+  modalCurrent: 0,
+  total: 3,
+  photos: [
+    
+      {
+        src: '/gallery/photos/Panama/derechos.jpg',
+        caption: 'Panama City, Panama, June 2023'
+      },
+    
+      {
+        src: '/gallery/photos/Panama/gato.jpg',
+        caption: 'Panama City, Panama, May 2023'
+      },
+    
+      {
+        src: '/gallery/photos/Panama/mono.jpg',
+        caption: 'Soberanía National Park, Panama, July 2022'
+      }
+    
+  ]
+};
+
+function slideCarousel(id, direction) {
+  const gallery = window.photoGalleries[id];
+  const slides = document.getElementById('slides-' + id);
+  const dots = document.querySelectorAll('#indicators-' + id + ' .dot-' + id);
+  
+  gallery.current += direction;
+  
+  if (gallery.current >= gallery.total) gallery.current = 0;
+  if (gallery.current < 0) gallery.current = gallery.total - 1;
+  
+  slides.style.transform = 'translateX(-' + (gallery.current * 100) + '%)';
+  
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('active', index === gallery.current);
+  });
+}
+
+function jumpToSlide(id, index) {
+  const gallery = window.photoGalleries[id];
+  const slides = document.getElementById('slides-' + id);
+  const dots = document.querySelectorAll('#indicators-' + id + ' .dot-' + id);
+  
+  gallery.current = index;
+  slides.style.transform = 'translateX(-' + (index * 100) + '%)';
+  
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === index);
+  });
+}
+
+function openFullsize(id, index) {
+  const gallery = window.photoGalleries[id];
+  const modal = document.getElementById('fullModal-' + id);
+  const image = document.getElementById('fullImage-' + id);
+  const caption = document.getElementById('fullCaption-' + id);
+  
+  gallery.modalCurrent = index;
+  modal.classList.add('show');
+  image.src = gallery.photos[index].src;
+  caption.textContent = gallery.photos[index].caption || '';
+  
+  if (!gallery.photos[index].caption) {
+    caption.style.display = 'none';
+  } else {
+    caption.style.display = 'block';
+  }
+  
+  document.body.style.overflow = 'hidden';
+}
+
+function navigateModal(id, direction) {
+  const gallery = window.photoGalleries[id];
+  const image = document.getElementById('fullImage-' + id);
+  const caption = document.getElementById('fullCaption-' + id);
+  
+  gallery.modalCurrent += direction;
+  
+  if (gallery.modalCurrent >= gallery.total) gallery.modalCurrent = 0;
+  if (gallery.modalCurrent < 0) gallery.modalCurrent = gallery.total - 1;
+  
+  image.src = gallery.photos[gallery.modalCurrent].src;
+  caption.textContent = gallery.photos[gallery.modalCurrent].caption || '';
+  
+  if (!gallery.photos[gallery.modalCurrent].caption) {
+    caption.style.display = 'none';
+  } else {
+    caption.style.display = 'block';
+  }
+}
+
+function closeFullsize(id) {
+  const modal = document.getElementById('fullModal-' + id);
+  modal.classList.remove('show');
+  document.body.style.overflow = 'auto';
+}
+
+// Close on click outside
+window.addEventListener('click', function(event) {
+  Object.keys(window.photoGalleries).forEach(id => {
+    const modal = document.getElementById('fullModal-' + id);
+    if (event.target === modal) {
+      closeFullsize(id);
+    }
+  });
+});
+
+// Keyboard navigation
+document.addEventListener('keydown', function(e) {
+  const activeModal = Object.keys(window.photoGalleries).find(id => 
+    document.getElementById('fullModal-' + id).classList.contains('show')
+  );
+  
+  if (activeModal) {
+    if (e.key === 'ArrowLeft') navigateModal(activeModal, -1);
+    if (e.key === 'ArrowRight') navigateModal(activeModal, 1);
+    if (e.key === 'Escape') closeFullsize(activeModal);
+  }
+});
+</script>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
@@ -819,38 +1549,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","loop":false,"descPosition":"bottom","openEffect":"zoom"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
-        }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
-      }
-    });
-  
-  };
-  
-})();
-          </script>
 
 
 

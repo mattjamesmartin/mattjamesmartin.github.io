@@ -1,44 +1,84 @@
 ```{=html}
+<%
+// Helper function to safely escape HTML attributes
+function escapeHtml(text) {
+  if (!text) return '';
+  return text.toString()
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#x27;');
+}
+%>
+
 <div class="teaching">
+  <% if (items && items.length > 0) { %>
     <% for (const course of items) { %>
-    <div class="course-entry">
+      <div class="course-entry">
         <div class="logo">
-            <% if (course.url) { %>
-            <a href="<%= course.url %>" target="_blank"><img src="<%= course.logo %>" alt="<%= course.title %>" title="<%= course.title %>" /></a>
-            <% } else { %>
-            <img src="<%= course.logo %>" alt="<%= course.title %>" title="<%= course.title %>" />
-            <% } %>
+          <% if (course.url && course.logo) { %>
+            <a href="<%= escapeHtml(course.url) %>" target="_blank" rel="noopener noreferrer">
+              <img src="<%= escapeHtml(course.logo) %>" 
+                   alt="<%= escapeHtml(course.title) %>" 
+                   title="<%= escapeHtml(course.title) %>"
+                   loading="lazy" />
+            </a>
+          <% } else if (course.logo) { %>
+            <img src="<%= escapeHtml(course.logo) %>" 
+                 alt="<%= escapeHtml(course.title) %>" 
+                 title="<%= escapeHtml(course.title) %>"
+                 loading="lazy" />
+          <% } %>
         </div>
         <div class="body">
-            <p class="course-title">
-                <% if (course.url) { %>
-                <a href="<%= course.url %>" target="_blank"><%= course.title %></a> 
-                <% } else { %>
-                <%= course.title %> 
-                <% } %>
-            </p>
-            <p class="course-details">
-                <% if (course.number) { %>
-                <span class="course-number"><%= course.number %></span> | 
-                <% } %>
-                <span class="course-university"><%= course.university %></span>
-                <% if (course.role) { %>
-                | <span class="course-role"><%= course.role %></span>
-                <% } %>
-            </p>
-            <p class="course-description"><%= course.description %></p>
-
+          <p class="course-title">
+            <% if (course.url) { %>
+              <a href="<%= escapeHtml(course.url) %>" target="_blank" rel="noopener noreferrer">
+                <%= escapeHtml(course.title) %>
+              </a> 
+            <% } else { %>
+              <%= escapeHtml(course.title) %> 
+            <% } %>
+          </p>
+          <p class="course-details">
+            <% if (course.number) { %>
+              <span class="course-number"><%= escapeHtml(course.number) %></span> | 
+            <% } %>
+            <span class="course-university"><%= escapeHtml(course.university) %></span>
+            <% if (course.role) { %>
+              | <span class="course-role"><%= escapeHtml(course.role) %></span>
+            <% } %>
+          </p>
+          <% if (course.description) { %>
+            <p class="course-description"><%= escapeHtml(course.description) %></p>
+          <% } %>
+          <% if (course.semester && course.semester.length > 0) { %>
             <ul class="course-semesters">
-                <% for (const semester of course.semester) { %>
+              <% for (const semester of course.semester) { %>
                 <% if (semester.url) { %>
-                <li><a href="<%= semester.url %>"><i class="fa-solid fa-book"></i> <%= semester.name %> syllabus</a></li>
+                  <li>
+                    <a href="<%= escapeHtml(semester.url) %>" target="_blank" rel="noopener noreferrer">
+                      <i class="fa-solid fa-book" aria-hidden="true"></i> 
+                      <%= escapeHtml(semester.name) %> syllabus
+                    </a>
+                  </li>
                 <% } else { %> 
-                <li class="no-link"><i class="fa-solid fa-book"></i> <%= semester.name %></li>
+                  <li class="no-link">
+                    <i class="fa-solid fa-book" aria-hidden="true"></i> 
+                    <%= escapeHtml(semester.name) %>
+                  </li>
                 <% } %>
-                <% } %>
+              <% } %>
             </ul>
+          <% } %>
         </div>
-    </div>
+      </div>
     <% } %>
+  <% } else { %>
+    <div class="no-courses">
+      <p>No courses available at this time.</p>
+    </div>
+  <% } %>
 </div>
 ```
