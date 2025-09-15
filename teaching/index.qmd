@@ -44,10 +44,10 @@ toc-title: Contents
 
 <summary><strong>Undergraduate Courses (5)</strong></summary>
 
--   UGS 303: Drugs, Commerce, and Immigration in U.S.-Mexico Relations (Fall 2023, Spring 2022)
--   GOV 320N: Civil Rights and Civil Liberties (Fall 2021)
--   GOV S365W: Human Rights and World Politics (Summer 2021)
--   GOV 312L: The U.S. in Comparative Perspective (Spring 2021)
--   GOV 328L: Introduction to Latin American Politics (Fall 2020)
+-   UGS 303 Drugs, Commerce, and Immigration in U.S.-Mexico Relations (Fall 2023, Spring 2022)
+-   GOV 320N Civil Rights and Civil Liberties (Fall 2021)
+-   GOV S365W Human Rights and World Politics (Summer 2021)
+-   GOV 312L The U.S. in Comparative Perspective (Spring 2021)
+-   GOV 328L Introduction to Latin American Politics (Fall 2020)
 
 </details>
