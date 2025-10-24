@@ -8,7 +8,7 @@ listing:
     categories: true
   - id: works-in-progress
     contents: "works-in-progress/*/index.qmd"
-    sort: "date desc"
+    sort: "sort asc"
     template: ../html/research/listing.ejs
   - id: other-works
     contents: "other-works/*/index.qmd"

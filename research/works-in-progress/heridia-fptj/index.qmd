@@ -1,0 +1,24 @@
+---
+title: "From Prosecutor to Judge: How Professional Backgrounds Shape Asylum Decision-Making in U.S. Immigration Courts"
+date: 10-20-2025
+sort: 5
+author:
+  - name: Sara Heridia
+    url: https://sara-heridia.github.io/
+    orcid: 0000-0002-0270-681103
+    affiliation: Department of Political Science, Emory University
+  - name: Matthew Martin
+    url: https://mattjamesmartin.github.io/
+    orcid: 0000-0003-3460-3603
+    affiliation: Department of Government, University of Texas at Austin
+categories: 
+  - Immigration 
+pub-info:
+  reference: >-
+    Heridia, Sara and <strong>Matthew Martin</strong>. “From Prosecutor to Judge: How Professional Backgrounds Shape Asylum Decision-Making in U.S. Immigration Courts.” 
+  links:
+---
+
+## Abstract
+
+This ongoing study examines how professional backgrounds influence asylum decision-making in U.S. immigration courts. We are constructing a novel dataset that systematically documents the career histories of immigration judges, including specific prosecutorial roles (ICE/OPLA, Office of Immigration Litigation, AUSA, District Attorney, JAG Corps), advocacy experience, and hiring patterns. We ask whether judges with prosecutorial backgrounds demonstrate different asylum grant rates compared to those with other professional experiences, and whether this relationship is conditioned by factors such as local versus external hiring, prior EOIR versus ICE experience, and court-level diversity. Our data collection involves systematic coding of judges’ complete career trajectories from EOIR investiture reports and biographical materials, which will be matched with asylum case outcomes and court-level characteristics. This research will provide new insights into the complex interplay between individual professional socialization and institutional context in immigration adjudication. {{< fa blank >}}
