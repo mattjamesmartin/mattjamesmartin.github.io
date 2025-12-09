@@ -16,21 +16,6 @@ function escapeHtml(text) {
   <% if (items && items.length > 0) { %>
     <% for (const course of items) { %>
       <div class="course-entry">
-        <div class="logo">
-          <% if (course.url && course.logo) { %>
-            <a href="<%= escapeHtml(course.url) %>" target="_blank" rel="noopener noreferrer">
-              <img src="<%= escapeHtml(course.logo) %>" 
-                   alt="<%= escapeHtml(course.title) %>" 
-                   title="<%= escapeHtml(course.title) %>"
-                   loading="lazy" />
-            </a>
-          <% } else if (course.logo) { %>
-            <img src="<%= escapeHtml(course.logo) %>" 
-                 alt="<%= escapeHtml(course.title) %>" 
-                 title="<%= escapeHtml(course.title) %>"
-                 loading="lazy" />
-          <% } %>
-        </div>
         <div class="body">
           <p class="course-title">
             <% if (course.url) { %>

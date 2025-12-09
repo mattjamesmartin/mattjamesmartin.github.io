@@ -25,8 +25,9 @@ $pink:    #A52C60 !default;
 $red:     #CF4446 !default;
 $orange:  #EE6A24 !default;
 $light-orange:  #FF8C00 !default;
-$burnt-orange: #BF5700 !default;
-$darkbrown: #5A2D0C !default;
+$garnet: #73000a !default;
+$darkgarnet: #570008 !default;
+$rose: #CC2E40 !default;
 $green:   #118230 !default;
 $cyan:    #3093CF !default;
 
@@ -51,14 +52,14 @@ $spacing-xxl: 2.5rem !default;
 $spacing-xxxl: 3rem !default;
 
 // Typography & Fonts
-$font-family-sans-serif: "Roboto" !default;
+$font-family-sans-serif: "Noto Sans" !default;
 
-$headings-font-family: "Lato" !default;
+$headings-font-family: "Noto Sans" !default;
 $headings-font-weight: 600 !default;
 
-$navbar-font-family: "Lato" !default;
-$toc-font-family: "Lato" !default;
-$footer-font-family: "Lato" !default;
+$navbar-font-family: "Noto Sans" !default;
+$toc-font-family: "Noto Sans" !default;
+$footer-font-family: "Noto Sans" !default;
 
 $font-size-xs: 0.65rem !default;
 $font-size-sm: 0.85rem !default;
@@ -88,16 +89,16 @@ $grid-breakpoints: (
 $body-color: $gray-900 !default;
 
 // Links
-$link-color: $burnt-orange !default;
+$link-color: $garnet !default;
 $link-decoration: none !default;
-$link-hover-color: $darkbrown !default;
+$link-hover-color: $rose !default;
 $link-hover-decoration: underline !default;
 
 // Code
 $code-bg: $gray-200 !default;
 $code-color: $gray-900 !default;
 $code-font-size: 0.8rem !default;
-$btn-code-copy-color-active: $burnt-orange !default;
+$btn-code-copy-color-active: $garnet !default;
 
 // Component Sizing
 $border-radius-sm: 0.25rem !default;
@@ -106,10 +107,10 @@ $border-width-thin: 1px !default;
 $border-width-thick: 6px !default;
 
 // Component Colors
-$toc-color: $burnt-orange;
+$toc-color: $garnet;
 $toc-font-size: $font-size-base;
 
-$navbar-bg: $burnt-orange !default;
+$navbar-bg: $garnet !default;
 $navbar-fg: $white !default;
 $navbar-hl: $black !default;
 
@@ -118,7 +119,7 @@ $footer-fg: $white !default;
 
 /*-- scss:rules --*/
 
-$web-font-path: "https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;700;900&family=Roboto:wght@400;700&display=swap" !default;
+$web-font-path: "https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@100;300;400;500;700;900&display=swap" !default;
 
 @if $web-font-path {
     @import url($web-font-path);
@@ -238,7 +239,7 @@ pre.text, pre.sourceCode, .cell-output pre {
 
         .active {
             font-weight: $font-weight-normal;
-            color: $orange;
+            color: $garnet;
         }
 
         .quarto-category-count {
@@ -643,7 +644,7 @@ pre.text, pre.sourceCode, .cell-output pre {
             li {
                 display: inline-block;
                 white-space: nowrap;
-                background-color: $burnt-orange;
+                background-color: $garnet;
                 margin: 0 0.2rem 0.4rem 0;
                 padding: 0.2rem 0.4rem;
                 font-size: $font-size-sm;
@@ -745,8 +746,8 @@ details {
 // UI Components
 .cv-download {
     font-family: $headings-font-family;
-    background-color: $burnt-orange;
-    border-color: $burnt-orange;
+    background-color: $garnet;
+    border-color: $garnet;
     color: $white;
 
     &:hover {
