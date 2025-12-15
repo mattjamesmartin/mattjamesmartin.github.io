@@ -52,7 +52,7 @@ $spacing-xxl: 2.5rem !default;
 $spacing-xxxl: 3rem !default;
 
 // Typography & Fonts
-$font-family-sans-serif: "Noto Sans" !default;
+$font-family-sans-serif: 'Noto Sans', sans-serif !default;
 
 $headings-font-family: "Noto Sans" !default;
 $headings-font-weight: 600 !default;
@@ -119,7 +119,7 @@ $footer-fg: $white !default;
 
 /*-- scss:rules --*/
 
-$web-font-path: "https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300..700;1,300..700&display=swap" !default;
+$web-font-path: "https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap" !default;
 
 @if $web-font-path {
     @import url($web-font-path);
