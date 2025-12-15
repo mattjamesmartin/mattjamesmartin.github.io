@@ -16,13 +16,3 @@ toc-title: Contents
 
 ::: {#courses}
 :::
-
-## Positions {style="margin-top: 0em;"}
-
-#### Research Internship Supervisor
-
--   Supervised eight students across four semesters as part of GOV 362L - Undergraduate Research Internship course.
-
-#### Methods Fellow
-
--   Assisted graduate students in the Department of Government with methods-related questions, organized methods workshops, and coordinated weekly co-working hours during the 2023-24 academic year.
