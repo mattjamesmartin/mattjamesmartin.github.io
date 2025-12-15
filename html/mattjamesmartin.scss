@@ -119,7 +119,7 @@ $footer-fg: $white !default;
 
 /*-- scss:rules --*/
 
-$web-font-path: "https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@100;300;400;500;700;900&display=swap" !default;
+$web-font-path: "https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300..700;1,300..700&display=swap" !default;
 
 @if $web-font-path {
     @import url($web-font-path);
