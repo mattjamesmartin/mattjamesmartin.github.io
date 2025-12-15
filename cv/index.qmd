@@ -1,12 +1,12 @@
 ---
 title: Curriculum Vitae
-date: 11-10-2025
+date: 12-15-2025
 title-block-banner: "#563C5C"
 published-title: CV last updated
 freeze: false
 engine: knitr 
 cv:
-  pdf: "CV-11-10.pdf"
+  pdf: "CV-12-15-25.pdf"
 ---
 
 ```{css echo=FALSE}
