@@ -338,6 +338,7 @@ pre.text, pre.sourceCode, .cell-output pre {
 }
 
 // Page-specific Styles - Blog
+// Page-specific Styles - Blog
 .blog {
     .blog-entry {
         display: flex;
@@ -346,51 +347,42 @@ pre.text, pre.sourceCode, .cell-output pre {
         line-height: 1.3;
         margin-bottom: 1.5em;
         column-gap: 1em;
-
         .metadata {
             flex: 0 0 8%;
         }
-
         .body {
             flex: 1 1 auto;
         }
-
         .thumbnail {
             flex: 0 0 25%;
-
             img {
                 width: 100%;
                 object-fit: cover;
             }
         }
-
         .title {
             font-weight: $font-weight-medium;
             font-size: $font-size-xxxl;
             margin-bottom: 0.2rem;
             line-height: 1.2;
         }
-
         .description {
             font-weight: $font-weight-light;
             font-size: $font-size-base;
             margin-bottom: 0.3rem;
         }
-
         .date {
             font-weight: $font-weight-light;
             font-size: $font-size-sm;
             margin-top: 0.3rem;
             text-align: right;
         }
-
         .post-categories {
             display: flex;
             flex-wrap: wrap;
             row-gap: 0.4rem;
             column-gap: 0.4rem;
             margin: $spacing-sm 0;
-
             .post-category {
                 color: $gray-600;
                 border: $border-width-thin solid $gray-500;
@@ -417,6 +409,11 @@ pre.text, pre.sourceCode, .cell-output pre {
                 color: $gray-600;
             }
         }
+    }
+    
+    .blog-entry + .blog-entry {
+        border-top: 1px solid $gray-300;
+        padding-top: 1.5em;
     }
 }
 

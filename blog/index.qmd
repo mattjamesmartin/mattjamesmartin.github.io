@@ -3,24 +3,11 @@ title: "Blog"
 author: ""
 description: "Matthew Martin's blog"
 listing:
-  - id: posts_2025
-    contents: "2025/**/index.qmd"
+  - id: posts
+    contents: "posts/**/**.qmd"
     sort: "date desc"
     template: ../html/blog/listing.ejs
     categories: true
-  - id: posts_2024
-    contents: "2024/**/index.qmd"
-    sort: "date desc"
-    template: ../html/blog/listing.ejs
-    categories: true
-  - id: posts_2023
-    contents: "2023/**/index.qmd"
-    sort: "date desc"
-    template: ../html/blog/listing.ejs
-  - id: posts_2021
-    contents: "2021/**/index.qmd"
-    sort: "date desc"
-    template: ../html/blog/listing.ejs
 page-layout: full
 toc-title: Year
 toc-location: right
@@ -37,22 +24,5 @@ freeze: false
 }
 ```
 
-## 2025
-
-::: {#posts_2025}
-:::
-
-## 2024
-
-::: {#posts_2024}
-:::
-
-## 2023
-
-::: {#posts_2023}
-:::
-
-## 2021
-
-::: {#posts_2021}
+::: {#posts}
 :::
