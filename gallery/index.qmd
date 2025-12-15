@@ -1,6 +1,6 @@
 ---
 title: Photos
-title-block-banner: "#957986"
+title-block-banner: "#844247"
 listing:
   - id: Cuba
     template: ../html/gallery/gallery.ejs

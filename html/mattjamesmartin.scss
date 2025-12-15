@@ -447,6 +447,8 @@ pre.text, pre.sourceCode, .cell-output pre {
     }
 }
 
+
+
 // Page-specific Styles - Research
 .quarto-title-block {
     .haiku {
@@ -751,8 +753,8 @@ details {
     color: $white;
 
     &:hover {
-        background-color: $orange;
-        border-color: $orange;
+        background-color: $rose;
+        border-color: $rose;
         color: $white;
     }
 }
