@@ -33,8 +33,6 @@ website:
         href: "cv/index.qmd"
       - text: "Blog"
         href: "blog/index.qmd"
-      - text: "Photos"
-        href: "gallery/index.qmd"
         
     right:
       - text: "{{< iconify bi envelope size=1.1em title='E-mail' >}}"
