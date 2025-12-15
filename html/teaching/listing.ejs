@@ -11,7 +11,6 @@ function escapeHtml(text) {
     .replace(/'/g, '&#x27;');
 }
 %>
-
 <div class="teaching">
   <% if (items && items.length > 0) { %>
     <% for (const course of items) { %>
@@ -21,9 +20,9 @@ function escapeHtml(text) {
             <% if (course.url) { %>
               <a href="<%= escapeHtml(course.url) %>" target="_blank" rel="noopener noreferrer">
                 <%= escapeHtml(course.title) %>
-              </a> 
+              </a>
             <% } else { %>
-              <%= escapeHtml(course.title) %> 
+              <%= escapeHtml(course.title) %>
             <% } %>
           </p>
           <p class="course-details">
@@ -37,25 +36,6 @@ function escapeHtml(text) {
           </p>
           <% if (course.description) { %>
             <p class="course-description"><%= escapeHtml(course.description) %></p>
-          <% } %>
-          <% if (course.semester && course.semester.length > 0) { %>
-            <ul class="course-semesters">
-              <% for (const semester of course.semester) { %>
-                <% if (semester.url) { %>
-                  <li>
-                    <a href="<%= escapeHtml(semester.url) %>" target="_blank" rel="noopener noreferrer">
-                      <i class="fa-solid fa-book" aria-hidden="true"></i> 
-                      <%= escapeHtml(semester.name) %> syllabus
-                    </a>
-                  </li>
-                <% } else { %> 
-                  <li class="no-link">
-                    <i class="fa-solid fa-book" aria-hidden="true"></i> 
-                    <%= escapeHtml(semester.name) %>
-                  </li>
-                <% } %>
-              <% } %>
-            </ul>
           <% } %>
         </div>
       </div>
