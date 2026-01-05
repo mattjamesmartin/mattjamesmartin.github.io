@@ -1,6 +1,6 @@
 ---
 title: "Deportation by Design: How Political Entrepreneurs Engineered Crime-Based Deportation in the United States"
-date: 2025-02-19
+date: 2026-04-01
 author:
   - name: Matthew Martin
     url: https://mattjamesmartin.github.io/
@@ -13,7 +13,7 @@ categories:
   - Reactive sequences
 pub-info:
   reference: >-
-    <strong>Matthew Martin</strong>. “Deportation by Design: How Political Entrepreneurs Engineered Crime-Based Deportation in the United States.” <em>Polity</em>, forthcoming.
+    <strong>Matthew Martin</strong>. 2026. “Deportation by Design: How Political Entrepreneurs Engineered Crime-Based Deportation in the United States.” <em>Polity</em>, forthcoming.
   links:
   - name: Pre-print
     url: dbd-2025.pdf

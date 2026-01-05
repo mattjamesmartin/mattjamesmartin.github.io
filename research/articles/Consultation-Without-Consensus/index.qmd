@@ -1,5 +1,5 @@
 ---
-title: "Consultation Without Consensus: Lessons from Chile’s Constitutional Convention (2021-2022)"
+title: "Consultation Without Consensus: Lessons from the Chilean Constitutional Convention (2021-2022)"
 date: 2025-12-20
 sort: 1
 author:
@@ -14,12 +14,12 @@ categories:
   - Public consultation 
 pub-info:
   reference: >-
-    <strong>Matthew Martin</strong>. “Consultation Without Consensus: Lessons from Chile’s Constitutional Convention (2021-2022),” <em>Política. Revista De Ciencia Política</em>, 2025.
+    <strong>Matthew Martin</strong>. 2025. “Consultation Without Consensus: Lessons from Chile’s Constitutional Convention (2021-2022).”  <em>Política. Revista De Ciencia Política</em> 63(2), 81-112. doi: <a href="https://doi.org/10.5354/0719-5338.2025.81160"><code>10.5354/0719-5338.2025.81160</code></a>.
   links:
-  - name: Pre-print
-    url: martin-cwc.pdf
-    local: true
-    icon: fa-solid fa-file-pdf
+  - name: Final version
+    url: https://doi.org/10.5354/0719-5338.2025.81160
+    icon: fa-solid fa-arrow-up-right-from-square
+doi: 10.5354/0719-5338.2025.81160
 ---
 
 ## Abstract
