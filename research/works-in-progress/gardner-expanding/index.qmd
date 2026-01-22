@@ -1,6 +1,5 @@
 ---
 title: "Expanding Your Vocabulary: A Framework for Topic Integration in Texts"
-date: 2024-09-01
 sort: 4
 author:
   - name: Roy Gardner
@@ -31,11 +30,11 @@ pub-info:
     Roy Gardner, <strong>Matthew Martin</strong>, <a href="https://liberalarts.utexas.edu/government/faculty/am49396">Ashley Moran</a>, <a href="https://site.google.com/site/zachelkinstexas/">Zachary Elkins</a>, <a href="https://arcruz0.github.io/">Andrés Cruz</a>, and <a href="https://liberalarts.utexas.edu/government/gradstudents/gp22823">Guillermo Pérez</a>. “Expanding Your Vocabulary: A Framework for Topic Integration in Texts.” Under review.
   links:
   - name: Draft
-    url: gardner-expanding.pdf
+    url: Expanding-Your-Vocabulary.pdf
     local: true
     icon: fa-solid fa-file-pdf
 ---
 
 ## Abstract
 
-Topic discovery and integration are vital for maintaining vocabularies that categorize textual corpora. Automated approaches are often computationally expensive and lack domain-specific conceptual nuance; manual approaches are costly in terms of time and potential bias. To address this dilemma, we introduce the segments-as-topic (SAT) methodology, a four-stage process that combines automation and human expertise to assess candidate topics for vocabulary inclusion. In the SAT generation stage, a topic is formulated and refined through collaboration with domain experts, then a sentence-level semantic similarity model retrieves corpus segments semantically aligned with the topic. The SAT expansion stage uses this seed set to find additional semantically similar segments, which are iteratively accepted or rejected to build a final segment set. During the review stage, a panel of scholars evaluates the topic for inclusion. In the integration stage, all segments in the final segment set are automatically tagged with the new topic. We apply this methodology to the Comparative Constitutions Project vocabulary that tracks over 330 topics in national constitutions, and demonstrate the addition of three new topics to the vocabulary. The SAT approach balances computational efficiency with expert judgment, offering a systematic, user-friendly, and replicable framework for social scientists to expand domain-specific vocabularies. {{< fa blank >}}
+Topic discovery and integration are vital for maintaining vocabularies that categorize textual corpora. Automated approaches are often computationally expensive and lack domain-specific conceptual nuance; manual approaches are costly in terms of time and potential bias. To address this dilemma, we introduce the segments-as-topic (SAT) methodology, a four-stage process that combines automation and human expertise to assess candidate topics for vocabulary inclusion. In the SAT generation stage, a topic is formulated and refined through collaboration with domain experts, then a sentence-level semantic similarity model retrieves corpus segments semantically aligned with the topic. The SAT expansion stage uses this seed set to find additional semantically similar segments, which are iteratively accepted or rejected to build a final segment set. During the review stage, a panel of scholars evaluates the topic for inclusion. In the integration stage, all segments in the final segment set are automatically tagged with the new topic. We apply this methodology to the Comparative Constitutions Project vocabulary that tracks over 330 topics in national constitutions, and demonstrate the addition of three new topics to the vocabulary. The SAT approach balances computational efficiency with expert judgment, offering a systematic, user-friendly, and replicable framework for social scientists to expand domain-specific vocabularies.{{< fa blank >}}
