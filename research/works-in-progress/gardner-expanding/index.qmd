@@ -1,6 +1,6 @@
 ---
 title: "Expanding Your Vocabulary: A Framework for Topic Integration in Texts"
-sort: 4
+sort: 2
 author:
   - name: Roy Gardner
     url: https://github.com/roybgardner
@@ -27,7 +27,7 @@ categories:
   - Constitution
 pub-info:
   reference: >-
-    Roy Gardner, <strong>Matthew Martin</strong>, <a href="https://liberalarts.utexas.edu/government/faculty/am49396">Ashley Moran</a>, <a href="https://site.google.com/site/zachelkinstexas/">Zachary Elkins</a>, <a href="https://arcruz0.github.io/">Andrés Cruz</a>, and <a href="https://liberalarts.utexas.edu/government/gradstudents/gp22823">Guillermo Pérez</a>. “Expanding Your Vocabulary: A Framework for Topic Integration in Texts.” Under review.
+    Roy Gardner, <strong>Matthew Martin</strong>, <a href="https://liberalarts.utexas.edu/government/faculty/am49396">Ashley Moran</a>, <a href="https://site.google.com/site/zachelkinstexas/">Zachary Elkins</a>, <a href="https://arcruz0.github.io/">Andrés Cruz</a>, and <a href="https://liberalarts.utexas.edu/government/gradstudents/gp22823">Guillermo Pérez</a>. “Expanding Your Vocabulary: A Framework for Topic Integration in Texts.” Revise and resubmit at <i>Social Science Computer Review</i>.
   links:
   - name: Draft
     url: Expanding-Your-Vocabulary.pdf
