@@ -255,7 +255,7 @@ pre.text, pre.sourceCode, .cell-output pre {
     align-items: flex-start;  // Align all flex items to the top
     flex-wrap: wrap;
     border: 0 !important;
-    min-height: $spacing-xxxl;
+    min-height: auto;
     font-family: $footer-font-family;
 
     a {
@@ -281,8 +281,8 @@ pre.text, pre.sourceCode, .cell-output pre {
         margin-top: 0;
 
         @media (max-width: map-get($grid-breakpoints, md)) {
-            margin-top: $spacing-sm;
-            margin-bottom: $spacing-lg;
+            margin-top: $spacing-xs;
+            margin-bottom: $spacing-sm;
         }
     }
 
@@ -293,7 +293,7 @@ pre.text, pre.sourceCode, .cell-output pre {
     .nav-footer-center {
         text-align: center;
         width: 100%;
-        min-height: $spacing-xl;
+        min-height: auto;
     }
 
     @media (min-width: map-get($grid-breakpoints, md)) {
@@ -330,10 +330,18 @@ pre.text, pre.sourceCode, .cell-output pre {
 .home {
     .quarto-title-banner {
         margin-bottom: 0;
+        
+        @media (max-width: map-get($grid-breakpoints, md)) {
+            padding: $spacing-md !important;
+        }
     }
 
     #title-block-header {
         margin-block-end: $spacing-sm;
+        
+        @media (max-width: map-get($grid-breakpoints, md)) {
+            margin-block-end: $spacing-xs;
+        }
     }
 }
 
