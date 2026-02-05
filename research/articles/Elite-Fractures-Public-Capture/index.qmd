@@ -12,7 +12,7 @@ categories:
   - Political elites
 pub-info:
   reference: >-
-    <strong>Matthew Martin</strong>. 2025. “Elite Fractures, Public Capture: The Strategic Use of Public Consultation in Global Constitution-Making.” <em>Journal of Law and Courts</em> 13(1): 1–34. doi: <a href="https://doi.org/10.1017/jlc.2024.9 "><code>10.1017/jlc.2024.9</code></a>. 
+    <strong>Matthew Martin</strong>. 2025. “Elite Fractures, Public Capture: The Strategic Use of Public Consultation in Global Constitution-Making.” <em>Journal of Law and Courts</em> 13(1): 1–34. doi: <a href="https://doi.org/10.1017/jlc.2024.9"><code>10.1017/jlc.2024.9</code></a>. 
   links:
   - name: Final version
     url: https://doi.org/10.1017/jlc.2024.9
