@@ -1,6 +1,5 @@
 ---
 title: "From Citizen Input to Elite Legitimation: The Logic of Will-Confirmation in Constitution-Making"
-date: 2025-05-26
 sort: 1
 author:
   - name: Matthew Martin

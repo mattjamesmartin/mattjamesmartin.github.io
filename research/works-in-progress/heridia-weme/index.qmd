@@ -1,7 +1,6 @@
 ---
-title: "From Prosecutor to Judge: How Professional Backgrounds Shape Asylum Decision-Making in U.S. Immigration Courts"
-date: 10-20-2025
-sort: 5
+title: "When Experience Meets Environment: Professional Backgrounds, Court Composition, and Decision-Making in Immigration Court"
+sort: 3
 author:
   - name: Sara Heridia
     url: https://sara-heridia.github.io/
@@ -15,7 +14,7 @@ categories:
   - Immigration 
 pub-info:
   reference: >-
-    Heridia, Sara and <strong>Matthew Martin</strong>. “From Prosecutor to Judge: How Professional Backgrounds Shape Asylum Decision-Making in U.S. Immigration Courts.” 
+    Heridia, Sara and <strong>Matthew Martin</strong>. “When Experience Meets Environment: Professional Backgrounds, Court Composition, and Decision-Making in Immigration Court.” 
   links:
 ---
 
