@@ -1,13 +1,5 @@
 [
   {
-    "listing": "/blog.html",
-    "items": [
-      "/posts/reimagining_patriotism.html",
-      "/posts/blog2.html",
-      "/posts/blog1.html"
-    ]
-  },
-  {
     "listing": "/blog/index.html",
     "items": [
       "/blog/posts/OCD.html",
@@ -31,10 +23,6 @@
   },
   {
     "listing": "/teaching/index.html",
-    "items": []
-  },
-  {
-    "listing": "/gallery/index.html",
     "items": []
   }
 ]
