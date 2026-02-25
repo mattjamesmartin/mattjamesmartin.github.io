@@ -1,0 +1,27 @@
+---
+title: "From Citizen Input to Elite Legitimation: The Logic of Will-Confirmation in Constitution-Making"
+sort: 1
+author:
+  - name: Matthew Martin
+    url: https://mattjamesmartin.github.io/
+    orcid: 0000-0003-3460-3603
+    affiliation: Department of Government, University of Texas at Austin
+categories: 
+  - Chile
+  - Constitutional design
+  - Cuba
+  - Political elites
+  - Public consultation 
+pub-info:
+  reference: >-
+    <strong>Matthew Martin</strong>. Forthcoming. “From Citizen Input to Elite Legitimation: The Logic of Will-Confirmation in Constitution-Making.” Accepted for publication at <em>Comparative Politics</em>.
+  links:
+  - name: Draft
+    url: martin-fcitel.pdf
+    local: true
+    icon: fa-solid fa-file-pdf
+---
+
+## Abstract
+
+Constitution-making is portrayed as a dialogue between state and society, with public consultation sustaining the legal fiction that “the people” write their constitution. This paper introduces will-confirmation—an interpretive practice whereby elites transform underdetermined public input into legitimation of their representative claims. Will-confirmation operates through two modes: constructive (synthesizing ambiguous input into alignment) and dismissive (excluding contrary input as unrepresentative). Drawing on 37 interviews from Chile’s Constitutional Convention and Cuba’s Drafting Commission, I show how will-confirmation operates when public consultation is deployed to fill representational voids. In Chile, consultation exposed rather than resolved the absence of elite consensus—drafters claiming to speak as the people produced parallel monologues, deepening fragmentation. In Cuba, consultation obscured rather than remedied the absence of ideological pluralism—input proved consequential only where elite consensus was already unsettled. Will-confirmation rendered consultation a source of elite self-legitimation rather than a check on interpretation. {{< fa blank >}}
