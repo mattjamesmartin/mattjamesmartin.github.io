@@ -16,7 +16,7 @@ pub-info:
   reference: >-
     <strong>Matthew Martin</strong>. Forthcoming. “From Citizen Input to Elite Legitimation: The Logic of Will-Confirmation in Constitution-Making.” Accepted for publication at <em>Comparative Politics</em>.
   links:
-  - name: Draft
+  - name: Pre-print
     url: martin-fcitel.pdf
     local: true
     icon: fa-solid fa-file-pdf
