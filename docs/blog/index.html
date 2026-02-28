@@ -379,7 +379,22 @@ No matching items
 
 
 
-</main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</main><!-- /main --><script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('a[href$=".pdf"]').forEach(function (link) {
+      link.addEventListener("click", function () {
+        if (typeof gtag === "function") {
+          gtag("event", "file_download", {
+            file_extension: "pdf",
+            file_name: link.getAttribute("href"),
+            link_text: link.innerText.trim(),
+            link_url: link.href
+          });
+        }
+      });
+    });
+  });
+</script><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
