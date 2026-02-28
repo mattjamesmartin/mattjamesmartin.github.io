@@ -60,7 +60,6 @@ website:
   
 format:
   html:
-    include-after-body: tracking.html
     theme:
       - html/mattjamesmartin.scss
     grid: 
