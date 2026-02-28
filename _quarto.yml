@@ -3,6 +3,7 @@ project:
   output-dir: docs
   resources:
   - CNAME
+  - imgs/doi.svg
   - research/**/*.pdf
   - teaching/**/*.pdf
 

@@ -443,7 +443,7 @@ pre.text, pre.sourceCode, .cell-output pre {
     
     .quarto-title-meta-contents .doi::before {
         content: "";
-        background-image: url(/files/doi.svg);
+        background-image: url(/imgs/doi.svg);
         background-size: $font-size-lg;
         display: inline-block;
         width: $font-size-lg;
