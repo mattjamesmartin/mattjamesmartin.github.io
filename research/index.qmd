@@ -10,10 +10,6 @@ listing:
     contents: "works-in-progress/*/index.qmd"
     sort: "sort asc"
     template: ../html/research/listing.ejs
-  - id: other-works
-    contents: "other-works/*/index.qmd"
-    sort: "date desc"
-    template: ../html/research/listing.ejs
 page-layout: full
 include-back-link: false
 toc-location: right
