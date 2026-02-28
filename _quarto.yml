@@ -3,6 +3,8 @@ project:
   output-dir: docs
   resources:
   - CNAME
+  - research/**/*.pdf
+  - teaching/**/*.pdf
 
 pagetitle: "{{< meta title >}} | Matthew Martin"
 author-meta:  "Matthew Martin"
