@@ -1,7 +1,7 @@
 project:
   type: website
   output-dir: docs
-  pre-render: rm -rf docs/site_libs
+  pre-render: rm -rf docs/site_libs docs/blog docs/cv docs/imgs docs/research docs/teaching
   resources:
   - CNAME
   - imgs/doi.svg
