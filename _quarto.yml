@@ -1,7 +1,8 @@
 project:
   type: website
   output-dir: docs
-  pre-render: rm -rf docs/site_libs docs/blog docs/cv docs/imgs docs/research docs/teaching
+  pre-render: rm -rf docs/site_libs
+  post-render: find docs -maxdepth 1 -name "* 2" -type d -exec rm -rf {} +
   resources:
   - CNAME
   - imgs/doi.svg
