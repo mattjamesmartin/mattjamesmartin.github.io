@@ -180,6 +180,17 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+// Remove excess bottom spacing on mobile from Quarto's grid layout
+@media (max-width: map-get($grid-breakpoints, md)) {
+    .page-rows-contents {
+        grid-template-rows: [content-top] minmax(max-content, 1fr) [content-bottom] minmax(0px, max-content) [page-bottom];
+    }
+
+    div.quarto-about-trestles {
+        padding-bottom: 0 !important;
+    }
+}
+
 .rtl {
     direction: rtl;
 }
@@ -282,11 +293,11 @@ pre.text, pre.sourceCode, .cell-output pre {
 
         @media (max-width: map-get($grid-breakpoints, md)) {
             margin-top: $spacing-xs;
-            margin-bottom: $spacing-sm;
+            margin-bottom: 0;
         }
     }
 
-    // When the screen is medium or smaller, make each footer chunk be 100% width 
+    // When the screen is medium or smaller, make each footer chunk be 100% width
     // and centered; otherwise make them be 33% width and left/right/centerd
     .nav-footer-left,
     .nav-footer-right,
@@ -294,6 +305,7 @@ pre.text, pre.sourceCode, .cell-output pre {
         text-align: center;
         width: 100%;
         min-height: auto;
+        margin-bottom: 0;
     }
 
     @media (min-width: map-get($grid-breakpoints, md)) {
