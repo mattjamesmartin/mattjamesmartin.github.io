@@ -355,32 +355,6 @@ pre.text, pre.sourceCode, .cell-output pre {
             margin-block-end: $spacing-xs;
         }
     }
-
-    // Mobile: icon-only social buttons in a single row
-    @media (max-width: map-get($grid-breakpoints, md)) {
-        .about-links {
-            display: flex !important;
-            flex-direction: row !important;
-            justify-content: center !important;
-            gap: $spacing-md !important;
-
-            .about-link {
-                width: auto !important;
-                padding: $spacing-sm !important;
-                border: $border-width-thin solid $gray-400 !important;
-                border-radius: $border-radius-md !important;
-
-                .about-link-text {
-                    display: none;
-                }
-
-                i.bi {
-                    font-size: $font-size-xl;
-                    margin-right: 0 !important;
-                }
-            }
-        }
-    }
 }
 
 // Page-specific Styles - Blog
