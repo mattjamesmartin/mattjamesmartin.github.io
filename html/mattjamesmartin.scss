@@ -788,10 +788,11 @@ details {
 // About page - compact icon-only buttons on mobile
 @media (max-width: map-get($grid-breakpoints, sm)) {
   .about-links {
-    display: flex;
-    flex-direction: row;
+    flex-direction: row !important;
     justify-content: center;
     gap: $spacing-sm;
+    width: auto !important;
+    padding-bottom: 0 !important;
   }
 
   .about-link {
@@ -799,6 +800,7 @@ details {
     align-items: center;
     justify-content: center;
     padding: $spacing-sm $spacing-md;
+    width: auto !important;
   }
 
   // Hide text labels; font-size: 0 collapses text nodes
@@ -815,6 +817,7 @@ details {
   // Keep Bootstrap icons (envelope, github) at a readable size
   .about-link .bi {
     font-size: 1.25rem;
+    margin-right: 0 !important;
   }
 }
 
