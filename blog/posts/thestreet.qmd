@@ -1,7 +1,7 @@
 ---
 title: "Reimagining Patriotism, According to My Father"
 description: "A letter to the editors of the Harper Review"
-image: thestreet.jpg
+image: "../../imgs/thestreet.jpg"
 date: 08-23-2024
 categories:
   - patriotism

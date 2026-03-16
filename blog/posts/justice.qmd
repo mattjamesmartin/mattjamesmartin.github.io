@@ -1,7 +1,7 @@
 ---
 title: "Immigration Courts and Abolition"
 description: "An abolitionist response to the call for independent immigration courts"
-image: justice.jpeg
+image: "../../imgs/justice.jpeg"
 date: 07-17-2021
 categories:
   - immigration

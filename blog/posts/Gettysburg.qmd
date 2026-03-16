@@ -1,7 +1,7 @@
 ---
 title: "The Art of Never Being Satisfied"
 description: "A guide to writing for perfectionists"
-image: Gettysburg.jpg
+image: "../../imgs/Gettysburg.jpg"
 date: 01-17-2023"
 code-tools: false
 categories:

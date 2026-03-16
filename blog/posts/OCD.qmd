@@ -1,7 +1,7 @@
 ---
 title: "Writing with OCD"
 description: "When every word, space, and letter becomes a battleground"
-image: "OCD.jpg"
+image: "../../imgs/OCD.jpg"
 date: 08-28-2025
 categories:
   - writing
