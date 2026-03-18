@@ -8,12 +8,6 @@ title-block-banner: "#844247"
 format: 
   html:
     code-tools: false
-    # comments:
-    #   giscus: 
-    #     repo: mattjamesmartin/mattjamesmartin.github.io
-    #     category: Blog comments
-    #     category-id: DIC_kwDOIg6EJc4CSz92
-    #     mapping: pathname
     quarto-template-params:
       banner-header-class: "blog-post"
 
