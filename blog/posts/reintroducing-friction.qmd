@@ -8,9 +8,9 @@ categories:
   - teaching
 ---
 
-## The Problem
+[![Image from Zohar, Bloom, and Inzlicht, "Against Frictionless AI," Communications Psychology 4, no. 39 (2026).](/imgs/AI.jpeg)](https://www.nature.com/articles/s44271-026-00402-1)
 
-[![Image from Zohar, Bloom, and Inzlicht, "Against Frictionless AI," *Communications Psychology* 4, no. 39 (2026).](/imgs/AI.jpeg)](https://www.nature.com/articles/s44271-026-00402-1){target="_blank"}
+## The Problem
 
 I start as an assistant professor of political science at the University of South Carolina in the fall. Because my future employer has signed a [\$1.5 million contract](https://scdailygazette.com/2025/06/20/usc-signs-1-5m-contract-with-openai-to-train-students-faculty-on-responsible-use/) with OpenAI to provide students free access to ChatGPT, I've been thinking—perhaps too much—about how to design my AI course policy. Most of those I've encountered fall into one of two camps: ban it entirely or ignore it and hope for the best. Neither approach seems sustainable. University partnerships with AI companies (OpenAI, Anthropic, Microsoft, Google, etc.) have [exploded](https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/01/05/5-predictions-how-ai-will-shape-higher-ed) in the U.S. and show no signs of slowing down. Outright bans have grown disconnected from the infrastructure students are now handed, and pretending the tools don't reshape how students engage with coursework is naive at best, harmful at worst.
 
