@@ -14,7 +14,7 @@ categories:
   - Public consultation 
 pub-info:
   reference: >-
-    <strong>Matthew Martin</strong>. Forthcoming. “From Citizen Input to Elite Legitimation: The Logic of Will-Confirmation in Constitution-Making.” Accepted for publication at <em>Comparative Politics</em>.
+    <strong>Matthew Martin</strong>. Forthcoming. “From Citizen Input to Elite Legitimation: The Logic of Will-Confirmation in Constitution-Making.” <em>Comparative Politics</em> 59(1): 000–000. doi: <a href="https://doi.org/10.5129/001041526X17731675177333"><code>10.5129/001041526X17731675177333</code></a>
   links:
   - name: Pre-print
     url: martin-fcitel.pdf
@@ -24,4 +24,4 @@ pub-info:
 
 ## Abstract
 
-Constitution-making is portrayed as a dialogue between state and society, with public consultation sustaining the legal fiction that “the people” write their constitution. This paper introduces will-confirmation—an interpretive practice whereby elites transform underdetermined public input into legitimation of their representative claims. Will-confirmation operates through two modes: constructive (synthesizing ambiguous input into alignment) and dismissive (excluding contrary input as unrepresentative). Drawing on 37 interviews with members of Chile’s Constitutional Convention and Cuba’s Drafting Commission, I show how will-confirmation operates when public consultation is deployed to fill representational voids. In Chile, consultation exposed rather than resolved the absence of elite consensus—drafters claiming to speak as the people produced parallel monologues, deepening fragmentation. In Cuba, consultation obscured rather than remedied the absence of ideological pluralism—input proved consequential only where elite consensus was already unsettled. Will-confirmation rendered consultation a source of elite self-legitimation rather than a check on interpretation. {{< fa blank >}}
+Constitution-making is cast as a state-society dialogue, with public consultation sustaining the legal fiction that “the people” write the social contract. I introduce will-confirmation—the interpretive practice whereby elites utilize underdetermined public input to legitimate representative claims. It has two modes: constructive (synthesizing ambiguous input into alignment) and dismissive (excluding contrary input as unrepresentative). Across thirty-seven interviews from Chile’s Constitutional Convention and Cuba’s Drafting Commission, I show how will-confirmation operates amid crises of representation. In Chile, drafters claiming to embody the people produced parallel monologues, aggravating rather than resolving a lack of elite consensus. In Cuba, drafters and regime-loyal intermediaries filtered input into centralized coherence, obscuring rather than remedying the absence of ideological pluralism. Will-confirmation reduced consultation to self-legitimation rather than a check on interpretation. {{< fa blank >}}
