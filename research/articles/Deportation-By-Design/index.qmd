@@ -18,6 +18,10 @@ pub-info:
   - name: Final version
     url: https://doi.org/10.1086/739835
     icon: fa-solid fa-arrow-up-right-from-square
+  - name: PDF
+    url: deportation-by-design.pdf
+    local: true
+    icon: fa-solid fa-file-pdf
 ---
 
 ## Abstract
