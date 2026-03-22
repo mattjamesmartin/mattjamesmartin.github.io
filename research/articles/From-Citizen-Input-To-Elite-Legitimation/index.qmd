@@ -19,8 +19,12 @@ pub-info:
   - name: Final version
     url: https://doi.org/10.5129/001041526X17731675177333
     icon: fa-solid fa-arrow-up-right-from-square
-  - name: PDF
+  - name: PDF (English)
     url: from-citizen-input-to-elite-legitimation.pdf
+    local: true
+    icon: fa-solid fa-file-pdf
+  - name: PDF (Español)
+    url: de-la-opinion-ciudadana-a-la-legitimacion-de-las-elites.pdf
     local: true
     icon: fa-solid fa-file-pdf
 ---
