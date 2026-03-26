@@ -16,18 +16,10 @@ function escapeHtml(text) {
     <% for (const course of items) { %>
       <div class="course-entry">
         <div class="body">
-          <p class="course-title">
-            <% if (course.url) { %>
-              <a href="<%= escapeHtml(course.url) %>" target="_blank" rel="noopener noreferrer">
-                <%= escapeHtml(course.title) %>
-              </a>
-            <% } else { %>
-              <%= escapeHtml(course.title) %>
-            <% } %>
-          </p>
+          <p class="course-title"><%= escapeHtml(course.title) %></p>
           <p class="course-details">
             <% if (course.number) { %>
-              <span class="course-number"><%= escapeHtml(course.number) %></span> | 
+              <span class="course-number"><%= escapeHtml(course.number) %></span> |
             <% } %>
             <span class="course-university"><%= escapeHtml(course.university) %></span>
             <% if (course.role) { %>
@@ -35,8 +27,31 @@ function escapeHtml(text) {
             <% } %>
           </p>
           <% if (course.description) { %>
-            <p class="course-description"><%= escapeHtml(course.description) %></p>
+            <details class="course-description">
+              <summary>Course description</summary>
+              <p><%= escapeHtml(course.description) %></p>
+            </details>
           <% } %>
+          <div class="course-meta">
+            <% if (course.semesters && course.semesters.length > 0) { %>
+              <ul class="course-semesters">
+                <% for (const semester of course.semesters) { %>
+                  <li><%= escapeHtml(semester.name) %></li>
+                <% } %>
+              </ul>
+            <% } %>
+            <% if (course.links && course.links.length > 0) { %>
+              <ul class="course-links">
+                <% for (const link of course.links) { %>
+                  <li>
+                    <a href="<%= escapeHtml(link.url) %>" target="_blank" rel="noopener noreferrer">
+                      <i class="<%= escapeHtml(link.icon) %>"></i> <%= escapeHtml(link.name) %>
+                    </a>
+                  </li>
+                <% } %>
+              </ul>
+            <% } %>
+          </div>
         </div>
       </div>
     <% } %>

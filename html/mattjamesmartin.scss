@@ -649,34 +649,60 @@ pre.text, pre.sourceCode, .cell-output pre {
             color: $gray-800;
         }
 
-        .course-description {
-            font-weight: $font-weight-light;
-            font-size: $font-size-lg;
+        details.course-description {
             margin-bottom: $spacing-sm;
+
+            summary {
+                font-size: 0.9rem;
+                font-weight: $font-weight-medium;
+                color: $garnet;
+                cursor: pointer;
+            }
+
+            p {
+                font-weight: $font-weight-light;
+                font-size: 0.95rem;
+                line-height: 1.5;
+                margin-top: $spacing-sm;
+                margin-bottom: 0;
+            }
+        }
+
+        .course-meta {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-top: 0.3rem;
         }
 
         ul.course-semesters {
             list-style: none;
             padding: 0;
-            margin-bottom: 0;
+            margin: 0;
+            display: flex;
+            gap: 0.3rem;
 
             li {
-                display: inline-block;
                 white-space: nowrap;
-                background-color: $garnet;
-                margin: 0 0.2rem 0.4rem 0;
-                padding: 0.2rem 0.4rem;
+                background-color: shift-color($slategray, -85%);
+                color: $gray-800;
+                padding: 0.15rem 0.5rem;
                 font-size: $font-size-sm;
                 border-radius: $border-radius-sm;
+            }
+        }
 
-                &.no-link {
-                    background-color: $white;
-                    border: $border-width-thin solid $black;
-                }
+        ul.course-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: $spacing-md;
 
-                a {
-                    color: $white;
-                }
+            li {
+                white-space: nowrap;
+                font-size: 0.9rem;
+                font-weight: bold;
             }
         }
     }

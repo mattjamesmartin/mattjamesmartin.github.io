@@ -81,9 +81,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-description','listing-university','listing-number','listing-url',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-title','listing-description','listing-university','listing-number','listing-semesters','listing-links',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-title","listing-description","listing-university","listing-number","listing-url"],
+      searchColumns: ["listing-title","listing-description","listing-university","listing-number","listing-semesters","listing-links"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -267,65 +267,116 @@ window.Quarto = {
     
       <div class="course-entry">
         <div class="body">
-          <p class="course-title">
-            
-              <a href="syllabi/POLI391-World-Constitutions-Syllabus-fa26.pdf" target="_blank" rel="noopener noreferrer">
-                World Constitutions
-              </a>
-            
-          </p>
+          <p class="course-title">World Constitutions</p>
           <p class="course-details">
             
-              <span class="course-number">POLI 391</span> | 
+              <span class="course-number">POLI 391</span> |
             
             <span class="course-university">University of South Carolina</span>
             
           </p>
           
-            <p class="course-description">Upper-level undergraduate course in Department of Political Science.</p>
+            <details class="course-description">
+              <summary>Course description</summary>
+              <p>Constitutions are fundamental to the establishment, and re-establishment, of a country's social, political, and economic order. Countries have experimented relentlessly with constitutional design, transforming our understanding of how constitutions are made, maintained, and replaced. This course explores the theoretical foundations of modern constitutionalism, the stages of the design process, innovations governments have incorporated into constitution-making, differences between democratic and authoritarian constitutions, and why constitutions ultimately die. Readings include materials on constitutional systems from various regions including Africa, Asia, and Latin America.</p>
+            </details>
           
+          <div class="course-meta">
+            
+              <ul class="course-semesters">
+                
+                  <li>Fall 2026</li>
+                
+              </ul>
+            
+            
+              <ul class="course-links">
+                
+                  <li>
+                    <a href="syllabi/POLI391-World-Constitutions-Syllabus-fa26.pdf" target="_blank" rel="noopener noreferrer">
+                      <i class="fa-solid fa-file-pdf"></i> Syllabus
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          </div>
         </div>
       </div>
     
       <div class="course-entry">
         <div class="body">
-          <p class="course-title">
-            
-              <a href="syllabi/GOV357L_syllabus_sp24.pdf" target="_blank" rel="noopener noreferrer">
-                Judicial Process and Behavior
-              </a>
-            
-          </p>
+          <p class="course-title">Judicial Process and Behavior</p>
           <p class="course-details">
             
-              <span class="course-number">GOV 357L</span> | 
+              <span class="course-number">GOV 357L</span> |
             
             <span class="course-university">University of Texas at Austin</span>
             
           </p>
           
-            <p class="course-description">Upper-level undergraduate course in Department of Government.</p>
+            <details class="course-description">
+              <summary>Course description</summary>
+              <p>This course examines the operation of the U.S. civil and criminal justice system, judicial decision-making through both normative and empirical approaches, and relevant constitutional doctrines. Students develop the ability to understand, comprehend, and critique textual materials, think logically, analytically and creatively, draw useful information from empirical data about judicial behavior, and create cogent arguments about the issues covered.</p>
+            </details>
           
+          <div class="course-meta">
+            
+              <ul class="course-semesters">
+                
+                  <li>Spring 2024</li>
+                
+              </ul>
+            
+            
+              <ul class="course-links">
+                
+                  <li>
+                    <a href="syllabi/GOV357L_syllabus_sp24.pdf" target="_blank" rel="noopener noreferrer">
+                      <i class="fa-solid fa-file-pdf"></i> Syllabus
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          </div>
         </div>
       </div>
     
       <div class="course-entry">
         <div class="body">
-          <p class="course-title">
-            
-              <a href="https://methodscamp.github.io/previous-editions/2023/" target="_blank" rel="noopener noreferrer">
-                Methods Camp 2023
-              </a>
-            
-          </p>
+          <p class="course-title">Methods Camp 2023</p>
           <p class="course-details">
             
             <span class="course-university">University of Texas at Austin</span>
             
           </p>
           
-            <p class="course-description">Introduction to statistics and quantitative methods for incoming PhD students in Deparment of Government.</p>
+            <details class="course-description">
+              <summary>Course description</summary>
+              <p>Introduction to statistics and quantitative methods for incoming PhD students in the Department of Government.</p>
+            </details>
           
+          <div class="course-meta">
+            
+              <ul class="course-semesters">
+                
+                  <li>Summer 2023</li>
+                
+              </ul>
+            
+            
+              <ul class="course-links">
+                
+                  <li>
+                    <a href="https://methodscamp.github.io/previous-editions/2023/" target="_blank" rel="noopener noreferrer">
+                      <i class="fa-solid fa-globe"></i> Course website
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          </div>
         </div>
       </div>
     
