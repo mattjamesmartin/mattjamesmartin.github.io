@@ -657,6 +657,20 @@ pre.text, pre.sourceCode, .cell-output pre {
                 font-weight: $font-weight-medium;
                 color: $garnet;
                 cursor: pointer;
+                list-style: none;
+
+                &::-webkit-details-marker {
+                    display: none;
+                }
+
+                &::before {
+                    content: "▸ ";
+                    display: inline;
+                }
+            }
+
+            &[open] > summary::before {
+                content: "▾ ";
             }
 
             p {
