@@ -1,6 +1,6 @@
 ---
 title: "Constitutional Cherry-Picking: How Drafters Leverage Public Input in Constitution-Making"
-sort: 4
+sort: 3
 author:
   - name: Matthew Martin
     url: https://mattjamesmartin.github.io/
@@ -17,7 +17,7 @@ pub-info:
     <strong>Matthew Martin</strong>. “Constitutional Cherry-Picking: How Drafters Leverage Public Input in Constitution-Making.” Under review.
   links:
   - name: Draft
-    url: martin-cherrypicking.pdf
+    url: constitutional-cherrypicking.pdf
     local: true
     icon: fa-solid fa-file-pdf
 ---
