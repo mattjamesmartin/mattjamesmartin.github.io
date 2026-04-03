@@ -1,6 +1,6 @@
 ---
 title: Curriculum Vitae
-date: 04-01-2026
+date: 04-03-2026
 title-block-banner: "#844247"
 published-title: CV last updated
 freeze: false
