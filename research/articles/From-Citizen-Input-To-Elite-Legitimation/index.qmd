@@ -1,6 +1,6 @@
 ---
 title: "From Citizen Input to Elite Legitimation: The Logic of Will-Confirmation in Constitution-Making"
-sort: 1
+date: 2026-04-02
 author:
   - name: Matthew Martin
     url: https://mattjamesmartin.github.io/

@@ -16,7 +16,7 @@ categories:
   - Professional backgrounds
 pub-info:
   reference: >-
-    Heridia, Sara and <strong>Matthew Martin</strong>. “When Experience Meets Environment: Professional Backgrounds, Court Composition, and Decision-Making in Immigration Court.” 
+    Heridia, Sara and <strong>Matthew Martin</strong>. “When Experience Meets Environment: Professional Backgrounds, Court Composition, and Decision-Making in Immigration Court.” Under review.
   links:
   - name: Draft
     url: when-experience-meets-environment.pdf
