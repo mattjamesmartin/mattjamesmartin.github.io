@@ -771,40 +771,10 @@ details {
     }
 }
 
-// About page - compact icon-only buttons on mobile
+// About page - hide social buttons on mobile
 @media (max-width: map-get($grid-breakpoints, sm)) {
   .about-links {
-    flex-direction: row !important;
-    justify-content: center;
-    gap: $spacing-sm;
-    width: auto !important;
-    padding-bottom: 0 !important;
-    margin-bottom: $spacing-lg;
-  }
-
-  .about-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: $spacing-sm $spacing-md;
-    width: auto !important;
-  }
-
-  // Hide text labels; font-size: 0 collapses text nodes
-  .about-link-text {
-    font-size: 0;
-  }
-
-  // Restore size for the Bluesky iconify-icon, which lives inside .about-link-text
-  // and has an inline font-size: 1em that would otherwise compute to 0
-  .about-link-text iconify-icon {
-    font-size: 1.25rem !important;
-  }
-
-  // Keep Bootstrap icons (envelope, github) at a readable size
-  .about-link .bi {
-    font-size: 1.25rem;
-    margin-right: 0 !important;
+    display: none !important;
   }
 }
 
