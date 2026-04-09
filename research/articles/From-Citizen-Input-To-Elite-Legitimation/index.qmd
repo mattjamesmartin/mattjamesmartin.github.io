@@ -27,6 +27,9 @@ pub-info:
     url: de-la-opinion-ciudadana-a-la-legitimacion-de-las-elites.pdf
     local: true
     icon: fa-solid fa-file-pdf
+  - name: Data
+    url: "https://doi.org/10.18738/T8/T7FLVR"
+    icon: fa-solid fa-database
 doi: 10.5129/001041526X17731675177333
 ---
 

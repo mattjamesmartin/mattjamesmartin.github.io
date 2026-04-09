@@ -17,7 +17,7 @@ pub-info:
   - name: Final version
     url: https://doi.org/10.1017/jlc.2024.9
     icon: fa-solid fa-arrow-up-right-from-square
-  - name: Code/data
+  - name: Data
     url: "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PVTH3Z"
     icon: fa-solid fa-database
   extra: >-
