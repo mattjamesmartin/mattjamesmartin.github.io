@@ -1,6 +1,6 @@
 ---
 title: "Expanding Your Vocabulary: A Framework for Topic Integration in Texts"
-sort: 1
+date: 2026-04-27
 author:
   - name: Roy Gardner
     url: https://github.com/roybgardner
@@ -9,17 +9,21 @@ author:
     url: https://mattjamesmartin.github.io/
     orcid: 0000-0003-3460-3603
     affiliation: Department of Government, University of Texas at Austin
-  - name: Andrés Cruz
-    url: https://arcruz0.github.io/
-    orcid: 0000-0003-3819-9433
+  - name: Ashley Moran
+    url: https://liberalarts.utexas.edu/government/faculty/am49396
+    orcid: 0000-0001-5969-2134
     affiliation: Department of Government, University of Texas at Austin
   - name: Zachary Elkins
     url: https://sites.google.com/site/zachelkinstexas/
     orcid: 0000-0002-7932-773X
     affiliation: Department of Government, University of Texas at Austin
-  - name: Ashley Moran
-    url: https://liberalarts.utexas.edu/government/faculty/am49396
-    orcid: 0000-0001-5969-2134
+  - name: Andrés Cruz
+    url: https://arcruz0.github.io/
+    orcid: 0000-0003-3819-9433
+    affiliation: Department of Government, University of Texas at Austin
+  - name: Guillermo Pérez
+    url: https://liberalarts.utexas.edu/government/gradstudents/gp22823
+    orcid: 0009-0007-1513-2013
     affiliation: Department of Government, University of Texas at Austin
 categories: 
   - Topic integration
@@ -29,18 +33,18 @@ categories:
   - Constitutions
 pub-info:
   reference: >-
-    Roy Gardner, <strong>Matthew Martin</strong>, <a href="https://liberalarts.utexas.edu/government/faculty/am49396">Ashley Moran</a>, <a href="https://site.google.com/site/zachelkinstexas/">Zachary Elkins</a>, <a href="https://arcruz0.github.io/">Andrés Cruz</a>, and <a href="https://liberalarts.utexas.edu/government/gradstudents/gp22823">Guillermo Pérez</a>. “Expanding Your Vocabulary: A Framework for Topic Integration in Texts.” Accepted for publication at <i>Social Science Computer Review</i>.
+    Roy Gardner, <strong>Matthew Martin</strong>, <a href="https://liberalarts.utexas.edu/government/faculty/am49396">Ashley Moran</a>, <a href="https://site.google.com/site/zachelkinstexas/">Zachary Elkins</a>, <a href="https://arcruz0.github.io/">Andrés Cruz</a>, and <a href="https://liberalarts.utexas.edu/government/gradstudents/gp22823">Guillermo Pérez</a>. “Expanding Your Vocabulary: A Framework for Topic Integration in Texts.” <i>Social Science Computer Review</i>. doi: <a href="https://doi.org/10.1177/08944393261443513"><code>10.1177/08944393261443513</code></a>
   links:
-  - name: Pre-print
-    url: expanding-your-vocabulary.pdf
-    local: true
-    icon: fa-solid fa-file-pdf
+  - name: Final version
+    url: https://doi.org/10.1177/08944393261443513
+    icon: fa-solid fa-arrow-up-right-from-square
   - name: GitHub
     url: https://github.com/conceptintegration/Segments-as-Topics
     icon: fa-brands fa-github
   - name: Tutorial
     url: https://www.youtube.com/watch?v=sm_0M5XHkk0
     icon: fa-brands fa-youtube
+doi: 10.1177/08944393261443513
 ---
 
 ## Abstract
