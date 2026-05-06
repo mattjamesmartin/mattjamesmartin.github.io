@@ -20,6 +20,10 @@ pub-info:
     url: constitutional-cherrypicking.pdf
     local: true
     icon: fa-solid fa-file-pdf
+  - name: Appendix
+    url: appendix.pdf
+    local: true
+    icon: fa-solid fa-paperclip
 ---
 
 ## Abstract
