@@ -1,5 +1,7 @@
 ---
 title: "Research"
+description: "Journal articles, working drafts, and other projects on constitution-making, public consultation, and U.S. immigration enforcement."
+title-block-banner: "#844247"
 listing:
   - id: articles
     contents: "articles/*/index.qmd"
@@ -12,21 +14,124 @@ listing:
     template: ../html/research/listing.ejs
 page-layout: full
 include-back-link: false
-toc-location: right
+toc: false
 ---
 
-## Journal articles
+```{=html}
+<div class="va-sec"><h2>Journal articles<span class="dot">.</span></h2></div>
+```
 
 ::: {#articles}
 :::
 
-## Works in progress
+```{=html}
+<div class="va-sec"><h2>Works in progress<span class="dot">.</span></h2></div>
+```
 
 ::: {#works-in-progress}
 :::
 
-## Other works
-
-Elkins, Zachary, Matthew Martin, Ashley Moran, Guillermo Pérez. 2023. "[12 Core Attributes of the Chilean Constitutional Proposal](https://www.constituteproject.org/data-stories/chile-2023-proposal)." Constitute Project.
-
-Martin, Matthew and Guillermo Pérez. "[Chile 2023 - Draft of 30 Oct 2023](https://www.constituteproject.org/constitution/Chile_2023DD)." Translation of Chilean constitutional proposal. Constitute Project.
+```{=html}
+<div class="va-sec" id="other-works-section"><h2>Other works<span class="dot">.</span></h2></div>
+<div class="other-works" id="other-works-list">
+  <div class="va-otherwork" data-categories="Chile,Constitutional design">
+    <span class="type">Data story</span>
+    <div>
+      <a class="ow-title" href="https://www.constituteproject.org/data-stories/chile-2023-proposal">12 Core Attributes of the Chilean Constitutional Proposal</a>
+      <div class="ow-meta">
+        <span>Zachary Elkins, <b>Matthew Martin</b>, Ashley Moran &amp; Guillermo P&eacute;rez</span>
+        <span class="dot">·</span>
+        <span class="venue">Constitute Project</span>
+        <span class="dot">·</span>
+        <span class="year">2023</span>
+      </div>
+      <div class="va-pubtags">
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory && window.quartoListingCategory('Chile'); return false;">Chile</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory && window.quartoListingCategory('Constitutional design'); return false;">Constitutional design</span>
+      </div>
+    </div>
+  </div>
+  <div class="va-otherwork" data-categories="Chile,Constitutional design">
+    <span class="type">Translation</span>
+    <div>
+      <a class="ow-title" href="https://www.constituteproject.org/constitution/Chile_2023DD">Chile 2023 &mdash; Draft of 30 Oct 2023</a>
+      <div class="ow-meta">
+        <span><b>Matthew Martin</b> &amp; Guillermo P&eacute;rez</span>
+        <span class="dot">·</span>
+        <span class="venue">Constitute Project</span>
+        <span class="dot">·</span>
+        <span class="year">2023</span>
+      </div>
+      <div class="ow-note">Translation of the Chilean constitutional proposal</div>
+      <div class="va-pubtags">
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory && window.quartoListingCategory('Chile'); return false;">Chile</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory && window.quartoListingCategory('Constitutional design'); return false;">Constitutional design</span>
+      </div>
+    </div>
+  </div>
+  <div id="other-works-empty" class="listing-no-matching" style="display: none;">No matching items</div>
+</div>
+<script>
+(function () {
+  function syncOtherWorks() {
+    var active = document.querySelector('.quarto-listing-category .category.active');
+    var cat = (active && active.dataset.category) ? active.dataset.category : '';
+    var entries = document.querySelectorAll('#other-works-list .va-otherwork');
+    var empty = document.getElementById('other-works-empty');
+    var anyVisible = false;
+    entries.forEach(function (el) {
+      var cats = (el.dataset.categories || '').split(',').map(function (s) { return s.trim(); });
+      var show = !cat || cats.indexOf(cat) !== -1;
+      el.style.display = show ? '' : 'none';
+      if (show) anyVisible = true;
+    });
+    if (empty) empty.style.display = (cat && !anyVisible) ? '' : 'none';
+  }
+  function updateSidebarCounts() {
+    var entries = document.querySelectorAll('#other-works-list .va-otherwork');
+    var bumps = {};
+    entries.forEach(function (el) {
+      (el.dataset.categories || '').split(',').forEach(function (raw) {
+        var c = raw.trim();
+        if (!c) return;
+        bumps[c] = (bumps[c] || 0) + 1;
+      });
+    });
+    var total = entries.length;
+    var allEl = document.querySelector(".quarto-listing-category .category[data-category='']");
+    if (allEl) {
+      var countEl = allEl.querySelector('.quarto-category-count');
+      if (countEl) {
+        var n = parseInt(countEl.textContent.replace(/[^0-9]/g, ''), 10) || 0;
+        countEl.textContent = '(' + (n + total) + ')';
+      }
+    }
+    Object.keys(bumps).forEach(function (cat) {
+      var el = document.querySelector(".quarto-listing-category .category[data-category='" + cat.replace(/'/g, "\\'") + "']");
+      if (el) {
+        var countEl = el.querySelector('.quarto-category-count');
+        if (countEl) {
+          var n = parseInt(countEl.textContent.replace(/[^0-9]/g, ''), 10) || 0;
+          countEl.textContent = '(' + (n + bumps[cat]) + ')';
+        }
+      }
+    });
+  }
+  function start() {
+    updateSidebarCounts();
+    syncOtherWorks();
+    var sidebar = document.querySelector('.quarto-listing-category');
+    if (sidebar) {
+      new MutationObserver(syncOtherWorks).observe(sidebar, {
+        attributes: true, attributeFilter: ['class'], subtree: true
+      });
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', start);
+  } else {
+    start();
+  }
+})();
+</script>
+```

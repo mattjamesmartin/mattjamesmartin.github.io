@@ -13,8 +13,12 @@ categories:
   - Political elites
   - Public consultation 
 pub-info:
-  reference: >-
-    <strong>Matthew Martin</strong>. Forthcoming. “From Citizen Input to Elite Legitimation: The Logic of Will-Confirmation in Constitution-Making.” <em>Comparative Politics</em> 59(1): 000–000. doi: <a href="https://doi.org/10.5129/001041526X17731675177333"><code>10.5129/001041526X17731675177333</code></a>
+  year: "2026"
+  status: "Forthcoming"
+  venue: "Comparative Politics"
+  venueDetail: "59(1)"
+  blurb: >-
+    Constitution-making is cast as a state-society dialogue, with public consultation sustaining the legal fiction that "the people" write the social contract. I introduce will-confirmation—the interpretive practice whereby elites utilize underdetermined public input to legitimate representative claims. Across thirty-seven interviews from Chile's Constitutional Convention and Cuba's Drafting Commission, I show how will-confirmation operates amid crises of representation. In Chile, drafters claiming to embody the people produced parallel monologues, aggravating rather than resolving a lack of elite consensus. In Cuba, drafters and regime-loyal intermediaries filtered input into centralized coherence, obscuring rather than remedying the absence of ideological pluralism.
   links:
   - name: Final version
     url: https://doi.org/10.5129/001041526X17731675177333

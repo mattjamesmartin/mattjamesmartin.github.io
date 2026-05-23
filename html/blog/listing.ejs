@@ -1,35 +1,27 @@
 ```{=html}
-<div class="list blog">
-    <% for (const post of items) { %>
-    <div class="blog-entry" <%= metadataAttrs(post) %>>
-        <div class="metadata">          
-            <p class="date listing-date"><%= post.date %></p>
-        </div>
-        <div class="body">
-            <p class="title listing-title"><a href="<%- post.path %>"><%= post.title %></a></p>
-
-            <% if (post.categories) { %>
-            <div class="post-categories listing-categories">
-                <% for (const category of post.categories) { %>
-                <div class="post-category listing-category" onclick="window.quartoListingCategory('<%=category%>'); return false;">
-                    <%= category %>
-                </div>
-                <% } %>
-            </div>
-            <% } %>
-
-            <p class="description listing-description"><%= post.description %></p>
-            
-            <% if (post.doi) { %>
-            <p class="post-doi"><img src="/imgs/doi.svg" class="doi-icon img-fluid" alt="DOI"/> <a href="https://doi.org/<%= post.doi %>" target="_blank" rel="noopener noreferrer"><%= post.doi %></a></p>
-            <% } %>
-        </div>
-        <% if (post.image) { %>
-        <div class="thumbnail">
-            <img src="<%= post.image %>" alt="<%= post.title %>" title="<%= post.title %>" />
-        </div>
+<div class="list blog-listing">
+<% for (const post of items) { %>
+  <div class="va-post" <%= metadataAttrs(post) %>>
+    <span class="va-postdate"><%= post.date %></span>
+    <div>
+      <a class="va-posttitle" href="<%- post.path %>"><%= post.title %></a>
+      <% if (post.description) { %>
+      <div class="va-postdesc"><%= post.description %></div>
+      <% } %>
+      <% if (post.categories && post.categories.length) { %>
+      <div class="va-pubtags" style="margin-top: 12px;">
+        <% for (const tag of post.categories) { %>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory && window.quartoListingCategory('<%= tag %>'); return false;"><%= tag %></span>
         <% } %>
+      </div>
+      <% } %>
     </div>
-    <% } %>
+    <div class="va-postmeta">
+      <% if (post.minutes) { %>
+      <span class="va-postmins"><%= post.minutes %> min read</span>
+      <% } %>
+    </div>
+  </div>
+<% } %>
 </div>
 ```

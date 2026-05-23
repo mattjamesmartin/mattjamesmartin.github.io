@@ -1,33 +1,34 @@
 ---
 title: "Matthew Martin"
 pagetitle: "About | Matthew Martin"
-about:
-  template: trestles
-  image: imgs/headshot.jpg
-  links:
-    - icon: envelope
-      text: Email
-      href: mailto:mjmartin@utexas.edu
-    - text: "{{< iconify bi bluesky size=1em title='Bluesky' >}} Bluesky"
-      href: https://bsky.app/profile/mattjmartin.com
-    - icon: github
-      text: Github
-      href: https://github.com/mattjamesmartin
-format:
-  html:
-    page-layout: full
-    open-graph:
-      image: "imgs/headshot-social.jpg"
-    twitter-card:
-      image: "imgs/headshot-social.jpg"
+title-block-style: none
+page-layout: full
 ---
 
-My name is Matt Martin (he/him), and I am a postdoctoral researcher at the [Comparative Constitutions Project](https://comparativeconstitutionsproject.org/). I received my PhD in Government from the University of Texas at Austin, specializing in public law and comparative politics. In August 2026, I will start as an Assistant Professor in the Department of Political Science at the [University of South Carolina](https://sc.edu/study/colleges_schools/artsandsciences/political_science/index.php).
+```{=html}
+<div class="va-trestles">
+  <div class="va-trestles-left">
+    <div class="va-portrait">
+      <img src="imgs/headshot.jpg" alt="Matthew Martin">
+    </div>
+    <div class="va-namecard">
+      <div class="name">Matthew Martin</div>
+      <div class="va-appointment">
+        <div class="role">Assistant Professor</div>
+        <div class="org">Department of Political Science</div>
+        <div class="org">University of South Carolina</div>
+      </div>
+    </div>
+  </div>
 
-My research examines constitution-making processes, focusing on mechanisms of public consultation. My dissertation analyzes how and why constitutional drafters engage public consultation—and what they do with the input they receive—through comparative case studies of constitution-making in Chile and Cuba. I combine large-N analyses and natural language processing with elite interviews and qualitative case research.
+  <div class="va-bio">
+    <p class="lead">My name is Matt Martin (he/him), and I am an Assistant Professor in the Department of Political Science at the <a class="org" href="https://sc.edu/study/colleges_schools/artsandsciences/political_science/index.php">University of South Carolina</a>. I received my PhD in Government from the University of Texas at Austin, specializing in public law and comparative politics. Previously, I was a postdoctoral researcher at the <a class="org" href="https://comparativeconstitutionsproject.org/">Comparative Constitutions Project</a>.</p>
 
-My work has been published in [*Social Science Computer Review*](https://doi.org/10.1177/08944393261443513), [*Comparative Politics*](https://doi.org/10.5129/001041526X17731675177333), [*Polity*](https://www.journals.uchicago.edu/doi/10.1086/739835), [*Política*](https://revistapolitica.uchile.cl/index.php/RP/article/view/81160), [*The Journal of Law and Courts*](https://www.cambridge.org/core/journals/journal-of-law-and-courts/article/elite-fractures-public-capture-the-strategic-use-of-public-consultation-in-global-constitutionmaking/A6BBCC7D2A7B5744D7766ABB4293595D), and [*PLOS One*](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0295396)*.* My dissertation research was supported by a Doctoral Dissertation Research Improvement Grant from the American Political Science Association. I am also an affiliate of the [Center for Law and Democracy](https://liberalarts.utexas.edu/lawanddemocracy/) at UT Austin.
+    <p>My research examines constitution-making processes, focusing on mechanisms of public consultation. My dissertation analyzes how and why constitutional drafters engage public consultation&mdash;and what they do with the input they receive&mdash;through comparative case studies of Chile and Cuba. I combine large-N analyses and natural language processing with elite interviews and qualitative case research.</p>
 
-Prior to graduate school, I worked as a legal assistant in immigration law. I remain committed to migrant justice through mutual aid work supporting trans and gender non-conforming asylum seekers.
+    <p>My work has appeared in <a href="https://doi.org/10.1177/08944393261443513">Social Science Computer Review</a>, <a href="https://doi.org/10.5129/001041526X17731675177333">Comparative Politics</a>, <a href="https://www.journals.uchicago.edu/doi/10.1086/739835">Polity</a>, <a href="https://revistapolitica.uchile.cl/index.php/RP/article/view/81160">Pol&iacute;tica</a>, the <a href="https://www.cambridge.org/core/journals/journal-of-law-and-courts/article/elite-fractures-public-capture-the-strategic-use-of-public-consultation-in-global-constitutionmaking/A6BBCC7D2A7B5744D7766ABB4293595D">Journal of Law and Courts</a>, and <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0295396">PLOS ONE</a>. My dissertation research was supported by a Doctoral Dissertation Research Improvement Grant from the American Political Science Association. I am also an affiliate of the <a class="org" href="https://liberalarts.utexas.edu/lawanddemocracy/">Center for Law and Democracy</a> at UT Austin.</p>
 
-Outside of work, I enjoy playing guitar and producing [music](https://soundcloud.com/meridiem-beats)—mostly lofi hip-hop.
+    <p>Prior to graduate school, I worked as a legal assistant in immigration law. I remain committed to migrant justice through mutual aid work supporting trans and gender non-conforming asylum seekers. Outside of work, I play guitar and produce <a href="https://soundcloud.com/meridiem-beats">music</a>&mdash;mostly lofi hip-hop.</p>
+  </div>
+</div>
+```

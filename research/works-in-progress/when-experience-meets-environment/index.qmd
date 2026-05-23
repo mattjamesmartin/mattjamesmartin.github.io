@@ -15,8 +15,9 @@ categories:
   - Judicial decision-making
   - Professional backgrounds
 pub-info:
-  reference: >-
-    Heridia, Sara and <strong>Matthew Martin</strong>. “When Experience Meets Environment: Professional Backgrounds, Court Composition, and Decision-Making in Immigration Court.” Under review.
+  status: "Under review"
+  blurb: >-
+    Analyzing more than 520,000 decisions by 502 immigration judges from 2015–2018, we disaggregate professional backgrounds by domain and examine how court composition moderates individual effects. Immigration-specific experience matters: former ICE attorneys grant relief at lower rates than other prosecutors; nonprofit immigration defense attorneys grant at higher rates than other defense attorneys. These background effects, however, are conditional on context—most pronounced in professionally heterogeneous courts and attenuating in prosecutor-dominated courts, where local norms absorb or suppress prior socialization.
   links:
   - name: Draft
     url: when-experience-meets-environment.pdf

@@ -32,8 +32,10 @@ categories:
   - Semantic similarity
   - Constitutions
 pub-info:
-  reference: >-
-    Roy Gardner, <strong>Matthew Martin</strong>, <a href="https://liberalarts.utexas.edu/government/faculty/am49396">Ashley Moran</a>, <a href="https://site.google.com/site/zachelkinstexas/">Zachary Elkins</a>, <a href="https://arcruz0.github.io/">Andrés Cruz</a>, and <a href="https://liberalarts.utexas.edu/government/gradstudents/gp22823">Guillermo Pérez</a>. “Expanding Your Vocabulary: A Framework for Topic Integration in Texts.” <i>Social Science Computer Review</i>. doi: <a href="https://doi.org/10.1177/08944393261443513"><code>10.1177/08944393261443513</code></a>
+  year: "2026"
+  venue: "Social Science Computer Review"
+  blurb: >-
+    Topic discovery and integration are vital for maintaining vocabularies that categorize textual corpora. Automated approaches are often computationally expensive and lack domain-specific conceptual nuance; manual approaches are costly in terms of time and potential bias. We introduce the segments-as-topic (SAT) methodology, a four-stage process that combines automation and human expertise to assess candidate topics for vocabulary inclusion. We apply this methodology to the Comparative Constitutions Project vocabulary that tracks over 330 topics in national constitutions, and demonstrate the addition of three new topics. The SAT approach balances computational efficiency with expert judgment, offering a systematic, user-friendly, and replicable framework for social scientists to expand domain-specific vocabularies.
   links:
   - name: Final version
     url: https://doi.org/10.1177/08944393261443513

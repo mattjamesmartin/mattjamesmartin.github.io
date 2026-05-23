@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Matthew Martin">
+<meta name="description" content="Courses on constitutional politics, the judiciary, and quantitative methods at USC and UT Austin.">
 
 <title>Teaching | Matthew Martin – Matthew Martin</title>
 <style>
@@ -30,6 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../favicon.svg" rel="icon" type="image/svg+xml">
 <script src="../site_libs/quarto-listing/list.min.js"></script>
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -81,9 +83,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-description','listing-university','listing-number','listing-semesters','listing-links',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-code','listing-title','listing-institution','listing-semesters','listing-summary','listing-actions','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-title","listing-description","listing-university","listing-number","listing-semesters","listing-links"],
+      searchColumns: ["listing-code","listing-title","listing-institution","listing-semesters","listing-summary","listing-actions","listing-date"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -147,13 +149,15 @@ window.Quarto = {
 </script>
 
 <meta property="og:title" content="Teaching | Matthew Martin">
-<meta property="og:image" content="https://mattjamesmartin.github.io/teaching/imgs/headshot.jpg">
+<meta property="og:description" content="Courses on constitutional politics, the judiciary, and quantitative methods at USC and UT Austin.">
+<meta property="og:image" content="https://mattjamesmartin.github.io/teaching/imgs/social-card.png">
 <meta property="og:site_name" content="Matthew Martin">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:title" content="Teaching | Matthew Martin">
-<meta name="twitter:image" content="https://mattjamesmartin.github.io/teaching/imgs/headshot.jpg">
+<meta name="twitter:description" content="Courses on constitutional politics, the judiciary, and quantitative methods at USC and UT Austin.">
+<meta name="twitter:image" content="https://mattjamesmartin.github.io/teaching/imgs/social-card.png">
 <meta name="twitter:creator" content="@MattJ_Martin">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed">
@@ -197,15 +201,15 @@ window.Quarto = {
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="mailto:mjmartin@utexas.edu"> 
-<span class="menu-text"><iconify-icon inline="" icon="bi:envelope" style="font-size: 1.1em;" aria-label="Icon envelope from bi Iconify.design set." title="E-mail"></iconify-icon></span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://github.com/mattjamesmartin"> 
-<span class="menu-text"><iconify-icon inline="" icon="bi:github" style="font-size: 1.1em;" aria-label="Icon github from bi Iconify.design set." title="GitHub"></iconify-icon></span></a>
+<span class="menu-text"><iconify-icon inline="" icon="bi:envelope-fill" style="font-size: 1.1em;" aria-label="Icon envelope-fill from bi Iconify.design set." title="E-mail"></iconify-icon></span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://bsky.app/profile/mattjmartin.com"> 
 <span class="menu-text"><iconify-icon inline="" icon="bi:bluesky" style="font-size: 1em;" aria-label="Icon bluesky from bi Iconify.design set." title="Bluesky"></iconify-icon></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/mattjamesmartin"> 
+<span class="menu-text"><iconify-icon inline="" icon="bi:github" style="font-size: 1.1em;" aria-label="Icon github from bi Iconify.design set." title="GitHub"></iconify-icon></span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://www.linkedin.com/in/mattj-martin/"> 
@@ -213,7 +217,7 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://orcid.org/0000-0003-3460-3603"> 
-<span class="menu-text"><iconify-icon inline="" icon="bi:orcid" style="font-size: 1.1em;" aria-label="Icon orcid from bi Iconify.design set." title="Orcid"></iconify-icon></span></a>
+<span class="menu-text"><iconify-icon inline="" icon="simple-icons:orcid" style="font-size: 1.1em;" aria-label="Icon orcid from simple-icons Iconify.design set." title="ORCID"></iconify-icon></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -225,13 +229,18 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
+    <div class="quarto-title column-page">
       <h1 class="title">Teaching</h1>
-                      </div>
+                  <div>
+        <div class="description">
+          Courses on constitutional politics, the judiciary, and quantitative methods at USC and UT Austin.
+        </div>
+      </div>
+                </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta column-page">
 
       
     
@@ -242,145 +251,116 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Contents</h2>
-   
-  <ul>
-  <li><a href="#courses" id="toc-courses" class="nav-link active" data-scroll-target="#courses">Courses</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
 
 
 
 
-<section id="courses" class="level2">
-<h2 class="anchored" data-anchor-id="courses">Courses</h2>
+<div class="va-sec"><h2 class="anchored">Courses<span class="dot">.</span></h2></div>
 <div id="listing-courses" class="quarto-listing quarto-listing-container-custom">
+<div class="list teaching-listing">
 
-<div class="teaching">
   
-    
-      <div class="course-entry">
-        <div class="body">
-          <p class="course-title">World Constitutions</p>
-          <p class="course-details">
-            
-              <span class="course-number">POLI 391</span> |
-            
-            <span class="course-university">University of South Carolina</span>
-            
-          </p>
-          
-            <details class="course-description">
-              <summary>Course description</summary>
-              <p>Constitutions are fundamental to the establishment, and re-establishment, of a country's social, political, and economic order. Countries have experimented relentlessly with constitutional design, transforming our understanding of how constitutions are made, maintained, and replaced. This course explores the theoretical foundations of modern constitutionalism, the stages of the design process, innovations governments have incorporated into constitution-making, differences between democratic and authoritarian constitutions, and why constitutions ultimately die. Readings include materials on constitutional systems from various regions including Africa, Asia, and Latin America.</p>
-            </details>
-          
-          <div class="course-meta">
-            
-              <ul class="course-semesters">
-                
-                  <li>Fall 2026</li>
-                
-              </ul>
-            
-            
-              <ul class="course-links">
-                
-                  <li>
-                    <a href="syllabi/POLI391-World-Constitutions-Syllabus-fa26.pdf" target="_blank" rel="noopener noreferrer">
-                      <i class="fa-solid fa-file-pdf"></i> Syllabus
-                    </a>
-                  </li>
-                
-              </ul>
-            
-          </div>
-        </div>
-      </div>
-    
-      <div class="course-entry">
-        <div class="body">
-          <p class="course-title">Judicial Process and Behavior</p>
-          <p class="course-details">
-            
-              <span class="course-number">GOV 357L</span> |
-            
-            <span class="course-university">University of Texas at Austin</span>
-            
-          </p>
-          
-            <details class="course-description">
-              <summary>Course description</summary>
-              <p>This course examines the operation of the U.S. civil and criminal justice system, judicial decision-making through both normative and empirical approaches, and relevant constitutional doctrines. Students develop the ability to understand, comprehend, and critique textual materials, think logically, analytically and creatively, draw useful information from empirical data about judicial behavior, and create cogent arguments about the issues covered.</p>
-            </details>
-          
-          <div class="course-meta">
-            
-              <ul class="course-semesters">
-                
-                  <li>Spring 2024</li>
-                
-              </ul>
-            
-            
-              <ul class="course-links">
-                
-                  <li>
-                    <a href="syllabi/GOV357L_syllabus_sp24.pdf" target="_blank" rel="noopener noreferrer">
-                      <i class="fa-solid fa-file-pdf"></i> Syllabus
-                    </a>
-                  </li>
-                
-              </ul>
-            
-          </div>
-        </div>
-      </div>
-    
-      <div class="course-entry">
-        <div class="body">
-          <p class="course-title">Methods Camp 2023</p>
-          <p class="course-details">
-            
-            <span class="course-university">University of Texas at Austin</span>
-            
-          </p>
-          
-            <details class="course-description">
-              <summary>Course description</summary>
-              <p>Introduction to statistics and quantitative methods for incoming PhD students in the Department of Government.</p>
-            </details>
-          
-          <div class="course-meta">
-            
-              <ul class="course-semesters">
-                
-                  <li>Summer 2023</li>
-                
-              </ul>
-            
-            
-              <ul class="course-links">
-                
-                  <li>
-                    <a href="https://methodscamp.github.io/previous-editions/2023/" target="_blank" rel="noopener noreferrer">
-                      <i class="fa-solid fa-globe"></i> Course website
-                    </a>
-                  </li>
-                
-              </ul>
-            
-          </div>
-        </div>
-      </div>
-    
+  <div class="va-course">
+    <div class="va-courseleft">
+      
+      <span class="va-coursecode">POLI 391</span>
+      
+      
+        
+        <span class="va-coursechip">Fall 2026</span>
+        
+      
+    </div>
+    <div>
+      
+      
+      <a class="va-coursetitle" href="syllabi/POLI391-World-Constitutions-Syllabus-fa26.pdf" target="_blank" rel="noopener noreferrer">World Constitutions</a>
+      
+      
+      <div class="va-courseinst">University of South Carolina</div>
+      
+      
+      <div class="va-coursesummary">This course explores the theoretical foundations of modern constitutionalism, the stages of the design process, innovations governments have incorporated into constitution-making, differences between democratic and authoritarian constitutions, and why constitutions ultimately die. Readings include materials on constitutional systems from Africa, Asia, and Latin America.</div>
+      
+    </div>
+    <div class="va-courseside">
+      
+        
+        <a class="va-publink" href="syllabi/POLI391-World-Constitutions-Syllabus-fa26.pdf" target="_blank" rel="noopener noreferrer">Syllabus <i class="fa-solid fa-file-pdf"></i></a>
+        
+      
+    </div>
+  </div>
   
+  <div class="va-course">
+    <div class="va-courseleft">
+      
+      <span class="va-coursecode">GOV 357L</span>
+      
+      
+        
+        <span class="va-coursechip">Spring 2024</span>
+        
+      
+    </div>
+    <div>
+      
+      
+      <a class="va-coursetitle" href="syllabi/GOV357L_syllabus_sp24.pdf" target="_blank" rel="noopener noreferrer">Judicial Process and Behavior</a>
+      
+      
+      <div class="va-courseinst">University of Texas at Austin</div>
+      
+      
+      <div class="va-coursesummary">An examination of the operation of the U.S. civil and criminal justice system, judicial decision-making through both normative and empirical approaches, and relevant constitutional doctrines. Students develop the ability to critique textual materials, think analytically about empirical data on judicial behavior, and build cogent arguments about the issues covered.</div>
+      
+    </div>
+    <div class="va-courseside">
+      
+        
+        <a class="va-publink" href="syllabi/GOV357L_syllabus_sp24.pdf" target="_blank" rel="noopener noreferrer">Syllabus <i class="fa-solid fa-file-pdf"></i></a>
+        
+      
+    </div>
+  </div>
+  
+  <div class="va-course">
+    <div class="va-courseleft">
+      
+      <span class="va-coursecode">—</span>
+      
+      
+        
+        <span class="va-coursechip">Summer 2023</span>
+        
+      
+    </div>
+    <div>
+      
+      
+      <a class="va-coursetitle" href="https://methodscamp.github.io/previous-editions/2023/" target="_blank" rel="noopener noreferrer">Methods Camp</a>
+      
+      
+      <div class="va-courseinst">University of Texas at Austin</div>
+      
+      
+      <div class="va-coursesummary">Introduction to statistics and quantitative methods for incoming PhD students in the Department of Government.</div>
+      
+    </div>
+    <div class="va-courseside">
+      
+        
+        <a class="va-publink" href="https://methodscamp.github.io/previous-editions/2023/" target="_blank" rel="noopener noreferrer">Course site <i class="fa-solid fa-globe"></i></a>
+        
+      
+    </div>
+  </div>
+  
+
 </div>
 <div class="listing-no-matching d-none">
 No matching items
@@ -389,7 +369,6 @@ No matching items
 
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -816,13 +795,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><span class="faux-block">All content licensed under<br><a href="https://creativecommons.org/licenses/by/4.0/"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> Creative Commons CC BY 4.0</a></span></p>
+<span class="footer-label">License</span>
+<p>
+<i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> All content licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+</p>
+<p>
+© 2023–2026 Matthew Martin
+</p>
 </div>   
     <div class="nav-footer-center">
-      &nbsp;
-    </div>
+<span class="footer-label">Source</span>
+<p>
+Built with <a href="https://quarto.org/">Quarto</a>
+</p>
+<p>
+View the source on <a href="https://github.com/mattjamesmartin/mattjamesmartin.github.io/">GitHub <i class="fa-brands fa-github" aria-label="github"></i></a>
+</p>
+</div>
     <div class="nav-footer-right">
-<p><span class="faux-block">Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/">Quarto</a></span> <span class="faux-block"><a href="https://github.com/mattjamesmartin/mattjamesmartin.github.io/">View the source at <i class="fa-brands fa-github" aria-label="github"></i> GitHub</a></span></p>
+<span class="footer-label">Colophon</span>
+<p>
+Set in <a href="https://fonts.google.com/specimen/Source+Serif+4">Source Serif 4</a>
+</p>
+<p>
+Last revised May 23, 2026
+</p>
 </div>
   </div>
 </footer>

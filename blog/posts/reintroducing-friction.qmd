@@ -1,11 +1,12 @@
 ---
 title: "Reintroducing Friction"
-description: "An AI policy for the classroom"
+description: "An AI policy for the classroom."
 image: "../../imgs/AI.jpeg"
 date: 03-19-2026
+minutes: 7
 categories:
   - AI
-  - teaching
+  - Teaching
 ---
 
 [![Image from Zohar, Bloom, and Inzlicht, "Against Frictionless AI," Communications Psychology 4, no. 39 (2026).](/imgs/AI.jpeg)](https://www.nature.com/articles/s44271-026-00402-1)

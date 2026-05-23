@@ -1,8 +1,9 @@
 ---
 title: "Cuba On My Mind"
-description: "Photos and reflections from Havana"
+description: "Photos and reflections from Havana."
 image: "../../imgs/Cuba.JPG"
 date: 03-16-2026
+minutes: 5
 categories:
   - Cuba
 include-in-header:

@@ -1,13 +1,16 @@
 ---
 title: "The Art of Never Being Satisfied"
-description: "A guide to writing for perfectionists"
+description: "A guide to writing for perfectionists."
 image: "../../imgs/Gettysburg.jpg"
-date: 01-17-2023"
+date: 01-17-2023
+minutes: 12
 code-tools: false
 categories:
-  - writing
-  - perfectionism
+  - Writing
+  - Perfectionism
 ---
+
+![](/imgs/Gettysburg.jpg)
 
 ## Introduction
 
