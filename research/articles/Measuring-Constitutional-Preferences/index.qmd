@@ -20,9 +20,9 @@ author:
     url: https://liberalarts.utexas.edu/government/faculty/am49396
     orcid: 0000-0001-5969-2134
     affiliation: Department of Government, University of Texas at Austin
-categories: 
+categories:
   - Constitutional design
-  - Public consultation 
+  - Public consultation
   - Natural language processing
   - Chile
   - Latin America

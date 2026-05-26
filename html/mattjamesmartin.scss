@@ -138,7 +138,7 @@ a { text-decoration: none; }
 // ------------------------------------------------------------------
 .quarto-title-banner {
   background: $banner !important;
-  padding: 56px 64px;
+  padding: 36px 64px;
   color: #fff;
 
   .quarto-title h1.title,
@@ -180,6 +180,11 @@ main.content,
   color: $ink;
 }
 
+// Quarto defaults main to margin: 1em 0; the home page should match the
+// trestles' own padding, so zero out main's bottom margin too.
+body:has(.va-trestles) main.content { margin-bottom: 0; }
+body:has(.va-trestles) .page-columns > .content { padding-bottom: 0; }
+
 @media (max-width: 720px) {
   .page-columns > .content { padding: 0 20px 56px; }
 }
@@ -204,27 +209,13 @@ main a {
 }
 
 // ------------------------------------------------------------------
-// Eyebrows / labels
-// ------------------------------------------------------------------
-.va-eyebrow {
-  font-size: 12px; font-weight: 600;
-  letter-spacing: 0.16em; text-transform: uppercase;
-  color: $garnet;
-}
-.va-label {
-  font-size: 11.5px; font-weight: 600;
-  letter-spacing: 0.16em; text-transform: uppercase;
-  color: $ink-faint;
-}
-
-// ------------------------------------------------------------------
 // About / Trestles hero (raw-HTML on index.qmd)
 // ------------------------------------------------------------------
 .va-trestles {
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 280px 1fr;
   gap: 56px;
-  padding: 64px 0 40px;
+  padding: 32px 0 24px;
   align-items: start;
 }
 .va-trestles-left { display: flex; flex-direction: column; gap: 18px; }
@@ -339,18 +330,6 @@ main a {
 
     .dot { color: $garnet; }
   }
-  .va-seclink {
-    font-size: 13.5px;
-    color: $ink-faint;
-    box-shadow: inset 0 -1px 0 $rule-soft;
-    padding-bottom: 2px;
-    transition: color .12s, box-shadow .12s;
-
-    &:hover {
-      color: $garnet;
-      box-shadow: inset 0 -1px 0 $garnet;
-    }
-  }
 }
 
 @media (max-width: 720px) {
@@ -408,7 +387,7 @@ main a {
 .va-pubtag,
 a.va-pubtag,
 main a.va-pubtag {
-  font-size: 12px; letter-spacing: 0.005em;
+  font-size: 13px; letter-spacing: 0.005em;
   color: $ink-faint;
   padding: 0 0 2px;
   box-shadow: inset 0 -1px 0 $rule-soft;
@@ -416,6 +395,7 @@ main a.va-pubtag {
   text-decoration: none;
   transition: color .12s, box-shadow .12s;
   display: inline-block;
+  cursor: pointer;
 
   &:hover { color: $garnet; box-shadow: inset 0 -1px 0 $garnet; }
 }
@@ -434,17 +414,6 @@ main a.va-pubtag {
 
   i { margin-left: 4px; }
 }
-.va-pubstatus {
-  display: inline-block;
-  font-size: 10.5px; font-weight: 600;
-  letter-spacing: 0.12em; text-transform: uppercase;
-  color: $garnet;
-  padding: 2px 8px;
-  border: 1px solid $garnet;
-  margin-bottom: 10px;
-  border-radius: 2px;
-}
-
 @media (max-width: 720px) {
   .va-pubentry {
     grid-template-columns: 1fr;
@@ -736,6 +705,9 @@ body:has(.va-detail) main > h2:first-of-type {
     &:hover { color: $garnet; box-shadow: inset 0 -1px 0 $garnet; }
   }
 }
+// On article pages, meta sits below the author list and needs extra top spacing.
+.va-detail-authors + .va-detail-meta { margin-top: 18px; }
+
 .va-detail-authors {
   font-size: 15px; color: $ink-soft;
   margin-top: 14px; line-height: 1.55;
@@ -758,7 +730,7 @@ body:has(.va-detail) main > h2:first-of-type {
 .va-detail-action {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 9px 14px;
-  font-size: 13px; font-weight: 500;
+  font-size: 14px; font-weight: 500;
   color: $ink;
   border: 1px solid $rule-soft;
   background: rgba(255, 255, 255, 0.4);
@@ -770,10 +742,6 @@ body:has(.va-detail) main > h2:first-of-type {
     border-color: $garnet; color: $garnet;
     background: rgba(122, 20, 36, 0.04);
     box-shadow: none;
-  }
-  &.primary {
-    background: $garnet; border-color: $garnet; color: #fff;
-    &:hover { background: $garnet-deep; border-color: $garnet-deep; color: #fff; }
   }
   i, svg { font-size: 13px; width: 13px; height: 13px; }
 }
@@ -796,191 +764,6 @@ body:has(.va-detail) main > h2:first-of-type {
   }
 }
 
-.va-detail-body {
-  padding-top: 16px;
-
-  h2 {
-    font-size: 22px; font-weight: 500;
-    letter-spacing: -0.01em;
-    color: $ink;
-    margin: 36px 0 14px;
-
-    &:first-child { margin-top: 0; }
-  }
-  .section-label {
-    font-size: 11px; font-weight: 600;
-    letter-spacing: 0.18em; text-transform: uppercase;
-    color: $garnet;
-    display: block; margin-bottom: 6px;
-  }
-  p {
-    font-size: 18px; line-height: 1.65;
-    margin: 0 0 18px; color: $ink;
-
-    &:last-child { margin-bottom: 0; }
-  }
-  a {
-    color: $ink;
-    box-shadow: inset 0 -1px 0 $garnet;
-    padding-bottom: 1px;
-
-    &:hover { color: $garnet; }
-    &:has(> img), &:has(> picture) {
-      box-shadow: none; padding-bottom: 0;
-      img { transition: opacity .15s; }
-      &:hover { box-shadow: none; }
-      &:hover img { opacity: 0.9; }
-    }
-  }
-  strong { font-weight: 600; }
-
-  // Blockquotes
-  blockquote {
-    margin: 26px 0;
-    padding: 2px 0 2px 22px;
-    border-left: 3px solid $garnet;
-    color: $ink-soft;
-
-    p { font-size: 17px; line-height: 1.6; margin: 0 0 12px; }
-    p:last-child { margin-bottom: 0; }
-    cite {
-      display: block;
-      font-size: 13.5px; color: $ink-faint;
-      margin-top: 10px;
-      font-style: normal;
-
-      &::before { content: "— "; }
-    }
-  }
-
-  // Footnote markers
-  sup a, .footnote-ref {
-    font-size: 0.72em;
-    vertical-align: super;
-    line-height: 0;
-    color: $garnet;
-    font-weight: 600;
-    box-shadow: none;
-    padding: 0 2px;
-    border-radius: 2px;
-
-    &:hover {
-      color: $garnet-deep;
-      background: rgba(122, 20, 36, 0.08);
-      box-shadow: none;
-    }
-  }
-
-  // Footnote list at bottom
-  section.footnotes,
-  .footnotes {
-    margin-top: 56px; padding-top: 24px;
-    border-top: 1px solid $rule-medium;
-    font-size: 14.5px; line-height: 1.55;
-    color: $ink-muted;
-
-    &::before {
-      content: "Notes";
-      display: block;
-      font-size: 11px; font-weight: 600;
-      letter-spacing: 0.18em; text-transform: uppercase;
-      color: $garnet;
-      margin-bottom: 16px;
-    }
-    ol { padding-left: 24px; margin: 0; }
-    li { margin-bottom: 12px; }
-    p { font-size: 14.5px; line-height: 1.55; margin: 0 0 4px; }
-  }
-  .footnote-back,
-  a.footnote-back {
-    color: $garnet;
-    box-shadow: none;
-    margin-left: 4px;
-    font-size: 0.85em;
-
-    &:hover { color: $garnet-deep; box-shadow: none; }
-  }
-
-  // Image galleries (lightgallery)
-  .gallery-item {
-    display: block; box-shadow: none; padding: 0; margin: 24px 0;
-
-    &:hover { box-shadow: none; }
-    img { width: 100%; height: auto; cursor: zoom-in; }
-  }
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 8px; margin: 24px 0;
-
-    .gallery-item { margin: 0; aspect-ratio: 1; overflow: hidden; }
-    .gallery-item img {
-      width: 100%; height: 100%; object-fit: cover;
-      transition: transform .25s;
-    }
-    .gallery-item:hover img { transform: scale(1.04); }
-  }
-
-  // Code blocks
-  code {
-    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
-    font-size: 0.85em;
-    background: $paper-shadow;
-    padding: 1px 6px;
-    border-radius: 2px;
-    color: $ink-soft;
-  }
-  pre {
-    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
-    font-size: 13px; line-height: 1.55;
-    background: $paper-shadow;
-    padding: 16px 18px;
-    border-left: 3px solid $garnet;
-    margin: 22px 0;
-    overflow-x: auto;
-    color: $ink;
-
-    code { background: none; padding: 0; font-size: inherit; border-radius: 0; }
-  }
-
-  // Tables
-  table {
-    width: 100%; border-collapse: collapse;
-    margin: 24px 0;
-    font-size: 15px; line-height: 1.5;
-
-    thead th {
-      font-size: 11.5px; letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: $garnet; font-weight: 600;
-      padding: 8px 12px 10px;
-      border-bottom: 2px solid $ink;
-      text-align: left;
-    }
-    tbody td {
-      padding: 10px 12px;
-      border-bottom: 1px solid $rule-medium;
-      vertical-align: top;
-      color: $ink;
-    }
-    tbody tr:last-child td { border-bottom: none; }
-    caption {
-      font-size: 13.5px; color: $ink-faint;
-      padding: 8px 0;
-      text-align: left;
-      caption-side: bottom;
-      font-style: italic;
-    }
-  }
-}
-
-// Figures
-.va-figure { margin: 28px 0; }
-.va-figure img { width: 100%; height: auto; display: block; }
-.va-figure figcaption {
-  font-size: 13.5px; color: $ink-muted; line-height: 1.45;
-  margin-top: 12px;
-}
 .va-figure-pair {
   display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
   margin: 28px 0;
@@ -993,39 +776,6 @@ body:has(.va-detail) main > h2:first-of-type {
   }
 }
 
-.va-callout {
-  margin: 28px 0;
-  padding: 20px 24px;
-  background: rgba(122, 20, 36, 0.05);
-  border-left: 3px solid $garnet;
-
-  p {
-    font-size: 16px; line-height: 1.6;
-    margin: 0 0 12px; color: $ink;
-    &:last-child { margin-bottom: 0; }
-  }
-  strong { color: $garnet; }
-}
-
-.va-post-hero {
-  margin: 28px 0 36px;
-
-  img {
-    width: 100%;
-    aspect-ratio: 16 / 8;
-    object-fit: cover;
-    background: rgba(122, 20, 36, 0.08);
-    display: block;
-  }
-  figcaption {
-    font-size: 13px; color: $ink-faint;
-    margin-top: 10px; text-align: right;
-    font-style: italic;
-
-    a { color: $ink-faint; box-shadow: inset 0 -1px 0 rgba(122, 20, 36, 0.3); }
-  }
-}
-
 @media (max-width: 720px) {
   .va-detail { padding: 28px 0 48px; }
   .va-backlink { margin-bottom: 24px; font-size: 13px; }
@@ -1035,14 +785,7 @@ body:has(.va-detail) main > h2:first-of-type {
   .va-detail-meta .doi { font-size: 11.5px; word-break: break-all; }
   .va-detail-actions { gap: 8px; margin-top: 22px; }
   .va-detail-action { flex: 1; justify-content: center; min-width: 0; }
-  .va-detail-body {
-    padding-top: 28px;
-    p { font-size: 16px; line-height: 1.6; }
-    h2 { font-size: 19px; margin-top: 28px; }
-  }
-  .va-callout { padding: 16px 18px; margin: 22px 0; p { font-size: 15px; } }
   .va-figure-pair { grid-template-columns: 1fr; gap: 24px; }
-  .va-post-hero { margin: 22px 0 28px; }
 }
 
 // ------------------------------------------------------------------
@@ -1108,7 +851,7 @@ footer.footer {
     align-items: flex-start;
     justify-content: space-between;
     gap: 48px;
-    padding: 40px 64px;
+    padding: 20px 48px;
     min-height: 0;
     text-align: left;
     color: $peach-link;
@@ -1181,17 +924,17 @@ body:has(.va-404) #title-block-header { display: none !important; }
 // Category sidebar (Quarto's listing filter)
 // ------------------------------------------------------------------
 #quarto-margin-sidebar {
-  padding-left: 24px;
-  border-left: 1px solid $rule-soft;
+  padding-top: 0;
   align-self: start;
   position: static;
   top: auto;
 }
 
 .quarto-listing-category {
-  padding-left: 0;
-  border-left: none;
-  font-size: 12.5px;
+  margin-left: 6px;
+  padding-left: 12px;
+  border-left: 1px solid $rule-soft;
+  font-size: 13px;
   color: $ink-soft;
   line-height: 1.5;
 
@@ -1201,7 +944,7 @@ body:has(.va-404) #title-block-header { display: none !important; }
     cursor: pointer;
     border-bottom: none;
     color: $ink-soft;
-    font-size: 12.5px;
+    font-size: 13px;
     transition: color .12s;
 
     &:hover { color: $garnet; }
@@ -1210,7 +953,7 @@ body:has(.va-404) #title-block-header { display: none !important; }
   .quarto-category-count {
     color: $ink-soft;
     opacity: 0.5;
-    font-size: 12.5px;
+    font-size: 13px;
     margin-left: 2px;
   }
 }
@@ -1222,18 +965,14 @@ h5.quarto-listing-category-title {
   letter-spacing: 0;
   text-transform: none;
   color: $ink;
-  padding-bottom: 6px;
-  margin-bottom: 6px;
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 4px;
   border-bottom: none;
 }
 
 // Category chips in the title block (Quarto emits when listing has categories)
 .quarto-title-block .quarto-categories { display: none; }
-
-// Show category tags as clickable filter chips
-.va-pubtag {
-  cursor: pointer;
-}
 
 // "No matching items" empty state for listings
 .listing-no-matching {

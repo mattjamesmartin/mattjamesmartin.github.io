@@ -6,7 +6,7 @@ author:
     url: https://mattjamesmartin.github.io/
     orcid: 0000-0003-3460-3603
     affiliation: Department of Government, University of Texas at Austin
-categories: 
+categories:
   - Crime-based deportation
   - Crimmigration
   - Political entrepreneurs

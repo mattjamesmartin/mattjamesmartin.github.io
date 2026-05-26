@@ -6,12 +6,12 @@ author:
     url: https://mattjamesmartin.github.io/
     orcid: 0000-0003-3460-3603
     affiliation: Department of Government, University of Texas at Austin
-categories: 
+categories:
   - Chile
   - Constitutional design
   - Cuba
   - Political elites
-  - Public consultation 
+  - Public consultation
 pub-info:
   status: "Under review"
   blurb: >-

@@ -25,7 +25,7 @@ author:
     url: https://liberalarts.utexas.edu/government/gradstudents/gp22823
     orcid: 0009-0007-1513-2013
     affiliation: Department of Government, University of Texas at Austin
-categories: 
+categories:
   - Topic integration
   - Segments-as-topic
   - Vocabularies

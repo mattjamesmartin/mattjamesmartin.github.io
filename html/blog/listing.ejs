@@ -9,7 +9,7 @@
       <div class="va-postdesc"><%= post.description %></div>
       <% } %>
       <% if (post.categories && post.categories.length) { %>
-      <div class="va-pubtags" style="margin-top: 12px;">
+      <div class="va-pubtags">
         <% for (const tag of post.categories) { %>
         <span class="va-pubtag listing-category" onclick="window.quartoListingCategory && window.quartoListingCategory('<%= tag %>'); return false;"><%= tag %></span>
         <% } %>
