@@ -59,7 +59,7 @@ website:
     background: "#570008"
     left: |
       <span class="footer-label">License</span>
-      <p>{{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} All content licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</p>
+      <p>{{< fa brands creative-commons >}} All content licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</p>
       <p>© 2023–2026 Matthew Martin</p>
     center: |
       <span class="footer-label">Source</span>
@@ -68,20 +68,18 @@ website:
     right: |
       <span class="footer-label">Colophon</span>
       <p>Set in [Source Serif 4](https://fonts.google.com/specimen/Source+Serif+4)</p>
-      <p>Last revised {{< var last-revised >}}</p>
+      <p>Last revised {{< today >}}</p>
 
 format:
   html:
     theme:
-      - html/mattjamesmartin.scss
+      - _assets/mattjamesmartin.scss
     grid:
       body-width: 900px
     toc: false
-    code-link: true
     anchor-sections: true
     fig-cap-location: margin
     reference-location: margin
     footnotes-hover: true
-    highlight-style: monokai
 
 editor: visual

@@ -3,7 +3,6 @@ title: "Writing with OCD"
 description: "When every word, space, and letter becomes a battleground."
 image: "../../imgs/OCD.jpg"
 date: 08-28-2025
-minutes: 2
 categories:
   - Writing
 code-tools: false

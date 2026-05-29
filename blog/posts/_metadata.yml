@@ -1,4 +1,4 @@
 format:
   html:
     template-partials:
-      - ../../html/blog/title-block.html
+      - ../../_assets/blog/title-block.html

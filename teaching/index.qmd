@@ -6,7 +6,7 @@ listing:
   - id: courses
     contents: courses.yml
     sort: "date desc"
-    template: ../html/teaching/listing.ejs
+    template: ../_assets/teaching/listing.ejs
 page-layout: full
 toc: false
 ---

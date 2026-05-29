@@ -7,7 +7,7 @@ listing:
   - id: posts
     contents: "posts/**/**.qmd"
     sort: "date desc"
-    template: ../html/blog/listing.ejs
+    template: ../_assets/blog/listing.ejs
     categories: true
 page-layout: full
 toc: false

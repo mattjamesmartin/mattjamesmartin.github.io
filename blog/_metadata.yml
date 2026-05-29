@@ -9,6 +9,7 @@ include-back-link: true
 format:
   html:
     code-tools: false
+    reading-time: true
 
 freeze: true
 

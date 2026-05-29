@@ -6,12 +6,12 @@ listing:
   - id: articles
     contents: "articles/*/index.qmd"
     sort: "date desc"
-    template: ../html/research/listing.ejs
+    template: ../_assets/research/listing.ejs
     categories: true
   - id: works-in-progress
     contents: "works-in-progress/*/index.qmd"
     sort: "sort asc"
-    template: ../html/research/listing.ejs
+    template: ../_assets/research/listing.ejs
 page-layout: full
 include-back-link: false
 toc: false
