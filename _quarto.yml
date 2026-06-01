@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  post-render:
+  - touch docs/.nojekyll
   resources:
   - CNAME
   - imgs/**
