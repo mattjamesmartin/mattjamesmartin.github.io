@@ -9,7 +9,6 @@ categories:
   - Immigration
   - Courts
   - Abolition
-code-tools: false
 ---
 
 ![](justice.jpeg)

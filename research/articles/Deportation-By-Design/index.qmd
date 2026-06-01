@@ -3,9 +3,6 @@ title: "Deportation by Design: How Political Entrepreneurs Engineered Crime-Base
 date: 2026-04-01
 author:
   - name: Matthew Martin
-    url: https://mattjamesmartin.github.io/
-    orcid: 0000-0003-3460-3603
-    affiliation: Department of Government, University of Texas at Austin
 categories:
   - Crime-based deportation
   - Crimmigration

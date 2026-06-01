@@ -3,9 +3,6 @@ title: "From Citizen Input to Elite Legitimation: The Logic of Will-Confirmation
 date: 2026-04-02
 author:
   - name: Matthew Martin
-    url: https://mattjamesmartin.github.io/
-    orcid: 0000-0003-3460-3603
-    affiliation: Department of Government, University of Texas at Austin
 categories:
   - Chile
   - Constitutional design

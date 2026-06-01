@@ -7,7 +7,6 @@ aliases:
 date: 08-28-2025
 categories:
   - Writing
-code-tools: false
 ---
 
 ![](OCD.jpg)

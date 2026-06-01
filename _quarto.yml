@@ -7,7 +7,6 @@ project:
   - research/**/*.pdf
   - teaching/**/*.pdf
 
-pagetitle: "{{< meta title >}} | Matthew Martin"
 author-meta:  "Matthew Martin"
 
 website:

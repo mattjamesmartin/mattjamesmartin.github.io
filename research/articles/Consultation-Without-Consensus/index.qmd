@@ -1,12 +1,8 @@
 ---
 title: "Consultation Without Consensus: Lessons from the Chilean Constitutional Convention (2021-2022)"
 date: 2025-12-20
-sort: 1
 author:
   - name: Matthew Martin
-    url: https://mattjamesmartin.github.io/
-    orcid: 0000-0003-3460-3603
-    affiliation: Department of Government, University of Texas at Austin
 categories:
   - Chile
   - Constitutional design

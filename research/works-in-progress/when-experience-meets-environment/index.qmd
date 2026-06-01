@@ -3,13 +3,7 @@ title: "When Experience Meets Environment: Professional Backgrounds, Court Compo
 sort: 2
 author:
   - name: Sara Heridia
-    url: https://sara-heridia.github.io/
-    orcid: 0000-0002-0270-681103
-    affiliation: Department of Political Science, Emory University
   - name: Matthew Martin
-    url: https://mattjamesmartin.github.io/
-    orcid: 0000-0003-3460-3603
-    affiliation: Department of Government, University of Texas at Austin
 categories:
   - Immigration judges
   - Judicial decision-making

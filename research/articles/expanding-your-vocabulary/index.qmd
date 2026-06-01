@@ -3,28 +3,11 @@ title: "Expanding Your Vocabulary: A Framework for Topic Integration in Texts"
 date: 2026-04-27
 author:
   - name: Roy Gardner
-    url: https://github.com/roybgardner
-    affiliation: Comparative Constitutions Project, University of Texas at Austin
   - name: Matthew Martin
-    url: https://mattjamesmartin.github.io/
-    orcid: 0000-0003-3460-3603
-    affiliation: Department of Government, University of Texas at Austin
   - name: Ashley Moran
-    url: https://liberalarts.utexas.edu/government/faculty/am49396
-    orcid: 0000-0001-5969-2134
-    affiliation: Department of Government, University of Texas at Austin
   - name: Zachary Elkins
-    url: https://sites.google.com/site/zachelkinstexas/
-    orcid: 0000-0002-7932-773X
-    affiliation: Department of Government, University of Texas at Austin
   - name: Andrés Cruz
-    url: https://arcruz0.github.io/
-    orcid: 0000-0003-3819-9433
-    affiliation: Department of Government, University of Texas at Austin
   - name: Guillermo Pérez
-    url: https://liberalarts.utexas.edu/government/gradstudents/gp22823
-    orcid: 0009-0007-1513-2013
-    affiliation: Department of Government, University of Texas at Austin
 categories:
   - Topic integration
   - Segments-as-topic

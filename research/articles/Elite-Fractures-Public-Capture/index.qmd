@@ -3,9 +3,6 @@ title: "Elite Fractures, Public Capture: The Strategic Use of Public Consultatio
 date: 2025-01-10
 author:
   - name: Matthew Martin
-    url: https://mattjamesmartin.github.io/
-    orcid: 0000-0003-3460-3603
-    affiliation: Department of Government, University of Texas at Austin
 categories:
   - Constitutional design
   - Public consultation

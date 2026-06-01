@@ -3,23 +3,10 @@ title: "Measuring constitutional preferences: A new method for analyzing public 
 date: 2023-12-14
 author:
   - name: Andrés Cruz
-    url: https://arcruz0.github.io/
-    orcid: 0000-0003-3819-9433
-    affiliation: Department of Government, University of Texas at Austin
   - name: Zachary Elkins
-    url: https://sites.google.com/site/zachelkinstexas/
-    orcid: 0000-0002-7932-773X
-    affiliation: Department of Government, University of Texas at Austin
   - name: Roy Gardner
-    affiliation: Comparative Constitutions Project, University of Texas at Austin
   - name: Matthew Martin
-    url: https://mattjamesmartin.github.io/
-    orcid: 0000-0003-3460-3603
-    affiliation: Department of Government, University of Texas at Austin
   - name: Ashley Moran
-    url: https://liberalarts.utexas.edu/government/faculty/am49396
-    orcid: 0000-0001-5969-2134
-    affiliation: Department of Government, University of Texas at Austin
 categories:
   - Constitutional design
   - Public consultation

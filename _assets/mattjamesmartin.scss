@@ -193,9 +193,11 @@ body:has(.va-trestles) .page-columns > .content { padding-bottom: 0; }
 }
 
 // ------------------------------------------------------------------
-// Generic links inside content
+// Prose paragraph links inside content (article body, blog body, bio)
+// Scoped to `main p a` so it does not match listing titles, action
+// buttons, tag chips, etc. — those define their own link styling.
 // ------------------------------------------------------------------
-main a {
+main p a {
   color: $ink;
   box-shadow: inset 0 -1px 0 $garnet;
   padding-bottom: 1px;
@@ -273,16 +275,6 @@ main a {
 
     &:last-child { margin-bottom: 0; }
   }
-  p.lead { font-weight: 400; font-size: 18px; }
-  a {
-    color: $ink;
-    box-shadow: inset 0 -1px 0 $garnet;
-    padding-bottom: 1px;
-    font-style: italic;
-
-    &.org { font-style: normal; }
-    &:hover { color: $garnet; }
-  }
   .lead::first-letter {
     float: left;
     font-size: 78px; line-height: 0.82;
@@ -358,10 +350,9 @@ main a {
   font-size: 22px; line-height: 1.2;
   font-weight: 500; letter-spacing: -0.01em;
   color: $ink; display: block;
-  box-shadow: none;
   transition: color .12s;
 
-  &:hover { color: $garnet; box-shadow: none; }
+  &:hover { color: $garnet; }
 }
 .va-pubmeta {
   display: flex; flex-wrap: wrap;
@@ -388,8 +379,7 @@ main a {
   display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 12px;
 }
 .va-pubtag,
-a.va-pubtag,
-main a.va-pubtag {
+a.va-pubtag {
   font-size: 13px; letter-spacing: 0.005em;
   color: $ink-faint;
   padding: 0 0 2px;
@@ -447,10 +437,10 @@ main a.va-pubtag {
   .ow-title {
     font-size: 19px; line-height: 1.22;
     font-weight: 500; letter-spacing: -0.008em;
-    color: $ink; display: block; box-shadow: none;
+    color: $ink; display: block;
     transition: color .12s;
 
-    &:hover { color: $garnet; box-shadow: none; }
+    &:hover { color: $garnet; }
   }
   .ow-meta {
     display: flex; flex-wrap: wrap;
@@ -500,18 +490,15 @@ main a.va-pubtag {
   font-feature-settings: "tnum" on, "lnum" on;
 }
 .va-coursetitle,
-a.va-coursetitle,
-main a.va-coursetitle {
+a.va-coursetitle {
   display: block;
   font-size: 26px; line-height: 1.14;
   font-weight: 500; letter-spacing: -0.014em;
   color: $ink;
   text-decoration: none;
-  box-shadow: none;
-  padding-bottom: 0;
   transition: color .12s;
 
-  &:hover { color: $garnet; box-shadow: none; }
+  &:hover { color: $garnet; }
 }
 .va-courseinst {
   font-size: 13.5px; color: $ink-muted; margin-top: 8px;
@@ -565,10 +552,10 @@ main a.va-coursetitle {
 .va-posttitle {
   font-size: 26px; line-height: 1.16;
   font-weight: 500; letter-spacing: -0.014em;
-  color: $ink; box-shadow: none;
+  color: $ink;
   transition: color .12s;
 
-  &:hover { color: $garnet; box-shadow: none; }
+  &:hover { color: $garnet; }
 }
 .va-postdesc {
   font-size: 16px; line-height: 1.55;
@@ -601,19 +588,17 @@ main a.va-coursetitle {
   display: flex; justify-content: center;
   padding: 0;
 }
-a.va-cv-download,
-main a.va-cv-download {
+a.va-cv-download {
   display: inline-flex; align-items: center; gap: 10px;
-  background: $garnet !important;
-  color: #fff !important;
+  background: $garnet;
+  color: #fff;
   padding: 12px 26px;
   font-size: 15px; font-weight: 500;
   letter-spacing: 0.005em;
   border-radius: 2px;
-  box-shadow: none;
   transition: background .12s;
 
-  &:hover { background: $garnet-deep !important; color: #fff !important; }
+  &:hover { background: $garnet-deep; color: #fff; }
   i, svg { font-size: 16px; width: 16px; height: 16px; }
 }
 .va-cv-updated {
@@ -645,7 +630,7 @@ main a.va-cv-download {
 
 @media (max-width: $bp-mobile) {
   .va-cv-actions { padding: 28px 0 16px; }
-  a.va-cv-download, main a.va-cv-download { padding: 11px 22px; font-size: 14px; }
+  a.va-cv-download { padding: 11px 22px; font-size: 14px; }
   .va-cv-frame { max-width: 100%; }
 }
 
@@ -699,8 +684,7 @@ body:has(.va-detail) main > h2:first-of-type {
   .venue { color: $ink; font-style: italic; }
   .year, .status { color: $garnet; letter-spacing: 0.02em; }
   .doi,
-  a.doi,
-  main a.doi {
+  a.doi {
     color: $ink-faint;
     font-family: ui-monospace, 'SF Mono', Menlo, monospace;
     font-size: 12.5px;
