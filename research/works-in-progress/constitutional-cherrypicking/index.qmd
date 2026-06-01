@@ -6,15 +6,16 @@ author:
     url: https://mattjamesmartin.github.io/
     orcid: 0000-0003-3460-3603
     affiliation: Department of Government, University of Texas at Austin
-categories: 
+categories:
   - Chile
   - Constitutional design
   - Cuba
   - Political elites
-  - Public consultation 
+  - Public consultation
 pub-info:
-  reference: >-
-    <strong>Matthew Martin</strong>. “Constitutional Cherry-Picking: Constructing 'The People' in Participatory Constitution-Making.” Under review.
+  status: "Under review"
+  blurb: >-
+    How do drafters leverage public consultation during constitution-making? I argue that drafters engage in cherry-picking, selectively invoking consultation inputs and procedures to elevate supportive and discredit contrary evidence. Using an LLM-assisted pipeline, I classify consultation invocations in plenary transcripts from Chile (2021–22) and Cuba (2018–19), identifying two modes distinguished by interpretive control of the consultation record. In Chile's *contested* mode, the supermajority invoked consultation to underwrite reforms while the opposition attacked its design. In Cuba's *concentrated* mode, the Drafting Commission invoked consultation to validate decisions already made while dominating the floor.
   links:
   - name: Draft
     url: constitutional-cherrypicking.pdf

@@ -1,0 +1,4 @@
+format:
+  html:
+    template-partials:
+      - ../../_assets/blog/title-block.html

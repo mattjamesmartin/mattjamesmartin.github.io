@@ -1,0 +1,16 @@
+---
+title: "Not Found"
+pagetitle: "404 · Matthew Martin"
+title-block-style: none
+page-layout: full
+toc: false
+---
+
+```{=html}
+<div class="va-404">
+  <h1 class="code">404</h1>
+  <p class="msg">We couldn&rsquo;t find that page.</p>
+  <p class="sub">The link may be old, or the page may have moved. Head back to the homepage, or try the navigation above.</p>
+  <a class="home" href="/">&larr; Back to home</a>
+</div>
+```

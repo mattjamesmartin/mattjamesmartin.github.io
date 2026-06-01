@@ -1,0 +1,21 @@
+<header id="title-block-header" class="quarto-title-block default">
+  <div class="va-detail">
+    $if(include-back-link)$
+    <a class="va-backlink" href="/blog/"><span class="arrow">←</span> Back to blog</a>
+    $endif$
+
+    <div class="va-detail-head">
+      <h1 class="va-detail-title">$title$</h1>
+
+      <div class="va-detail-meta">
+        $if(date)$<span class="year">$date$</span>$endif$
+      </div>
+
+      $if(categories)$
+      <div class="va-detail-tags">
+        $for(categories)$<a class="va-pubtag" href="/blog/#category=$categories$">$categories$</a>$endfor$
+      </div>
+      $endif$
+    </div>
+  </div>
+</header>

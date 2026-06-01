@@ -1,0 +1,27 @@
+```{=html}
+<div class="list blog-listing">
+<% for (const post of items) { %>
+  <div class="va-post" <%= metadataAttrs(post) %>>
+    <span class="va-postdate"><%= post.date %></span>
+    <div>
+      <a class="va-posttitle" href="<%- post.path %>"><%= post.title %></a>
+      <% if (post.description) { %>
+      <div class="va-postdesc"><%= post.description %></div>
+      <% } %>
+      <% if (post.categories && post.categories.length) { %>
+      <div class="va-pubtags">
+        <% for (const tag of post.categories) { %>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory && window.quartoListingCategory('<%= tag %>'); return false;"><%= tag %></span>
+        <% } %>
+      </div>
+      <% } %>
+    </div>
+    <div class="va-postmeta">
+      <% if (post['reading-time']) { %>
+      <span class="va-postmins"><%= post['reading-time'] %> read</span>
+      <% } %>
+    </div>
+  </div>
+<% } %>
+</div>
+```

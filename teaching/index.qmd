@@ -1,18 +1,19 @@
 ---
 title: "Teaching"
+description: "Courses on constitutional politics, the judiciary, and quantitative methods at USC and UT Austin."
+title-block-banner: "#844247"
 listing:
   - id: courses
     contents: courses.yml
     sort: "date desc"
-    template: ../html/teaching/listing.ejs
-title-block-banner: "#844247"
+    template: ../_assets/teaching/listing.ejs
 page-layout: full
-toc: true
-toc-location: right
-toc-title: Contents
+toc: false
 ---
 
-## Courses
+```{=html}
+<div class="va-sec"><h2>Courses<span class="dot">.</span></h2></div>
+```
 
 ::: {#courses}
 :::

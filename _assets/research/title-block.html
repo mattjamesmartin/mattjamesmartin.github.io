@@ -1,0 +1,43 @@
+<header id="title-block-header" class="quarto-title-block default">
+  <div class="va-detail">
+    $if(include-back-link)$
+    <a class="va-backlink" href="/research/"><span class="arrow">←</span> Back to research</a>
+    $endif$
+
+    <div class="va-detail-head">
+      <h1 class="va-detail-title">$title$</h1>
+
+      $if(author)$
+      <div class="va-detail-authors">
+        $for(author)$<span class="author">$if(author.name)$$if(author.url)$<a href="$author.url$">$author.name$</a>$else$$author.name$$endif$$if(author.affiliation)$ <span class="aff">— $author.affiliation$</span>$endif$$else$$author$$endif$</span>$sep$<span class="sep">·</span>$endfor$
+      </div>
+      $endif$
+
+      $if(pub-info)$
+      <div class="va-detail-meta">
+        $if(pub-info.venue)$<span class="venue">$pub-info.venue$</span>$endif$
+        $if(pub-info.venueDetail)$<span class="dot">·</span> <span>$pub-info.venueDetail$</span>$endif$
+        $if(pub-info.year)$<span class="dot">·</span> <span class="year">$pub-info.year$</span>$endif$
+        $if(pub-info.status)$<span class="dot">·</span> <span class="status">$pub-info.status$</span>$endif$
+        $if(doi)$<span class="dot">·</span> <a class="doi" href="https://doi.org/$doi$">doi: $doi$</a>$endif$
+      </div>
+      $endif$
+
+      $if(pub-info.links)$
+      <div class="va-detail-actions">
+        $for(pub-info.links)$<a class="va-detail-action" href="$pub-info.links.url$">$pub-info.links.name$$if(pub-info.links.icon)$ <i class="$pub-info.links.icon$"></i>$endif$</a>$endfor$
+      </div>
+      $endif$
+
+      $if(categories)$
+      <div class="va-detail-tags">
+        $for(categories)$<a class="va-pubtag" href="/research/#category=$categories$">$categories$</a>$endfor$
+      </div>
+      $endif$
+
+      $if(pub-info.extra)$
+      <div class="va-detail-extra"><span class="lbl">Other details:</span> $pub-info.extra$</div>
+      $endif$
+    </div>
+  </div>
+</header>

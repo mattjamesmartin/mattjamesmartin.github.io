@@ -1,0 +1,43 @@
+```{=html}
+<div class="list teaching-listing">
+<% if (items && items.length > 0) { %>
+  <% for (const course of items) { %>
+  <div class="va-course">
+    <div class="va-courseleft">
+      <% if (course.code) { %>
+      <span class="va-coursecode"><%= course.code %></span>
+      <% } %>
+      <% if (course.semesters && course.semesters.length) { %>
+        <% for (const sem of course.semesters) { %>
+        <span class="va-coursechip"><%= sem %></span>
+        <% } %>
+      <% } %>
+    </div>
+    <div>
+      <% var primaryUrl = (course.actions && course.actions.length) ? course.actions[0].url : null; %>
+      <% if (primaryUrl) { %>
+      <a class="va-coursetitle" href="<%= primaryUrl %>" target="_blank" rel="noopener noreferrer"><%= course.title %></a>
+      <% } else { %>
+      <div class="va-coursetitle"><%= course.title %></div>
+      <% } %>
+      <% if (course.institution) { %>
+      <div class="va-courseinst"><%= course.institution %></div>
+      <% } %>
+      <% if (course.summary) { %>
+      <div class="va-coursesummary"><%= course.summary %></div>
+      <% } %>
+    </div>
+    <div class="va-courseside">
+      <% if (course.actions && course.actions.length) { %>
+        <% for (const action of course.actions) { %>
+        <a class="va-publink" href="<%= action.url %>" target="_blank" rel="noopener noreferrer"><%= action.name %><% if (action.icon) { %> <i class="<%= action.icon %>"></i><% } %></a>
+        <% } %>
+      <% } %>
+    </div>
+  </div>
+  <% } %>
+<% } else { %>
+  <p>No courses available at this time.</p>
+<% } %>
+</div>
+```

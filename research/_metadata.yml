@@ -1,23 +1,13 @@
 # Date format
 date-format: "MMMM YYYY"
 
-# Enable banner style title blocks
-title-block-banner: "#844247"
+# Default for table of contents (design has none on detail pages)
+toc: false
 
-# Default for table of contents
-toc: true
-toc-title: Contents
-toc-location: left
+include-back-link: true
 
 # Default knitr options
 execute:
   echo: false
   message: false
   warning: false
-
-include-back-link: true
-
-format:
-  html:
-    template-partials:
-      - ../html/research/title-block.html

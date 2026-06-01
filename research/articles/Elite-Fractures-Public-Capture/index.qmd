@@ -6,13 +6,16 @@ author:
     url: https://mattjamesmartin.github.io/
     orcid: 0000-0003-3460-3603
     affiliation: Department of Government, University of Texas at Austin
-categories: 
+categories:
   - Constitutional design
-  - Public consultation 
+  - Public consultation
   - Political elites
 pub-info:
-  reference: >-
-    <strong>Matthew Martin</strong>. 2025. “Elite Fractures, Public Capture: The Strategic Use of Public Consultation in Global Constitution-Making.” <em>Journal of Law and Courts</em> 13(1): 1–34. doi: <a href="https://doi.org/10.1017/jlc.2024.9"><code>10.1017/jlc.2024.9</code></a> 
+  year: "2025"
+  venue: "Journal of Law and Courts"
+  venueDetail: "13(1): 1–34"
+  blurb: >-
+    Since 1974, two out of every five constitutions (40.3%) were prepared via processes that included public consultation. The reasons for adopting these participatory mechanisms, however, are largely unexplored. I argue that public consultation is a tool for elite contestation of power. Using an original dataset of public consultations in constitution-making processes from 1974–2021 (n = 300), I find that in democracies, factional majorities and newcomer elites use public consultation to legitimate a break from the status quo. In autocracies, governing coalitions that depend on performance and enjoy greater party institutionalization push for public consultation to preserve favorable power-sharing arrangements.
   links:
   - name: Final version
     url: https://doi.org/10.1017/jlc.2024.9
@@ -33,20 +36,15 @@ Since 1974, two out of every five constitutions (40.3%) were prepared via proces
 
 ![Figure 2: World Map of Public Consultation in Constitution-Making (1974-2021)](figures/map.png)
 
-::: {style="display: flex; justify-content: space-between; align-items: center;"}
-<figure style="width: 50%; text-align: center; margin-right: 10px;">
-
-<img src="figures/full_plot_ord.png" alt="Figure 3a: Predicted Probability of Public Consultation Across Level of Democracy (Lexical Index of Democracy)" style="width: 100%;"/>
-
-<figcaption>Figure 3a: Predicted Probability of Public Consultation Across Level of Democracy (Lexical Index of Democracy)</figcaption>
-
-</figure>
-
-<figure style="width: 50%; text-align: center; margin-left: 10px;">
-
-<img src="figures/full_plot_cont.png" alt="Figure 3b: Predicted Probability of Public Consultation Across Level of Democracy (V-Dem Electoral Democracy Index)" style="width: 100%;"/>
-
-<figcaption>Figure 3: Predicted Probability of Public Consultation Across Level of Democracy (V-Dem Electoral Democracy Index)</figcaption>
-
-</figure>
-:::
+```{=html}
+<div class="va-figure-pair">
+  <figure>
+    <img src="figures/full_plot_ord.png" alt="Figure 3a: Predicted Probability of Public Consultation Across Level of Democracy (Lexical Index of Democracy)">
+    <figcaption>Figure 3a: Predicted Probability of Public Consultation Across Level of Democracy (Lexical Index of Democracy)</figcaption>
+  </figure>
+  <figure>
+    <img src="figures/full_plot_cont.png" alt="Figure 3b: Predicted Probability of Public Consultation Across Level of Democracy (V-Dem Electoral Democracy Index)">
+    <figcaption>Figure 3b: Predicted Probability of Public Consultation Across Level of Democracy (V-Dem Electoral Democracy Index)</figcaption>
+  </figure>
+</div>
+```

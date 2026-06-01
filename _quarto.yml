@@ -12,21 +12,24 @@ author-meta:  "Matthew Martin"
 
 website:
   title: "Matthew Martin"
+  favicon: favicon.svg
   google-analytics: "G-EL33VJN6EN"
-  site-url: https://mattjamesmartin.github.io/
+  site-url: https://mattjmartin.com/
   repo-url: https://github.com/mattjamesmartin/mattjamesmartin.github.io
 
-  open-graph: 
-    image: "imgs/headshot.jpg"
+  open-graph:
+    image: "imgs/social-card.png"
     locale: en_US
-  
+
   twitter-card:
-    image: "imgs/headshot.jpg"
+    image: "imgs/social-card.png"
     creator: "@MattJ_Martin"
-    card-style: summary
-    
+    card-style: summary_large_image
+
   navbar:
     pinned: true
+    background: "#73000a"
+    foreground: "#ffffff"
 
     left:
       - text: "About"
@@ -39,39 +42,44 @@ website:
         href: "cv/index.qmd"
       - text: "Blog"
         href: "blog/index.qmd"
-        
+
     right:
-      - text: "{{< iconify bi envelope size=1.1em title='E-mail' >}}"
+      - text: "{{< iconify bi envelope-fill size=1.1em title='E-mail' >}}"
         href: "mailto:mjmartin@utexas.edu"
-      - text: "{{< iconify bi github size=1.1em title='GitHub' >}}"
-        href: https://github.com/mattjamesmartin
       - text: "{{< iconify bi bluesky size=1em title='Bluesky' >}}"
         href: https://bsky.app/profile/mattjmartin.com
+      - text: "{{< iconify bi github size=1.1em title='GitHub' >}}"
+        href: https://github.com/mattjamesmartin
       - text: "{{< iconify bi linkedin size=1.1em title='LinkedIn' >}}"
         href: https://www.linkedin.com/in/mattj-martin/
-      - text: "{{< iconify bi orcid size=1.1em title='Orcid' >}}"
+      - text: "{{< iconify simple-icons orcid size=1.1em title='ORCID' >}}"
         href: https://orcid.org/0000-0003-3460-3603
 
   page-footer:
+    background: "#570008"
     left: |
-      <span class="faux-block">All content licensed under<br>[{{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} Creative Commons CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span>
+      <span class="footer-label">License</span>
+      <p>{{< fa brands creative-commons >}} All content licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</p>
+      <p>© 2023–2026 Matthew Martin</p>
+    center: |
+      <span class="footer-label">Source</span>
+      <p>Built with [Quarto](https://quarto.org/)</p>
+      <p>View the source on [GitHub {{< fa brands github >}}]({{< var github-url >}})</p>
     right: |
-      <span class="faux-block">Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)</span>
-      <span class="faux-block">[View the source at {{< fa brands github >}} GitHub]({{< var github-url >}})</span>
-    background: light
-  
+      <span class="footer-label">Colophon</span>
+      <p>Set in [Source Serif 4](https://fonts.google.com/specimen/Source+Serif+4)</p>
+      <p>Last revised {{< today >}}</p>
+
 format:
   html:
     theme:
-      - html/mattjamesmartin.scss
-    grid: 
+      - _assets/mattjamesmartin.scss
+    grid:
       body-width: 900px
     toc: false
-    code-link: true
     anchor-sections: true
     fig-cap-location: margin
     reference-location: margin
     footnotes-hover: true
-    highlight-style: monokai
-  
+
 editor: visual

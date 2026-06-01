@@ -1,0 +1,994 @@
+/*-- scss:defaults --*/
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500;8..60,600;8..60,700&display=swap");
+
+// Color tokens
+$paper:        #F6F1E6;
+$ink:          #1A1612;
+$ink-soft:     #2a221a;
+$ink-muted:    #4a3f33;
+$ink-faint:    #6E6356;
+$garnet:       #7A1424;
+$garnet-deep:  #570008;
+$garnet-bar:   #73000a;
+$banner:       #844247;
+$rule-soft:    #D9CFBC;
+$rule-medium:  #E6DCC7;
+$peach:        #f0c89c;
+$peach-link:   #fadcc6;
+$paper-shadow: #EFE7D3;
+$meta-dot:     #C5B79B;
+
+// Typography
+$font-family-sans-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+$headings-font-family:   'Source Serif 4', Georgia, serif;
+$navbar-font-family:     'Source Serif 4', Georgia, serif;
+$toc-font-family:        'Source Serif 4', Georgia, serif;
+$footer-font-family:     'Source Serif 4', Georgia, serif;
+
+// Bootstrap-flavor overrides Quarto reads
+$body-bg:    $paper;
+$body-color: $ink;
+$link-color: $ink;
+$link-hover-color: $garnet;
+
+$navbar-bg:  $garnet-bar;
+$navbar-fg:  #ffffff;
+$navbar-hl:  $peach;
+
+$footer-bg:  $garnet-deep;
+$footer-fg:  rgba(247, 224, 205, 0.85);
+
+$code-bg:    $paper-shadow;
+$code-color: $ink-soft;
+
+$border-radius:    2px;
+$border-radius-sm: 2px;
+$border-radius-lg: 2px;
+
+$toc-color:        $ink-faint;
+$toc-active-color: $garnet;
+
+// Breakpoints
+$bp-mobile: 720px;
+
+
+/*-- scss:rules --*/
+
+// ------------------------------------------------------------------
+// Base
+// ------------------------------------------------------------------
+body {
+  font-feature-settings: "lnum" on, "kern" on;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.65;
+}
+
+a { text-decoration: none; }
+
+// ------------------------------------------------------------------
+// Navbar  (Quarto emits .navbar / .navbar-brand / .nav-link)
+// ------------------------------------------------------------------
+.navbar {
+  padding: 8px 48px;
+  background-color: $garnet-bar !important;
+
+  .navbar-brand {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: #fff;
+    transition: color .12s;
+    padding: 6px 0;
+
+    &:hover { color: rgba(255, 255, 255, 0.78); }
+  }
+
+  .nav-link {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.78);
+    padding: 8px 14px;
+    text-decoration: none;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+    transition: color .12s, text-decoration-color .12s;
+
+    &:hover, &:focus { color: #fff; }
+    &.active {
+      color: #fff;
+      text-decoration: underline;
+      text-decoration-color: rgba(255, 255, 255, 0.9);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 6px;
+    }
+  }
+
+  .quarto-navbar-tools {
+    margin-left: 8px;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 4px;
+      color: rgba(255, 255, 255, 0.78);
+      transition: color .12s, background .12s;
+
+      &:hover {
+        color: #fff;
+        background: rgba(255, 255, 255, 0.10);
+      }
+    }
+    iconify-icon, svg, i {
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .navbar { padding: 10px 16px; }
+  .navbar .navbar-brand { font-size: 18px; }
+}
+
+// ------------------------------------------------------------------
+// Banner  (Quarto emits .quarto-title-banner)
+// ------------------------------------------------------------------
+.quarto-title-banner {
+  background: $banner !important;
+  padding: 36px 64px;
+  color: #fff;
+
+  .quarto-title h1.title,
+  .title {
+    font-size: 44px;
+    line-height: 1.05;
+    font-weight: 500;
+    letter-spacing: -0.018em;
+    color: #fff;
+
+    &::after {
+      content: ".";
+      color: $peach;
+    }
+  }
+
+  .description, .subtitle {
+    display: none;
+  }
+
+  .quarto-categories { display: none; }
+}
+
+@media (max-width: $bp-mobile) {
+  .quarto-title-banner {
+    padding: 32px 20px;
+
+    .quarto-title h1.title, .title { font-size: 30px; }
+    .description, .subtitle { font-size: 15px; }
+  }
+}
+
+// ------------------------------------------------------------------
+// Content container
+// ------------------------------------------------------------------
+main.content,
+.page-columns > .content,
+.quarto-container {
+  color: $ink;
+}
+
+// Quarto defaults main to margin: 1em 0; the home page should match the
+// trestles' own padding, so zero out main's bottom margin too.
+body:has(.va-trestles) main.content { margin-bottom: 0; }
+body:has(.va-trestles) .page-columns > .content { padding-bottom: 0; }
+
+@media (max-width: $bp-mobile) {
+  .page-columns > .content { padding: 0 20px 56px; }
+}
+
+// ------------------------------------------------------------------
+// Generic links inside content
+// ------------------------------------------------------------------
+main a {
+  color: $ink;
+  box-shadow: inset 0 -1px 0 $garnet;
+  padding-bottom: 1px;
+  transition: color .12s;
+
+  &:hover { color: $garnet; }
+  &:has(> img), &:has(> picture) {
+    box-shadow: none;
+    padding-bottom: 0;
+    img { transition: opacity .15s; }
+    &:hover { box-shadow: none; }
+    &:hover img { opacity: 0.9; }
+  }
+}
+
+// ------------------------------------------------------------------
+// About / Trestles hero (raw-HTML on index.qmd)
+// ------------------------------------------------------------------
+.va-trestles {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 56px;
+  padding: 32px 0 24px;
+  align-items: start;
+}
+.va-trestles-left { display: flex; flex-direction: column; gap: 18px; }
+.va-portrait img {
+  width: 100%; height: auto; display: block;
+  border-radius: 2px;
+}
+.va-namecard {
+  padding-top: 4px;
+  display: flex; flex-direction: column; gap: 18px;
+
+  .name {
+    font-size: 28px; line-height: 1.05;
+    font-weight: 500; letter-spacing: -0.014em;
+    color: $ink;
+    padding-bottom: 14px;
+    border-bottom: 1px solid $rule-soft;
+
+    &::after {
+      content: ".";
+      color: $garnet;
+      font-weight: 600;
+    }
+  }
+}
+.va-appointment {
+  .lbl {
+    display: block;
+    font-size: 10.5px; letter-spacing: 0.18em;
+    text-transform: uppercase; color: $garnet;
+    font-weight: 600; margin-bottom: 6px;
+  }
+  .role {
+    font-size: 15px; line-height: 1.35;
+    color: $ink; font-weight: 500;
+  }
+  .org {
+    font-size: 14px; line-height: 1.45;
+    color: $ink-muted; font-weight: 400;
+    margin-top: 2px;
+  }
+}
+
+.va-bio {
+  padding-top: 6px;
+
+  p {
+    font-size: 18px; line-height: 1.65;
+    font-weight: 400;
+    margin: 0 0 20px;
+    color: $ink;
+
+    &:last-child { margin-bottom: 0; }
+  }
+  p.lead { font-weight: 400; font-size: 18px; }
+  a {
+    color: $ink;
+    box-shadow: inset 0 -1px 0 $garnet;
+    padding-bottom: 1px;
+    font-style: italic;
+
+    &.org { font-style: normal; }
+    &:hover { color: $garnet; }
+  }
+  .lead::first-letter {
+    float: left;
+    font-size: 78px; line-height: 0.82;
+    font-weight: 500;
+    padding: 6px 12px 0 0;
+    color: $garnet;
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .va-trestles {
+    grid-template-columns: 1fr;
+    gap: 24px; padding: 32px 0 28px;
+  }
+  .va-trestles-left {
+    flex-direction: row; gap: 18px; align-items: flex-start;
+  }
+  .va-portrait { flex: 0 0 130px; }
+  .va-namecard {
+    padding-top: 0; gap: 14px; flex: 1; min-width: 0;
+    .name { font-size: 22px; padding-bottom: 10px; }
+  }
+  .va-appointment .role { font-size: 14px; }
+  .va-appointment .org  { font-size: 13px; }
+  .va-bio p { font-size: 16.5px; line-height: 1.6; margin-bottom: 16px; }
+  .va-bio .lead::first-letter { font-size: 64px; padding: 4px 10px 0 0; }
+}
+
+// ------------------------------------------------------------------
+// Section heads
+// ------------------------------------------------------------------
+.va-sec {
+  padding: 48px 0 16px;
+  display: flex; align-items: baseline; justify-content: space-between;
+  border-top: 1px solid $rule-medium;
+  margin-top: 32px;
+
+  &:first-of-type,
+  main > &:first-child {
+    border-top: none;
+    margin-top: 0;
+    padding-top: 12px;
+  }
+
+  h2 {
+    font-size: 30px; font-weight: 500;
+    letter-spacing: -0.012em; margin: 0;
+
+    .dot { color: $garnet; }
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .va-sec {
+    flex-direction: column; gap: 6px;
+    align-items: flex-start;
+    padding: 36px 0 14px; margin-top: 28px;
+    h2 { font-size: 24px; }
+  }
+}
+
+// ------------------------------------------------------------------
+// Publication / WIP rows
+// ------------------------------------------------------------------
+.va-pubentry {
+  display: grid;
+  grid-template-columns: 1fr 160px;
+  gap: 40px;
+  padding: 28px 0;
+  align-items: start;
+}
+.va-pubtitle {
+  font-size: 22px; line-height: 1.2;
+  font-weight: 500; letter-spacing: -0.01em;
+  color: $ink; display: block;
+  box-shadow: none;
+  transition: color .12s;
+
+  &:hover { color: $garnet; box-shadow: none; }
+}
+.va-pubmeta {
+  display: flex; flex-wrap: wrap;
+  gap: 6px 12px;
+  margin-top: 8px;
+  font-size: 13.5px; color: $ink-muted; line-height: 1.4;
+
+  .dot { color: $meta-dot; }
+  .authors b { font-weight: 600; color: $ink; }
+  .venue { color: $ink; font-weight: 400; font-style: italic; }
+  .year, .status {
+    color: $garnet; font-weight: 400;
+    letter-spacing: 0.02em;
+    font-feature-settings: "tnum" on, "lnum" on;
+  }
+}
+.va-pubblurb {
+  font-size: 15px; line-height: 1.6;
+  color: $ink-soft;
+  margin-top: 12px;
+  max-width: 620px;
+}
+.va-pubtags {
+  display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 12px;
+}
+.va-pubtag,
+a.va-pubtag,
+main a.va-pubtag {
+  font-size: 13px; letter-spacing: 0.005em;
+  color: $ink-faint;
+  padding: 0 0 2px;
+  box-shadow: inset 0 -1px 0 $rule-soft;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color .12s, box-shadow .12s;
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover { color: $garnet; box-shadow: inset 0 -1px 0 $garnet; }
+}
+.va-publinks {
+  display: flex; flex-direction: column; gap: 6px;
+  align-items: flex-start; padding-top: 4px;
+}
+.va-publink {
+  font-size: 13px; font-weight: 500;
+  color: $ink;
+  box-shadow: inset 0 -1px 0 $rule-soft;
+  padding: 0 0 2px;
+  transition: box-shadow .12s, color .12s;
+
+  &:hover { color: $garnet; box-shadow: inset 0 -1px 0 $garnet; }
+
+  i { margin-left: 4px; }
+}
+@media (max-width: $bp-mobile) {
+  .va-pubentry {
+    grid-template-columns: 1fr;
+    gap: 14px; padding: 22px 0;
+  }
+  .va-pubtitle { font-size: 20px; }
+  .va-pubblurb { font-size: 14.5px; }
+  .va-publinks {
+    flex-direction: row; flex-wrap: wrap;
+    gap: 12px 16px; padding-top: 0;
+  }
+}
+
+// ------------------------------------------------------------------
+// Other works
+// ------------------------------------------------------------------
+.va-otherwork {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 28px; padding: 22px 0;
+  align-items: start;
+
+  .type {
+    font-size: 13px;
+    color: $garnet; font-weight: 600;
+    padding-top: 4px;
+  }
+  .ow-title {
+    font-size: 19px; line-height: 1.22;
+    font-weight: 500; letter-spacing: -0.008em;
+    color: $ink; display: block; box-shadow: none;
+    transition: color .12s;
+
+    &:hover { color: $garnet; box-shadow: none; }
+  }
+  .ow-meta {
+    display: flex; flex-wrap: wrap;
+    gap: 6px 12px; margin-top: 8px;
+    font-size: 13.5px; color: $ink-muted; line-height: 1.4;
+
+    .dot { color: $meta-dot; }
+    .venue { color: $ink; font-weight: 400; }
+    .year {
+      color: $garnet; font-weight: 400;
+      letter-spacing: 0.02em;
+      font-feature-settings: "tnum" on, "lnum" on;
+    }
+  }
+  .ow-note {
+    font-size: 14px; color: $ink-faint; margin-top: 6px;
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .va-otherwork {
+    grid-template-columns: 1fr;
+    gap: 6px; padding: 18px 0;
+    .ow-title { font-size: 17px; }
+  }
+}
+
+// ------------------------------------------------------------------
+// Teaching rows
+// ------------------------------------------------------------------
+.va-course {
+  display: grid;
+  grid-template-columns: 130px 1fr 120px;
+  gap: 28px; padding: 36px 0;
+  align-items: start;
+
+  & + .va-course { border-top: 1px solid $rule-medium; }
+}
+.va-courseleft {
+  display: flex; flex-direction: column; gap: 12px;
+  padding-top: 6px; align-items: flex-start;
+}
+.va-coursecode {
+  font-size: 13px; font-weight: 600;
+  letter-spacing: 0.06em;
+  color: $garnet;
+  font-feature-settings: "tnum" on, "lnum" on;
+}
+.va-coursetitle,
+a.va-coursetitle,
+main a.va-coursetitle {
+  display: block;
+  font-size: 26px; line-height: 1.14;
+  font-weight: 500; letter-spacing: -0.014em;
+  color: $ink;
+  text-decoration: none;
+  box-shadow: none;
+  padding-bottom: 0;
+  transition: color .12s;
+
+  &:hover { color: $garnet; box-shadow: none; }
+}
+.va-courseinst {
+  font-size: 13.5px; color: $ink-muted; margin-top: 8px;
+}
+.va-coursesummary {
+  font-size: 15.5px; line-height: 1.6;
+  color: $ink-soft; margin-top: 12px;
+  max-width: 560px;
+}
+.va-courseside {
+  display: flex; flex-direction: column; gap: 10px;
+  align-items: flex-start; padding-top: 6px;
+}
+.va-coursechip {
+  font-size: 13px; letter-spacing: 0.005em;
+  color: $ink-muted; padding: 0; font-weight: 400;
+}
+
+@media (max-width: $bp-mobile) {
+  .va-course {
+    grid-template-columns: 1fr;
+    gap: 12px; padding: 28px 0;
+  }
+  .va-courseleft {
+    flex-direction: row; gap: 14px;
+    padding-top: 0; align-items: baseline;
+  }
+  .va-coursetitle { font-size: 22px; }
+  .va-courseside { padding-top: 0; }
+}
+
+// ------------------------------------------------------------------
+// Blog rows
+// ------------------------------------------------------------------
+.va-post {
+  display: grid;
+  grid-template-columns: 150px 1fr 140px;
+  gap: 28px; padding: 32px 0;
+  align-items: start;
+
+  & + .va-post { border-top: 1px solid $rule-medium; }
+}
+.va-postdate {
+  padding-top: 10px;
+  font-size: 13.5px; font-weight: 500;
+  color: $garnet;
+  letter-spacing: 0.02em;
+  font-feature-settings: "tnum" on, "lnum" on;
+  white-space: nowrap;
+}
+.va-posttitle {
+  font-size: 26px; line-height: 1.16;
+  font-weight: 500; letter-spacing: -0.014em;
+  color: $ink; box-shadow: none;
+  transition: color .12s;
+
+  &:hover { color: $garnet; box-shadow: none; }
+}
+.va-postdesc {
+  font-size: 16px; line-height: 1.55;
+  color: $ink-soft; margin-top: 8px;
+  max-width: 560px;
+}
+.va-postmeta {
+  display: flex; flex-direction: column; gap: 8px;
+  align-items: flex-start; padding-top: 10px;
+}
+.va-postmins {
+  font-size: 12.5px; color: $ink-faint;
+}
+
+@media (max-width: $bp-mobile) {
+  .va-post {
+    grid-template-columns: 1fr;
+    gap: 10px; padding: 26px 0;
+  }
+  .va-postdate { padding-top: 0; }
+  .va-posttitle { font-size: 22px; }
+  .va-postdesc { font-size: 15.5px; }
+  .va-postmeta { padding-top: 0; }
+}
+
+// ------------------------------------------------------------------
+// CV page
+// ------------------------------------------------------------------
+.va-cv-actions {
+  display: flex; justify-content: center;
+  padding: 0;
+}
+a.va-cv-download,
+main a.va-cv-download {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: $garnet !important;
+  color: #fff !important;
+  padding: 12px 26px;
+  font-size: 15px; font-weight: 500;
+  letter-spacing: 0.005em;
+  border-radius: 2px;
+  box-shadow: none;
+  transition: background .12s;
+
+  &:hover { background: $garnet-deep !important; color: #fff !important; }
+  i, svg { font-size: 16px; width: 16px; height: 16px; }
+}
+.va-cv-updated {
+  text-align: center;
+  margin: 14px 0 28px;
+  font-size: 13.5px;
+  color: $ink-muted;
+  text-transform: none;
+
+  .lbl {
+    color: $ink-muted;
+    font-weight: 400;
+    margin-right: 4px;
+    text-transform: none;
+  }
+}
+.va-cv-frame {
+  background: #fff;
+  border: 1px solid $rule-soft;
+  box-shadow: 0 2px 0 rgba(122, 20, 36, 0.04),
+              0 8px 24px rgba(26, 22, 18, 0.06);
+  max-width: 760px; margin: 0 auto;
+  aspect-ratio: 8.5 / 11;
+  border-radius: 2px;
+  overflow: hidden;
+
+  iframe { width: 100%; height: 100%; border: 0; display: block; }
+}
+
+@media (max-width: $bp-mobile) {
+  .va-cv-actions { padding: 28px 0 16px; }
+  a.va-cv-download, main a.va-cv-download { padding: 11px 22px; font-size: 14px; }
+  .va-cv-frame { max-width: 100%; }
+}
+
+// ------------------------------------------------------------------
+// Detail pages (article + post)
+// ------------------------------------------------------------------
+.va-detail { padding: 36px 0 64px; }
+
+.va-backlink {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 13.5px; color: $ink-faint;
+  box-shadow: inset 0 -1px 0 $rule-soft;
+  padding-bottom: 2px;
+  transition: color .12s, box-shadow .12s;
+  margin-bottom: 36px;
+
+  &:hover { color: $garnet; box-shadow: inset 0 -1px 0 $garnet; }
+  .arrow { color: $garnet; }
+}
+
+.va-detail-head {
+  padding-bottom: 8px;
+}
+
+// Tighten gap between the title-block header and the first body section
+// on detail pages — the body sits as a sibling of #title-block-header,
+// not inside it, so the gap comes from Quarto/Bootstrap defaults.
+body:has(.va-detail) #title-block-header {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+body:has(.va-detail) main > section.level2:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+}
+body:has(.va-detail) main > section.level2:first-of-type > h2:first-child,
+body:has(.va-detail) main > h2:first-of-type {
+  margin-top: 16px;
+}
+.va-detail-title {
+  font-size: 40px; line-height: 1.1;
+  font-weight: 500; letter-spacing: -0.018em;
+  color: $ink;
+  margin: 0 0 18px;
+}
+.va-detail-meta {
+  display: flex; flex-wrap: wrap; gap: 6px 14px;
+  font-size: 14px; color: $ink-muted; line-height: 1.4;
+
+  .dot { color: $meta-dot; }
+  .venue { color: $ink; font-style: italic; }
+  .year, .status { color: $garnet; letter-spacing: 0.02em; }
+  .doi,
+  a.doi,
+  main a.doi {
+    color: $ink-faint;
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 12.5px;
+    box-shadow: inset 0 -1px 0 $rule-soft;
+    padding-bottom: 1px;
+    text-decoration: none;
+    transition: color .12s, box-shadow .12s;
+
+    &:hover { color: $garnet; box-shadow: inset 0 -1px 0 $garnet; }
+  }
+}
+// On article pages, meta sits below the author list and needs extra top spacing.
+.va-detail-authors + .va-detail-meta { margin-top: 18px; }
+
+.va-detail-authors {
+  font-size: 15px; color: $ink-soft;
+  margin-top: 14px; line-height: 1.55;
+
+  .author { display: inline; }
+  .author b { font-weight: 600; }
+  .aff { color: $ink-faint; font-size: 13.5px; }
+  .sep { color: $meta-dot; margin: 0 6px; }
+}
+.va-detail-actions {
+  display: flex; flex-wrap: wrap; gap: 10px 8px;
+  margin-top: 26px;
+
+  // First action button rendered as primary (per design's VAArticle)
+  .va-detail-action:first-child {
+    background: $garnet; border-color: $garnet; color: #fff;
+    &:hover { background: $garnet-deep; border-color: $garnet-deep; color: #fff; }
+  }
+}
+.va-detail-action {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 9px 14px;
+  font-size: 14px; font-weight: 500;
+  color: $ink;
+  border: 1px solid $rule-soft;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 2px;
+  box-shadow: none;
+  transition: border-color .12s, color .12s, background .12s;
+
+  &:hover {
+    border-color: $garnet; color: $garnet;
+    background: rgba(122, 20, 36, 0.04);
+    box-shadow: none;
+  }
+  i, svg { font-size: 13px; width: 13px; height: 13px; }
+}
+.va-detail-tags {
+  display: flex; flex-wrap: wrap; gap: 6px 14px;
+  margin-top: 24px;
+}
+
+.va-detail-extra {
+  margin-top: 18px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: $ink-muted;
+  max-width: 720px;
+
+  .lbl {
+    font-weight: 600;
+    color: $garnet;
+    margin-right: 4px;
+  }
+}
+
+.va-figure-pair {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+  margin: 28px 0;
+
+  figure { margin: 0; }
+  img { width: 100%; height: auto; display: block; }
+  figcaption {
+    font-size: 13px; color: $ink-muted; line-height: 1.45;
+    margin-top: 10px; text-align: center;
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .va-detail { padding: 28px 0 48px; }
+  .va-backlink { margin-bottom: 24px; font-size: 13px; }
+  .va-detail-title { font-size: 28px; line-height: 1.15; }
+  .va-detail-authors { font-size: 14px; }
+  .va-detail-meta { font-size: 13px; }
+  .va-detail-meta .doi { font-size: 11.5px; word-break: break-all; }
+  .va-detail-actions { gap: 8px; margin-top: 22px; }
+  .va-detail-action { flex: 1; justify-content: center; min-width: 0; }
+  .va-figure-pair { grid-template-columns: 1fr; gap: 24px; }
+}
+
+// ------------------------------------------------------------------
+// 404 page
+// ------------------------------------------------------------------
+.va-404 {
+  padding: 96px 0;
+  text-align: center;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+
+  .code {
+    font-size: 120px; line-height: 1;
+    font-weight: 500; letter-spacing: -0.04em;
+    color: $garnet; margin: 0;
+  }
+  .msg {
+    font-size: 28px; line-height: 1.2;
+    font-weight: 500; letter-spacing: -0.015em;
+    color: $ink;
+    margin: 18px 0 14px;
+  }
+  .sub {
+    font-size: 17px; line-height: 1.55;
+    color: $ink-muted;
+    margin: 0 0 32px; max-width: 460px;
+  }
+  .home {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 14px; font-weight: 500;
+    color: $ink;
+    box-shadow: inset 0 -1px 0 $garnet;
+    padding-bottom: 2px;
+    transition: color .12s, box-shadow .12s;
+
+    &:hover { color: $garnet; box-shadow: inset 0 -1px 0 $garnet; }
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .va-404 {
+    padding: 56px 20px;
+    .code { font-size: 88px; }
+    .msg  { font-size: 22px; }
+    .sub  { font-size: 15.5px; }
+  }
+}
+
+// ------------------------------------------------------------------
+// Footer  (Quarto emits footer.footer > .nav-footer > .nav-footer-*)
+// ------------------------------------------------------------------
+footer.footer {
+  background: $garnet-deep !important;
+  color: $peach-link;
+  border-top: none;
+  padding: 0;
+
+  .nav-footer {
+    background: transparent !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 48px;
+    padding: 20px 48px;
+    min-height: 0;
+    text-align: left;
+    color: $peach-link;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .nav-footer-left,
+  .nav-footer-center,
+  .nav-footer-right {
+    flex: 1;
+    min-width: 200px;
+    font-size: 14px;
+    text-align: left;
+  }
+  .nav-footer-right { text-align: right; }
+
+  p {
+    margin: 0 0 6px;
+    line-height: 1.55;
+    font-size: 14px;
+  }
+
+  a {
+    color: $peach-link;
+    box-shadow: inset 0 -1px 0 rgba(250, 220, 198, 0.35);
+    padding-bottom: 1px;
+    transition: color .12s, box-shadow .12s;
+    text-decoration: none;
+
+    &:hover { color: #fff; box-shadow: inset 0 -1px 0 #fff; }
+  }
+
+  .footer-label {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(241, 232, 213, 0.7);
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  .fa, .fa-brands, .fab { color: rgba(241, 232, 213, 0.7); margin-right: 2px; }
+}
+
+@media (max-width: $bp-mobile) {
+  footer.footer .nav-footer {
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px 20px;
+
+    .nav-footer-left,
+    .nav-footer-center,
+    .nav-footer-right {
+      text-align: left;
+      min-width: 0;
+    }
+  }
+}
+
+// ------------------------------------------------------------------
+// Hide Quarto's default title block on pages that supply their own
+// (home + 404 use raw-HTML wrappers; banner pages emit the banner instead)
+// ------------------------------------------------------------------
+body:has(.va-trestles) #title-block-header,
+body:has(.va-404) #title-block-header { display: none !important; }
+
+// ------------------------------------------------------------------
+// Category sidebar (Quarto's listing filter)
+// ------------------------------------------------------------------
+#quarto-margin-sidebar {
+  padding-top: 0;
+  align-self: start;
+  position: sticky;
+  // !important needed: Quarto's .sidebar.margin-sidebar { top: 0px } loses on
+  // specificity but appears to be applied later in the cascade in practice.
+  top: 80px !important;
+}
+
+.quarto-listing-category {
+  margin-left: 6px;
+  padding-left: 12px;
+  border-left: 1px solid $rule-soft;
+  font-size: 14px;
+  color: $ink-soft;
+  line-height: 1.5;
+
+  .category {
+    display: block;
+    padding: 3px 0;
+    cursor: pointer;
+    border-bottom: none;
+    color: $ink-soft;
+    font-size: 14px;
+    transition: color .12s;
+
+    &:hover { color: $garnet; }
+    &.active { color: $garnet; font-weight: 600; }
+  }
+  .quarto-category-count {
+    color: $ink-soft;
+    opacity: 0.5;
+    font-size: 14px;
+    margin-left: 2px;
+  }
+}
+
+.quarto-listing-category-title,
+h5.quarto-listing-category-title {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+  color: $ink;
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 4px;
+  border-bottom: none;
+}
+
+// Category chips in the title block (Quarto emits when listing has categories)
+.quarto-title-block .quarto-categories { display: none; }
+
+// "No matching items" empty state for listings
+.listing-no-matching {
+  padding: 28px 0;
+  font-size: 14.5px;
+  color: $ink-faint;
+  font-style: italic;
+}
+
+.listing-actions-group { display: none; }

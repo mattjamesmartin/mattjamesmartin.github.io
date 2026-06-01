@@ -1,0 +1,62 @@
+```{=html}
+<div class="list research-listing">
+<% for (const item of items) { %>
+  <div class="va-pubentry" <%= metadataAttrs(item) %>>
+    <div>
+      <a class="va-pubtitle" href="<%- item.path %>"><%= item.title %></a>
+      <div class="va-pubmeta">
+        <% if (item.author) {
+          let authorStr;
+          if (typeof item.author === 'string') {
+            authorStr = item.author;
+          } else if (Array.isArray(item.author)) {
+            authorStr = item.author.map(a => (a && a.name) ? a.name : a).join(', ');
+          } else {
+            authorStr = String(item.author);
+          }
+        %>
+        <span class="authors"><%= authorStr.replace(/Matthew Martin/g, '<b>Matthew Martin</b>') %></span>
+        <% } %>
+        <% if (item['pub-info'] && item['pub-info'].venue) { %>
+        <span class="dot">·</span>
+        <span class="venue"><%= item['pub-info'].venue %></span>
+        <% } %>
+        <% if (item['pub-info'] && item['pub-info'].venueDetail) { %>
+        <span class="dot">·</span>
+        <span><%= item['pub-info'].venueDetail %></span>
+        <% } %>
+        <% if (item['pub-info'] && item['pub-info'].status) { %>
+        <span class="dot">·</span>
+        <span class="status"><%= item['pub-info'].status %></span>
+        <% } %>
+        <% if (item['pub-info'] && item['pub-info'].year) { %>
+        <span class="dot">·</span>
+        <span class="year"><%= item['pub-info'].year %></span>
+        <% } %>
+      </div>
+      <% if (item['pub-info'] && item['pub-info'].blurb) { %>
+      <div class="va-pubblurb"><%= item['pub-info'].blurb %></div>
+      <% } %>
+      <% if (item.categories && item.categories.length) { %>
+      <div class="va-pubtags">
+        <% for (const tag of item.categories) { %>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory && window.quartoListingCategory('<%= tag %>'); return false;"><%= tag %></span>
+        <% } %>
+      </div>
+      <% } %>
+    </div>
+    <% if (item['pub-info'] && item['pub-info'].links && item['pub-info'].links.length) { %>
+    <div class="va-publinks">
+      <% for (const link of item['pub-info'].links) { %>
+        <% if (link.local) { %>
+        <a class="va-publink" href="<%- item.path.substring(0, item.path.lastIndexOf('/')) %>/<%- link.url %>"><%= link.name %><% if (link.icon) { %> <i class="<%- link.icon %>"></i><% } %></a>
+        <% } else { %>
+        <a class="va-publink" href="<%- link.url %>"><%= link.name %><% if (link.icon) { %> <i class="<%- link.icon %>"></i><% } %></a>
+        <% } %>
+      <% } %>
+    </div>
+    <% } %>
+  </div>
+<% } %>
+</div>
+```

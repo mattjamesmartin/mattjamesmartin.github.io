@@ -4,3 +4,18 @@
 .Rhistory
 .DS_Store
 .positai
+scripts/
+
+# macOS Finder name-collision duplicates (e.g. "site_libs 2", "clipboard 4")
+* [0-9]/
+* [0-9]
+* [0-9].*
+
+# Stray Quarto outputs (output-dir is docs/; anything next to source is cruft)
+/site_libs/
+/index_files/
+/research/index_files/
+/teaching/index_files/
+/research/articles/*/index.html
+/research/works-in-progress/*/index.html
+/blog/posts/index.html

@@ -6,14 +6,17 @@ author:
     url: https://mattjamesmartin.github.io/
     orcid: 0000-0003-3460-3603
     affiliation: Department of Government, University of Texas at Austin
-categories: 
+categories:
   - Crime-based deportation
   - Crimmigration
   - Political entrepreneurs
   - Reactive sequences
 pub-info:
-  reference: >-
-    <strong>Matthew Martin</strong>. 2026. “Deportation by Design: How Political Entrepreneurs Engineered Crime-Based Deportation in the United States.” <em>Polity</em> 58(2): 362–394. doi: <a href="https://doi.org/10.1086/739835"><code>10.1086/739835</code></a>
+  year: "2026"
+  venue: "Polity"
+  venueDetail: "58(2): 362–394"
+  blurb: >-
+    Starting in the 1980s, the United States federal government considerably expanded criminal grounds for the removal of non-citizens, laying the foundation for today's deportation regime. I trace crime-based deportation, a core institution of modern immigration enforcement, back to an understudied section of the Immigration Reform and Control Act (IRCA) of 1986 and two key reforms in 1988 and 1990, consolidated by a bipartisan coalition of political entrepreneurs. Substantively, the findings contribute to historical research on how deportation laws have changed through the policymaking process; theoretically, the paper clarifies how human agency contributes to processes of institutional transformation.
   links:
   - name: Final version
     url: https://doi.org/10.1086/739835

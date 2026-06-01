@@ -1,0 +1,4 @@
+format:
+  html:
+    template-partials:
+      - ../../_assets/research/title-block.html

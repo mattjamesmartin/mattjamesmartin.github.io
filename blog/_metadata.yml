@@ -1,20 +1,15 @@
 # Date format
 date-format: "MMMM D, YYYY"
 
-# Enable banner style title blocks
-title-block-banner: "#844247"
+# Default for table of contents (design has none on detail pages)
+toc: false
 
-# Add blog-post class to the banner header area
-format: 
+include-back-link: true
+
+format:
   html:
     code-tools: false
-    quarto-template-params:
-      banner-header-class: "blog-post"
-
-# Default for table of contents
-toc: true
-toc-title: Contents
-toc-location: left
+    reading-time: true
 
 freeze: true
 
