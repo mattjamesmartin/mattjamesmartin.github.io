@@ -35,9 +35,13 @@
         <% } %>
       </div>
       <% if (item['pub-info'] && item['pub-info'].blurb) {
+         // Convert markdown emphasis (*x*) in the blurb to italics. NOTE: in
+         // Quarto's EJS the output tags are reversed from standard EJS -- the
+         // raw output tag is the equals form and the dash form HTML-escapes,
+         // so we must use the equals form here or the tags come out escaped.
          const blurbHtml = item['pub-info'].blurb.replace(/\*([^*]+)\*/g, '<em>$1</em>');
       %>
-      <div class="va-pubblurb"><%- blurbHtml %></div>
+      <div class="va-pubblurb"><%= blurbHtml %></div>
       <% } %>
       <% if (item.categories && item.categories.length) { %>
       <div class="va-pubtags">
