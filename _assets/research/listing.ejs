@@ -35,7 +35,7 @@
         <% } %>
       </div>
       <% if (item['pub-info'] && item['pub-info'].blurb) { %>
-      <div class="va-pubblurb"><%= item['pub-info'].blurb %></div>
+      <div class="va-pubblurb"><%- item['pub-info'].blurb %></div>
       <% } %>
       <% if (item.categories && item.categories.length) { %>
       <div class="va-pubtags">
