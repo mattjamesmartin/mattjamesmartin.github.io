@@ -1,0 +1,52 @@
+---
+title: "Cuba On My Mind"
+description: "Photos and reflections from Havana."
+image: "Cuba.JPG"
+aliases:
+  - /blog/posts/cuba-on-my-mind.html
+  - /blog/posts/Cuba.html
+resources:
+  - Cuba_2025/**
+date: 03-16-2026
+categories:
+  - Cuba
+include-in-header:
+  - text: |
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.9.0/css/lightgallery-bundle.min.css">
+include-after-body:
+  - text: |
+      <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.9.0/lightgallery.umd.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.9.0/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.9.0/plugins/zoom/lg-zoom.umd.min.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          lightGallery(document.getElementById('havana-gallery'), {
+            plugins: [lgZoom, lgThumbnail],
+            speed: 500,
+            thumbnail: true,
+            exThumbImage: 'data-thumb',
+            selector: '.gallery-item'
+          });
+        });
+      </script>
+---
+
+::: {#havana-gallery}
+<a class="gallery-item" data-src="Cuba_2025/havana_001.jpg" data-thumb="Cuba_2025/havana_001.jpg"><img src="Cuba_2025/havana_001.jpg" style="max-width:100%; cursor:pointer;"/></a> <a class="gallery-item" data-src="Cuba_2025/havana_002.jpg" data-thumb="Cuba_2025/havana_002.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_003.jpg" data-thumb="Cuba_2025/havana_003.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_004.jpg" data-thumb="Cuba_2025/havana_004.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_005.jpg" data-thumb="Cuba_2025/havana_005.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_006.jpg" data-thumb="Cuba_2025/havana_006.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_007.jpg" data-thumb="Cuba_2025/havana_007.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_008.jpg" data-thumb="Cuba_2025/havana_008.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_009.jpg" data-thumb="Cuba_2025/havana_009.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_010.jpg" data-thumb="Cuba_2025/havana_010.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_011.jpg" data-thumb="Cuba_2025/havana_011.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_012.jpg" data-thumb="Cuba_2025/havana_012.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_013.jpg" data-thumb="Cuba_2025/havana_013.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_014.jpg" data-thumb="Cuba_2025/havana_014.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_015.jpg" data-thumb="Cuba_2025/havana_015.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_016.jpg" data-thumb="Cuba_2025/havana_016.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_017.jpg" data-thumb="Cuba_2025/havana_017.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_018.jpg" data-thumb="Cuba_2025/havana_018.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_019.jpg" data-thumb="Cuba_2025/havana_019.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_020.jpg" data-thumb="Cuba_2025/havana_020.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_021.jpg" data-thumb="Cuba_2025/havana_021.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_022.jpg" data-thumb="Cuba_2025/havana_022.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_023.jpg" data-thumb="Cuba_2025/havana_023.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_024.jpg" data-thumb="Cuba_2025/havana_024.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_025.jpg" data-thumb="Cuba_2025/havana_025.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_026.jpg" data-thumb="Cuba_2025/havana_026.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_027.jpg" data-thumb="Cuba_2025/havana_027.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_028.jpg" data-thumb="Cuba_2025/havana_028.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_029.jpg" data-thumb="Cuba_2025/havana_029.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a> <a class="gallery-item" data-src="Cuba_2025/havana_030.jpg" data-thumb="Cuba_2025/havana_030.jpg" style="visibility:hidden; height:0; overflow:hidden; position:absolute;"></a>
+:::
+
+::: {style="text-align: center;"}
+*Click the photo above to browse the album.*
+:::
+
+From January 4–18, 2025, I traveled to Havana, Cuba to conduct fieldwork for my doctoral thesis. With me I brought my (very) old Nikon D7100 camera and an iPhone 12 to help document my experience. They captured only a snapshot of what I observed. In all honesty, I’ve been hesitant to revisit these photos—let alone share them—because of the emotions they resurface.
+
+It was jarring to roam the streets of Havana—a once romanticized, now decaying city in a country collapsing under its own contradictions. And I was there to interview an ossified ruling elite about the country’s constitution-making process, a fleeting moment of relative prosperity for the island in the wake of U.S. President Obama’s “Cuban Thaw,” which today could not feel further from reality.
+
+Perhaps the most vivid memory I have from my trip is when, during a meeting with a high-ranking government official, we were interrupted by his secretary who told us that President Biden, in the last week of his presidency, had removed Cuba from the list of state sponsors of terrorism. A week later, President Trump added the country back to the list.
+
+A lot has happened since then, which I won’t attempt to summarize here, but Cuba is back in the U.S. news cycle. Trump says he’s weighing a “friendly takeover” of the country after his war-of-choice with Iran. In the meantime, he has imposed an oil embargo that has completely paralyzed the already abysmal Cuban economy. My friends in Havana tell me they are lucky to have 2–4 hours of electricity per day as massive grid failures are a near-constant occurrence, worsening food shortages.
+
+Cuba has now entered its tenth consecutive day of protests throughout the country—pot-banging, makeshift barricades, burning trash—with citizens burning down the provincial headquarters of the Communist Party in Ciego de Ávila over the weekend. The Cuban government has responded by unleashing its police and military forces to guard government and Party buildings and carry out another wave of arbitrary detentions.
+
+As one of my closest friends I made during my trip told me, “I just want this to end (all Cubans do)—hopefully not in a violent way—because the people are the ones who suffer all the consequences and bad decisions.” Since I started writing this post, Cuba's power grid has completely collapsed, leaving 10 million people without power. It is the country's eighth national blackout since February 2024, and exactly three months since the last one.

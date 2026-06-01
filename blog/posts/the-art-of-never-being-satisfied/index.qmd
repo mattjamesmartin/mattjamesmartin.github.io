@@ -1,7 +1,9 @@
 ---
 title: "The Art of Never Being Satisfied"
 description: "A guide to writing for perfectionists."
-image: "../../imgs/Gettysburg.jpg"
+image: "Gettysburg.jpg"
+aliases:
+  - /blog/posts/the-art-of-never-being-satisfied.html
 date: 01-17-2023
 code-tools: false
 categories:
@@ -9,7 +11,7 @@ categories:
   - Perfectionism
 ---
 
-![](/imgs/Gettysburg.jpg)
+![](Gettysburg.jpg)
 
 ## Introduction
 

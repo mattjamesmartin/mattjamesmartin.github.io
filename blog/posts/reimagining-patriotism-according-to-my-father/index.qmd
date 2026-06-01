@@ -1,14 +1,16 @@
 ---
 title: "Reimagining Patriotism, According to My Father"
 description: "A letter to the editors of the Harper Review"
-image: "../../imgs/thestreet.jpg"
+image: "thestreet.jpg"
+aliases:
+  - /blog/posts/reimagining-patriotism-according-to-my-father.html
 date: 08-23-2024
 categories:
   - Patriotism
   - Electoralism
 ---
 
-![*The Street* (1933) by Balthus, Museum of Modern Art.](/imgs/thestreet.jpg)
+![*The Street* (1933) by Balthus, Museum of Modern Art.](thestreet.jpg)
 
 A response to *The Harper Review's* autumn 2024 proposition, "You should love your country."
 
