@@ -14,15 +14,14 @@ page-layout: full
     <div class="va-namecard">
       <div class="name">Matthew Martin</div>
       <div class="va-appointment">
-        <div class="role">Assistant Professor</div>
-        <div class="org">Department of Political Science</div>
-        <div class="org">University of South Carolina</div>
+        <div class="role">Postdoctoral Researcher</div>
+        <div class="org">Comparative Constitutions Project</div>
       </div>
     </div>
   </div>
 
   <div class="va-bio">
-    <p class="lead">My name is Matt Martin (he/him), and I am an Assistant Professor in the Department of Political Science at the <a class="org" href="https://sc.edu/study/colleges_schools/artsandsciences/political_science/index.php">University of South Carolina</a>. I received my PhD in Government from the University of Texas at Austin, specializing in public law and comparative politics. Previously, I was a postdoctoral researcher at the <a class="org" href="https://comparativeconstitutionsproject.org/">Comparative Constitutions Project</a>.</p>
+    <p class="lead">My name is Matt Martin (he/him), and I am a postdoctoral researcher at the <a class="org" href="https://comparativeconstitutionsproject.org/">Comparative Constitutions Project</a>. In Fall 2026, I will join the Department of Political Science at the <a class="org" href="https://sc.edu/study/colleges_schools/artsandsciences/political_science/index.php">University of South Carolina</a> as an Assistant Professor. I received my PhD in Government from the University of Texas at Austin, specializing in public law and comparative politics.</p>
 
     <p>My research examines constitution-making processes, focusing on mechanisms of public consultation. My dissertation analyzes how and why constitutional drafters engage public consultation&mdash;and what they do with the input they receive&mdash;through comparative case studies of Chile and Cuba. I combine large-N analyses and natural language processing with elite interviews and qualitative case research.</p>
 

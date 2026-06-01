@@ -454,12 +454,16 @@ main a.va-pubtag {
   }
   .ow-meta {
     display: flex; flex-wrap: wrap;
-    gap: 6px 12px; margin-top: 6px;
+    gap: 6px 12px; margin-top: 8px;
     font-size: 13.5px; color: $ink-muted; line-height: 1.4;
 
     .dot { color: $meta-dot; }
-    .venue { color: $ink; font-weight: 500; }
-    .year { color: $garnet; font-weight: 600; letter-spacing: 0.02em; }
+    .venue { color: $ink; font-weight: 400; }
+    .year {
+      color: $garnet; font-weight: 400;
+      letter-spacing: 0.02em;
+      font-feature-settings: "tnum" on, "lnum" on;
+    }
   }
   .ow-note {
     font-size: 14px; color: $ink-faint; margin-top: 6px;
