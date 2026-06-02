@@ -917,6 +917,10 @@ footer.footer {
 
     .nav-footer-left,
     .nav-footer-center {
+      // Base rule sets flex: 1; in the column layout of a sticky footer that's
+      // taller than its content, that makes each block grow vertically and
+      // leaves a gap below it. Keep them content-height so they stack tightly.
+      flex: 0 0 auto;
       text-align: left;
       min-width: 0;
     }
