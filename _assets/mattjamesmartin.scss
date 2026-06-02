@@ -907,7 +907,7 @@ footer.footer {
 @media (max-width: $bp-mobile) {
   footer.footer .nav-footer {
     flex-direction: column;
-    gap: 12px;
+    gap: 0;
     padding: 32px 20px;
 
     .nav-footer-left,
