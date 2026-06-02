@@ -347,6 +347,14 @@ main p a {
     padding: 36px 0 14px; margin-top: 28px;
     h2 { font-size: 24px; }
   }
+  // The first section keeps no border/margin, but the desktop first-of-type
+  // rule also drops its top padding to 12px — which on mobile leaves the
+  // header cramped above (12px) and loose below (~36px). Match the top
+  // padding so the header sits evenly between the banner and the first item.
+  .va-sec:first-of-type,
+  main > .va-sec:first-child {
+    padding-top: 36px;
+  }
 }
 
 // ------------------------------------------------------------------
