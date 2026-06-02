@@ -907,7 +907,12 @@ footer.footer {
 @media (max-width: $bp-mobile) {
   footer.footer .nav-footer {
     flex-direction: column;
-    gap: 0;
+    flex-wrap: nowrap;
+    // Base rule sets justify-content: space-between for the desktop row; in a
+    // sticky footer that's taller than its content, that spreads the stacked
+    // mobile blocks vertically (the "empty line"). Stack from the top instead.
+    justify-content: flex-start;
+    gap: 16px;
     padding: 32px 20px;
 
     .nav-footer-left,
