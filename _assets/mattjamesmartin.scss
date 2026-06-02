@@ -917,10 +917,12 @@ footer.footer {
 
     .nav-footer-left,
     .nav-footer-center {
-      // Base rule sets flex: 1; in the column layout of a sticky footer that's
-      // taller than its content, that makes each block grow vertically and
-      // leaves a gap below it. Keep them content-height so they stack tightly.
       flex: 0 0 auto;
+      // Quarto's stock mobile footer CSS adds margin-top: 3em (and
+      // margin-bottom: 1em) to .nav-footer-center — THAT is the big gap
+      // between License and Source. Reset it; the .nav-footer `gap`
+      // handles spacing between the stacked blocks.
+      margin: 0;
       text-align: left;
       min-width: 0;
     }
