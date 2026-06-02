@@ -184,6 +184,10 @@ a { text-decoration: none; }
 @media (max-width: $bp-mobile) {
   .quarto-title-banner {
     padding: 32px 20px;
+    // Quarto adds margin-bottom: 1em below the banner; drop it on mobile so the
+    // first section header sits closer to the banner (its own padding-top is
+    // the gap). The banner's symmetric padding above keeps the title centered.
+    margin-bottom: 0;
 
     .quarto-title h1.title, .title { font-size: 30px; }
     .description, .subtitle { font-size: 15px; }
