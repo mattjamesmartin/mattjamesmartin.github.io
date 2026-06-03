@@ -356,6 +356,28 @@ main p a {
   }
 }
 
+// "Selected work" head on the home page: unlike a listing page, this section
+// follows the bio, so restore the top rule that :first-of-type would drop.
+.va-sec.va-selected-head {
+  border-top: 1px solid $rule-medium;
+  margin-top: 12px;
+  padding-top: 40px;
+
+  // Smaller, muted sentence-case head (vs the 30px research-page heads), so it
+  // sits clearly below the name in the hero instead of competing with it.
+  h2 {
+    font-size: 19px; font-weight: 600;
+    letter-spacing: -0.01em;
+    color: $ink-muted;
+  }
+}
+@media (max-width: $bp-mobile) {
+  .va-sec.va-selected-head {
+    padding-top: 28px;
+    h2 { font-size: 18px; } // keep it clearly under the 22px mobile name
+  }
+}
+
 // ------------------------------------------------------------------
 // Publication / WIP rows
 // ------------------------------------------------------------------
@@ -394,6 +416,33 @@ main p a {
   color: $ink-soft;
   margin-top: 12px;
   max-width: 620px;
+
+  // Collapsed state — applied by JS only when the abstract overflows the clamp
+  // (see the read-more script in research/index.qmd). No-JS users see it full.
+  &.is-clamped {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+.va-readmore {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: 14px;
+  font-size: 12.5px; font-weight: 600;
+  color: $garnet;
+  background: none; border: 0; padding: 0;
+  cursor: pointer;
+  transition: opacity .12s;
+
+  // Caret signals expand/collapse; no underline, so this never reads as a tag.
+  .va-readmore-caret {
+    font-size: 8px; line-height: 1;
+    transition: transform .18s ease;
+  }
+  &[aria-expanded="true"] .va-readmore-caret { transform: rotate(180deg); }
+
+  &:hover { opacity: 0.6; }
 }
 .va-pubtags {
   display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 12px;
@@ -668,6 +717,20 @@ a.va-cv-download {
   padding-bottom: 2px;
   transition: color .12s, box-shadow .12s;
   margin-bottom: 36px;
+
+  &:hover { color: $garnet; box-shadow: inset 0 -1px 0 $garnet; }
+  .arrow { color: $garnet; }
+}
+
+// Right-pointing counterpart to .va-backlink — "All research →" on the home
+// page. Same treatment, arrow trailing, sized to sit below the listing.
+.va-morelink {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 13.5px; color: $ink-faint;
+  box-shadow: inset 0 -1px 0 $rule-soft;
+  padding-bottom: 2px;
+  flex: 0 0 auto;
+  transition: color .12s, box-shadow .12s;
 
   &:hover { color: $garnet; box-shadow: inset 0 -1px 0 $garnet; }
   .arrow { color: $garnet; }

@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./favicon.svg" rel="icon" type="image/svg+xml">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -70,6 +72,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-selected-work .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-project','listing-author-meta','listing-website','listing-format','listing-editor','listing-_quarto-vars','listing-language','listing-date-format','listing-toc','listing-include-back-link','listing-execute','listing-title','listing-date','listing-author','listing-categories','listing-pub-info','listing-doi','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-author-meta","listing-website","listing-format","listing-editor","listing-_quarto-vars","listing-language","listing-date-format","listing-toc","listing-include-back-link","listing-execute","listing-title","listing-date","listing-author","listing-categories","listing-pub-info","listing-doi","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-selected-work'] = new List('listing-selected-work', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-EL33VJN6EN"></script>
 
 <script type="text/javascript">
@@ -80,6 +111,35 @@ gtag('js', new Date());
 gtag('config', 'G-EL33VJN6EN', { 'anonymize_ip': true});
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <meta property="og:title" content="About">
 <meta property="og:image" content="https://mattjmartin.com/imgs/social-card.png">
@@ -199,6 +259,119 @@ gtag('config', 'G-EL33VJN6EN', { 'anonymize_ip': true});
     <p>Prior to graduate school, I worked as a legal assistant in immigration law. I remain committed to migrant justice through mutual aid work supporting trans and gender non-conforming asylum seekers. Outside of work, I play guitar and produce <a href="https://soundcloud.com/meridiem-beats">music</a>—mostly lofi hip-hop.</p>
   </div>
 </div>
+<div class="va-sec va-selected-head">
+  <h2 class="anchored">Selected work<span class="dot">.</span></h2>
+  <a class="va-morelink" href="./research/">All research <span class="arrow">→</span></a>
+</div>
+<div id="listing-selected-work" class="quarto-listing quarto-listing-container-custom">
+
+<div class="list research-listing">
+
+  <div class="va-pubentry" data-index="0" data-categories="Chile,Constitutional design,Cuba,Political elites,Public consultation" data-listing-date-sort="1775113200000" data-listing-file-modified-sort="1780521857089" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
+    <div>
+      <a class="va-pubtitle" href="./research/articles/from-citizen-input-to-elite-legitimation/index.html">From Citizen Input to Elite Legitimation: The Logic of Will-Confirmation in Constitution-Making</a>
+      <div class="va-pubmeta">
+        
+        <span class="authors"><b>Matthew Martin</b></span>
+        
+        
+        <span class="dot">·</span>
+        <span class="venue">Comparative Politics</span>
+        
+        
+        <span class="dot">·</span>
+        <span>59(1)</span>
+        
+        
+        
+        <span class="dot">·</span>
+        <span class="year">2026</span>
+        
+      </div>
+      
+    </div>
+    
+    
+    <div class="va-publinks">
+      
+      <a class="va-publink" href="https://doi.org/10.5129/001041526X17731675177333">Final version <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      
+    </div>
+    
+  </div>
+
+  <div class="va-pubentry" data-index="1" data-categories="Crime-based deportation,Crimmigration,Political entrepreneurs,Reactive sequences" data-listing-date-sort="1775026800000" data-listing-file-modified-sort="1780521801968" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="8">
+    <div>
+      <a class="va-pubtitle" href="./research/articles/deportation-by-design/index.html">Deportation by Design: How Political Entrepreneurs Engineered Crime-Based Deportation in the United States</a>
+      <div class="va-pubmeta">
+        
+        <span class="authors"><b>Matthew Martin</b></span>
+        
+        
+        <span class="dot">·</span>
+        <span class="venue">Polity</span>
+        
+        
+        <span class="dot">·</span>
+        <span>58(2): 362–394</span>
+        
+        
+        
+        <span class="dot">·</span>
+        <span class="year">2026</span>
+        
+      </div>
+      
+    </div>
+    
+    
+    <div class="va-publinks">
+      
+      <a class="va-publink" href="https://doi.org/10.1086/739835">Final version <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      
+    </div>
+    
+  </div>
+
+  <div class="va-pubentry" data-index="2" data-categories="Chile,Constitutional design,Political elites,Public consultation" data-listing-date-sort="1766217600000" data-listing-file-modified-sort="1780521782245" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
+    <div>
+      <a class="va-pubtitle" href="./research/articles/consultation-without-consensus/index.html">Consultation Without Consensus: Lessons from the Chilean Constitutional Convention (2021-2022)</a>
+      <div class="va-pubmeta">
+        
+        <span class="authors"><b>Matthew Martin</b></span>
+        
+        
+        <span class="dot">·</span>
+        <span class="venue">Política. Revista De Ciencia Política</span>
+        
+        
+        <span class="dot">·</span>
+        <span>63(2): 81–112</span>
+        
+        
+        
+        <span class="dot">·</span>
+        <span class="year">2025</span>
+        
+      </div>
+      
+    </div>
+    
+    
+    <div class="va-publinks">
+      
+      <a class="va-publink" href="https://doi.org/10.5354/0719-5338.2025.81160">Final version <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      
+    </div>
+    
+  </div>
+
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+
 
 
 
@@ -650,7 +823,7 @@ View the source on <a href="https://github.com/mattjamesmartin/mattjamesmartin.g
 Set in <a href="https://fonts.google.com/specimen/Source+Serif+4">Source Serif 4</a>
 </p>
 <p>
-Last revised June 02, 2026
+Last revised June 03, 2026
 </p>
 </div>
   </div>

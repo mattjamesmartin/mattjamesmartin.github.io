@@ -11,8 +11,8 @@ categories:
   - Public consultation
 pub-info:
   status: "Under review"
-  blurb: >-
-    How do drafters leverage public consultation during constitution-making? I argue that drafters engage in cherry-picking, selectively invoking consultation inputs and procedures to elevate supportive and discredit contrary evidence. Using an LLM-assisted pipeline, I classify consultation invocations in plenary transcripts from Chile (2021–22) and Cuba (2018–19), identifying two modes distinguished by interpretive control of the consultation record. In Chile's *contested* mode, the supermajority invoked consultation to underwrite reforms while the opposition attacked its design. In Cuba's *concentrated* mode, the Drafting Commission invoked consultation to validate decisions already made while dominating the floor.
+  abstract: >-
+    How do drafters leverage public consultation during constitution-making? Research focuses on participation’s downstream effects, sidestepping elite deliberations where the will of “the people” takes shape. I argue that drafters engage in cherry-picking, selectively invoking consultation inputs and procedures to elevate supportive and discredit contrary evidence. Through this mode of representative claim-making, these elites do not transmit citizen preferences but characterize them to fit their constitutional positions. Using an LLM-assisted pipeline, I classify consultation invocations in plenary transcripts from Chile (2021–22) and Cuba (2018–19), identifying two modes distinguished by interpretive control of the consultation record. In Chile’s *contested* mode, the supermajority invoked consultation to underwrite reforms while the opposition attacked its design. In Cuba’s *concentrated* mode, the Drafting Commission invoked consultation to validate decisions already made while dominating the floor. Cherry-picking makes visible what constituent power theory often conceals — that drafters represent a public whose will they partly construct.
   links:
   - name: Draft
     url: constitutional-cherrypicking.pdf
@@ -29,4 +29,4 @@ pub-info:
 
 ## Abstract
 
-How do drafters leverage public consultation during constitution-making? Research focuses on participation's downstream effects, sidestepping elite deliberations where the will of \`\`the people" takes shape. I argue that drafters engage in cherry-picking, selectively invoking consultation inputs and procedures to elevate supportive and discredit contrary evidence. Through this mode of representative claim-making, these elites do not transmit citizen preferences but characterize them to fit their constitutional positions. Using an LLM-assisted pipeline, I classify consultation invocations in plenary transcripts from Chile (2021–22) and Cuba (2018–19), identifying two modes distinguished by interpretive control of the consultation record. In Chile's *contested* mode, the supermajority invoked consultation to underwrite reforms while the opposition attacked its design. In Cuba's *concentrated* mode, the Drafting Commission invoked consultation to validate decisions already made while dominating the floor. Cherry-picking makes visible what constituent power theory often conceals — that drafters represent a public whose will they partly construct. {{< fa blank >}}
+{{< meta pub-info.abstract >}} {{< fa blank >}}

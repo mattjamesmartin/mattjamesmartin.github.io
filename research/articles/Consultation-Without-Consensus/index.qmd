@@ -12,8 +12,8 @@ pub-info:
   year: "2025"
   venue: "Política. Revista De Ciencia Política"
   venueDetail: "63(2): 81–112"
-  blurb: >-
-    Constitutional crises increasingly emerge not from dictatorship's end, but from democracy's disappointments, generating demands for greater citizen involvement. Drawing on interviews with 30 delegates and staff from the Chilean Constitutional Convention, this research note examines why one of history's most ambitious participatory experiments faltered. The analysis reveals three interconnected tensions characterizing consultation without consensus: sequencing (when citizen input informs elite deliberation), aggregation (how input becomes actionable), and authority (what binding force participation has over representatives).
+  abstract: >-
+    Constitutional crises increasingly emerge not from dictatorship’s end, but from democracy’s disappointments, generating demands for greater citizen involvement. Drawing on interviews with 30 delegates and staff from the Chilean Constitutional Convention, this research note examines why one of history’s most ambitious participatory experiments faltered. The analysis reveals three interconnected tensions characterizing consultation without consensus: sequencing (when citizen input informs elite deliberation), aggregation (how input becomes actionable), and authority (what binding force participation has over representatives). The Convention attempted extensive citizen engagement without prior elite agreement on these core questions, producing mechanisms that struggled to link citizens to decision-making. The case exposes a paradox: the conditions making consultation most necessary—acute fragmentation and representational failure—also make coherent implementation most difficult.
   links:
   - name: Final version
     url: https://doi.org/10.5354/0719-5338.2025.81160
@@ -27,4 +27,4 @@ doi: 10.5354/0719-5338.2025.81160
 
 ## Abstract
 
-Constitutional crises increasingly emerge not from dictatorship’s end, but from democracy’s disappointments, generating demands for greater citizen involvement. Drawing on interviews with 30 delegates and staff from the Chilean Constitutional Convention, this research note examines why one of history’s most ambitious participatory experiments faltered. The analysis reveals three interconnected tensions characterizing consultation without consensus: sequencing (when citizen input informs elite deliberation), aggregation (how input becomes actionable), and authority (what binding force participation has over representatives). The Convention attempted extensive citizen engagement without prior elite agreement on these core questions, producing mechanisms that struggled to link citizens to decision-making. The case exposes a paradox: the conditions making consultation most necessary—acute fragmentation and representational failure—also make coherent implementation most difficult.{{< fa blank >}}
+{{< meta pub-info.abstract >}}{{< fa blank >}}

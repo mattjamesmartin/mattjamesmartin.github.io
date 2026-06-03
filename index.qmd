@@ -3,6 +3,11 @@ title: "Matthew Martin"
 pagetitle: "About"
 title-block-style: none
 page-layout: full
+listing:
+  - id: selected-work
+    contents: "research/articles/*/index.qmd"
+    sort: "date desc"
+    template: _assets/research/home-listing.ejs
 ---
 
 ```{=html}
@@ -31,3 +36,13 @@ page-layout: full
   </div>
 </div>
 ```
+
+```{=html}
+<div class="va-sec va-selected-head">
+  <h2>Selected work<span class="dot">.</span></h2>
+  <a class="va-morelink" href="/research/">All research <span class="arrow">→</span></a>
+</div>
+```
+
+::: {#selected-work}
+:::

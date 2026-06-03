@@ -11,8 +11,8 @@ pub-info:
   year: "2025"
   venue: "Journal of Law and Courts"
   venueDetail: "13(1): 1–34"
-  blurb: >-
-    Since 1974, two out of every five constitutions (40.3%) were prepared via processes that included public consultation. The reasons for adopting these participatory mechanisms, however, are largely unexplored. I argue that public consultation is a tool for elite contestation of power. Using an original dataset of public consultations in constitution-making processes from 1974–2021 (n = 300), I find that in democracies, factional majorities and newcomer elites use public consultation to legitimate a break from the status quo. In autocracies, governing coalitions that depend on performance and enjoy greater party institutionalization push for public consultation to preserve favorable power-sharing arrangements.
+  abstract: >-
+    Since 1974, two out of every five constitutions (40.3%) were prepared via processes that included public consultation. The reasons for adopting these participatory mechanisms, however, are largely unexplored. I argue that public consultation is a tool for elite contestation of power. Introducing an original dataset of public consultations in constitution-making processes from 1974-2021 (n = 300), I find that in democracies, factional majorities and newcomer elites use public consultation to legitimate a break from the status quo. In autocracies, governing coalitions that depend on performance and enjoy greater party institutionalization push for public consultation to preserve favorable power-sharing arrangements.
   links:
   - name: Final version
     url: https://doi.org/10.1017/jlc.2024.9
@@ -27,7 +27,7 @@ doi: 10.1017/jlc.2024.9
 
 ## Abstract
 
-Since 1974, two out of every five constitutions (40.3%) were prepared via processes that included public consultation. The reasons for adopting these participatory mechanisms, however, are largely unexplored. I argue that public consultation is a tool for elite contestation of power. Introducing an original dataset of public consultations in constitution-making processes from 1974-2021 (n = 300), I find that in democracies, factional majorities and newcomer elites use public consultation to legitimate a break from the status quo. In autocracies, governing coalitions that depend on performance and enjoy greater party institutionalization push for public consultation to preserve favorable power-sharing arrangements. {{< fa blank >}}
+{{< meta pub-info.abstract >}} {{< fa blank >}}
 
 ## Key figures
 

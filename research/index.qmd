@@ -135,3 +135,62 @@ toc: false
 })();
 </script>
 ```
+
+```{=html}
+<script>
+// Research-listing abstracts: clamp long descriptions to a few lines (count set
+// by .va-pubblurb.is-clamped in CSS) and add a "Read more"/"Read less" toggle.
+// Progressive enhancement: the full text is always in the DOM, so no-JS users
+// lose nothing, and the toggle is added only when the text actually overflows.
+(function () {
+  function setup() {
+    var blurbs = document.querySelectorAll('.research-listing .va-pubblurb');
+    blurbs.forEach(function (el) {
+      // Idempotency guard (in case this runs more than once).
+      if (el.nextElementSibling &&
+          el.nextElementSibling.classList.contains('va-readmore')) return;
+      // Clamp, then measure: if the full text fits within the clamp, leave it
+      // expanded with no button; otherwise keep it clamped and add a toggle.
+      el.classList.add('is-clamped');
+      if (el.scrollHeight <= el.clientHeight + 1) {
+        el.classList.remove('is-clamped');
+        return;
+      }
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'va-readmore';
+      btn.setAttribute('aria-expanded', 'false');
+      var label = document.createElement('span');
+      label.className = 'va-readmore-label';
+      label.textContent = 'Read more';
+      var caret = document.createElement('span');
+      caret.className = 'va-readmore-caret';
+      caret.setAttribute('aria-hidden', 'true');
+      caret.textContent = '▾'; // ▾ ; CSS rotates it when expanded
+      btn.appendChild(label);
+      btn.appendChild(caret);
+      el.insertAdjacentElement('afterend', btn);
+      btn.addEventListener('click', function () {
+        var clamped = el.classList.toggle('is-clamped');
+        label.textContent = clamped ? 'Read more' : 'Read less';
+        btn.setAttribute('aria-expanded', clamped ? 'false' : 'true');
+      });
+    });
+  }
+  // Measure after web fonts settle so line metrics are accurate; fall back to
+  // DOMContentLoaded / immediate when the Font Loading API is unavailable.
+  function schedule() {
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(setup);
+    } else {
+      setup();
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', schedule);
+  } else {
+    schedule();
+  }
+})();
+</script>
+```
