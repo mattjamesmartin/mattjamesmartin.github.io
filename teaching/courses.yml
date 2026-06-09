@@ -1,3 +1,15 @@
+- code: "POLI 709"
+  title: "Qualitative Methods of Political Analysis"
+  institution: "University of South Carolina"
+  semesters:
+    - "Fall 2026"
+  summary: "This course prepares graduate students to design, conduct, and evaluate qualitative research in political science. Pluralist in method but explicit about what makes such research rigorous, the course takes up questions of evidentiary quality, transparency, and judgment, including emerging debates over the role of artificial intelligence, as students work toward a research project they can develop beyond the semester."
+  actions:
+    - name: "Syllabus"
+      url: "syllabi/POLI709-Syllabus-Qualitative-Research.pdf"
+      icon: "fa-solid fa-file-pdf"
+  date: 2026-08-16
+
 - code: "POLI 391"
   title: "World Constitutions"
   institution: "University of South Carolina"
@@ -8,7 +20,7 @@
     - name: "Syllabus"
       url: "syllabi/POLI391-World-Constitutions-Syllabus-fa26.pdf"
       icon: "fa-solid fa-file-pdf"
-  date: 2026-08-01
+  date: 2026-08-16
 
 - code: "GOV 357L"
   title: "Judicial Process and Behavior"
