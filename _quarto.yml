@@ -19,11 +19,18 @@ website:
   repo-url: https://github.com/mattjamesmartin/mattjamesmartin.github.io
 
   open-graph:
-    image: "imgs/social-card.png"
+    # Absolute URL so the card resolves the same on every page. A relative path
+    # gets resolved per-page, breaking on anything outside the site root (e.g.
+    # /research/ pointed at the nonexistent /research/imgs/social-card.png).
+    image: "https://mattjmartin.com/imgs/social-card.png"
+    image-width: 1200
+    image-height: 630
     locale: en_US
 
   twitter-card:
-    image: "imgs/social-card.png"
+    image: "https://mattjmartin.com/imgs/social-card.png"
+    image-width: 1200
+    image-height: 630
     creator: "@MattJ_Martin"
     card-style: summary_large_image
 
