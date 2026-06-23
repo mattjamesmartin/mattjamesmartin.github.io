@@ -19,57 +19,17 @@
 <div class="list research-listing">
 <% for (const item of shown) { %>
   <div class="va-pubentry" <%= metadataAttrs(item) %>>
+    <% // Year sits in a left rail (aligned for chronological scanning), echoing
+       // the blog page's date column. %>
+    <div class="va-pubyear"><% if (item['pub-info'] && item['pub-info'].year) { %><%= item['pub-info'].year %><% } %></div>
     <div>
       <a class="va-pubtitle" href="<%- item.path %>"><%= item.title %></a>
-      <div class="va-pubmeta">
-        <% if (item.author) {
-          let authorStr;
-          if (typeof item.author === 'string') {
-            authorStr = item.author;
-          } else if (Array.isArray(item.author)) {
-            authorStr = item.author.map(a => (a && a.name) ? a.name : a).join(', ');
-          } else {
-            authorStr = String(item.author);
-          }
-        %>
-        <span class="authors"><%= authorStr.replace(/Matthew Martin/g, '<b>Matthew Martin</b>') %></span>
-        <% } %>
-        <% if (item['pub-info'] && item['pub-info'].venue) { %>
-        <span class="dot">·</span>
-        <span class="venue"><%= item['pub-info'].venue %></span>
-        <% } %>
-        <% if (item['pub-info'] && item['pub-info'].venueDetail) { %>
-        <span class="dot">·</span>
-        <span><%= item['pub-info'].venueDetail %></span>
-        <% } %>
-        <% if (item['pub-info'] && item['pub-info'].status) { %>
-        <span class="dot">·</span>
-        <span class="status"><%= item['pub-info'].status %></span>
-        <% } %>
-        <% if (item['pub-info'] && item['pub-info'].year) { %>
-        <span class="dot">·</span>
-        <span class="year"><%= item['pub-info'].year %></span>
-        <% } %>
-      </div>
-      <% // Abstract and category tags are intentionally omitted here: the
-         // home-page "Selected work" section is a scannable teaser, not a full
-         // listing. (Tags are also non-functional off the research page.) Both
-         // still appear on the research page via listing.ejs. %>
-    </div>
-    <% // Teaser shows only the canonical "Final version" link, not the full
-       // set (PDF/Data/etc.). Those remain on the research page via listing.ejs.
-       const links = (item['pub-info'] && item['pub-info'].links) || [];
-       const finalLink = links.find(l => l.name && l.name.toLowerCase() === 'final version');
-    %>
-    <% if (finalLink) { %>
-    <div class="va-publinks">
-      <% if (finalLink.local) { %>
-      <a class="va-publink" href="<%- item.path.substring(0, item.path.lastIndexOf('/')) %>/<%- finalLink.url %>"><%= finalLink.name %><% if (finalLink.icon) { %> <i class="<%- finalLink.icon %>"></i><% } %></a>
-      <% } else { %>
-      <a class="va-publink" href="<%- finalLink.url %>"><%= finalLink.name %><% if (finalLink.icon) { %> <i class="<%- finalLink.icon %>"></i><% } %></a>
+      <% // Teaser meta is venue only: issue/page detail, author, abstract, and
+         // tags all live on the research page via listing.ejs. %>
+      <% if (item['pub-info'] && item['pub-info'].venue) { %>
+      <div class="va-pubmeta"><span class="venue"><%= item['pub-info'].venue %></span></div>
       <% } %>
     </div>
-    <% } %>
   </div>
 <% } %>
 </div>

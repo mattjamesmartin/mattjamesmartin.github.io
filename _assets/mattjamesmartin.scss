@@ -1,43 +1,48 @@
 /*-- scss:defaults --*/
 
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500;8..60,600;8..60,700&display=swap");
+// Noto Sans, per the CCP brand guide (Bold + Regular), plus Medium (500) used
+// only for listing-entry titles so they sit between body and bold headings.
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap");
 
-// Color tokens
-$paper:        #F6F1E6;
-$ink:          #1A1612;
-$ink-soft:     #2a221a;
-$ink-muted:    #4a3f33;
-$ink-faint:    #6E6356;
-$garnet:       #7A1424;
-$garnet-deep:  #570008;
-$garnet-bar:   #73000a;
-$banner:       #844247;
-$rule-soft:    #D9CFBC;
-$rule-medium:  #E6DCC7;
-$peach:        #f0c89c;
-$peach-link:   #fadcc6;
-$paper-shadow: #EFE7D3;
-$meta-dot:     #C5B79B;
+// CCP brand colors (per brand guide)
+$charcoal:     #252729;  // PMS 426c — ink
+$sage:         #70a087;  // PMS 556c — secondary accent
+$teal:         #075056;  // PMS 7476c — primary
+
+// Supporting shades derived from the three brand colors
+$paper:        #F1F6F4;  // very pale teal-tinted background
+$paper-shadow: #E6EFEA;  // code background / soft fill
+$ink:          $charcoal;
+$ink-soft:     #34403b;
+$ink-muted:    #4c5852;
+$ink-faint:    #6c7a73;
+$teal-deep:    #043b40;  // darker teal — footer / hover
+$teal-bar:     #075056;  // navbar
+$banner:       #3b786e;  // muted teal-sage banner surface
+$sage-pale:    #cfe3da;  // pale sage — footer text on dark teal
+$rule-soft:    #d4e1db;
+$rule-medium:  #dde8e3;
+$meta-dot:     #b3c9bd;  // pale sage separator dots
 
 // Typography
-$font-family-sans-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
-$headings-font-family:   'Source Serif 4', Georgia, serif;
-$navbar-font-family:     'Source Serif 4', Georgia, serif;
-$toc-font-family:        'Source Serif 4', Georgia, serif;
-$footer-font-family:     'Source Serif 4', Georgia, serif;
+$font-family-sans-serif: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+$headings-font-family:   'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+$navbar-font-family:     'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+$toc-font-family:        'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+$footer-font-family:     'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
 
 // Bootstrap-flavor overrides Quarto reads
 $body-bg:    $paper;
 $body-color: $ink;
 $link-color: $ink;
-$link-hover-color: $garnet;
+$link-hover-color: $teal;
 
-$navbar-bg:  $garnet-bar;
+$navbar-bg:  $teal-bar;
 $navbar-fg:  #ffffff;
-$navbar-hl:  $peach;
+$navbar-hl:  $sage;
 
-$footer-bg:  $garnet-deep;
-$footer-fg:  rgba(247, 224, 205, 0.85);
+$footer-bg:  $teal-deep;
+$footer-fg:  rgba(207, 227, 218, 0.85);
 
 $code-bg:    $paper-shadow;
 $code-color: $ink-soft;
@@ -47,7 +52,7 @@ $border-radius-sm: 2px;
 $border-radius-lg: 2px;
 
 $toc-color:        $ink-faint;
-$toc-active-color: $garnet;
+$toc-active-color: $teal;
 
 // Breakpoints
 $bp-mobile: 720px;
@@ -72,11 +77,11 @@ a { text-decoration: none; }
 // ------------------------------------------------------------------
 .navbar {
   padding: 8px 48px;
-  background-color: $garnet-bar !important;
+  background-color: $teal-bar !important;
 
   .navbar-brand {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 0.01em;
     color: #fff;
     transition: color .12s;
@@ -131,6 +136,12 @@ a { text-decoration: none; }
   }
 }
 
+// The right-hand social links render as .nav-link items (the .quarto-navbar-tools
+// container Quarto emits stays empty). Iconify's inline mode adds
+// vertical-align:-0.125em, which pushed the ORCID glyph's bottom past the navbar's
+// painted edge — it read as clipped. Center the icon on the line instead.
+.navbar .nav-link iconify-icon { vertical-align: middle; }
+
 @media (max-width: $bp-mobile) {
   .navbar { padding: 10px 16px; }
   .navbar .navbar-brand { font-size: 18px; }
@@ -161,17 +172,12 @@ a { text-decoration: none; }
   .title {
     font-size: 44px;
     line-height: 1.05;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: -0.018em;
     color: #fff;
     // Bootstrap gives h1 a margin-bottom: 0.5rem that Quarto only zeroes for
     // non-banner titles, leaving the banner title ~8px lower than centered.
     margin: 0;
-
-    &::after {
-      content: ".";
-      color: $peach;
-    }
   }
 
   .description, .subtitle {
@@ -219,11 +225,11 @@ body:has(.va-trestles) .page-columns > .content { padding-bottom: 0; }
 // ------------------------------------------------------------------
 main p a {
   color: $ink;
-  box-shadow: inset 0 -1px 0 $garnet;
+  box-shadow: inset 0 -1px 0 $rule-soft;
   padding-bottom: 1px;
-  transition: color .12s;
+  transition: color .12s, box-shadow .12s;
 
-  &:hover { color: $garnet; }
+  &:hover { color: $teal; box-shadow: inset 0 -1px 0 $teal; }
   &:has(> img), &:has(> picture) {
     box-shadow: none;
     padding-bottom: 0;
@@ -254,28 +260,16 @@ main p a {
 
   .name {
     font-size: 28px; line-height: 1.05;
-    font-weight: 500; letter-spacing: -0.014em;
+    font-weight: 700; letter-spacing: -0.014em;
     color: $ink;
     padding-bottom: 14px;
     border-bottom: 1px solid $rule-soft;
-
-    &::after {
-      content: ".";
-      color: $garnet;
-      font-weight: 600;
-    }
   }
 }
 .va-appointment {
-  .lbl {
-    display: block;
-    font-size: 10.5px; letter-spacing: 0.18em;
-    text-transform: uppercase; color: $garnet;
-    font-weight: 600; margin-bottom: 6px;
-  }
   .role {
     font-size: 15px; line-height: 1.35;
-    color: $ink; font-weight: 500;
+    color: $ink-soft; font-weight: 500;
   }
   .org {
     font-size: 14px; line-height: 1.45;
@@ -295,13 +289,6 @@ main p a {
 
     &:last-child { margin-bottom: 0; }
   }
-  .lead::first-letter {
-    float: left;
-    font-size: 78px; line-height: 0.82;
-    font-weight: 500;
-    padding: 6px 12px 0 0;
-    color: $garnet;
-  }
 }
 
 @media (max-width: $bp-mobile) {
@@ -320,7 +307,6 @@ main p a {
   .va-appointment .role { font-size: 14px; }
   .va-appointment .org  { font-size: 13px; }
   .va-bio p { font-size: 16.5px; line-height: 1.6; margin-bottom: 16px; }
-  .va-bio .lead::first-letter { font-size: 64px; padding: 4px 10px 0 0; }
 }
 
 // ------------------------------------------------------------------
@@ -340,12 +326,15 @@ main p a {
   }
 
   h2 {
-    font-size: 30px; font-weight: 500;
-    letter-spacing: -0.012em; margin: 0;
-
-    .dot { color: $garnet; }
+    font-size: 30px; font-weight: 700;
+    letter-spacing: -0.015em; margin: 0;
   }
 }
+
+// These section heads are decorative labels, not navigable sections, so suppress
+// Quarto's anchor-sections hover link icon here. It stays on real article/post
+// body headings, where deep-linking is useful.
+.va-sec h2.anchored .anchorjs-link { display: none; }
 
 @media (max-width: $bp-mobile) {
   .va-sec {
@@ -366,7 +355,7 @@ main p a {
   // Smaller, muted sentence-case head (vs the 30px research-page heads), so it
   // sits clearly below the name in the hero instead of competing with it.
   h2 {
-    font-size: 19px; font-weight: 600;
+    font-size: 19px; font-weight: 700;
     letter-spacing: -0.01em;
     color: $ink-muted;
   }
@@ -390,11 +379,11 @@ main p a {
 }
 .va-pubtitle {
   font-size: 22px; line-height: 1.2;
-  font-weight: 500; letter-spacing: -0.01em;
+  font-weight: 500; letter-spacing: -0.012em;
   color: $ink; display: block;
   transition: color .12s;
 
-  &:hover { color: $garnet; }
+  &:hover { color: $teal; }
 }
 .va-pubmeta {
   display: flex; flex-wrap: wrap;
@@ -403,10 +392,10 @@ main p a {
   font-size: 13.5px; color: $ink-muted; line-height: 1.4;
 
   .dot { color: $meta-dot; }
-  .authors b { font-weight: 600; color: $ink; }
+  .authors b { font-weight: 500; color: $ink; }
   .venue { color: $ink; font-weight: 400; font-style: italic; }
   .year, .status {
-    color: $garnet; font-weight: 400;
+    color: $teal; font-weight: 400;
     letter-spacing: 0.02em;
     font-feature-settings: "tnum" on, "lnum" on;
   }
@@ -429,8 +418,8 @@ main p a {
 .va-readmore {
   display: inline-flex; align-items: center; gap: 6px;
   margin-top: 14px;
-  font-size: 12.5px; font-weight: 600;
-  color: $garnet;
+  font-size: 12.5px; font-weight: 500;
+  color: $teal;
   background: none; border: 0; padding: 0;
   cursor: pointer;
   transition: opacity .12s;
@@ -459,7 +448,7 @@ a.va-pubtag {
   display: inline-block;
   cursor: pointer;
 
-  &:hover { color: $garnet; box-shadow: inset 0 -1px 0 $garnet; }
+  &:hover { color: $teal; box-shadow: inset 0 -1px 0 $teal; }
 }
 .va-publinks {
   display: flex; flex-direction: column; gap: 6px;
@@ -472,7 +461,7 @@ a.va-pubtag {
   padding: 0 0 2px;
   transition: box-shadow .12s, color .12s;
 
-  &:hover { color: $garnet; box-shadow: inset 0 -1px 0 $garnet; }
+  &:hover { color: $teal; box-shadow: inset 0 -1px 0 $teal; }
 
   i { margin-left: 4px; }
 }
@@ -490,6 +479,36 @@ a.va-pubtag {
 }
 
 // ------------------------------------------------------------------
+// Home "Selected work" teaser — a single-column, divided featured list,
+// distinct from the research page's dense two-column listing. The research
+// page keeps the 1fr/160px grid (author + abstract + links); here we drop
+// the empty action column so titles run full width.
+// ------------------------------------------------------------------
+#listing-selected-work .va-pubentry {
+  grid-template-columns: 64px 1fr;
+  gap: 28px;
+  padding: 22px 0;
+  align-items: start;
+}
+#listing-selected-work .va-pubyear {
+  padding-top: 4px;
+  font-size: 13.5px; font-weight: 500;
+  color: $teal;
+  letter-spacing: 0.02em;
+  font-feature-settings: "tnum" on, "lnum" on;
+  white-space: nowrap;
+}
+#listing-selected-work .va-pubmeta { margin-top: 6px; }
+#listing-selected-work .va-pubentry + .va-pubentry {
+  border-top: 1px solid $rule-medium;
+}
+
+@media (max-width: $bp-mobile) {
+  #listing-selected-work .va-pubentry { grid-template-columns: 1fr; gap: 4px; }
+  #listing-selected-work .va-pubyear { padding-top: 0; }
+}
+
+// ------------------------------------------------------------------
 // Other works
 // ------------------------------------------------------------------
 .va-otherwork {
@@ -500,16 +519,16 @@ a.va-pubtag {
 
   .type {
     font-size: 13px;
-    color: $garnet; font-weight: 600;
+    color: $teal; font-weight: 700;
     padding-top: 4px;
   }
   .ow-title {
     font-size: 19px; line-height: 1.22;
-    font-weight: 500; letter-spacing: -0.008em;
+    font-weight: 500; letter-spacing: -0.01em;
     color: $ink; display: block;
     transition: color .12s;
 
-    &:hover { color: $garnet; }
+    &:hover { color: $teal; }
   }
   .ow-meta {
     display: flex; flex-wrap: wrap;
@@ -519,7 +538,7 @@ a.va-pubtag {
     .dot { color: $meta-dot; }
     .venue { color: $ink; font-weight: 400; }
     .year {
-      color: $garnet; font-weight: 400;
+      color: $teal; font-weight: 400;
       letter-spacing: 0.02em;
       font-feature-settings: "tnum" on, "lnum" on;
     }
@@ -553,9 +572,9 @@ a.va-pubtag {
   padding-top: 6px; align-items: flex-start;
 }
 .va-coursecode {
-  font-size: 13px; font-weight: 600;
+  font-size: 13px; font-weight: 500;
   letter-spacing: 0.06em;
-  color: $garnet;
+  color: $teal;
   font-feature-settings: "tnum" on, "lnum" on;
 }
 .va-coursetitle,
@@ -567,7 +586,7 @@ a.va-coursetitle {
   text-decoration: none;
   transition: color .12s;
 
-  &:hover { color: $garnet; }
+  &:hover { color: $teal; }
 }
 .va-courseinst {
   font-size: 13.5px; color: $ink-muted; margin-top: 8px;
@@ -613,7 +632,7 @@ a.va-coursetitle {
 .va-postdate {
   padding-top: 10px;
   font-size: 13.5px; font-weight: 500;
-  color: $garnet;
+  color: $teal;
   letter-spacing: 0.02em;
   font-feature-settings: "tnum" on, "lnum" on;
   white-space: nowrap;
@@ -624,7 +643,7 @@ a.va-coursetitle {
   color: $ink;
   transition: color .12s;
 
-  &:hover { color: $garnet; }
+  &:hover { color: $teal; }
 }
 .va-postdesc {
   font-size: 16px; line-height: 1.55;
@@ -659,7 +678,7 @@ a.va-coursetitle {
 }
 a.va-cv-download {
   display: inline-flex; align-items: center; gap: 10px;
-  background: $garnet;
+  background: $teal;
   color: #fff;
   padding: 12px 26px;
   font-size: 15px; font-weight: 500;
@@ -667,7 +686,7 @@ a.va-cv-download {
   border-radius: 2px;
   transition: background .12s;
 
-  &:hover { background: $garnet-deep; color: #fff; }
+  &:hover { background: $teal-deep; color: #fff; }
   i, svg { font-size: 16px; width: 16px; height: 16px; }
 }
 .va-cv-updated {
@@ -687,8 +706,8 @@ a.va-cv-download {
 .va-cv-frame {
   background: #fff;
   border: 1px solid $rule-soft;
-  box-shadow: 0 2px 0 rgba(122, 20, 36, 0.04),
-              0 8px 24px rgba(26, 22, 18, 0.06);
+  box-shadow: 0 2px 0 rgba(7, 80, 86, 0.05),
+              0 8px 24px rgba(37, 39, 41, 0.06);
   max-width: 760px; margin: 0 auto;
   aspect-ratio: 8.5 / 11;
   border-radius: 2px;
@@ -708,7 +727,9 @@ a.va-cv-download {
 // ------------------------------------------------------------------
 // Detail pages (article + post)
 // ------------------------------------------------------------------
-.va-detail { padding: 36px 0 64px; }
+// Bottom padding is the single gap between the title block and the body (abstract
+// or first heading) — keep it modest so the body sits close to the tags.
+.va-detail { padding: 36px 0 32px; }
 
 .va-backlink {
   display: inline-flex; align-items: center; gap: 8px;
@@ -718,8 +739,8 @@ a.va-cv-download {
   transition: color .12s, box-shadow .12s;
   margin-bottom: 36px;
 
-  &:hover { color: $garnet; box-shadow: inset 0 -1px 0 $garnet; }
-  .arrow { color: $garnet; }
+  &:hover { color: $teal; box-shadow: inset 0 -1px 0 $teal; }
+  .arrow { color: $teal; }
 }
 
 // Right-pointing counterpart to .va-backlink — "All research →" on the home
@@ -732,8 +753,8 @@ a.va-cv-download {
   flex: 0 0 auto;
   transition: color .12s, box-shadow .12s;
 
-  &:hover { color: $garnet; box-shadow: inset 0 -1px 0 $garnet; }
-  .arrow { color: $garnet; }
+  &:hover { color: $teal; box-shadow: inset 0 -1px 0 $teal; }
+  .arrow { color: $teal; }
 }
 
 .va-detail-head {
@@ -747,17 +768,21 @@ body:has(.va-detail) #title-block-header {
   margin-bottom: 0;
   padding-bottom: 0;
 }
+// Zero the first section's own spacing so the gap below the tags is governed
+// solely by .va-detail's bottom padding (above) — for both the abstract
+// paragraph and a first heading (blog posts / "Key figures").
 body:has(.va-detail) main > section.level2:first-of-type {
   margin-top: 0;
   padding-top: 0;
 }
 body:has(.va-detail) main > section.level2:first-of-type > h2:first-child,
-body:has(.va-detail) main > h2:first-of-type {
-  margin-top: 16px;
+body:has(.va-detail) main > h2:first-of-type,
+body:has(.va-detail) main > p:first-of-type {
+  margin-top: 0;
 }
 .va-detail-title {
   font-size: 40px; line-height: 1.1;
-  font-weight: 500; letter-spacing: -0.018em;
+  font-weight: 700; letter-spacing: -0.018em;
   color: $ink;
   margin: 0 0 18px;
 }
@@ -767,7 +792,7 @@ body:has(.va-detail) main > h2:first-of-type {
 
   .dot { color: $meta-dot; }
   .venue { color: $ink; font-style: italic; }
-  .year, .status { color: $garnet; letter-spacing: 0.02em; }
+  .year, .status { color: $teal; letter-spacing: 0.02em; }
   .doi,
   a.doi {
     color: $ink-faint;
@@ -778,7 +803,7 @@ body:has(.va-detail) main > h2:first-of-type {
     text-decoration: none;
     transition: color .12s, box-shadow .12s;
 
-    &:hover { color: $garnet; box-shadow: inset 0 -1px 0 $garnet; }
+    &:hover { color: $teal; box-shadow: inset 0 -1px 0 $teal; }
   }
 }
 // On article pages, meta sits below the author list and needs extra top spacing.
@@ -789,7 +814,7 @@ body:has(.va-detail) main > h2:first-of-type {
   margin-top: 14px; line-height: 1.55;
 
   .author { display: inline; }
-  .author b { font-weight: 600; }
+  .author b { font-weight: 500; }
   .aff { color: $ink-faint; font-size: 13.5px; }
   .sep { color: $meta-dot; margin: 0 6px; }
 }
@@ -799,8 +824,8 @@ body:has(.va-detail) main > h2:first-of-type {
 
   // First action button rendered as primary (per design's VAArticle)
   .va-detail-action:first-child {
-    background: $garnet; border-color: $garnet; color: #fff;
-    &:hover { background: $garnet-deep; border-color: $garnet-deep; color: #fff; }
+    background: $teal; border-color: $teal; color: #fff;
+    &:hover { background: $teal-deep; border-color: $teal-deep; color: #fff; }
   }
 }
 .va-detail-action {
@@ -815,8 +840,8 @@ body:has(.va-detail) main > h2:first-of-type {
   transition: border-color .12s, color .12s, background .12s;
 
   &:hover {
-    border-color: $garnet; color: $garnet;
-    background: rgba(122, 20, 36, 0.04);
+    border-color: $teal; color: $teal;
+    background: rgba(7, 80, 86, 0.05);
     box-shadow: none;
   }
   i, svg { font-size: 13px; width: 13px; height: 13px; }
@@ -834,8 +859,8 @@ body:has(.va-detail) main > h2:first-of-type {
   max-width: 720px;
 
   .lbl {
-    font-weight: 600;
-    color: $garnet;
+    font-weight: 700;
+    color: $teal;
     margin-right: 4px;
   }
 }
@@ -853,7 +878,7 @@ body:has(.va-detail) main > h2:first-of-type {
 }
 
 @media (max-width: $bp-mobile) {
-  .va-detail { padding: 28px 0 48px; }
+  .va-detail { padding: 28px 0 28px; }
   .va-backlink { margin-bottom: 24px; font-size: 13px; }
   .va-detail-title { font-size: 28px; line-height: 1.15; }
   .va-detail-authors { font-size: 14px; }
@@ -875,12 +900,12 @@ body:has(.va-detail) main > h2:first-of-type {
 
   .code {
     font-size: 120px; line-height: 1;
-    font-weight: 500; letter-spacing: -0.04em;
-    color: $garnet; margin: 0;
+    font-weight: 700; letter-spacing: -0.04em;
+    color: $teal; margin: 0;
   }
   .msg {
     font-size: 28px; line-height: 1.2;
-    font-weight: 500; letter-spacing: -0.015em;
+    font-weight: 700; letter-spacing: -0.015em;
     color: $ink;
     margin: 18px 0 14px;
   }
@@ -891,13 +916,13 @@ body:has(.va-detail) main > h2:first-of-type {
   }
   .home {
     display: inline-flex; align-items: center; gap: 8px;
-    font-size: 14px; font-weight: 500;
+    font-size: 14px; font-weight: 700;
     color: $ink;
-    box-shadow: inset 0 -1px 0 $garnet;
+    box-shadow: inset 0 -1px 0 $teal;
     padding-bottom: 2px;
     transition: color .12s, box-shadow .12s;
 
-    &:hover { color: $garnet; box-shadow: inset 0 -1px 0 $garnet; }
+    &:hover { color: $teal; box-shadow: inset 0 -1px 0 $teal; }
   }
 }
 
@@ -914,8 +939,8 @@ body:has(.va-detail) main > h2:first-of-type {
 // Footer  (Quarto emits footer.footer > .nav-footer > .nav-footer-*)
 // ------------------------------------------------------------------
 footer.footer {
-  background: $garnet-deep !important;
-  color: $peach-link;
+  background: $teal-bar !important;
+  color: #fff;
   border-top: none;
   padding: 0;
 
@@ -930,7 +955,7 @@ footer.footer {
     padding: 20px 48px;
     min-height: 0;
     text-align: left;
-    color: $peach-link;
+    color: #fff;
     font-size: 14px;
     line-height: 1.55;
   }
@@ -952,8 +977,8 @@ footer.footer {
   }
 
   a {
-    color: $peach-link;
-    box-shadow: inset 0 -1px 0 rgba(250, 220, 198, 0.35);
+    color: #fff;
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.4);
     padding-bottom: 1px;
     transition: color .12s, box-shadow .12s;
     text-decoration: none;
@@ -966,12 +991,12 @@ footer.footer {
     font-size: 11px;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: rgba(241, 232, 213, 0.7);
-    font-weight: 600;
+    color: rgba(207, 227, 218, 0.7);
+    font-weight: 700;
     margin-bottom: 12px;
   }
 
-  .fa, .fa-brands, .fab { color: rgba(241, 232, 213, 0.7); margin-right: 2px; }
+  .fa, .fa-brands, .fab { color: rgba(255, 255, 255, 0.7); margin-right: 2px; }
 }
 
 @media (max-width: $bp-mobile) {
@@ -1025,13 +1050,17 @@ body:has(.va-404) #title-block-header { display: none !important; }
     font-size: 14px;
     transition: color .12s;
 
-    &:hover { color: $garnet; }
-    &.active { color: $garnet; font-weight: 600; }
+    &:hover { color: $teal; }
+    // Quarto's listing CSS bolds the active category to 600 — heavier than our
+    // system wants. Use 500 (our "selected/emphasis" weight) so active reads as
+    // selected without being heading-weight. The count stays 400 (see below).
+    &.active { color: $teal; font-weight: 500; }
   }
   .quarto-category-count {
     color: $ink-soft;
     opacity: 0.5;
     font-size: 14px;
+    font-weight: 400;  // never inherit the active label's 500 — stays quiet metadata
     margin-left: 2px;
   }
 }
@@ -1039,7 +1068,7 @@ body:has(.va-404) #title-block-header { display: none !important; }
 .quarto-listing-category-title,
 h5.quarto-listing-category-title {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0;
   text-transform: none;
   color: $ink;

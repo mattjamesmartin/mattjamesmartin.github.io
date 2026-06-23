@@ -1,4 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="4" fill="#73000a"></rect>
-  <text x="32" y="42" font-family="&#39;Source Serif 4&#39;, &#39;Source Serif Pro&#39;, Georgia, serif" font-size="26" font-weight="500" text-anchor="middle" fill="#F6F1E6" letter-spacing="-0.4">MM<tspan fill="#000000">.</tspan></text>
+  <defs><clipPath id="r"><rect width="64" height="64" rx="4"></rect></clipPath></defs>
+  <g clip-path="url(#r)">
+    <rect width="64" height="64" fill="#075056"></rect>
+    <svg x="13.7" y="1" width="36.6" height="62" viewBox="88.7 157.4 177.1 310.6" opacity="0.75" preserveAspectRatio="xMidYMid meet">
+      <g fill="#70a087" stroke-width="0">
+        <path d="M250.5 160.4c-43 15.7-76.7 36.5-102 62.7-34.6 35.8-52.9 79.6-55.1 131.6-.5 10.6-.3 16 1 23.3.9 5.2 2 9.8 2.4 10.2.5.5 2.1-3.1 3.6-8 9.4-29.2 31.3-72.6 51-100.7l5.6-7.9v6.5c0 6.2-.5 7.7-7.4 22-8.5 17.8-13.1 29.2-19.1 47.4-4.8 14.5-13.9 49.4-13.1 50.2.6.6 19.5-10.3 31.7-18.3 17.2-11.3 32.1-23.6 48.4-39.9 18-18 17.9-17.5 2.8-15.5-4.7.6-8.7.9-9 .6-.2-.2 10.3-9 23.4-19.6l23.8-19.1 4.1-9.2c2.3-5.1 3.8-9.4 3.2-9.5-.5-.2-9 .6-18.9 1.8s-18.2 2-18.5 1.7c-.2-.2 11-9.6 25.1-20.8l25.4-20.4 2-6.3c4.1-12.6 5.4-22.7 4.8-37.7-.6-13.7-3.1-27.5-5.2-28.1-.6-.2-5 1.2-10 3"></path>
+        <path d="M143.8 297.7c-29.1 48.5-47.4 99-53.4 147.1l-1.7 13.3 2.3 5c1.3 2.7 2.7 4.9 3.1 4.9.5 0 2.6-1.7 4.9-3.8 3.7-3.6 4-4.3 4-9 0-6.6 3.5-33.6 6.1-47.7 6.9-36.8 20.6-78.1 36.5-109.6 3-6 5.2-10.9 5-10.9s-3.3 4.8-6.8 10.7"></path>
+      </g>
+    </svg>
+  </g>
+  <text x="32" y="43" font-family="&#39;Noto Sans&#39;, -apple-system, &#39;Segoe UI&#39;, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" text-anchor="middle" fill="#F4F8F6" letter-spacing="-0.6">MM</text>
 </svg>

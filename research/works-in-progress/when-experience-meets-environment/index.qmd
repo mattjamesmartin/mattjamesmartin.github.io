@@ -19,6 +19,5 @@ pub-info:
     icon: fa-solid fa-file-pdf
 ---
 
-## Abstract
 
 {{< meta pub-info.abstract >}} {{< fa blank >}}

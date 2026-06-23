@@ -27,6 +27,5 @@ pub-info:
     icon: fa-brands fa-github
 ---
 
-## Abstract
 
 {{< meta pub-info.abstract >}} {{< fa blank >}}

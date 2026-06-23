@@ -33,6 +33,5 @@ pub-info:
 doi: 10.5129/001041526X17731675177333
 ---
 
-## Abstract
 
 {{< meta pub-info.abstract >}}{{< fa blank >}}

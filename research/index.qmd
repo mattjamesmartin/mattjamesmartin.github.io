@@ -18,21 +18,21 @@ toc: false
 ---
 
 ```{=html}
-<div class="va-sec"><h2>Journal articles<span class="dot">.</span></h2></div>
+<div class="va-sec"><h2>Journal articles</h2></div>
 ```
 
 ::: {#articles}
 :::
 
 ```{=html}
-<div class="va-sec"><h2>Works in progress<span class="dot">.</span></h2></div>
+<div class="va-sec"><h2>Works in progress</h2></div>
 ```
 
 ::: {#works-in-progress}
 :::
 
 ```{=html}
-<div class="va-sec" id="other-works-section"><h2>Other works<span class="dot">.</span></h2></div>
+<div class="va-sec" id="other-works-section"><h2>Other works</h2></div>
 <div class="other-works" id="other-works-list">
   <div class="va-otherwork" data-categories="Chile,Constitutional design">
     <span class="type">Data story</span>

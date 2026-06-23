@@ -19,7 +19,7 @@ freeze: false
 ---
 
 ```{=html}
-<div class="va-sec"><h2>Posts<span class="dot">.</span></h2></div>
+<div class="va-sec"><h2>Posts</h2></div>
 ```
 
 ::: {#posts}

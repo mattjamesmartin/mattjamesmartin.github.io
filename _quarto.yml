@@ -36,7 +36,7 @@ website:
 
   navbar:
     pinned: true
-    background: "#73000a"
+    background: "#075056"
     foreground: "#ffffff"
 
     left:
@@ -64,18 +64,15 @@ website:
         href: https://orcid.org/0000-0003-3460-3603
 
   page-footer:
-    background: "#570008"
+    background: "#075056"
     left: |
-      <span class="footer-label">License</span>
       <p>{{< fa brands creative-commons >}} All content licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</p>
       <p>© 2023–2026 Matthew Martin</p>
     center: |
-      <span class="footer-label">Source</span>
       <p>Built with [Quarto](https://quarto.org/)</p>
       <p>View the source on [GitHub {{< fa brands github >}}]({{< var github-url >}})</p>
     right: |
-      <span class="footer-label">Colophon</span>
-      <p>Set in [Source Serif 4](https://fonts.google.com/specimen/Source+Serif+4)</p>
+      <p>Set in [Noto Sans](https://fonts.google.com/specimen/Noto+Sans)</p>
       <p>Last revised {{< today >}}</p>
 
 format:
