@@ -19,7 +19,6 @@ $ink-faint:    #6c7a73;
 $teal-deep:    #043b40;  // darker teal — footer / hover
 $teal-bar:     #075056;  // navbar
 $banner:       #3b786e;  // muted teal-sage banner surface
-$sage-pale:    #cfe3da;  // pale sage — footer text on dark teal
 $rule-soft:    #d4e1db;
 $rule-medium:  #dde8e3;
 $meta-dot:     #b3c9bd;  // pale sage separator dots
@@ -865,18 +864,6 @@ body:has(.va-detail) main > p:first-of-type {
   }
 }
 
-.va-figure-pair {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
-  margin: 28px 0;
-
-  figure { margin: 0; }
-  img { width: 100%; height: auto; display: block; }
-  figcaption {
-    font-size: 13px; color: $ink-muted; line-height: 1.45;
-    margin-top: 10px; text-align: center;
-  }
-}
-
 @media (max-width: $bp-mobile) {
   .va-detail { padding: 28px 0 28px; }
   .va-backlink { margin-bottom: 24px; font-size: 13px; }
@@ -886,7 +873,6 @@ body:has(.va-detail) main > p:first-of-type {
   .va-detail-meta .doi { font-size: 11.5px; word-break: break-all; }
   .va-detail-actions { gap: 8px; margin-top: 22px; }
   .va-detail-action { flex: 1; justify-content: center; min-width: 0; }
-  .va-figure-pair { grid-template-columns: 1fr; gap: 24px; }
 }
 
 // ------------------------------------------------------------------
@@ -984,16 +970,6 @@ footer.footer {
     text-decoration: none;
 
     &:hover { color: #fff; box-shadow: inset 0 -1px 0 #fff; }
-  }
-
-  .footer-label {
-    display: block;
-    font-size: 11px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: rgba(207, 227, 218, 0.7);
-    font-weight: 700;
-    margin-bottom: 12px;
   }
 
   .fa, .fa-brands, .fab { color: rgba(255, 255, 255, 0.7); margin-right: 2px; }
