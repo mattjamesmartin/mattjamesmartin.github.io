@@ -1,5 +1,5 @@
 ---
-title: "Matthew Martin"
+title: "Matt Martin"
 pagetitle: "About"
 title-block-style: none
 page-layout: full
@@ -14,10 +14,10 @@ listing:
 <div class="va-trestles">
   <div class="va-trestles-left">
     <div class="va-portrait">
-      <img src="imgs/headshot.jpg" alt="Matthew Martin">
+      <img src="imgs/headshot.jpg" alt="Matt Martin">
     </div>
     <div class="va-namecard">
-      <div class="name">Matthew Martin</div>
+      <div class="name">Matt Martin</div>
       <div class="va-appointment">
         <div class="role">Postdoctoral Researcher</div>
         <div class="org">Comparative Constitutions Project</div>

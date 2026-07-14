@@ -12,7 +12,7 @@ project:
 author-meta:  "Matthew Martin"
 
 website:
-  title: "Matthew Martin"
+  title: "Matt Martin"
   favicon: favicon.svg
   google-analytics: "G-EL33VJN6EN"
   site-url: https://mattjmartin.com/
@@ -67,7 +67,7 @@ website:
     background: "#075056"
     left: |
       <p>{{< fa brands creative-commons >}} All content licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</p>
-      <p>© 2023–2026 Matthew Martin</p>
+      <p>© 2023–2026 Matt Martin</p>
     center: |
       <p>Built with [Quarto](https://quarto.org/)</p>
       <p>View the source on [GitHub {{< fa brands github >}}]({{< var github-url >}})</p>
