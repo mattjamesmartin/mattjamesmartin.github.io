@@ -11,6 +11,9 @@ scripts/
 * [0-9]
 * [0-9].*
 
+# Word/Office lock files (e.g. "~$nsulta-sin-consenso.docx")
+~$*
+
 # Stray Quarto outputs (output-dir is docs/; anything next to source is cruft)
 /site_libs/
 /index_files/
