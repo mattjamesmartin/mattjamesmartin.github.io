@@ -2,6 +2,7 @@
   {
     "listing": "/blog/index.html",
     "items": [
+      "/blog/posts/goodbye-seattle/index.html",
       "/blog/posts/reintroducing-friction/index.html",
       "/blog/posts/cuba-on-my-mind/index.html",
       "/blog/posts/writing-with-ocd/index.html",
