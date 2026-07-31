@@ -38,10 +38,6 @@ $link-hover-color: $teal;
 
 $navbar-bg:  $teal-bar;
 $navbar-fg:  #ffffff;
-$navbar-hl:  $sage;
-
-$footer-bg:  $teal-deep;
-$footer-fg:  rgba(207, 227, 218, 0.85);
 
 $code-bg:    $paper-shadow;
 $code-color: $ink-soft;
@@ -182,8 +178,6 @@ a { text-decoration: none; }
   .description, .subtitle {
     display: none;
   }
-
-  .quarto-categories { display: none; }
 }
 
 @media (max-width: $bp-mobile) {
