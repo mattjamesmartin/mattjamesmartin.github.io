@@ -1,7 +1,9 @@
 ---
 title: "Blog"
 description: "Essays on fieldwork, writing, and life outside work."
-title-block-banner: "#844247"
+title-block-banner: true
+# Blank author suppresses the default author set in blog/_metadata.yml, which
+# would otherwise render in this listing page's title block.
 author: ""
 listing:
   - id: posts
@@ -12,10 +14,6 @@ listing:
 page-layout: full
 toc: false
 date-format: "MMMM D, YYYY"
-code-tools: false
-comments: false
-engine: knitr
-freeze: false
 ---
 
 ```{=html}

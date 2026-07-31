@@ -1,7 +1,7 @@
 ---
 title: "Teaching"
 description: "Courses on constitutional politics, the judiciary, and quantitative methods at USC and UT Austin."
-title-block-banner: "#844247"
+title-block-banner: true
 listing:
   - id: courses
     contents: courses.yml

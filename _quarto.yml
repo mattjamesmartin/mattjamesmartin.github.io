@@ -34,10 +34,10 @@ website:
     creator: "@MattJ_Martin"
     card-style: summary_large_image
 
+  # Navbar and footer colors live in _assets/mattjamesmartin.scss, which paints
+  # both with `!important` rules — setting them here as well had no effect.
   navbar:
     pinned: true
-    background: "#075056"
-    foreground: "#ffffff"
 
     left:
       - text: "About"
@@ -64,7 +64,6 @@ website:
         href: https://orcid.org/0000-0003-3460-3603
 
   page-footer:
-    background: "#075056"
     left: |
       <p>{{< fa brands creative-commons >}} All content licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</p>
       <p>© 2023–2026 Matt Martin</p>

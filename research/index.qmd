@@ -1,7 +1,7 @@
 ---
 title: "Research"
 description: "Journal articles, working drafts, and other projects on constitution-making, public consultation, and U.S. immigration enforcement."
-title-block-banner: "#844247"
+title-block-banner: true
 listing:
   - id: articles
     contents: "articles/*/index.qmd"
@@ -13,7 +13,6 @@ listing:
     sort: "sort asc"
     template: ../_assets/research/listing.ejs
 page-layout: full
-include-back-link: false
 toc: false
 ---
 

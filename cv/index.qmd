@@ -2,7 +2,7 @@
 title: Curriculum Vitae
 description: "A full record of appointments, education, publications, teaching, and service."
 updated: 07-09-2026
-title-block-banner: "#844247"
+title-block-banner: true
 freeze: false
 engine: knitr
 page-layout: full
