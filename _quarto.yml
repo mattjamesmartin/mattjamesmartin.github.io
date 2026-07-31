@@ -53,7 +53,7 @@ website:
 
     right:
       - text: "{{< iconify bi envelope-fill size=1.1em title='E-mail' >}}"
-        href: "mailto:mjmartin@utexas.edu"
+        href: "mailto:mattmartin@sc.edu"
       - text: "{{< iconify bi bluesky size=1em title='Bluesky' >}}"
         href: https://bsky.app/profile/mattjmartin.com
       - text: "{{< iconify bi github size=1.1em title='GitHub' >}}"
