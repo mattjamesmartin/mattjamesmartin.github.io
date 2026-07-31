@@ -208,17 +208,21 @@ main.content,
   color: $ink;
 }
 
-// Quarto defaults main to margin: 1em 0; the home page should match the
-// trestles' own padding, so zero out main's bottom margin too.
-body:has(.va-trestles) main.content { margin-bottom: 0; }
-body:has(.va-trestles) .page-columns > .content { padding-bottom: 0; }
+// Bottom gap above the footer. Quarto's `main { margin-bottom: 1em }` is an
+// arbitrary 17px that used to be zeroed on the home page only, so home ended
+// 22px above the footer while other pages ended 39px (desktop) or 95px
+// (mobile). Drop it everywhere and set the gap here instead: listing rows
+// carry 22-36px of their own bottom padding, so 18/26px lands the typical page
+// at ~40px desktop and ~48px mobile.
+main.content { margin-bottom: 0; }
+.page-columns > .content { padding-bottom: 18px; }
 
 @media (max-width: $bp-mobile) {
   // Quarto's own mobile grid already reserves a 1.5em (~25px) screen gutter on
   // each side, so a 20px content padding on top of it doubled the inset to
   // ~45px and squeezed the column to ~299px on a 390px phone. Keep just enough
   // to clear the gutter's edge.
-  .page-columns > .content { padding: 0 6px 56px; }
+  .page-columns > .content { padding: 0 6px 26px; }
 }
 
 // ------------------------------------------------------------------
@@ -711,7 +715,9 @@ a.va-cv-download {
   border: 1px solid $rule-soft;
   box-shadow: 0 2px 0 rgba(7, 80, 86, 0.05),
               0 8px 24px rgba(37, 39, 41, 0.06);
-  max-width: 760px; margin: 0 auto;
+  // Trailing 22px matches the bottom padding listing rows carry on the other
+  // pages, so the CV ends the same distance above the footer as they do.
+  max-width: 760px; margin: 0 auto 22px;
   aspect-ratio: 8.5 / 11;
   border-radius: 2px;
   overflow: hidden;
