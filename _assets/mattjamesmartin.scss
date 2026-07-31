@@ -299,27 +299,16 @@ main p a {
     grid-template-columns: 1fr;
     gap: 24px; padding: 32px 0 28px;
   }
-  // Stack rather than sit side by side: at phone width the row left the
-  // namecard ~150px, which wrapped every appointment line. Full column width
-  // fits each on one line. The portrait is capped because at full width it
-  // would render ~420px tall and push the bio off screen.
+  // Phone: centered portrait only. The pinned navbar already carries the name
+  // and the bio's opening sentence carries the appointment, so the namecard is
+  // duplication in the space we can least afford. The portrait is capped
+  // because at full column width it would render ~420px tall.
   .va-trestles-left {
-    flex-direction: column; gap: 16px;
-    align-items: center; text-align: center;
+    flex-direction: column;
+    align-items: center;
   }
   .va-portrait { width: 170px; max-width: 100%; }
-  .va-namecard {
-    // Stretch so the rule under the name spans the column rather than shrinking
-    // to the longest appointment line, which would set an arbitrary width.
-    align-self: stretch;
-    padding-top: 0; gap: 12px;
-    .name { font-size: 22px; padding-bottom: 10px; }
-  }
-  // At least body size (the bio is 16.5px here) — the appointment is the one
-  // piece of the hero that should not read as fine print.
-  .va-appointment .role { font-size: 17px; }
-  .va-appointment .dept,
-  .va-appointment .org  { font-size: 16.5px; }
+  .va-namecard { display: none; }
   .va-bio p { font-size: 16.5px; line-height: 1.6; margin-bottom: 16px; }
 }
 
@@ -996,7 +985,7 @@ footer.footer {
     padding: 32px 20px;
 
     .nav-footer-left {
-      text-align: left;
+      text-align: center;
       min-width: 0;
     }
     // On mobile, show only the License block. Source and Colophon are hidden.
