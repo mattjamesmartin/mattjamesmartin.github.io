@@ -983,6 +983,10 @@ footer.footer {
   footer.footer .nav-footer {
     flex-direction: column;
     padding: 32px 20px;
+    // The desktop rule sets align-items: flex-start, which in a column flex
+    // container is the *horizontal* axis — it shrank the block to its content
+    // and pinned it left, so text-align alone centered nothing.
+    align-items: center;
 
     .nav-footer-left {
       text-align: center;
