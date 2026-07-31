@@ -305,15 +305,21 @@ main p a {
   // would render ~420px tall and push the bio off screen.
   .va-trestles-left {
     flex-direction: column; gap: 16px;
+    align-items: center; text-align: center;
   }
-  .va-portrait { max-width: 140px; }
+  .va-portrait { width: 170px; max-width: 100%; }
   .va-namecard {
+    // Stretch so the rule under the name spans the column rather than shrinking
+    // to the longest appointment line, which would set an arbitrary width.
+    align-self: stretch;
     padding-top: 0; gap: 12px;
     .name { font-size: 22px; padding-bottom: 10px; }
   }
-  .va-appointment .role { font-size: 14px; }
+  // At least body size (the bio is 16.5px here) — the appointment is the one
+  // piece of the hero that should not read as fine print.
+  .va-appointment .role { font-size: 17px; }
   .va-appointment .dept,
-  .va-appointment .org  { font-size: 13px; }
+  .va-appointment .org  { font-size: 16.5px; }
   .va-bio p { font-size: 16.5px; line-height: 1.6; margin-bottom: 16px; }
 }
 
