@@ -214,7 +214,11 @@ body:has(.va-trestles) main.content { margin-bottom: 0; }
 body:has(.va-trestles) .page-columns > .content { padding-bottom: 0; }
 
 @media (max-width: $bp-mobile) {
-  .page-columns > .content { padding: 0 20px 56px; }
+  // Quarto's own mobile grid already reserves a 1.5em (~25px) screen gutter on
+  // each side, so a 20px content padding on top of it doubled the inset to
+  // ~45px and squeezed the column to ~299px on a 390px phone. Keep just enough
+  // to clear the gutter's edge.
+  .page-columns > .content { padding: 0 6px 56px; }
 }
 
 // ------------------------------------------------------------------
@@ -295,12 +299,16 @@ main p a {
     grid-template-columns: 1fr;
     gap: 24px; padding: 32px 0 28px;
   }
+  // Stack rather than sit side by side: at phone width the row left the
+  // namecard ~150px, which wrapped every appointment line. Full column width
+  // fits each on one line. The portrait is capped because at full width it
+  // would render ~420px tall and push the bio off screen.
   .va-trestles-left {
-    flex-direction: row; gap: 18px; align-items: flex-start;
+    flex-direction: column; gap: 16px;
   }
-  .va-portrait { flex: 0 0 130px; }
+  .va-portrait { max-width: 140px; }
   .va-namecard {
-    padding-top: 0; gap: 14px; flex: 1; min-width: 0;
+    padding-top: 0; gap: 12px;
     .name { font-size: 22px; padding-bottom: 10px; }
   }
   .va-appointment .role { font-size: 14px; }
