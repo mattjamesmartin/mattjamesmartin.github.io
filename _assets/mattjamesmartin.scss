@@ -988,9 +988,16 @@ footer.footer {
     // and pinned it left, so text-align alone centered nothing.
     align-items: center;
 
+    // Give the block the full column width and centre inside it, rather than
+    // letting align-items centre a shrink-to-fit box — Quarto still applies
+    // `flex: 100%` (<=575.98px) and `flex: 1; min-width: 200px` here, and those
+    // decide the box width in ways that are easy to get wrong.
     .nav-footer-left {
-      text-align: center;
+      flex: 0 0 auto;
+      width: 100%;
       min-width: 0;
+      margin-bottom: 0;
+      text-align: center;
     }
     // On mobile, show only the License block. Source and Colophon are hidden.
     .nav-footer-center,
