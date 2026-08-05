@@ -2,7 +2,7 @@
 title: "From Citizen Input to Elite Legitimation: The Logic of Will-Confirmation in Constitution-Making"
 date: 2026-04-02
 aliases:
-  - research/articles/From-Citizen-Input-To-Elite-Legitimation/martin-fcitel.pdf
+  - /research/articles/From-Citizen-Input-To-Elite-Legitimation/martin-fcitel.pdf
 author:
   - name: Matthew Martin
 categories:
