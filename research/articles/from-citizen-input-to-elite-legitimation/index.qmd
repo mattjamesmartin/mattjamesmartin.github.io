@@ -33,4 +33,4 @@ pub-info:
 doi: 10.5129/001041526X17731675177333
 ---
 
-{{< meta pub-info.abstract >}}{{\< fa blank \>}}
+{{< meta pub-info.abstract >}}

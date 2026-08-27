@@ -25,5 +25,4 @@ pub-info:
 doi: 10.1086/739835
 ---
 
-
-{{< meta pub-info.abstract >}} {{< fa blank >}}
+{{< meta pub-info.abstract >}}
