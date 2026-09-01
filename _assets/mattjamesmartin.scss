@@ -251,8 +251,15 @@ main p a {
   align-items: start;
 }
 .va-trestles-left { display: flex; flex-direction: column; gap: 18px; }
+// The portrait box owns its proportions rather than inheriting them from
+// whatever file is dropped in. Swapping in a square headshot previously
+// shortened the left column by ~110px and unbalanced it against the bio;
+// aspect-ratio + object-fit makes any future source crop to the same 4:5 box.
 .va-portrait img {
   width: 100%; height: auto; display: block;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 20%;
   border-radius: 2px;
 }
 .va-namecard {
@@ -267,13 +274,20 @@ main p a {
     border-bottom: 1px solid $rule-soft;
   }
 }
+// One size for all three lines — weight and color carry the hierarchy on their
+// own. The old 15/14px step was below the threshold where a size change reads
+// as intentional, so it only made the block look inconsistent. Deliberately
+// smaller than the 18px bio: that gap is what marks this as an identity label
+// rather than a second column of prose.
 .va-appointment {
+  font-size: 16px;
+
   .role {
-    font-size: 15px; line-height: 1.35;
+    line-height: 1.35;
     color: $ink-soft; font-weight: 500;
   }
   .dept, .org {
-    font-size: 14px; line-height: 1.45;
+    line-height: 1.45;
     color: $ink-muted; font-weight: 400;
     margin-top: 2px;
   }
@@ -297,17 +311,42 @@ main p a {
     grid-template-columns: 1fr;
     gap: 24px; padding: 32px 0 28px;
   }
-  // Phone: centered portrait only. The pinned navbar already carries the name
-  // and the bio's opening sentence carries the appointment, so the namecard is
-  // duplication in the space we can least afford. The portrait is capped
-  // because at full column width it would render ~420px tall.
+  // Phone: portrait and namecard sit side by side as one header card. This is
+  // cheaper than the centered-portrait-only version it replaced — a 112px
+  // portrait is shorter than the namecard beside it, so the bio starts ~70px
+  // higher while the name and appointment come back.
   .va-trestles-left {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    gap: 16px;
   }
-  .va-portrait { width: 170px; max-width: 100%; }
-  .va-namecard { display: none; }
+  // 100px, not larger: the namecard beside it needs ~205px to keep "Department
+  // of Political Science" on one line at 14px.
+  .va-portrait { flex: 0 0 100px; width: 100px; }
+  .va-namecard {
+    padding-top: 0;
+    gap: 10px;
+    .name { font-size: 22px; padding-bottom: 9px; }
+  }
+  .va-appointment { font-size: 14px; }
   .va-bio p { font-size: 16.5px; line-height: 1.6; margin-bottom: 16px; }
+}
+
+// Small phones: at 320px the 112px portrait leaves too little for the namecard
+// and "Matt Martin" wraps to two lines. Shrink both a step.
+@media (max-width: 380px) {
+  .va-trestles-left { gap: 14px; }
+  .va-portrait { flex: 0 0 88px; width: 88px; }
+  .va-namecard .name { font-size: 20px; }
+}
+
+// Tablet / narrow laptop: above the mobile breakpoint the two-column grid comes
+// back, but a 280px portrait plus a 56px gutter leaves the bio only ~410px at
+// this width. Narrow both so the measure stays readable. 240px is the floor —
+// below it the 16px appointment lines start wrapping.
+@media (min-width: #{$bp-mobile + 1px}) and (max-width: 900px) {
+  .va-trestles { grid-template-columns: 240px 1fr; gap: 32px; }
+  .va-namecard .name { font-size: 24px; }
 }
 
 // ------------------------------------------------------------------
