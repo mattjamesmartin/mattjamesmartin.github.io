@@ -1,6 +1,6 @@
 ---
 title: "When Experience Meets Environment: Professional Backgrounds, Court Composition, and Decision-Making in Immigration Court"
-sort: 2
+sort: 1
 author:
   - name: Sara Heridia
   - name: Matthew Martin
@@ -11,13 +11,16 @@ categories:
 pub-info:
   status: "Under review"
   abstract: >-
-    Research on judicial behavior has long recognized that professional backgrounds shape decision-making, but often treats these effects as uniform across institutional contexts. Focusing on U.S. immigration courts, we argue that understanding how professional experience influences judges requires attention to the specificity of prior socialization and the courts where judges currently sit. Analyzing more than 520,000 decisions by 502 immigration judges from 2015–2018, we disaggregate backgrounds by domain and examine how court composition moderates individual effects. Immigration-specific experience matters: former ICE attorneys grant relief at lower rates than other prosecutors; nonprofit immigration defense attorneys grant at higher rates than other defense attorneys. These background effects, however, are conditional on context — they are most pronounced in professionally heterogeneous courts and attenuate in prosecutor-dominated courts, where local norms absorb or suppress prior socialization. Professional background shapes judicial heuristics, but institutional environment determines whether those heuristics distinguish judges from their peers.
+    Research on judicial behavior shows that professional backgrounds shape how judges decide but often assumes the effect is uniform across institutional settings. Focusing on U.S. immigration courts, we argue that the influence of professional experience depends on the specificity of prior socialization and the court in which a judge sits. Analyzing over 550,000 decisions by 502 judges in 67 courts (2015--2018), we disaggregate backgrounds by legal domain and examine how court composition conditions their influence. Each additional year as an ICE attorney is associated with a lower relief rate, regardless of court composition. Experience as a nonprofit immigration defense attorney is associated with higher relief rates only where former ICE colleagues are few, fading as their share grows. We interpret this as asymmetric conformity, in which lenient judges in courts dominated by former ICE attorneys are visible and sanctionable outliers while restrictive judges face no comparable cost.
   links:
   - name: Draft
     url: when-experience-meets-environment.pdf
     local: true
     icon: fa-solid fa-file-pdf
+  - name: Appendix
+    url: appendix.pdf
+    local: true
+    icon: fa-solid fa-paperclip
 ---
-
 
 {{< meta pub-info.abstract >}} {{< fa blank >}}

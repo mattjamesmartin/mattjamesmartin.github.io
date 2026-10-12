@@ -1,6 +1,6 @@
 ---
 title: "Constitutional Cherry-Picking: Constructing 'The People' in Participatory Constitution-Making"
-sort: 1
+sort: 2
 author:
   - name: Matthew Martin
 categories:
@@ -26,6 +26,5 @@ pub-info:
     url: https://github.com/mattjamesmartin/constitutional-cherrypicking
     icon: fa-brands fa-github
 ---
-
 
 {{< meta pub-info.abstract >}} {{< fa blank >}}
