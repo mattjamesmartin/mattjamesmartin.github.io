@@ -22,3 +22,6 @@ scripts/
 /research/articles/*/index.html
 /research/works-in-progress/*/index.html
 /blog/posts/index.html
+
+# Claude Code local permissions (machine-specific)
+.claude/settings.local.json
