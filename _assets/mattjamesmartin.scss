@@ -577,11 +577,16 @@ a.va-pubtag {
 // page keeps the 1fr/160px grid (author + abstract + links); here we drop
 // the empty action column so titles run full width.
 // ------------------------------------------------------------------
-// Hero and teaser share one right edge (see $home-width). No effect below
-// ~1100px viewports, where the content column is already narrower than this.
+// Hero and teaser share one width (see $home-width) and are centered as a
+// block: left-aligned, the page sat visibly off-center on laptop and desktop
+// screens, with the spare width all on the right. No effect below ~1100px
+// viewports, where the content column is already narrower than this.
 .va-trestles,
 .va-sec.va-selected-head,
-#listing-selected-work { max-width: $home-width; }
+#listing-selected-work {
+  max-width: $home-width;
+  margin-left: auto; margin-right: auto;
+}
 
 #listing-selected-work .va-pubentry {
   grid-template-columns: 64px 1fr;
