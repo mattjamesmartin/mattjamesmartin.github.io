@@ -60,6 +60,11 @@ $bp-mobile: 720px;
 // own 560–620px caps.
 $measure: 640px;
 
+// Home page column: portrait (280) + gutter (56) + the bio at reading measure.
+// "Selected work" is held to the same width so its rule, titles, and "All
+// research" link end where the bio does instead of running on to the page edge.
+$home-width: 280px + 56px + $measure;
+
 
 /*-- scss:rules --*/
 
@@ -572,6 +577,12 @@ a.va-pubtag {
 // page keeps the 1fr/160px grid (author + abstract + links); here we drop
 // the empty action column so titles run full width.
 // ------------------------------------------------------------------
+// Hero and teaser share one right edge (see $home-width). No effect below
+// ~1100px viewports, where the content column is already narrower than this.
+.va-trestles,
+.va-sec.va-selected-head,
+#listing-selected-work { max-width: $home-width; }
+
 #listing-selected-work .va-pubentry {
   grid-template-columns: 64px 1fr;
   gap: 28px;
