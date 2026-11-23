@@ -65,6 +65,11 @@ $measure: 640px;
 // research" link end where the bio does instead of running on to the page edge.
 $home-width: 280px + 56px + $measure;
 
+// Text column on article and post pages: about 90 characters a line at the
+// 17px body size. Wider than $measure because here the text is the whole page,
+// and 640px looked pinched under 900px-wide photos.
+$post-measure: 720px;
+
 
 /*-- scss:rules --*/
 
@@ -912,22 +917,36 @@ body:has(.va-detail) main > h2:first-of-type,
 body:has(.va-detail) main > p:first-of-type {
   margin-top: 0;
 }
-// Hold body prose to the reading measure. Only blocks in the main text flow are
-// capped (direct children of main or of a heading section), so figures, the
-// photo gallery, margin notes, and anything in its own wrapper div keep the
-// full column. Headings are capped too so their rule matches the text below.
+// Article and post pages are one centered column. The title block and body
+// prose are held to $post-measure and centered in the 900px content column;
+// figures keep the full column, so a wide photo extends equally past both edges
+// of the text and a narrower one sits centered on the same axis. (An earlier
+// version capped the text but left it flush left, which read as a narrow strip
+// with everything else off to one side.)
+// Only blocks in the main text flow are capped (direct children of main or of a
+// heading section), so figures, the photo gallery, margin notes, and anything
+// in its own wrapper div are untouched. Headings are capped too so their rule
+// matches the text below.
+.va-detail {
+  max-width: $post-measure;
+  margin-left: auto; margin-right: auto;
+}
 body:has(.va-detail) main,
 body:has(.va-detail) main section {
   > p, > ul, > ol, > dl, > blockquote, > .callout,
-  > h2, > h3, > h4, > h5, > h6 { max-width: $measure; }
-  // A paragraph that only wraps an image is a figure, not prose.
-  > p:has(img) { max-width: none; }
+  > h2, > h3, > h4, > h5, > h6 {
+    // width: 100% matters in sections Quarto lays out as a grid (any section
+    // with a margin note): there, auto margins alone shrink a short block to
+    // its content and center it, so a heading or one-line paragraph would
+    // float in the middle instead of starting at the text's left edge.
+    width: 100%;
+    max-width: $post-measure;
+    margin-left: auto; margin-right: auto;
+  }
+  // A paragraph that only wraps an image is a figure, not prose: full column,
+  // image centered like Quarto's own figures.
+  > p:has(img) { max-width: none; text-align: center; }
 }
-// Figures narrower than the column start at the text's left edge. Centered in
-// the 900px column (`fig-align="center"`) they sat off-axis from the narrower
-// text block above and below them.
-body:has(.va-detail) main .quarto-figure-center > figure > p,
-body:has(.va-detail) main .quarto-figure-center > figure > div { text-align: left; }
 .va-detail-title {
   font-size: 40px; line-height: 1.1;
   font-weight: 700; letter-spacing: -0.018em;
