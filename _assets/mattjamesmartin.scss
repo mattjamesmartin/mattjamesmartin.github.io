@@ -178,7 +178,11 @@ a { text-decoration: none; }
 // ------------------------------------------------------------------
 .quarto-title-banner {
   background: $banner !important;
-  padding: 36px 64px;
+  // No side padding: the banner is laid out on the same column grid as the
+  // page content, so the title lines up with the content's left edge on its
+  // own. Side padding only showed below ~1100px, where the grid's gutters are
+  // at their minimum and it pushed the title 64px in from the content.
+  padding: 36px 0;
   color: #fff;
 
   .quarto-title h1.title,
@@ -200,7 +204,9 @@ a { text-decoration: none; }
 
 @media (max-width: $bp-mobile) {
   .quarto-title-banner {
-    padding: 32px 20px;
+    // 6px each side matches the content's own mobile inset (see
+    // `.page-columns > .content` below), keeping title and content aligned.
+    padding: 32px 6px;
     // Quarto adds margin-bottom: 1em below the banner; drop it on mobile so the
     // first section header sits closer to the banner (its own padding-top is
     // the gap). The banner's symmetric padding above keeps the title centered.
@@ -704,6 +710,22 @@ a.va-pubtag {
 .va-coursechip {
   font-size: 13px; letter-spacing: 0.005em;
   color: $ink-muted; padding: 0; font-weight: 400;
+}
+
+// The Teaching page has no category sidebar, so at the full page width each
+// row left a wide empty gap between the 560px summary and the action link at
+// the far edge. Hold the banner title, section head, and rows to the home
+// page's column and center them, so the link sits near the text it belongs to.
+// width: 100% because the banner title is a grid item, where auto margins
+// alone would shrink it to its text and center the word itself.
+body:has(.teaching-listing) {
+  .quarto-title-banner .quarto-title,
+  main > .va-sec,
+  #listing-courses {
+    width: 100%;
+    max-width: $home-width;
+    margin-left: auto; margin-right: auto;
+  }
 }
 
 @media (max-width: $bp-mobile) {
