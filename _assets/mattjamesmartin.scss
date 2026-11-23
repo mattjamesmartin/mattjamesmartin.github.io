@@ -728,6 +728,30 @@ body:has(.teaching-listing) {
   }
 }
 
+// Research and Blog share that same centered column, so every top-level page
+// (Home, Research, Teaching, Blog) starts and ends at the same edges. These two
+// have a category sidebar in Quarto's margin column, so instead of capping the
+// rows, cap the whole page grid: at $home-width plus the grid's two 1.5em
+// gutters, list and sidebar together come to $home-width. Matched by listing
+// id because the home page reuses the .research-listing class.
+body:has(#listing-articles),
+body:has(#listing-posts) {
+  #quarto-content {
+    max-width: calc(#{$home-width} + 3em);
+    margin-left: auto; margin-right: auto;
+  }
+  // The banner's background must stay full-bleed, so narrow its inner grid with
+  // side padding instead: the title then sits on the same grid as the list
+  // below and shares its left edge. Desktop only — the mobile banner padding
+  // (6px) is set in the Banner section and must not be overridden here.
+  @media (min-width: #{$bp-mobile + 1px}) {
+    .quarto-title-banner {
+      padding-left: max(0px, calc((100% - #{$home-width} - 3em) / 2));
+      padding-right: max(0px, calc((100% - #{$home-width} - 3em) / 2));
+    }
+  }
+}
+
 @media (max-width: $bp-mobile) {
   .va-course {
     grid-template-columns: 1fr;
