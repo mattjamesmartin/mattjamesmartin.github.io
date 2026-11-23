@@ -4,10 +4,7 @@ date: 2026-04-01
 author:
   - name: Matthew Martin
 categories:
-  - Crime-based deportation
-  - Crimmigration
-  - Political entrepreneurs
-  - Reactive sequences
+  - Immigration
 pub-info:
   year: "2026"
   venue: "Polity"

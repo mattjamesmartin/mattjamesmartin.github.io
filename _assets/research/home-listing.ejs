@@ -23,7 +23,7 @@
        // the blog page's date column. %>
     <div class="va-pubyear"><% if (item['pub-info'] && item['pub-info'].year) { %><%= item['pub-info'].year %><% } %></div>
     <div>
-      <a class="va-pubtitle" href="<%- item.path %>"><%= item.title %></a>
+      <h3 class="va-pubtitle"><a href="<%- item.path %>"><%= item.title %></a></h3>
       <% // Teaser meta is venue only: issue/page detail, author, abstract, and
          // tags all live on the research page via listing.ejs. %>
       <% if (item['pub-info'] && item['pub-info'].venue) { %>

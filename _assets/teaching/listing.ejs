@@ -16,9 +16,9 @@
     <div>
       <% var primaryUrl = (course.actions && course.actions.length) ? course.actions[0].url : null; %>
       <% if (primaryUrl) { %>
-      <a class="va-coursetitle" href="<%= primaryUrl %>" target="_blank" rel="noopener noreferrer"><%= course.title %></a>
+      <h3 class="va-coursetitle"><a href="<%= primaryUrl %>" target="_blank" rel="noopener noreferrer"><%= course.title %></a></h3>
       <% } else { %>
-      <div class="va-coursetitle"><%= course.title %></div>
+      <h3 class="va-coursetitle"><%= course.title %></h3>
       <% } %>
       <% if (course.institution) { %>
       <div class="va-courseinst"><%= course.institution %></div>

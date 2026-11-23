@@ -6,9 +6,7 @@ aliases:
   - /blog/posts/immigration-courts-and-abolition.html
 date: 07-17-2021
 categories:
-  - Immigration
-  - Courts
-  - Abolition
+  - Politics
 ---
 
 ![](justice.jpeg)

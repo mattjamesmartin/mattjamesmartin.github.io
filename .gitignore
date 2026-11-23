@@ -25,3 +25,5 @@ scripts/
 
 # Claude Code local permissions (machine-specific)
 .claude/settings.local.json
+
+**/*.quarto_ipynb

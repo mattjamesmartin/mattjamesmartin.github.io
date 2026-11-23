@@ -15,7 +15,9 @@ $paper-shadow: #E6EFEA;  // code background / soft fill
 $ink:          $charcoal;
 $ink-soft:     #34403b;
 $ink-muted:    #4c5852;
-$ink-faint:    #6c7a73;
+// 5.2:1 on $paper. The previous #6c7a73 was 4.1:1 — under the 4.5:1 WCAG AA
+// floor for the 12.5–13.5px text this colors (tags, back links, read times).
+$ink-faint:    #5c6a63;
 $teal-deep:    #043b40;  // darker teal — footer / hover
 $teal-bar:     #075056;  // navbar
 $banner:       #3b786e;  // muted teal-sage banner surface
@@ -51,6 +53,12 @@ $toc-active-color: $teal;
 
 // Breakpoints
 $bp-mobile: 720px;
+
+// Reading measure for long-form prose (bio, article abstracts, blog posts).
+// The content column is 900px, which ran body text to ~110 characters a line;
+// 640px lands near 80 at the 17px body size. Listing blurbs already carry their
+// own 560–620px caps.
+$measure: 640px;
 
 
 /*-- scss:rules --*/
@@ -272,6 +280,18 @@ main p a {
     color: $ink;
     padding-bottom: 14px;
     border-bottom: 1px solid $rule-soft;
+    // Flex so the name-to-pronouns gap exists only while they share a line: on
+    // a ~320px phone the pronouns wrap, and a margin would leave them indented.
+    display: flex; flex-wrap: wrap; align-items: baseline;
+    gap: 2px 11px;
+  }
+  // Pronouns sit on the name's baseline but in the appointment lines' voice
+  // (same size, weight, and color as .dept / .org), so they read as a label.
+  // The size comes from .va-appointment's rules below, to track its breakpoints.
+  .pronouns {
+    font-weight: 400; letter-spacing: 0;
+    color: $ink-muted;
+    white-space: nowrap;
   }
 }
 // One size for all three lines — weight and color carry the hierarchy on their
@@ -279,9 +299,11 @@ main p a {
 // as intentional, so it only made the block look inconsistent. Deliberately
 // smaller than the 18px bio: that gap is what marks this as an identity label
 // rather than a second column of prose.
-.va-appointment {
+.va-appointment,
+.va-namecard .pronouns {
   font-size: 16px;
-
+}
+.va-appointment {
   .role {
     line-height: 1.35;
     color: $ink-soft; font-weight: 500;
@@ -290,6 +312,15 @@ main p a {
     line-height: 1.45;
     color: $ink-muted; font-weight: 400;
     margin-top: 2px;
+  }
+  // Same quiet underline as prose links (`main p a` doesn't reach these divs).
+  a {
+    color: inherit;
+    box-shadow: inset 0 -1px 0 $rule-soft;
+    padding-bottom: 1px;
+    transition: color .12s, box-shadow .12s;
+
+    &:hover { color: $teal; box-shadow: inset 0 -1px 0 $teal; }
   }
 }
 
@@ -301,6 +332,7 @@ main p a {
     font-weight: 400;
     margin: 0 0 20px;
     color: $ink;
+    max-width: $measure;
 
     &:last-child { margin-bottom: 0; }
   }
@@ -328,7 +360,7 @@ main p a {
     gap: 10px;
     .name { font-size: 22px; padding-bottom: 9px; }
   }
-  .va-appointment { font-size: 14px; }
+  .va-appointment, .va-namecard .pronouns { font-size: 14px; }
   .va-bio p { font-size: 16.5px; line-height: 1.6; margin-bottom: 16px; }
 }
 
@@ -373,8 +405,27 @@ main p a {
 
 // These section heads are decorative labels, not navigable sections, so suppress
 // Quarto's anchor-sections hover link icon here. It stays on real article/post
-// body headings, where deep-linking is useful.
-.va-sec h2.anchored .anchorjs-link { display: none; }
+// body headings, where deep-linking is useful. Same for listing-entry titles,
+// which are h3s that already link to their own page.
+.va-sec h2.anchored .anchorjs-link,
+.va-pubtitle .anchorjs-link,
+.ow-title .anchorjs-link,
+.va-coursetitle .anchorjs-link,
+.va-posttitle .anchorjs-link { display: none; }
+
+// Listing-entry titles are h3s wrapping a link, so each listing page has a
+// heading outline (h1 page, h2 section, h3 entry). Reset what the theme gives
+// h3 (top margin, 0.9 opacity) and let the link inherit the title's type.
+.va-pubtitle, .va-coursetitle, .va-posttitle, .va-otherwork .ow-title {
+  margin: 0; opacity: 1;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color .12s;
+    &:hover { color: $teal; }
+  }
+}
 
 @media (max-width: $bp-mobile) {
   .va-sec {
@@ -421,9 +472,6 @@ main p a {
   font-size: 22px; line-height: 1.2;
   font-weight: 500; letter-spacing: -0.012em;
   color: $ink; display: block;
-  transition: color .12s;
-
-  &:hover { color: $teal; }
 }
 .va-pubmeta {
   display: flex; flex-wrap: wrap;
@@ -566,9 +614,6 @@ a.va-pubtag {
     font-size: 19px; line-height: 1.22;
     font-weight: 500; letter-spacing: -0.01em;
     color: $ink; display: block;
-    transition: color .12s;
-
-    &:hover { color: $teal; }
   }
   .ow-meta {
     display: flex; flex-wrap: wrap;
@@ -617,16 +662,11 @@ a.va-pubtag {
   color: $teal;
   font-feature-settings: "tnum" on, "lnum" on;
 }
-.va-coursetitle,
-a.va-coursetitle {
+.va-coursetitle {
   display: block;
   font-size: 26px; line-height: 1.14;
   font-weight: 500; letter-spacing: -0.014em;
   color: $ink;
-  text-decoration: none;
-  transition: color .12s;
-
-  &:hover { color: $teal; }
 }
 .va-courseinst {
   font-size: 13.5px; color: $ink-muted; margin-top: 8px;
@@ -681,9 +721,6 @@ a.va-coursetitle {
   font-size: 26px; line-height: 1.16;
   font-weight: 500; letter-spacing: -0.014em;
   color: $ink;
-  transition: color .12s;
-
-  &:hover { color: $teal; }
 }
 .va-postdesc {
   font-size: 16px; line-height: 1.55;
@@ -713,36 +750,69 @@ a.va-coursetitle {
 // CV page
 // ------------------------------------------------------------------
 .va-cv-actions {
-  display: flex; justify-content: center;
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 10px;
   padding: 0;
 }
 a.va-cv-download {
-  display: inline-flex; align-items: center; gap: 10px;
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
   background: $teal;
+  // Border on the filled button too, so it matches the outlined one's height.
+  border: 1px solid $teal;
   color: #fff;
   padding: 12px 26px;
   font-size: 15px; font-weight: 500;
   letter-spacing: 0.005em;
   border-radius: 2px;
-  transition: background .12s;
+  transition: background .12s, border-color .12s, color .12s;
 
-  &:hover { background: $teal-deep; color: #fff; }
+  &:hover { background: $teal-deep; border-color: $teal-deep; color: #fff; }
   i, svg { font-size: 16px; width: 16px; height: 16px; }
-}
-.va-cv-updated {
-  text-align: center;
-  margin: 14px 0 28px;
-  font-size: 13.5px;
-  color: $ink-muted;
-  text-transform: none;
 
-  .lbl {
-    color: $ink-muted;
-    font-weight: 400;
-    margin-right: 4px;
-    text-transform: none;
+  // Second-language button: outlined, the same primary/secondary pairing the
+  // article pages use for "PDF (English)" / "PDF (Español)" (.va-detail-action).
+  &.is-secondary {
+    background: rgba(255, 255, 255, 0.4);
+    border-color: $rule-soft;
+    color: $ink;
+
+    &:hover {
+      background: rgba(7, 80, 86, 0.05);
+      border-color: $teal; color: $teal;
+    }
   }
 }
+// Preview-language switch between the buttons and the embedded PDF. It only
+// changes what the frame shows; the buttons above always download.
+.va-cv-switch {
+  display: flex; justify-content: center; align-items: baseline;
+  gap: 10px;
+  margin: 16px 0 26px;
+  font-size: 13.5px;
+  color: $ink-muted;
+
+  // The `hidden` attribute loses to `display: flex` above without this.
+  &[hidden] { display: none; }
+
+  .dot { color: $meta-dot; }
+  button {
+    background: none; border: 0;
+    padding: 0 0 2px;
+    font: inherit; color: $ink-muted;
+    box-shadow: inset 0 -1px 0 $rule-soft;
+    cursor: pointer;
+    transition: color .12s, box-shadow .12s;
+
+    &:hover { color: $teal; box-shadow: inset 0 -1px 0 $teal; }
+    &[aria-pressed="true"] {
+      color: $teal; font-weight: 500;
+      box-shadow: inset 0 -1px 0 $teal;
+      cursor: default;
+    }
+  }
+}
+// No switch (JS off): keep the same gap between the buttons and the frame.
+.va-cv-switch[hidden] + .va-cv-frame { margin-top: 28px; }
 .va-cv-frame {
   background: #fff;
   border: 1px solid $rule-soft;
@@ -759,11 +829,15 @@ a.va-cv-download {
 }
 
 @media (max-width: $bp-mobile) {
-  .va-cv-actions { padding: 28px 0 16px; }
-  a.va-cv-download { padding: 11px 22px; font-size: 14px; }
-  // Embedded PDF preview renders poorly on phones; hide it and rely on the
-  // download button above.
-  .va-cv-frame { display: none; }
+  // Stack the two buttons at one shared width; side by side they don't fit.
+  .va-cv-actions {
+    flex-direction: column; align-items: center;
+    padding: 28px 0 16px;
+  }
+  a.va-cv-download { padding: 11px 22px; font-size: 14px; width: 100%; max-width: 280px; }
+  // Embedded PDF preview renders poorly on phones; hide it (and the switch
+  // that controls it) and rely on the download buttons above.
+  .va-cv-frame, .va-cv-switch { display: none; }
 }
 
 // ------------------------------------------------------------------
@@ -822,6 +896,22 @@ body:has(.va-detail) main > h2:first-of-type,
 body:has(.va-detail) main > p:first-of-type {
   margin-top: 0;
 }
+// Hold body prose to the reading measure. Only blocks in the main text flow are
+// capped (direct children of main or of a heading section), so figures, the
+// photo gallery, margin notes, and anything in its own wrapper div keep the
+// full column. Headings are capped too so their rule matches the text below.
+body:has(.va-detail) main,
+body:has(.va-detail) main section {
+  > p, > ul, > ol, > dl, > blockquote, > .callout,
+  > h2, > h3, > h4, > h5, > h6 { max-width: $measure; }
+  // A paragraph that only wraps an image is a figure, not prose.
+  > p:has(img) { max-width: none; }
+}
+// Figures narrower than the column start at the text's left edge. Centered in
+// the 900px column (`fig-align="center"`) they sat off-axis from the narrower
+// text block above and below them.
+body:has(.va-detail) main .quarto-figure-center > figure > p,
+body:has(.va-detail) main .quarto-figure-center > figure > div { text-align: left; }
 .va-detail-title {
   font-size: 40px; line-height: 1.1;
   font-weight: 700; letter-spacing: -0.018em;
@@ -1094,8 +1184,10 @@ body:has(.va-404) #title-block-header { display: none !important; }
     &.active { color: $teal; font-weight: 500; }
   }
   .quarto-category-count {
-    color: $ink-soft;
-    opacity: 0.5;
+    // Solid $ink-faint rather than $ink-soft at 50% opacity, which came out at
+    // 2.6:1 against the page.
+    color: $ink-faint;
+    opacity: 1;
     font-size: 14px;
     font-weight: 400;  // never inherit the active label's 500 — stays quiet metadata
     margin-left: 2px;

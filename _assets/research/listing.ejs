@@ -3,7 +3,7 @@
 <% for (const item of items) { %>
   <div class="va-pubentry" <%= metadataAttrs(item) %>>
     <div>
-      <a class="va-pubtitle" href="<%- item.path %>"><%= item.title %></a>
+      <h3 class="va-pubtitle"><a href="<%- item.path %>"><%= item.title %></a></h3>
       <div class="va-pubmeta">
         <% if (item.author) {
           let authorStr;
@@ -45,10 +45,14 @@
       %>
       <div class="va-pubblurb"><%= abstractHtml %></div>
       <% } %>
+      <% // Category chips: Quarto's listing script (1.4+) expects the category
+         // as base64 of its URI-encoded name, which utils.b64encode produces (it
+         // is what Quarto's own templates pass). A plain name makes
+         // quartoListingCategory() throw, so the click silently does nothing. %>
       <% if (item.categories && item.categories.length) { %>
       <div class="va-pubtags">
         <% for (const tag of item.categories) { %>
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory && window.quartoListingCategory('<%= tag %>'); return false;"><%= tag %></span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory && window.quartoListingCategory('<%= utils.b64encode(tag) %>'); return false;"><%= tag %></span>
         <% } %>
       </div>
       <% } %>

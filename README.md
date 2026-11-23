@@ -1,6 +1,6 @@
 # mattjamesmartin.github.io
 
-Source code for [mattjmartin.com](https://mattjmartin.com/). I'm Matt Martin, a postdoctoral researcher at the [Comparative Constitutions Project](https://comparativeconstitutionsproject.org/). In Fall 2026, I will join the Department of Political Science at the University of South Carolina as an Assistant Professor.
+Source code for [mattjmartin.com](https://mattjmartin.com/). I'm Matt Martin, an Assistant Professor of Political Science at the University of South Carolina and Associate Director of the [Comparative Constitutions Project](https://comparativeconstitutionsproject.org/).
 
 ## Acknowledgments
 

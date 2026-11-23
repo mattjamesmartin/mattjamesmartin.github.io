@@ -36,7 +36,7 @@ toc: false
   <div class="va-otherwork" data-categories="Chile,Constitutional design">
     <span class="type">Data story</span>
     <div>
-      <a class="ow-title" href="https://www.constituteproject.org/data-stories/chile-2023-proposal">12 Core Attributes of the Chilean Constitutional Proposal</a>
+      <h3 class="ow-title"><a href="https://www.constituteproject.org/data-stories/chile-2023-proposal">12 Core Attributes of the Chilean Constitutional Proposal</a></h3>
       <div class="ow-meta">
         <span>Zachary Elkins, <b>Matthew Martin</b>, Ashley Moran &amp; Guillermo P&eacute;rez</span>
         <span class="dot">·</span>
@@ -45,15 +45,15 @@ toc: false
         <span class="year">2023</span>
       </div>
       <div class="va-pubtags">
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory && window.quartoListingCategory('Chile'); return false;">Chile</span>
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory && window.quartoListingCategory('Constitutional design'); return false;">Constitutional design</span>
+        <span class="va-pubtag listing-category" data-cat="Chile">Chile</span>
+        <span class="va-pubtag listing-category" data-cat="Constitutional design">Constitutional design</span>
       </div>
     </div>
   </div>
   <div class="va-otherwork" data-categories="Chile,Constitutional design">
     <span class="type">Translation</span>
     <div>
-      <a class="ow-title" href="https://www.constituteproject.org/constitution/Chile_2023DD">Chile 2023 &mdash; Draft of 30 Oct 2023</a>
+      <h3 class="ow-title"><a href="https://www.constituteproject.org/constitution/Chile_2023DD">Chile 2023 &mdash; Draft of 30 Oct 2023</a></h3>
       <div class="ow-meta">
         <span><b>Matthew Martin</b> &amp; Guillermo P&eacute;rez</span>
         <span class="dot">·</span>
@@ -63,8 +63,8 @@ toc: false
       </div>
       <div class="ow-note">Translation of the Chilean constitutional proposal</div>
       <div class="va-pubtags">
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory && window.quartoListingCategory('Chile'); return false;">Chile</span>
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory && window.quartoListingCategory('Constitutional design'); return false;">Constitutional design</span>
+        <span class="va-pubtag listing-category" data-cat="Chile">Chile</span>
+        <span class="va-pubtag listing-category" data-cat="Constitutional design">Constitutional design</span>
       </div>
     </div>
   </div>
@@ -72,9 +72,17 @@ toc: false
 </div>
 <script>
 (function () {
+  // Quarto's listing script (1.4+) stores each sidebar category as base64 of its
+  // URI-encoded name, and quartoListingCategory() expects that same encoding.
+  // These hand-written entries carry plain names, so convert at the boundary.
+  function encodeCat(name) { return btoa(encodeURIComponent(name)); }
+  function decodeCat(raw) {
+    if (!raw) return '';
+    try { return decodeURIComponent(atob(raw)); } catch (e) { return raw; }
+  }
   function syncOtherWorks() {
     var active = document.querySelector('.quarto-listing-category .category.active');
-    var cat = (active && active.dataset.category) ? active.dataset.category : '';
+    var cat = active ? decodeCat(active.dataset.category) : '';
     var entries = document.querySelectorAll('#other-works-list .va-otherwork');
     var empty = document.getElementById('other-works-empty');
     var anyVisible = false;
@@ -97,28 +105,24 @@ toc: false
       });
     });
     var total = entries.length;
-    var allEl = document.querySelector(".quarto-listing-category .category[data-category='']");
-    if (allEl) {
-      var countEl = allEl.querySelector('.quarto-category-count');
-      if (countEl) {
-        var n = parseInt(countEl.textContent.replace(/[^0-9]/g, ''), 10) || 0;
-        countEl.textContent = '(' + (n + total) + ')';
-      }
-    }
-    Object.keys(bumps).forEach(function (cat) {
-      var el = document.querySelector(".quarto-listing-category .category[data-category='" + cat.replace(/'/g, "\\'") + "']");
-      if (el) {
-        var countEl = el.querySelector('.quarto-category-count');
-        if (countEl) {
-          var n = parseInt(countEl.textContent.replace(/[^0-9]/g, ''), 10) || 0;
-          countEl.textContent = '(' + (n + bumps[cat]) + ')';
-        }
-      }
+    document.querySelectorAll('.quarto-listing-category .category').forEach(function (el) {
+      var raw = el.dataset.category || '';
+      // The empty category is "All"; every other one is looked up by name.
+      var add = raw === '' ? total : (bumps[decodeCat(raw)] || 0);
+      var countEl = el.querySelector('.quarto-category-count');
+      if (!add || !countEl) return;
+      var n = parseInt(countEl.textContent.replace(/[^0-9]/g, ''), 10) || 0;
+      countEl.textContent = '(' + (n + add) + ')';
     });
   }
   function start() {
     updateSidebarCounts();
     syncOtherWorks();
+    document.querySelectorAll('#other-works-list .va-pubtag[data-cat]').forEach(function (el) {
+      el.addEventListener('click', function () {
+        if (window.quartoListingCategory) window.quartoListingCategory(encodeCat(el.dataset.cat));
+      });
+    });
     var sidebar = document.querySelector('.quarto-listing-category');
     if (sidebar) {
       new MutationObserver(syncOtherWorks).observe(sidebar, {

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,16 @@
 
 <title>Research – Matt Martin</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -34,15 +40,16 @@ ul.task-list li input[type="checkbox"] {
 <link href="../favicon.svg" rel="icon" type="image/svg+xml">
 <script src="../site_libs/quarto-listing/list.min.js"></script>
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4835d0bd2278e05703125fbb9c83d52e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script src="../site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script>
@@ -83,9 +90,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-author-meta','listing-website','listing-format','listing-editor','listing-_quarto-vars','listing-language','listing-date-format','listing-toc','listing-include-back-link','listing-execute','listing-title','listing-date','listing-author','listing-categories','listing-pub-info','listing-doi','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-project','listing-author-meta','listing-website','listing-format','listing-editor','listing-engines','listing-_quarto-vars','listing-language','listing-date-format','listing-toc','listing-include-back-link','listing-execute','listing-title','listing-date','listing-author','listing-categories','listing-pub-info','listing-doi','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-author-meta","listing-website","listing-format","listing-editor","listing-_quarto-vars","listing-language","listing-date-format","listing-toc","listing-include-back-link","listing-execute","listing-title","listing-date","listing-author","listing-categories","listing-pub-info","listing-doi","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-project","listing-author-meta","listing-website","listing-format","listing-editor","listing-engines","listing-_quarto-vars","listing-language","listing-date-format","listing-toc","listing-include-back-link","listing-execute","listing-title","listing-date","listing-author","listing-categories","listing-pub-info","listing-doi","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -111,9 +118,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-author-meta','listing-website','listing-format','listing-editor','listing-_quarto-vars','listing-language','listing-date-format','listing-toc','listing-include-back-link','listing-execute','listing-title','listing-sort','listing-author','listing-categories','listing-pub-info','listing-path','listing-outputHref','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-project','listing-author-meta','listing-website','listing-format','listing-editor','listing-engines','listing-_quarto-vars','listing-language','listing-date-format','listing-toc','listing-include-back-link','listing-execute','listing-title','listing-sort','listing-author','listing-categories','listing-pub-info','listing-path','listing-outputHref','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-author-meta","listing-website","listing-format","listing-editor","listing-_quarto-vars","listing-language","listing-date-format","listing-toc","listing-include-back-link","listing-execute","listing-title","listing-sort","listing-author","listing-categories","listing-pub-info","listing-path","listing-outputHref","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-project","listing-author-meta","listing-website","listing-format","listing-editor","listing-engines","listing-_quarto-vars","listing-language","listing-date-format","listing-toc","listing-include-back-link","listing-execute","listing-title","listing-sort","listing-author","listing-categories","listing-pub-info","listing-path","listing-outputHref","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -141,7 +148,7 @@ gtag('config', 'G-EL33VJN6EN', { 'anonymize_ip': true});
 </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -154,7 +161,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -182,7 +189,7 @@ window.Quarto = {
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -274,7 +281,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(8)</span></div><div class="category" data-category="Chile">Chile <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Constitutional design">Constitutional design <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Constitutions">Constitutions <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Crime-based deportation">Crime-based deportation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Crimmigration">Crimmigration <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Cuba">Cuba <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Immigration judges">Immigration judges <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Judicial decision-making">Judicial decision-making <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Latin America">Latin America <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Natural language processing">Natural language processing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Political elites">Political elites <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Political entrepreneurs">Political entrepreneurs <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Professional backgrounds">Professional backgrounds <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Public consultation">Public consultation <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Reactive sequences">Reactive sequences <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Segments-as-topic">Segments-as-topic <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Semantic similarity">Semantic similarity <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Topic integration">Topic integration <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Vocabularies">Vocabularies <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(8)</span></div><div class="category" data-category="Q2hpbGU=">Chile <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Q29uc3RpdHV0aW9uYWwlMjBkZXNpZ24=">Constitutional design <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Q3ViYQ==">Cuba <span class="quarto-category-count">(2)</span></div><div class="category" data-category="SW1taWdyYXRpb24=">Immigration <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UG9saXRpY2FsJTIwZWxpdGVz">Political elites <span class="quarto-category-count">(4)</span></div><div class="category" data-category="UHVibGljJTIwY29uc3VsdGF0aW9u">Public consultation <span class="quarto-category-count">(5)</span></div><div class="category" data-category="VGV4dC1hcy1kYXRh">Text-as-data <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -286,9 +293,9 @@ window.Quarto = {
 <div id="listing-articles" class="quarto-listing quarto-listing-container-custom">
 <div class="list research-listing">
 
-  <div class="va-pubentry" data-index="0" data-categories="Topic integration,Segments-as-topic,Vocabularies,Semantic similarity,Constitutions" data-listing-date-sort="1777262400000" data-listing-file-modified-sort="1787837197754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
+  <div class="va-pubentry" data-index="0" data-categories="Q29uc3RpdHV0aW9uYWwlMjBkZXNpZ24lMkNUZXh0LWFzLWRhdGE=" data-listing-date-sort="1777262400000" data-listing-file-modified-sort="1795462868754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
     <div>
-      <a class="va-pubtitle" href="../research/articles/expanding-your-vocabulary/index.html">Expanding Your Vocabulary: A Framework for Topic Integration in Texts</a>
+      <h3 class="va-pubtitle anchored"><a href="../research/articles/expanding-your-vocabulary/index.html">Expanding Your Vocabulary: A Framework for Topic Integration in Texts</a></h3>
       <div class="va-pubmeta">
         
         <span class="authors">Roy Gardner, <b>Matthew Martin</b>, Ashley Moran, Zachary Elkins, Andrés Cruz, Guillermo Pérez</span>
@@ -308,17 +315,12 @@ window.Quarto = {
       <div class="va-pubblurb">Topic discovery and integration are vital for maintaining vocabularies that categorize textual corpora. Automated approaches are often computationally expensive and lack domain-specific conceptual nuance; manual approaches are costly in terms of time and potential bias. To address this dilemma, we introduce the segments-as-topic (SAT) methodology, a four-stage process that combines automation and human expertise to assess candidate topics for vocabulary inclusion. In the SAT generation stage, a topic is formulated and refined through collaboration with domain experts, then a sentence-level semantic similarity model retrieves corpus segments semantically aligned with the topic. The SAT expansion stage uses this seed set to find additional semantically similar segments, which are iteratively accepted or rejected to build a final segment set. During the review stage, a panel of scholars evaluates the topic for inclusion. In the integration stage, all segments in the final segment set are automatically tagged with the new topic. We apply this methodology to the Comparative Constitutions Project vocabulary that tracks over 330 topics in national constitutions, and demonstrate the addition of three new topics to the vocabulary. The SAT approach balances computational efficiency with expert judgment, offering a systematic, user-friendly, and replicable framework for social scientists to expand domain-specific vocabularies.</div>
       
       
+      
       <div class="va-pubtags">
         
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Topic integration'); return false;">Topic integration</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Q29uc3RpdHV0aW9uYWwlMjBkZXNpZ24='); return false;">Constitutional design</span>
         
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Segments-as-topic'); return false;">Segments-as-topic</span>
-        
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Vocabularies'); return false;">Vocabularies</span>
-        
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Semantic similarity'); return false;">Semantic similarity</span>
-        
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Constitutions'); return false;">Constitutions</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('VGV4dC1hcy1kYXRh'); return false;">Text-as-data</span>
         
       </div>
       
@@ -342,9 +344,9 @@ window.Quarto = {
     
   </div>
 
-  <div class="va-pubentry" data-index="1" data-categories="Chile,Constitutional design,Cuba,Political elites,Public consultation" data-listing-date-sort="1775102400000" data-listing-file-modified-sort="1787837158388" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
+  <div class="va-pubentry" data-index="1" data-categories="Q2hpbGUlMkNDb25zdGl0dXRpb25hbCUyMGRlc2lnbiUyQ0N1YmElMkNQb2xpdGljYWwlMjBlbGl0ZXMlMkNQdWJsaWMlMjBjb25zdWx0YXRpb24=" data-listing-date-sort="1775102400000" data-listing-file-modified-sort="1787837158000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
     <div>
-      <a class="va-pubtitle" href="../research/articles/from-citizen-input-to-elite-legitimation/index.html">From Citizen Input to Elite Legitimation: The Logic of Will-Confirmation in Constitution-Making</a>
+      <h3 class="va-pubtitle anchored"><a href="../research/articles/from-citizen-input-to-elite-legitimation/index.html">From Citizen Input to Elite Legitimation: The Logic of Will-Confirmation in Constitution-Making</a></h3>
       <div class="va-pubmeta">
         
         <span class="authors"><b>Matthew Martin</b></span>
@@ -367,17 +369,18 @@ window.Quarto = {
       <div class="va-pubblurb">Constitution-making is cast as a state-society dialogue, with public consultation sustaining the legal fiction that “the people” write the social contract. I introduce will-confirmation—the interpretive practice whereby elites utilize underdetermined public input to legitimate representative claims. It has two modes: constructive (synthesizing ambiguous input into alignment) and dismissive (excluding contrary input as unrepresentative). Across thirty-seven interviews from Chile’s Constitutional Convention and Cuba’s Drafting Commission, I show how will-confirmation operates amid crises of representation. In Chile, drafters claiming to embody the people produced parallel monologues, aggravating rather than resolving a lack of elite consensus. In Cuba, drafters and regime-loyal intermediaries filtered input into centralized coherence, obscuring rather than remedying the absence of ideological pluralism. Will-confirmation reduced consultation to self-legitimation rather than a check on interpretation.</div>
       
       
+      
       <div class="va-pubtags">
         
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Chile'); return false;">Chile</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Q2hpbGU='); return false;">Chile</span>
         
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Constitutional design'); return false;">Constitutional design</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Q29uc3RpdHV0aW9uYWwlMjBkZXNpZ24='); return false;">Constitutional design</span>
         
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Cuba'); return false;">Cuba</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Q3ViYQ=='); return false;">Cuba</span>
         
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Political elites'); return false;">Political elites</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('UG9saXRpY2FsJTIwZWxpdGVz'); return false;">Political elites</span>
         
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Public consultation'); return false;">Public consultation</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('UHVibGljJTIwY29uc3VsdGF0aW9u'); return false;">Public consultation</span>
         
       </div>
       
@@ -405,9 +408,9 @@ window.Quarto = {
     
   </div>
 
-  <div class="va-pubentry" data-index="2" data-categories="Crime-based deportation,Crimmigration,Political entrepreneurs,Reactive sequences" data-listing-date-sort="1775016000000" data-listing-file-modified-sort="1787837209573" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
+  <div class="va-pubentry" data-index="2" data-categories="SW1taWdyYXRpb24=" data-listing-date-sort="1775016000000" data-listing-file-modified-sort="1795462868759" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
     <div>
-      <a class="va-pubtitle" href="../research/articles/deportation-by-design/index.html">Deportation by Design: How Political Entrepreneurs Engineered Crime-Based Deportation in the United States</a>
+      <h3 class="va-pubtitle anchored"><a href="../research/articles/deportation-by-design/index.html">Deportation by Design: How Political Entrepreneurs Engineered Crime-Based Deportation in the United States</a></h3>
       <div class="va-pubmeta">
         
         <span class="authors"><b>Matthew Martin</b></span>
@@ -430,15 +433,10 @@ window.Quarto = {
       <div class="va-pubblurb">Starting in the 1980s, the United States federal government considerably expanded criminal grounds for the removal of non-citizens, laying the foundation for today’s deportation regime. The reasons for, and the timing of, the entrenchment of crime-based deportation remain unclear, however, considering the country’s long history of using criminality to exclude, detain, and deport immigrants. I contend that crime-based deportation, as a core institution of modern immigration enforcement, can be traced back to an understudied section of the Immigration Reform and Control Act (IRCA) of 1986 and two key reforms in 1988 and 1990. I use a “reactive sequences” approach to examine the macroscopic forces that converged to produce a contingent event—the insertion of Section 701 into IRCA—and two subsequent episodes that transformed the scale and arrangement of crime-based deportation through today. To bolster my argument, I uncover discursive evidence in the Congressional Record across three instances of reform in 1986, 1988, and 1990. A bipartisan coalition of political entrepreneurs consolidated modest policy innovations into the foundation of crime-based deportation, presenting these changes as a logical extension of the ongoing institutional crackdown on drugs and crime. Substantively, these findings contribute to historical research on how deportation laws have changed through the policymaking process. Theoretically, I apply the reactive sequences approach to a novel case study, clarifying how human agency contributes to certain processes of institutional transformation.</div>
       
       
+      
       <div class="va-pubtags">
         
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Crime-based deportation'); return false;">Crime-based deportation</span>
-        
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Crimmigration'); return false;">Crimmigration</span>
-        
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Political entrepreneurs'); return false;">Political entrepreneurs</span>
-        
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Reactive sequences'); return false;">Reactive sequences</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('SW1taWdyYXRpb24='); return false;">Immigration</span>
         
       </div>
       
@@ -458,9 +456,9 @@ window.Quarto = {
     
   </div>
 
-  <div class="va-pubentry" data-index="3" data-categories="Chile,Constitutional design,Political elites,Public consultation" data-listing-date-sort="1766206800000" data-listing-file-modified-sort="1787837226953" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
+  <div class="va-pubentry" data-index="3" data-categories="Q2hpbGUlMkNDb25zdGl0dXRpb25hbCUyMGRlc2lnbiUyQ1BvbGl0aWNhbCUyMGVsaXRlcyUyQ1B1YmxpYyUyMGNvbnN1bHRhdGlvbg==" data-listing-date-sort="1766206800000" data-listing-file-modified-sort="1787837226000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
     <div>
-      <a class="va-pubtitle" href="../research/articles/consultation-without-consensus/index.html">Consultation Without Consensus: Lessons from the Chilean Constitutional Convention (2021-2022)</a>
+      <h3 class="va-pubtitle anchored"><a href="../research/articles/consultation-without-consensus/index.html">Consultation Without Consensus: Lessons from the Chilean Constitutional Convention (2021-2022)</a></h3>
       <div class="va-pubmeta">
         
         <span class="authors"><b>Matthew Martin</b></span>
@@ -483,15 +481,16 @@ window.Quarto = {
       <div class="va-pubblurb">Constitutional crises increasingly emerge not from dictatorship’s end, but from democracy’s disappointments, generating demands for greater citizen involvement. Drawing on interviews with 30 delegates and staff from the Chilean Constitutional Convention, this research note examines why one of history’s most ambitious participatory experiments faltered. The analysis reveals three interconnected tensions characterizing consultation without consensus: sequencing (when citizen input informs elite deliberation), aggregation (how input becomes actionable), and authority (what binding force participation has over representatives). The Convention attempted extensive citizen engagement without prior elite agreement on these core questions, producing mechanisms that struggled to link citizens to decision-making. The case exposes a paradox: the conditions making consultation most necessary—acute fragmentation and representational failure—also make coherent implementation most difficult.</div>
       
       
+      
       <div class="va-pubtags">
         
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Chile'); return false;">Chile</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Q2hpbGU='); return false;">Chile</span>
         
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Constitutional design'); return false;">Constitutional design</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Q29uc3RpdHV0aW9uYWwlMjBkZXNpZ24='); return false;">Constitutional design</span>
         
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Political elites'); return false;">Political elites</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('UG9saXRpY2FsJTIwZWxpdGVz'); return false;">Political elites</span>
         
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Public consultation'); return false;">Public consultation</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('UHVibGljJTIwY29uc3VsdGF0aW9u'); return false;">Public consultation</span>
         
       </div>
       
@@ -511,9 +510,9 @@ window.Quarto = {
     
   </div>
 
-  <div class="va-pubentry" data-index="4" data-categories="Constitutional design,Public consultation,Political elites" data-listing-date-sort="1736485200000" data-listing-file-modified-sort="1787837189144" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
+  <div class="va-pubentry" data-index="4" data-categories="Q29uc3RpdHV0aW9uYWwlMjBkZXNpZ24lMkNQdWJsaWMlMjBjb25zdWx0YXRpb24lMkNQb2xpdGljYWwlMjBlbGl0ZXM=" data-listing-date-sort="1736485200000" data-listing-file-modified-sort="1795462876543" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
     <div>
-      <a class="va-pubtitle" href="../research/articles/elite-fractures-public-capture/index.html">Elite Fractures, Public Capture: The Strategic Use of Public Consultation in Global Constitution-Making</a>
+      <h3 class="va-pubtitle anchored"><a href="../research/articles/elite-fractures-public-capture/index.html">Elite Fractures, Public Capture: The Strategic Use of Public Consultation in Global Constitution-Making</a></h3>
       <div class="va-pubmeta">
         
         <span class="authors"><b>Matthew Martin</b></span>
@@ -536,13 +535,14 @@ window.Quarto = {
       <div class="va-pubblurb">Since 1974, two out of every five constitutions (40.3%) were prepared via processes that included public consultation. The reasons for adopting these participatory mechanisms, however, are largely unexplored. I argue that public consultation is a tool for elite contestation of power. Introducing an original dataset of public consultations in constitution-making processes from 1974-2021 (n = 300), I find that in democracies, factional majorities and newcomer elites use public consultation to legitimate a break from the status quo. In autocracies, governing coalitions that depend on performance and enjoy greater party institutionalization push for public consultation to preserve favorable power-sharing arrangements.</div>
       
       
+      
       <div class="va-pubtags">
         
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Constitutional design'); return false;">Constitutional design</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Q29uc3RpdHV0aW9uYWwlMjBkZXNpZ24='); return false;">Constitutional design</span>
         
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Public consultation'); return false;">Public consultation</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('UHVibGljJTIwY29uc3VsdGF0aW9u'); return false;">Public consultation</span>
         
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Political elites'); return false;">Political elites</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('UG9saXRpY2FsJTIwZWxpdGVz'); return false;">Political elites</span>
         
       </div>
       
@@ -562,9 +562,9 @@ window.Quarto = {
     
   </div>
 
-  <div class="va-pubentry" data-index="5" data-categories="Constitutional design,Public consultation,Natural language processing,Chile,Latin America" data-listing-date-sort="1702530000000" data-listing-file-modified-sort="1787837217966" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
+  <div class="va-pubentry" data-index="5" data-categories="Q2hpbGUlMkNDb25zdGl0dXRpb25hbCUyMGRlc2lnbiUyQ1B1YmxpYyUyMGNvbnN1bHRhdGlvbiUyQ1RleHQtYXMtZGF0YQ==" data-listing-date-sort="1702530000000" data-listing-file-modified-sort="1795462868757" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
     <div>
-      <a class="va-pubtitle" href="../research/articles/measuring-constitutional-preferences/index.html">Measuring constitutional preferences: A new method for analyzing public consultation data</a>
+      <h3 class="va-pubtitle anchored"><a href="../research/articles/measuring-constitutional-preferences/index.html">Measuring constitutional preferences: A new method for analyzing public consultation data</a></h3>
       <div class="va-pubmeta">
         
         <span class="authors">Andrés Cruz, Zachary Elkins, Roy Gardner, <b>Matthew Martin</b>, Ashley Moran</span>
@@ -587,17 +587,16 @@ window.Quarto = {
       <div class="va-pubblurb">Public consultation has become an indispensable part of constitutional design, yet the voluminous, narrative data produced are often impractical to analyze. There are also few, if any, standards for such analysis. Using a comprehensive reference ontology from the Comparative Constitutions Project (CCP), we develop a new methodology to identify constitutional topics of most concern to citizens and compare these to topics in constitutions globally. We analyze data from Chile’s 2016 public consultations—an ambitious process that produced nearly 265,000 narrative responses and launched the constitutional reform process that remains underway today. We leverage advances in natural language processing, in particular sentence-level semantic similarity technology, to classify consultation responses with respect to constitutional topics. Our methodology has potential for advocates, drafters, and researchers seeking to analyze public consultation data that too often go unexamined.</div>
       
       
+      
       <div class="va-pubtags">
         
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Constitutional design'); return false;">Constitutional design</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Q2hpbGU='); return false;">Chile</span>
         
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Public consultation'); return false;">Public consultation</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Q29uc3RpdHV0aW9uYWwlMjBkZXNpZ24='); return false;">Constitutional design</span>
         
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Natural language processing'); return false;">Natural language processing</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('UHVibGljJTIwY29uc3VsdGF0aW9u'); return false;">Public consultation</span>
         
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Chile'); return false;">Chile</span>
-        
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Latin America'); return false;">Latin America</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('VGV4dC1hcy1kYXRh'); return false;">Text-as-data</span>
         
       </div>
       
@@ -618,17 +617,15 @@ window.Quarto = {
   </div>
 
 </div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 <div class="va-sec"><h2 class="anchored">Works in progress</h2></div>
 <div id="listing-works-in-progress" class="quarto-listing quarto-listing-container-custom">
 <div class="list research-listing">
 
-  <div class="va-pubentry" data-index="0" data-categories="Immigration judges,Judicial decision-making,Professional backgrounds" data-listing-file-modified-sort="1791813225365" data-listing-reading-time-sort="1" data-listing-word-count-sort="8">
+  <div class="va-pubentry" data-index="0" data-categories="SW1taWdyYXRpb24=" data-listing-file-modified-sort="1795462868761" data-listing-reading-time-sort="1" data-listing-word-count-sort="8">
     <div>
-      <a class="va-pubtitle" href="../research/works-in-progress/when-experience-meets-environment/index.html">When Experience Meets Environment: Professional Backgrounds, Court Composition, and Decision-Making in Immigration Court</a>
+      <h3 class="va-pubtitle anchored"><a href="../research/works-in-progress/when-experience-meets-environment/index.html">When Experience Meets Environment: Professional Backgrounds, Court Composition, and Decision-Making in Immigration Court</a></h3>
       <div class="va-pubmeta">
         
         <span class="authors">Sara Heridia, <b>Matthew Martin</b></span>
@@ -645,13 +642,10 @@ No matching items
       <div class="va-pubblurb">Research on judicial behavior shows that professional backgrounds shape how judges decide but often assumes the effect is uniform across institutional settings. Focusing on U.S. immigration courts, we argue that the influence of professional experience depends on the specificity of prior socialization and the court in which a judge sits. Analyzing over 550,000 decisions by 502 judges in 67 courts (2015--2018), we disaggregate backgrounds by legal domain and examine how court composition conditions their influence. Each additional year as an ICE attorney is associated with a lower relief rate, regardless of court composition. Experience as a nonprofit immigration defense attorney is associated with higher relief rates only where former ICE colleagues are few, fading as their share grows. We interpret this as asymmetric conformity, in which lenient judges in courts dominated by former ICE attorneys are visible and sanctionable outliers while restrictive judges face no comparable cost.</div>
       
       
+      
       <div class="va-pubtags">
         
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Immigration judges'); return false;">Immigration judges</span>
-        
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Judicial decision-making'); return false;">Judicial decision-making</span>
-        
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Professional backgrounds'); return false;">Professional backgrounds</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('SW1taWdyYXRpb24='); return false;">Immigration</span>
         
       </div>
       
@@ -671,9 +665,9 @@ No matching items
     
   </div>
 
-  <div class="va-pubentry" data-index="1" data-categories="Chile,Constitutional design,Cuba,Political elites,Public consultation" data-listing-file-modified-sort="1791812954819" data-listing-reading-time-sort="1" data-listing-word-count-sort="8">
+  <div class="va-pubentry" data-index="1" data-categories="Q2hpbGUlMkNDb25zdGl0dXRpb25hbCUyMGRlc2lnbiUyQ0N1YmElMkNQb2xpdGljYWwlMjBlbGl0ZXMlMkNQdWJsaWMlMjBjb25zdWx0YXRpb24=" data-listing-file-modified-sort="1791812954000" data-listing-reading-time-sort="1" data-listing-word-count-sort="8">
     <div>
-      <a class="va-pubtitle" href="../research/works-in-progress/constitutional-cherrypicking/index.html">Constitutional Cherry-Picking: Constructing 'The People' in Participatory Constitution-Making</a>
+      <h3 class="va-pubtitle anchored"><a href="../research/works-in-progress/constitutional-cherrypicking/index.html">Constitutional Cherry-Picking: Constructing 'The People' in Participatory Constitution-Making</a></h3>
       <div class="va-pubmeta">
         
         <span class="authors"><b>Matthew Martin</b></span>
@@ -690,17 +684,18 @@ No matching items
       <div class="va-pubblurb">How do drafters leverage public consultation during constitution-making? Research focuses on participation’s downstream effects, sidestepping elite deliberations where the will of “the people” takes shape. I argue that drafters engage in cherry-picking, selectively invoking consultation inputs and procedures to elevate supportive and discredit contrary evidence. Through this mode of representative claim-making, these elites do not transmit citizen preferences but characterize them to fit their constitutional positions. Using an LLM-assisted pipeline, I classify consultation invocations in plenary transcripts from Chile (2021–22) and Cuba (2018–19), identifying two modes distinguished by interpretive control of the consultation record. In Chile’s <em>contested</em> mode, the supermajority invoked consultation to underwrite reforms while the opposition attacked its design. In Cuba’s <em>concentrated</em> mode, the Drafting Commission invoked consultation to validate decisions already made while dominating the floor. Cherry-picking makes visible what constituent power theory often conceals — that drafters represent a public whose will they partly construct.</div>
       
       
+      
       <div class="va-pubtags">
         
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Chile'); return false;">Chile</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Q2hpbGU='); return false;">Chile</span>
         
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Constitutional design'); return false;">Constitutional design</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Q29uc3RpdHV0aW9uYWwlMjBkZXNpZ24='); return false;">Constitutional design</span>
         
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Cuba'); return false;">Cuba</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Q3ViYQ=='); return false;">Cuba</span>
         
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Political elites'); return false;">Political elites</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('UG9saXRpY2FsJTIwZWxpdGVz'); return false;">Political elites</span>
         
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Public consultation'); return false;">Public consultation</span>
+        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('UHVibGljJTIwY29uc3VsdGF0aW9u'); return false;">Public consultation</span>
         
       </div>
       
@@ -725,16 +720,14 @@ No matching items
   </div>
 
 </div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 <div class="va-sec" id="other-works-section"><h2 class="anchored">Other works</h2></div>
 <div class="other-works" id="other-works-list">
   <div class="va-otherwork" data-categories="Chile,Constitutional design">
     <span class="type">Data story</span>
     <div>
-      <a class="ow-title" href="https://www.constituteproject.org/data-stories/chile-2023-proposal">12 Core Attributes of the Chilean Constitutional Proposal</a>
+      <h3 class="ow-title anchored"><a href="https://www.constituteproject.org/data-stories/chile-2023-proposal">12 Core Attributes of the Chilean Constitutional Proposal</a></h3>
       <div class="ow-meta">
         <span>Zachary Elkins, <b>Matthew Martin</b>, Ashley Moran &amp; Guillermo Pérez</span>
         <span class="dot">·</span>
@@ -743,15 +736,15 @@ No matching items
         <span class="year">2023</span>
       </div>
       <div class="va-pubtags">
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Chile'); return false;">Chile</span>
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Constitutional design'); return false;">Constitutional design</span>
+        <span class="va-pubtag listing-category" data-cat="Chile">Chile</span>
+        <span class="va-pubtag listing-category" data-cat="Constitutional design">Constitutional design</span>
       </div>
     </div>
   </div>
   <div class="va-otherwork" data-categories="Chile,Constitutional design">
     <span class="type">Translation</span>
     <div>
-      <a class="ow-title" href="https://www.constituteproject.org/constitution/Chile_2023DD">Chile 2023 — Draft of 30 Oct 2023</a>
+      <h3 class="ow-title anchored"><a href="https://www.constituteproject.org/constitution/Chile_2023DD">Chile 2023 — Draft of 30 Oct 2023</a></h3>
       <div class="ow-meta">
         <span><b>Matthew Martin</b> &amp; Guillermo Pérez</span>
         <span class="dot">·</span>
@@ -761,8 +754,8 @@ No matching items
       </div>
       <div class="ow-note">Translation of the Chilean constitutional proposal</div>
       <div class="va-pubtags">
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Chile'); return false;">Chile</span>
-        <span class="va-pubtag listing-category" onclick="window.quartoListingCategory &amp;&amp; window.quartoListingCategory('Constitutional design'); return false;">Constitutional design</span>
+        <span class="va-pubtag listing-category" data-cat="Chile">Chile</span>
+        <span class="va-pubtag listing-category" data-cat="Constitutional design">Constitutional design</span>
       </div>
     </div>
   </div>
@@ -770,9 +763,17 @@ No matching items
 </div>
 <script>
 (function () {
+  // Quarto's listing script (1.4+) stores each sidebar category as base64 of its
+  // URI-encoded name, and quartoListingCategory() expects that same encoding.
+  // These hand-written entries carry plain names, so convert at the boundary.
+  function encodeCat(name) { return btoa(encodeURIComponent(name)); }
+  function decodeCat(raw) {
+    if (!raw) return '';
+    try { return decodeURIComponent(atob(raw)); } catch (e) { return raw; }
+  }
   function syncOtherWorks() {
     var active = document.querySelector('.quarto-listing-category .category.active');
-    var cat = (active && active.dataset.category) ? active.dataset.category : '';
+    var cat = active ? decodeCat(active.dataset.category) : '';
     var entries = document.querySelectorAll('#other-works-list .va-otherwork');
     var empty = document.getElementById('other-works-empty');
     var anyVisible = false;
@@ -795,28 +796,24 @@ No matching items
       });
     });
     var total = entries.length;
-    var allEl = document.querySelector(".quarto-listing-category .category[data-category='']");
-    if (allEl) {
-      var countEl = allEl.querySelector('.quarto-category-count');
-      if (countEl) {
-        var n = parseInt(countEl.textContent.replace(/[^0-9]/g, ''), 10) || 0;
-        countEl.textContent = '(' + (n + total) + ')';
-      }
-    }
-    Object.keys(bumps).forEach(function (cat) {
-      var el = document.querySelector(".quarto-listing-category .category[data-category='" + cat.replace(/'/g, "\\'") + "']");
-      if (el) {
-        var countEl = el.querySelector('.quarto-category-count');
-        if (countEl) {
-          var n = parseInt(countEl.textContent.replace(/[^0-9]/g, ''), 10) || 0;
-          countEl.textContent = '(' + (n + bumps[cat]) + ')';
-        }
-      }
+    document.querySelectorAll('.quarto-listing-category .category').forEach(function (el) {
+      var raw = el.dataset.category || '';
+      // The empty category is "All"; every other one is looked up by name.
+      var add = raw === '' ? total : (bumps[decodeCat(raw)] || 0);
+      var countEl = el.querySelector('.quarto-category-count');
+      if (!add || !countEl) return;
+      var n = parseInt(countEl.textContent.replace(/[^0-9]/g, ''), 10) || 0;
+      countEl.textContent = '(' + (n + add) + ')';
     });
   }
   function start() {
     updateSidebarCounts();
     syncOtherWorks();
+    document.querySelectorAll('#other-works-list .va-pubtag[data-cat]').forEach(function (el) {
+      el.addEventListener('click', function () {
+        if (window.quartoListingCategory) window.quartoListingCategory(encodeCat(el.dataset.cat));
+      });
+    });
     var sidebar = document.querySelector('.quarto-listing-category');
     if (sidebar) {
       new MutationObserver(syncOtherWorks).observe(sidebar, {
@@ -893,239 +890,243 @@ No matching items
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
       }
+      return false;
     }
-    return false;
-  }
-  const onCopySuccess = function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
       }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
       for (const childEl of codeEl.children) {
         if (isCodeAnnotation(childEl)) {
           childEl.remove();
         }
       }
       return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
-  });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
     });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/mattjmartin\.com\/");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
     }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/mattjmartin\.com\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
-    };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
           }
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
         }
-        return container.innerHTML
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
       } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
       }
     }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
           }
         } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
+            const note = htmlDoc.querySelector('main.content');
             if (note !== null) {
-              const html = processXRef(id, note);
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -1133,185 +1134,161 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+      }, function(instance) {
       });
     }
-  }
-});
-</script>
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -1336,7 +1313,7 @@ View the source on <a href="https://github.com/mattjamesmartin/mattjamesmartin.g
 Set in <a href="https://fonts.google.com/specimen/Noto+Sans">Noto Sans</a>
 </p>
 <p>
-Last revised October 15, 2026
+Last revised November 23, 2026
 </p>
 </div>
   </div>

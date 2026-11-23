@@ -9,11 +9,8 @@ author:
   - name: Andrés Cruz
   - name: Guillermo Pérez
 categories:
-  - Topic integration
-  - Segments-as-topic
-  - Vocabularies
-  - Semantic similarity
-  - Constitutions
+  - Constitutional design
+  - Text-as-data
 pub-info:
   year: "2026"
   venue: "Social Science Computer Review"

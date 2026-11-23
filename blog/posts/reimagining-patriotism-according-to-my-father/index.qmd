@@ -6,8 +6,7 @@ aliases:
   - /blog/posts/reimagining-patriotism-according-to-my-father.html
 date: 08-23-2024
 categories:
-  - Patriotism
-  - Electoralism
+  - Politics
 ---
 
 ![*The Street* (1933) by Balthus, Museum of Modern Art.](thestreet.jpg)

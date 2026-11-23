@@ -8,11 +8,10 @@ author:
   - name: Matthew Martin
   - name: Ashley Moran
 categories:
+  - Chile
   - Constitutional design
   - Public consultation
-  - Natural language processing
-  - Chile
-  - Latin America
+  - Text-as-data
 pub-info:
   year: "2023"
   venue: "PLoS ONE"

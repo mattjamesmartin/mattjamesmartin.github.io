@@ -1,27 +1,60 @@
 ---
 title: Curriculum Vitae
-updated: 08-26-2026
 title-block-banner: true
-freeze: false
-engine: knitr
 page-layout: full
 toc: false
-cv:
-  pdf: "CV.pdf"
 ---
 
 ```{=html}
 <div class="va-cv-actions">
-  <a class="va-cv-download" href="`r rmarkdown::metadata$cv$pdf`" target="_blank" rel="noopener">
-    Download CV (PDF) <i class="fa-solid fa-file-arrow-down"></i>
+  <a class="va-cv-download" href="CV-eng.pdf" hreflang="en" target="_blank" rel="noopener">
+    Download CV (English) <i class="fa-solid fa-file-arrow-down"></i>
+  </a>
+  <a class="va-cv-download is-secondary" href="CV-esp.pdf" lang="es" hreflang="es" target="_blank" rel="noopener">
+    Descargar CV (Español) <i class="fa-solid fa-file-arrow-down"></i>
   </a>
 </div>
 
-<div class="va-cv-updated">
-  <span class="lbl">Last updated:</span> `r format(as.Date(rmarkdown::metadata$updated, format="%m-%d-%Y"), "%B %d, %Y")`
+<!-- Chooses which PDF the preview below shows. Hidden until the script at the
+     bottom runs, so without JS there is no dead control: the preview stays on
+     English and both download buttons above still work. -->
+<div class="va-cv-switch" role="group" aria-label="Preview language" hidden>
+  <span class="lbl">Preview:</span>
+  <button type="button" data-cv="CV-eng.pdf" data-title="Curriculum Vitae (English)" aria-pressed="true">English</button>
+  <span class="dot" aria-hidden="true">·</span>
+  <button type="button" lang="es" data-cv="CV-esp.pdf" data-title="Curriculum Vitae (Español)" aria-pressed="false">Español</button>
 </div>
 
 <div class="va-cv-frame">
-  <iframe src="`r rmarkdown::metadata$cv$pdf`" title="Curriculum Vitae"></iframe>
+  <iframe src="CV-eng.pdf" title="Curriculum Vitae (English)"></iframe>
 </div>
+
+<script>
+(function () {
+  var sw = document.querySelector('.va-cv-switch');
+  var frame = document.querySelector('.va-cv-frame');
+  if (!sw || !frame) return;
+  var buttons = sw.querySelectorAll('button[data-cv]');
+
+  function show(btn) {
+    // Swap in a fresh iframe instead of changing `src`: navigating an existing
+    // iframe adds a history entry, so the browser's Back button would flip the
+    // preview back rather than leave the page.
+    var next = document.createElement('iframe');
+    next.src = btn.dataset.cv;
+    next.title = btn.dataset.title;
+    frame.querySelector('iframe').replaceWith(next);
+    buttons.forEach(function (b) {
+      b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
+    });
+  }
+
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () {
+      if (b.getAttribute('aria-pressed') !== 'true') show(b);
+    });
+  });
+  sw.hidden = false;
+})();
+</script>
 ```

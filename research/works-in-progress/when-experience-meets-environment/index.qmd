@@ -5,9 +5,7 @@ author:
   - name: Sara Heridia
   - name: Matthew Martin
 categories:
-  - Immigration judges
-  - Judicial decision-making
-  - Professional backgrounds
+  - Immigration
 pub-info:
   status: "Under review"
   abstract: >-

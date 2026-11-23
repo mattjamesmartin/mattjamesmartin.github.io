@@ -6,7 +6,6 @@ aliases:
   - /blog/posts/reintroducing-friction.html
 date: 03-19-2026
 categories:
-  - AI
   - Teaching
 ---
 

@@ -4,7 +4,7 @@ description: "An homage to our home for the last two years."
 image: "discovery.jpg"
 date: 07-24-2026
 categories:
-  - Seattle
+  - Places
 ---
 
 My wife and I moved to Seattle two years ago, mostly for shits and giggles. More honestly, we had soured on Austin, Texas. Lexi and I were not fans of the implacable heat, or the worsening ice storms, which twice cut our power for days (the grid is [still](https://removepaywalls.com/https://www.forbes.com/sites/edhirs/2025/05/11/texas-is-failing-to-fix-the-grid-again/) not fixed). But more than anything, we resented how the city and the state worship at the altar of the freeway.[^1] To get anywhere, to do anything, meant at least 15 minutes braving ever-widening lanes, high-speed exits, and some of the [worst drivers](https://www.texasmonthly.com/news-politics/texas-drivers-bad/) in the country. A crash even totaled Lexi's car, and because the other driver was underinsured, she received no compensation for months. Needless to say, when the opportunity to leave Austin arose, we took it. Nursing meant Lexi could work almost anywhere, and I had secured a year-long fellowship to write my dissertation. Why not try a new city?
