@@ -529,8 +529,13 @@ main p a {
   transition: opacity .12s;
 
   // Caret signals expand/collapse; no underline, so this never reads as a tag.
+  // Drawn with borders rather than a "▾" character: that glyph isn't in Noto
+  // Sans, so it came from a fallback font and rendered as a 3px speck.
   .va-readmore-caret {
-    font-size: 8px; line-height: 1;
+    width: 0; height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid currentColor;
     transition: transform .18s ease;
   }
   &[aria-expanded="true"] .va-readmore-caret { transform: rotate(180deg); }
@@ -1286,6 +1291,43 @@ h5.quarto-listing-category-title {
   padding-bottom: 0;
   margin-bottom: 4px;
   border-bottom: none;
+}
+
+// Filter status bar ("Showing: Places · Clear"), built by _assets/filter-bar.html.
+// Stands in for the sidebar above at the widths where Quarto hides the margin
+// column — its own 768px breakpoint, not $bp-mobile — so it never shows beside
+// the sidebar.
+.va-filterbar { display: none; }
+@media (max-width: 767.98px) {
+  .va-filterbar:not([hidden]) {
+    // No wrapping between items: a long category name wraps inside its own
+    // box instead, so "· Clear" never drops to a line of its own.
+    display: flex; align-items: baseline;
+    gap: 8px;
+    // Sticks under the fixed navbar (height supplied by the script) so it is
+    // still in view when a tag is tapped far down the list.
+    position: sticky; top: var(--va-header-h, 60px); z-index: 5;
+    background: $paper;
+    border-bottom: 1px solid $rule-soft;
+    padding: 8px 0;
+    font-size: 14px; line-height: 1.5;
+    color: $ink-muted;
+
+    [role="status"] { min-width: 0; }
+    .name { color: $ink; font-weight: 500; }
+    .dot { color: $meta-dot; flex: none; }
+    button {
+      flex: none;
+      background: none; border: 0;
+      padding: 6px 0 3px;
+      font: inherit; color: $teal; font-weight: 500;
+      box-shadow: inset 0 -1px 0 $rule-soft;
+      cursor: pointer;
+      transition: box-shadow .12s;
+
+      &:hover { box-shadow: inset 0 -1px 0 $teal; }
+    }
+  }
 }
 
 // Category chips in the title block (Quarto emits when listing has categories)

@@ -49,7 +49,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-9835d9c03354983c1dd2e3a17558c450.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-8d1945f98eeda6eae541528d63ed0059.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script src="../site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script>
@@ -857,7 +857,8 @@ window.Quarto = {
       var caret = document.createElement('span');
       caret.className = 'va-readmore-caret';
       caret.setAttribute('aria-hidden', 'true');
-      caret.textContent = '▾'; // ▾ ; CSS rotates it when expanded
+      // Empty on purpose: the triangle is drawn in CSS (.va-readmore-caret),
+      // which also flips it when expanded.
       btn.appendChild(label);
       btn.appendChild(caret);
       el.insertAdjacentElement('afterend', btn);
@@ -889,6 +890,100 @@ window.Quarto = {
 
 
 </main> <!-- /main -->
+<script>
+// Filter status bar for the Research and Blog listings (included from each
+// page's front matter with `include-after-body`).
+//
+// Below 768px Quarto hides the margin column, and the Categories sidebar with
+// it, but the tags under each entry still filter the list. That left phones
+// with no sign that a filter was on and no "All" to tap. This adds a
+// "Showing: <category> · Clear" line above the list; CSS shows it only at the
+// widths where the sidebar is gone (.va-filterbar in mattjamesmartin.scss).
+(function () {
+  function decodeCat(raw) {
+    if (!raw) return '';
+    try { return decodeURIComponent(atob(raw)); } catch (e) { return raw; }
+  }
+
+  function start() {
+    var sidebar = document.querySelector('.quarto-listing-category');
+    var anchor = document.querySelector('main .va-sec');
+    if (!sidebar || !anchor) return;
+
+    // A <section>, not a <div>: the first section heading on these pages is
+    // styled with `.va-sec:first-of-type`, which counts sibling divs, so a div
+    // placed ahead of it would give that heading the rule and spacing meant
+    // for later ones.
+    var bar = document.createElement('section');
+    bar.className = 'va-filterbar';
+    bar.hidden = true;
+
+    var status = document.createElement('span');
+    status.setAttribute('role', 'status');
+    var label = document.createElement('span');
+    label.className = 'lbl';
+    label.textContent = 'Showing: ';
+    var name = document.createElement('span');
+    name.className = 'name';
+    status.appendChild(label);
+    status.appendChild(name);
+
+    var dot = document.createElement('span');
+    dot.className = 'dot';
+    dot.setAttribute('aria-hidden', 'true');
+    dot.textContent = '·';
+
+    var clear = document.createElement('button');
+    clear.type = 'button';
+    clear.textContent = 'Clear';
+    clear.setAttribute('aria-label', 'Clear category filter');
+    clear.addEventListener('click', function () {
+      // The empty category is Quarto's "All"; it takes the same base64 form as
+      // any other, and base64 of the empty string is the empty string.
+      if (window.quartoListingCategory) window.quartoListingCategory('');
+    });
+
+    bar.appendChild(status);
+    bar.appendChild(dot);
+    bar.appendChild(clear);
+    anchor.parentNode.insertBefore(bar, anchor);
+
+    function sync() {
+      var active = sidebar.querySelector('.category.active');
+      var cat = active ? decodeCat(active.dataset.category) : '';
+      name.textContent = cat;
+      bar.hidden = !cat;
+    }
+
+    // The bar sticks just under the fixed navbar, so it stays in view when a
+    // tag is tapped far down the list. The navbar's height isn't exposed to
+    // CSS, so hand it over here.
+    function setOffset() {
+      var header = document.getElementById('quarto-header');
+      if (!header) return;
+      // One pixel under the navbar's edge: its height can be fractional, and
+      // an exact fit left a hairline gap that scrolling text showed through.
+      var h = Math.floor(header.getBoundingClientRect().height) - 1;
+      bar.style.setProperty('--va-header-h', h + 'px');
+    }
+
+    sync();
+    setOffset();
+    window.addEventListener('resize', setOffset);
+    // Quarto marks the chosen category with .active, whether it came from a
+    // tag, the sidebar, or a #category= link.
+    new MutationObserver(sync).observe(sidebar, {
+      attributes: true, attributeFilter: ['class'], subtree: true
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', start);
+  } else {
+    start();
+  }
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

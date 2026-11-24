@@ -14,6 +14,7 @@ listing:
     template: ../_assets/research/listing.ejs
 page-layout: full
 toc: false
+include-after-body: ../_assets/filter-bar.html
 ---
 
 ```{=html}
@@ -169,7 +170,8 @@ toc: false
       var caret = document.createElement('span');
       caret.className = 'va-readmore-caret';
       caret.setAttribute('aria-hidden', 'true');
-      caret.textContent = '▾'; // ▾ ; CSS rotates it when expanded
+      // Empty on purpose: the triangle is drawn in CSS (.va-readmore-caret),
+      // which also flips it when expanded.
       btn.appendChild(label);
       btn.appendChild(caret);
       el.insertAdjacentElement('afterend', btn);

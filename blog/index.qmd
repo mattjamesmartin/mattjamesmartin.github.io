@@ -13,6 +13,7 @@ listing:
     categories: true
 page-layout: full
 toc: false
+include-after-body: ../_assets/filter-bar.html
 date-format: "MMMM D, YYYY"
 ---
 
